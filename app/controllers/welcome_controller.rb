@@ -2,7 +2,8 @@ class WelcomeController < ApplicationController
 
   def index
     if (input = params[:input])
-      output = "That's a good question"
+      @response = Interactors::QueryBot.new(@request).call
+      output = @response[:output]
       session[:inputs] ||= []
       session[:outputs] ||= []
       session[:inputs] << input
