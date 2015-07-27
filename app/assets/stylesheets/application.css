@@ -13,3 +13,47 @@
  *= require_tree .
  *= require_self
  */
+
+ .title {
+   font-size: 36px;
+   color: white;
+   text-align: center;
+ }
+
+ .exchange {
+   width: 500px;
+   margin: 0 auto;
+   color: white;
+   text-align: left;
+   line-height: 20px;
+ }
+
+ .ask {
+   font-weight: bold;
+   color: white;
+   text-align: center;
+ }
+
+ form {
+   width: 500px;
+   margin: 0 auto;
+ }
+
+ body {
+   background-image: url('https://thenypost.files.wordpress.com/2015/06/usa-election_trump1.jpg');
+   background-size: cover;
+ }
+
+ .conversation {
+   width: 500px;
+   margin: 0 auto;
+   color: white;
+   text-align: left;
+   line-height: 20px;
+ }
+
+ .conversation > .title {
+   font-size: 24px;
+   color: white;
+   text-align: left;
+ }
