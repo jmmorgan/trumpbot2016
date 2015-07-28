@@ -13,8 +13,6 @@ Dir["#{Rails.root}/lib/aiml/*.aiml"].each do |path|
   doc = Nokogiri::XML(File.open(path))
 
   doc.xpath('//category').each do |category| 
-    pattern = category.xpath('pattern').first.content
-
-    CATEGORIES << Category.new(pattern: pattern)
+    CATEGORIES << Parsers::CategoryXmlParser.new.parse(category)
   end
 end
