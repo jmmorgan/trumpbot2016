@@ -1,15 +1,27 @@
 class Bot
 
   def respond(input)
-    normalize(input)
+    sentences = normalize(input)
 
-    "I'm seriously impressed"
+    "You're normalized text is: #{sentences.join('|')}"
   end
 
   private
 
   def normalize(input)
     sentences = input.split(/[#{Regexp.quote(PROPERTIES_MAP_FILE['sentence-splitters'])}]/)
-    sentences = sentences.map(&:strip)
+    sentences = sentences.map{|sentence| sentence.rjust(sentence.length + 1)}
+    sentences.each do |sentence|
+      NORMAL_SUBSTITUTION_MAP_FILE.each_pair do |key, value|
+        sentence.gsub!(/(#{Regexp.quote(key)})/i, value)
+      end
+    end
+
+    sentences.each_index do |i|
+      # Normalize interword spaces and convert to caps
+      sentences[i] = sentences[i].split.join(' ').upcase
+    end
+    puts sentences.inspect
+    sentences
   end
 end
