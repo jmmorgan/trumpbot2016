@@ -3,6 +3,11 @@ class Bot
   def respond(input)
     sentences = normalize(input)
 
+    sentences.each do |sentence|
+      catgories = find_matching_categories(sentence)
+      puts "CATGEORIES >> #{catgories}"
+    end
+
     "You're normalized text is: #{sentences.join('|')}"
   end
 
@@ -23,5 +28,16 @@ class Bot
     end
     puts sentences.inspect
     sentences
+  end
+
+  def find_matching_categories(input)
+    result = []
+    CATEGORIES.each do |category|
+      if (category.match_pattern?(input))
+        result << category
+      end
+    end
+
+    result
   end
 end
