@@ -1,7 +1,7 @@
 class Interactors::QueryBot < Interactor
 
   def call
-    @response[:output] = "I'm impressed."
+    @response[:output] = Bot.new.respond(@request[:input])
     @response
   end
 end
