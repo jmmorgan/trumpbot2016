@@ -5,7 +5,5 @@ and an AIML 2.0 interpreter.
 
 # Next up TODOs
 
-- Parse out nested XML inside <pattern> elements when creating Category objects
-- Implement Category#match_pattern?
-
+- Implement Graphmaster as outlined in AIML 2.0 spec
 
