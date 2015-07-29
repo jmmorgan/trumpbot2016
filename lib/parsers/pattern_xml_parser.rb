@@ -1,7 +1,7 @@
-require 'parsers/bot_parser'
-require 'parsers/eval_parser'
-require 'parsers/set_parser'
-require 'parsers/star_parser'
+require 'parsers/bot_xml_parser'
+require 'parsers/eval_xml_parser'
+require 'parsers/set_xml_parser'
+require 'parsers/star_xml_parser'
 require 'text'
 
 module Parsers
@@ -32,10 +32,10 @@ module Parsers
     end
 
     PARSER_MAP = {
-      'bot' => Parsers::BotParser,
-      'eval' => Parsers::EvalParser,
-      'set' => Parsers::SetParser,
-      'star' => Parsers::StarParser
+      'bot' => Parsers::BotXmlParser,
+      'eval' => Parsers::EvalXmlParser,
+      'set' => Parsers::SetXmlParser,
+      'star' => Parsers::StarXmlParser
     }
   end
 end

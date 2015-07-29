@@ -1,5 +1,5 @@
 module Parsers
-  class BotParser
+  class BotXmlParser
 
     def parse(bot_element)
       bot = AimlBot.new

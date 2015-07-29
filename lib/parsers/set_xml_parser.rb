@@ -1,5 +1,5 @@
 module Parsers
-  class SetParser
+  class SetXmlParser
 
     def parse(set_element)
       set = AimlSet.new

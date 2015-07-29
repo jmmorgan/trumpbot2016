@@ -17,4 +17,8 @@ class GraphmasterNode
     result
   end 
 
+  def to_s
+    "#{self.class}, children: #{children}"
+  end
+
 end

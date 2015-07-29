@@ -9,5 +9,9 @@ class Graphmaster < GraphmasterNode
       current_node = current_node.find_or_append_child(current_token)
       current_token = tokens.shift
     end
+
+    current_node.find_or_append_child(category.that)
+
+    self
   end
 end

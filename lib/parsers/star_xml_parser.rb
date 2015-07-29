@@ -1,8 +1,8 @@
 module Parsers
-  class StarParser
+  class StarXmlParser
 
     def parse(star_element)
-      eval = Star.new
+      star = Star.new
     end
   end
 end
