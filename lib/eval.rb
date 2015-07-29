@@ -1,3 +1,3 @@
-class Eval
+class Eval < GraphmasterNode
 
 end

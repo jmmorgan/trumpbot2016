@@ -32,11 +32,8 @@ class Bot
 
   def find_matching_categories(input)
     result = []
-    CATEGORIES.each do |category|
-      if (category.match_pattern?(input))
-        result << category
-      end
-    end
+    
+    # TODO
 
     result
   end

@@ -1,3 +1,3 @@
-class Star
+class Star < GraphmasterNode
 
 end

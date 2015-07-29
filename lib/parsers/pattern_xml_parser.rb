@@ -1,5 +1,8 @@
+require 'parsers/bot_parser'
 require 'parsers/eval_parser'
 require 'parsers/set_parser'
+require 'parsers/star_parser'
+require 'text'
 
 module Parsers
   class PatternXmlParser
@@ -16,7 +19,7 @@ module Parsers
       tokens = []
       nodes.each do |node|
         if (node.text?)
-          tokens << node.content
+          tokens += node.content.split.collect{|word| Text.new(word)}
         else
           name = node.name
           parser_class = PARSER_MAP[name]
