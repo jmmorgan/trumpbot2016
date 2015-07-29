@@ -8,7 +8,7 @@ class Bot
       puts "CATGEORIES >> #{catgories}"
     end
 
-    "You're normalized text is: #{sentences.join('|')}"
+    "Your normalized text is: #{sentences.join('|')}"
   end
 
   private
