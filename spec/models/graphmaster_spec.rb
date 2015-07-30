@@ -7,7 +7,7 @@ describe Graphmaster do
 
     context 'pattern contains text only' do
 
-      it 'returns the matching paths' do
+      it 'returns the matching path' do
         path = GRAPHMASTER.get_matching_paths('HOW DO YOU WORK')
         expect(path.count).to eq 7
         expect(path.slice(1,4).join(' ')).to eq 'HOW DO YOU WORK'
