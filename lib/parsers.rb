@@ -4,6 +4,7 @@ module Parsers
   require 'parsers/set_xml_parser'
   require 'parsers/star_xml_parser'
   require 'parsers/that_xml_parser'
+  require 'parsers/topic_xml_parser'
   
 
   require 'parsers/pattern_xml_parser'

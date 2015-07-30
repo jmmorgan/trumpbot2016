@@ -17,8 +17,27 @@ class GraphmasterNode
     result
   end 
 
-  def to_s
-    "#{self.class}, children: #{children}"
+  def leaf?
+    @children.empty?
   end
 
+  def inspect
+    self.to_s
+  end
+
+  def match?(input, that, topic)
+    input.match(/#{Regexp.quote(self.path.map(&:to_regex).join(' ').strip)}/i) != nil
+  end
+
+  def path
+    if (self.parent)
+      self.parent.path << self
+    else
+      [self]
+    end
+  end
+
+  def to_regex
+    ""
+  end
 end

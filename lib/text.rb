@@ -15,5 +15,8 @@ class Text < GraphmasterNode
   def to_s
     @value
   end
-  
+
+  def to_regex
+    value
+  end
 end

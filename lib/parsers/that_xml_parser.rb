@@ -3,7 +3,7 @@ module Parsers
 
     def parse(that_element)
       that = That.new
-      that.expression = that_element ? that_element.content : nil
+      that.expression = that_element ? that_element.content : '*'
       that
     end
   end

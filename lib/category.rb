@@ -1,5 +1,5 @@
 class Category
-  attr_accessor :pattern, :that
+  attr_accessor :pattern, :that, :topic
 
   def initialize(options = {})
     @pattern = options[:pattern]

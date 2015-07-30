@@ -5,6 +5,7 @@ module Parsers
       category = Category.new
       category.pattern = Parsers::PatternXmlParser.new.parse(category_element.xpath('pattern').first)
       category.that =  Parsers::ThatXmlParser.new.parse(category_element.xpath('that').first)
+      category.topic = Topic.new # for now
       category
     end
 
