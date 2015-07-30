@@ -17,6 +17,24 @@ class Text < GraphmasterNode
   end
 
   def to_regex
-    value
+    value.gsub(/\*/, '[A-Z0-9 ]+').gsub(/\$/, '').gsub(/\#/, '[A-Z0-9 ]*')
   end
+
+  def priority
+    case @value.first
+    when '$'
+      1
+    when '#'
+      2
+    when '_'
+      3
+    when '^'
+      6
+    when '*'
+      7
+    else
+      3
+    end
+  end
+      
 end

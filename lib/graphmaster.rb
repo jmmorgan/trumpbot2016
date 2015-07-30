@@ -38,4 +38,9 @@ class Graphmaster < GraphmasterNode
 
     result
   end
+
+  def to_regex
+    ""
+  end
+
 end

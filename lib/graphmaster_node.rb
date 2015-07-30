@@ -12,6 +12,7 @@ class GraphmasterNode
       result = node
       node.parent = self
       @children << node
+      @children.sort!{|a,b| a.priority <=> b.priority}
     end
 
     result
@@ -26,7 +27,8 @@ class GraphmasterNode
   end
 
   def match?(input, that, topic)
-    input.match(/#{Regexp.quote(self.path.map(&:to_regex).join(' ').strip)}/i) != nil
+    temp = (input.match(/^#{self.path.map(&:to_regex).join('\s*').strip.gsub(/\s+\$/, '$')}/i) != nil)
+    temp
   end
 
   def path
@@ -38,6 +40,10 @@ class GraphmasterNode
   end
 
   def to_regex
-    ""
+    "<#{self.class}>" # for now
+  end
+
+  def priority
+    0
   end
 end
