@@ -11,5 +11,8 @@ class ApplicationController < ActionController::Base
     r = Request.new
     r.merge!(params)
     @request = r.with_indifferent_access
+    # Initializing chat here for now.
+    @request[:chat] = Chat.new
+    # TODO: Need to persist Chat across session
   end
 end
