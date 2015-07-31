@@ -2,13 +2,14 @@ class Bot
 
   def respond(input)
     sentences = normalize(input)
+    path_matcher = PathMatcher.new
+    path_results = []
 
     sentences.each do |sentence|
-      catgories = find_matching_categories(sentence)
-      puts "CATGEORIES >> #{catgories}"
+      path_results << path_matcher.get_matching_path(GRAPHMASTER, sentence, '*', '*')
     end
 
-    "Your normalized text is: #{sentences.join('|')}"
+    "The matching paths are: #{path_results.map(&:path).join('|')}"
   end
 
   private
@@ -28,13 +29,5 @@ class Bot
     end
     puts sentences.inspect
     sentences
-  end
-
-  def find_matching_categories(input)
-    result = []
-    
-    # TODO
-
-    result
   end
 end
