@@ -5,7 +5,6 @@ and an AIML 2.0 interpreter.
 
 # Next up TODOs
 
-- Implement search node prioritization
-- Implement nodes aside from text
-- Try to get first basic responses working
+- Implement basic template functionality.
+- Implement patern matching on sets.
 
