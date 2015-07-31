@@ -5,7 +5,7 @@ class Topic < GraphmasterNode
     return other_object.is_a?(Topic) && other_object.expression == @expression
   end
 
-  def to_regex
-    ''
+  def matching_tokens(input_tokens, next_node, that = '*', topic = '*')
+    []
   end
 end

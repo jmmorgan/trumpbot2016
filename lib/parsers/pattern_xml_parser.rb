@@ -19,7 +19,7 @@ module Parsers
       tokens = []
       nodes.each do |node|
         if (node.text?)
-          tokens += node.content.split.collect{|word| Text.new(word)}
+          tokens += node.content.split.collect{|token| to_text_node(token)}
         else
           name = node.name
           parser_class = PARSER_MAP[name]
@@ -30,6 +30,24 @@ module Parsers
 
       tokens
     end
+
+    def to_text_node(token)
+      case token
+      when /^\$/
+        PriorityWord.new(token)
+      when '#'
+        Pound.new(token)
+      when '_'
+        Underscore.new(token)
+      when '^'
+        Caret.new(token)
+      when '*'
+        Asterisk.new(token)
+      else
+        Word.new(token)
+      end
+    end
+
 
     PARSER_MAP = {
       'bot' => Parsers::BotXmlParser,

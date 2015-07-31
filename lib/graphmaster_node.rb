@@ -26,11 +26,6 @@ class GraphmasterNode
     self.to_s
   end
 
-  def match?(input, that, topic)
-    temp = (input.match(/^#{self.path.map(&:to_regex).join('\s*').strip.gsub(/\s+\$/, '$')}/i) != nil)
-    temp
-  end
-
   def path
     if (self.parent)
       self.parent.path << self
@@ -39,11 +34,15 @@ class GraphmasterNode
     end
   end
 
-  def to_regex
-    "<#{self.class}>" # for now
-  end
-
   def priority
     0
+  end
+
+  def matching_tokens(input_tokens, next_node, that = '*', topic = '*')
+    nil
+  end
+
+  def wildcard?
+    false
   end
 end
