@@ -9,7 +9,7 @@ class Bot
       path_results << path_matcher.get_matching_path(GRAPHMASTER, sentence, '*', '*')
     end
 
-    "The matching paths are: #{path_results.map(&:path).join('|')}"
+    "The matching paths are: #{path_results.map(&:path).map(&:last).join('|')}"
   end
 
   private

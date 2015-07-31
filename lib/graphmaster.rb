@@ -11,7 +11,8 @@ class Graphmaster < GraphmasterNode
     end
 
     current_node = current_node.find_or_append_child(category.that)
-    current_node.find_or_append_child(category.topic)
+    current_node = current_node.find_or_append_child(category.topic)
+    current_node = current_node.find_or_append_child(category.template)
 
     self
   end

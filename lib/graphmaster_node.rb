@@ -18,10 +18,6 @@ class GraphmasterNode
     result
   end 
 
-  def leaf?
-    @children.empty?
-  end
-
   def inspect
     self.to_s
   end

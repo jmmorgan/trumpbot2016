@@ -11,7 +11,7 @@ class PathMatcher
       unvisited_children = current_node.children.reject{|child| visited_nodes.include?(child)}
       if (unvisited_children.empty? || !path_match_result)
         visited_nodes.add(current_node)
-        if (current_node.leaf? && path_match_result)
+        if (current_node.is_a?(Template) && path_match_result)
           result = path_match_result
           break
         end

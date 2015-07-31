@@ -1,11 +1,3 @@
 class Category
-  attr_accessor :pattern, :that, :topic
-
-  def initialize(options = {})
-    @pattern = options[:pattern]
-  end
-
-  def match_pattern?(input)
-    pattern.match?(input)
-  end
+  attr_accessor :pattern, :that, :topic, :template
 end
