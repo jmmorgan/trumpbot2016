@@ -42,7 +42,7 @@ describe PathMatcher do
     context 'pattern contains leading and trailing *' do
 
       it 'returns the matching path' do
-        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'TRIXIE GAVE ME A SCARE')
+        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'TRIXIEBEAN GAVE ME A SCARE')
         path = path_match_result.path
         #puts path
         expect(path.count).to eq 7
@@ -94,6 +94,33 @@ describe PathMatcher do
         expect(path.count).to eq 8
         expect(path.slice(1,4).join(' ')).to eq '* IS THE *'
       end
+    end
+
+    context 'patters contains a <set> element' do
+      it 'returns the matching path when set contains a matching value' do
+        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'WHAT DOES A COW SAY')
+        path = path_match_result.path
+        #puts path
+        expect(path.count).to eq 10
+        expect(path.slice(1,6).join(' ')).to eq 'WHAT DOES A <set>animal</set> SAY ^'
+      end
+
+      it 'returns the matching path when set contains a matching multi-word value' do
+        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'IS ROAD RUNNER A BIRD')
+        path = path_match_result.path
+        #puts path
+        expect(path.count).to eq 8
+        expect(path.slice(1,4).join(' ')).to eq 'IS <set>bird</set> A BIRD'
+      end
+
+      it 'returns the appropriate path when set does not contains a matching value' do
+        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'WHAT DOES A VELOCIRAPTOR SAY')
+        path = path_match_result.path
+        #puts path
+        expect(path.count).to eq 8
+        expect(path.slice(1,4).join(' ')).to eq 'WHAT DOES A *'
+      end
+
     end
 
 

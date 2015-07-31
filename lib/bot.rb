@@ -27,7 +27,7 @@ class Bot
       # Normalize interword spaces and convert to caps
       sentences[i] = sentences[i].split.join(' ').upcase
     end
-    puts sentences.inspect
+    
     sentences
   end
 end

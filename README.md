@@ -6,5 +6,4 @@ and an AIML 2.0 interpreter.
 # Next up TODOs
 
 - Implement basic template functionality.
-- Implement patern matching on sets.
 
