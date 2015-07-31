@@ -1,14 +1,16 @@
 require 'spec_helper'
 require 'rails_helper'
 
-describe Graphmaster do
+describe PathMatcher do
+  let(:path_matcher) { PathMatcher.new }
 
   describe '#get_matching_path' do
 
     context 'pattern contains text only' do
 
       it 'returns the matching path' do
-        path = GRAPHMASTER.get_matching_path('HOW DO YOU WORK')
+        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'HOW DO YOU WORK')
+        path = path_match_result.path
         #puts path
         expect(path.count).to eq 8
         expect(path.slice(1,4).join(' ')).to eq 'HOW DO YOU WORK'
@@ -18,7 +20,8 @@ describe Graphmaster do
     context 'pattern contains one trailing *' do
 
       it 'returns the matching path' do
-        path = GRAPHMASTER.get_matching_path('MY FAVORITE COLOR IS PLAID')
+        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'MY FAVORITE COLOR IS PLAID')
+        path = path_match_result.path
         #puts path
         expect(path.count).to eq 9
         expect(path.slice(1,5).join(' ')).to eq 'MY FAVORITE COLOR IS *'
@@ -28,7 +31,8 @@ describe Graphmaster do
     context 'pattern contains one leading *' do
 
       it 'returns the matching path' do
-        path = GRAPHMASTER.get_matching_path('COWS PRODUCE MILK')
+        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'COWS PRODUCE MILK')
+        path = path_match_result.path
         #puts path
         expect(path.count).to eq 6
         expect(path.slice(1,2).join(' ')).to eq '* MILK'
@@ -38,7 +42,8 @@ describe Graphmaster do
     context 'pattern contains leading and trailing *' do
 
       it 'returns the matching path' do
-        path = GRAPHMASTER.get_matching_path('TRIXIE GAVE ME A SCARE')
+        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'TRIXIE GAVE ME A SCARE')
+        path = path_match_result.path
         #puts path
         expect(path.count).to eq 7
         expect(path.slice(1,3).join(' ')).to eq '* GAVE *'
@@ -47,7 +52,8 @@ describe Graphmaster do
 
     context 'pattern contains $' do
       it 'returns the matching path' do
-        path = GRAPHMASTER.get_matching_path('EMAIL JON TO SAY I AM GOING')
+        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'EMAIL JON TO SAY I AM GOING')
+        path = path_match_result.path
         #puts path
         expect(path.count).to eq 9
         expect(path.slice(1,5).join(' ')).to eq '$EMAIL * TO SAY *'
@@ -56,14 +62,16 @@ describe Graphmaster do
 
     context 'pattern contains #' do
       it 'returns the matching path when words are matched' do
-        path = GRAPHMASTER.get_matching_path('IN WHICH ROOMS DO YOU WATCH PORN')
+        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'IN WHICH ROOMS DO YOU WATCH PORN')
+        path = path_match_result.path
         #puts path
         expect(path.count).to eq 10
         expect(path.slice(1,6).join(' ')).to eq '# DO YOU WATCH PORN #'
       end
 
       it 'returns the matching path when zero words match' do
-        path = GRAPHMASTER.get_matching_path('DO YOU WATCH PORN')
+        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'DO YOU WATCH PORN')
+        path = path_match_result.path
         #puts path
         expect(path.count).to eq 10
         expect(path.slice(1,6).join(' ')).to eq '# DO YOU WATCH PORN #'
@@ -72,14 +80,16 @@ describe Graphmaster do
 
     context 'pattern contains _' do
       it 'returns the matching path when words are matched' do
-        path = GRAPHMASTER.get_matching_path('WHAT IS THE MONETARY UNIT IN ENGLAND')
+        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'WHAT IS THE MONETARY UNIT IN ENGLAND')
+        path = path_match_result.path
         #puts path
         expect(path.count).to eq 10
         expect(path.slice(1,6).join(' ')).to eq 'WHAT IS THE MONETARY _ ENGLAND'
       end
 
       it 'returns the default when zero words match' do
-        path = GRAPHMASTER.get_matching_path('WHAT IS THE MONETARY ENGLAND')
+        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'WHAT IS THE MONETARY ENGLAND')
+        path = path_match_result.path
         #puts path
         expect(path.count).to eq 8
         expect(path.slice(1,4).join(' ')).to eq '* IS THE *'

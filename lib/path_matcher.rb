@@ -1,6 +1,6 @@
 class PathMatcher
 
-  def get_matching_path(graphmaster, input, that, topic)
+  def get_matching_path(graphmaster, input, that = '*', topic = '*')
     result = nil
     visited_nodes = Set.new
     current_node = graphmaster

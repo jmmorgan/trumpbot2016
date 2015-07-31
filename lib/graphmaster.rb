@@ -17,11 +17,6 @@ class Graphmaster < GraphmasterNode
     self
   end
 
-  def get_matching_path(input, that = '*', topic = '*')
-    # TODO: Remove this call-through
-    PathMatcher.new.get_matching_path(self, input, that, topic).path
-  end
-
   def matching_tokens(input_tokens, next_node, that = '*', topic = '*')
     []
   end
