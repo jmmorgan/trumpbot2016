@@ -1,6 +1,11 @@
 class Chat
   attr_accessor :requests, :responses
 
+  def initialize
+    @requests = []
+    @responses = []
+  end
+
   def respond(input)
     sentences = normalize(input)
     path_matcher = PathMatcher.new
@@ -12,7 +17,25 @@ class Chat
       normalized_responses << template.apply(self, GRAPHMASTER)
     end
 
-    normalized_responses.join('|') # for now
+    response = normalized_responses.join(' ') # for now. We need to denormalize responses.
+
+    save_exchange(input, response)
+    response
+  end
+
+  def to_json
+    {
+      'requests' => @requests,
+      'responses' => @responses
+      }.to_json
+  end
+
+  def self.from_json(json)
+    hash = JSON.parse(json)
+    result = Chat.new
+    result.requests = hash['requests']
+    result.responses = hash['responses']
+    result
   end
 
   private
@@ -32,5 +55,10 @@ class Chat
     end
     
     sentences
+  end
+
+  def save_exchange(input, response)
+    @requests << input
+    @responses << response
   end
 end
