@@ -1,4 +1,4 @@
-class Star < GraphmasterNode
+class AimlDate
   include TemplateContentNode
 
 end

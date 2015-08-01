@@ -1,4 +1,4 @@
-class Star < GraphmasterNode
+class Condition
   include TemplateContentNode
 
 end

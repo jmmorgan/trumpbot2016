@@ -10,7 +10,7 @@ describe Chat do
       it 'returns an expected response' do
         response = chat.respond('Hello')
 
-        expect(response).to eq 'Not yet'
+        expect(response).to match /^Hi.*/
       end
     end
   end

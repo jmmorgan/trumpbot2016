@@ -1,4 +1,4 @@
-class Star < GraphmasterNode
+class Uppercase
   include TemplateContentNode
 
 end

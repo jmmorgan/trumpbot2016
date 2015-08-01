@@ -1,4 +1,4 @@
-class Star < GraphmasterNode
+class First
   include TemplateContentNode
 
 end

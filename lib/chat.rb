@@ -4,13 +4,15 @@ class Chat
   def respond(input)
     sentences = normalize(input)
     path_matcher = PathMatcher.new
-    path_results = []
+    normalized_responses = []
 
     sentences.each do |sentence|
-      path_results << path_matcher.get_matching_path(GRAPHMASTER, sentence, '*', '*')
+      path_result = path_matcher.get_matching_path(GRAPHMASTER, sentence, '*', '*')
+      template = path_result.path.last
+      normalized_responses << template.apply(self, GRAPHMASTER)
     end
 
-    "The matching paths are: #{path_results.map(&:path).map(&:last).join('|')}"
+    normalized_responses.join('|') # for now
   end
 
   private

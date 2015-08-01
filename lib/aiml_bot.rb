@@ -1,4 +1,5 @@
 class AimlBot < GraphmasterNode
+  include TemplateContentNode
   attr_accessor :name
 
   def ==(other)

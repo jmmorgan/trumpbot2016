@@ -1,4 +1,4 @@
-class Star < GraphmasterNode
+class Anchor
   include TemplateContentNode
 
 end

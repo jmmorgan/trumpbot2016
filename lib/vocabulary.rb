@@ -1,4 +1,4 @@
-class Star < GraphmasterNode
+class Vocabulary
   include TemplateContentNode
 
 end

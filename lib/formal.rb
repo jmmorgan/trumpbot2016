@@ -1,4 +1,4 @@
-class Star < GraphmasterNode
+class Formal
   include TemplateContentNode
 
 end

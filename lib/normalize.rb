@@ -1,4 +1,4 @@
-class Star < GraphmasterNode
+class Normalize
   include TemplateContentNode
 
 end

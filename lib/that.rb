@@ -1,4 +1,5 @@
 class That < GraphmasterNode
+  include TemplateContentNode
   attr_accessor :expression
 
   def ==(other_object)

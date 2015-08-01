@@ -1,4 +1,4 @@
-class Star < GraphmasterNode
+class Think
   include TemplateContentNode
 
 end

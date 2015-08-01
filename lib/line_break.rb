@@ -1,4 +1,4 @@
-class Star < GraphmasterNode
+class LineBreak
   include TemplateContentNode
 
 end

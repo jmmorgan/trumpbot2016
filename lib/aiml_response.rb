@@ -1,4 +1,4 @@
-class Star < GraphmasterNode
+class AimlResponse
   include TemplateContentNode
 
 end

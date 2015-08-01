@@ -1,4 +1,4 @@
-class Star < GraphmasterNode
+class Interval
   include TemplateContentNode
 
 end
