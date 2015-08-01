@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
     r.merge!(params)
     @request = r.with_indifferent_access
     # Initializing chat here for now.
-    @request[:chat] = Chat.new
-    # TODO: Need to persist Chat across session
+    @chat_session = ChatSession.find_or_create_by(session_id: session.id)
+    @request[:chat] = (@chat = @chat_session ? @chat_session.chat : Chat.new)
   end
 end

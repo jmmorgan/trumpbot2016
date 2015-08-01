@@ -23,6 +23,11 @@ class Chat
     response
   end
 
+  def clear
+    @requests.clear
+    @responses.clear
+  end
+
   def to_json
     {
       'requests' => @requests,
@@ -33,8 +38,8 @@ class Chat
   def self.from_json(json)
     hash = JSON.parse(json)
     result = Chat.new
-    result.requests = hash['requests']
-    result.responses = hash['responses']
+    result.requests = hash['requests'] || []
+    result.responses = hash['responses'] || []
     result
   end
 
