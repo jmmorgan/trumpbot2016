@@ -8,3 +8,4 @@ and an AIML 2.0 interpreter.
 - Now that a quick and dirty PoC is done take a step back and think about design.
   - Get basic requests/responses working through Chat (write at least one test for each TemplateContentNode class).
 - Switch from SQLite to PostgreSQL
+- Get started with the fun part of adding personality by editing/adding proprties files and AIML files.

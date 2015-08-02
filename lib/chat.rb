@@ -1,9 +1,10 @@
 class Chat
-  attr_accessor :requests, :responses
+  attr_accessor :requests, :responses, :predicates
 
   def initialize
     @requests = []
     @responses = []
+    @predicates = {}
   end
 
   def respond(input)
@@ -13,7 +14,7 @@ class Chat
 
     sentences.each do |sentence|
       path_result = path_matcher.get_matching_path(GRAPHMASTER, sentence, '*', '*')
-      normalized_responses << path_result.apply_template()
+      normalized_responses << path_result.apply_template(predicates)
     end
 
     response = denormalize(normalized_responses).join(' ') 
@@ -25,12 +26,14 @@ class Chat
   def clear
     @requests.clear
     @responses.clear
+    @predicates.clear
   end
 
   def to_json
     {
       'requests' => @requests,
-      'responses' => @responses
+      'responses' => @responses,
+      'predicates' => @predicates
       }.to_json
   end
 
@@ -39,6 +42,7 @@ class Chat
     result = Chat.new
     result.requests = hash['requests'] || []
     result.responses = hash['responses'] || []
+    result.predicates = hash['predicates'] || {}
     result
   end
 

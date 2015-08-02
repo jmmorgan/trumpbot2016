@@ -12,10 +12,4 @@ class Template < GraphmasterNode
   def matching_tokens(input_tokens, next_node, that = '*', topic = '*')
     []
   end
-
-  # Applies this template to the given PathMatchResult and Graphmaster and returns
-  # a normalized response.
-  def apply(path_match_result, graphmaster)
-    result = tokens.map{|token| token.is_a?(String) ? token : token.apply(path_match_result, graphmaster)}.join(' ')
-  end
 end

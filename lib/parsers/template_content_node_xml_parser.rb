@@ -49,8 +49,10 @@ module Parsers
       'random' => AimlRandom,
       'think' => Think,
       'condition' => Condition,
-
       'interval' => Interval,
+      'from' => From,
+      'to' => To,
+      'style' => Style,
       'size' => Size,
       'vocabulary' => Vocabulary,
       'star' => Star,

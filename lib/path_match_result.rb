@@ -18,8 +18,8 @@ class PathMatchResult
     end
   end
 
-  def apply_template
-    @path.last.apply(self, @graphmaster)
+  def apply_template(predicates)
+    @path.last.apply(self, @graphmaster, predicates)
   end
 
 end

@@ -21,6 +21,15 @@ describe Chat do
           expect(response).to match /TrumpBot\.$/
         end
       end
+
+      context 'template contains get and set elements' do
+
+        it 'returns the expected response' do
+          response = chat.respond('How old are you?')
+
+          expect(response).to match /I am \d+ years old\.$/
+        end
+      end
     end
   end
 
