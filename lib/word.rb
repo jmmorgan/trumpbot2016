@@ -19,4 +19,8 @@ class Word < Text
     true
   end
 
+  def word_value
+    @value
+  end
+
 end

@@ -2,7 +2,8 @@ class PathMatcher
 
   def get_matching_path(graphmaster, input, that = '*', topic = '*')
     @node_count = 0
-    result = nil
+    result = get_cached_result(input)
+    return result if result
     visited_nodes = init_visited_nodes(graphmaster, input)
     current_node = graphmaster
 
@@ -22,7 +23,7 @@ class PathMatcher
       end
     end
 
-    result
+    put_cached_result(input, result)
   end
 
   private
@@ -53,11 +54,19 @@ class PathMatcher
   def init_visited_nodes(graphmaster, input)
     result = Set.new
     graphmaster.word_nodes.each do |node|
-      if input !~ /#{node.value}/ 
+      if input !~ /#{node.word_value}/ 
         result << node
       end
     end
 
     result
+  end
+
+  def get_cached_result(input)
+    (@@cached_results ||= {})[input]
+  end
+
+  def put_cached_result(input, pattern_match_result)
+    (@@cached_results ||= {})[input] = pattern_match_result
   end
 end

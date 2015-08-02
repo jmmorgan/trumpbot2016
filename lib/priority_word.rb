@@ -19,4 +19,8 @@ class PriorityWord < Text
     true
   end
 
+  def word_value
+    @value.gsub(/\$/, '')
+  end
+
 end

@@ -1,6 +1,6 @@
 require 'graphmaster_node'
 
-class Underscore < Word
+class Underscore < Text
 
   def matching_tokens(input_tokens, next_node, that = '*', topic = '*')
     if (input_tokens.empty?)
