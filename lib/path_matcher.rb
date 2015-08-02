@@ -21,14 +21,13 @@ class PathMatcher
         current_node = unvisited_children.first
       end
     end
-    puts @node_count
+
     result
   end
 
   private
 
   def get_path_match_result(graphmaster, node, input, that, topic)
-    @node_count += 1
     match = true
     path = node.path
     path_mappings = {}

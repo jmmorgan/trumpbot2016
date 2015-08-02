@@ -23,11 +23,21 @@ class GraphmasterNode
   end
 
   def path
-    if (self.parent)
-      self.parent.path << self
-    else
-      [self]
+    # Optimizing here.  Even though the path isn't technically immutable we will treat it thusly
+    # for now because we *should* only reference this method after the node has been inserted 
+    # into the Graphmaster (we'll see), and the path *should not* change once this 
+    # node is appended to the Graphmaster.
+    #
+    # TODO: If this project builds momentum we might think about making this class essentially immutable.
+    unless (@path)
+      if (self.parent)
+        @path = self.parent.path + [self]
+      else
+        @path = [self]
+      end
     end
+    
+    @path
   end
 
   def priority
