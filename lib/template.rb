@@ -16,6 +16,6 @@ class Template < GraphmasterNode
   # Applies this template to the given PathMatchResult and Graphmaster and returns
   # a normalized response.
   def apply(path_match_result, graphmaster)
-    tokens.map{|token| token.is_a?(String) ? token : token.apply(path_match_result, graphmaster)}.join(' ')
+    result = tokens.map{|token| token.is_a?(String) ? token : token.apply(path_match_result, graphmaster)}.join(' ')
   end
 end

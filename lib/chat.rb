@@ -16,7 +16,7 @@ class Chat
       normalized_responses << path_result.apply_template()
     end
 
-    response = normalized_responses.join(' ') # for now. We need to denormalize responses.
+    response = denormalize(normalized_responses).join(' ') 
 
     save_exchange(input, response)
     response
@@ -59,6 +59,16 @@ class Chat
     end
     
     sentences
+  end
+
+  def denormalize(normalized_responses)
+    result = normalized_responses
+    # TODO: Apply substitutions found in substituition map file
+
+    # Clean out leading spaces before punctuation (may need to to tweak this as we go along)
+    result = result.collect{|sentence| sentence.gsub(/\s+([\.\?!,])/, '\1')}
+
+    result
   end
 
   def save_exchange(input, response)

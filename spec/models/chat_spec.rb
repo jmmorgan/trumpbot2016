@@ -12,6 +12,15 @@ describe Chat do
 
         expect(response).to match /^Hi.*/
       end
+
+      context 'template contains bot element' do
+
+        it 'returns the expected response' do
+          response = chat.respond('What is your name?')
+
+          expect(response).to match /TrumpBot\.$/
+        end
+      end
     end
   end
 

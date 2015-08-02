@@ -1,10 +1,9 @@
+# TODO: We can probably eliminate the need for this class with a refactor or PatternXmlParser
 module Parsers
-  class BotXmlParser
+  class BotXmlParser < TemplateContentNodeXmlParser
 
     def parse(bot_element)
-      bot = AimlBot.new
-      bot.name = bot_element.content
-      bot
+      super(bot_element, AimlBot)
     end
   end
 end
