@@ -30,6 +30,15 @@ describe Chat do
           expect(response).to match /I am \d+ years old\.$/
         end
       end
+
+      context 'template contains a condition' do
+
+        it 'returns the expected response' do
+          response = chat.respond('Are you on Facebook?')
+
+          expect(response).to match /My Facebook page/
+        end
+      end
     end
   end
 

@@ -57,3 +57,7 @@
    color: white;
    text-align: left;
  }
+
+ a:link, a:visited {
+   color: white;
+ }
