@@ -2,12 +2,14 @@ class TemplateSet
   include TemplateContentNode
 
   def apply(path_match_result, graphmaster, predicates)
-    var = attributes['var']
+
+    result = nil
+    var = attributes['var'] || attributes['name']
     if (var)
-      predicates[var] = super(path_match_result, graphmaster, predicates)
+      result = (predicates[var] = super(path_match_result, graphmaster, predicates))
     end
     
-    nil
+    result
   end
 
 end
