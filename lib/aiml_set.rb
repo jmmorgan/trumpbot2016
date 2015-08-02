@@ -30,6 +30,10 @@ class AimlSet < GraphmasterNode
     "<set>#{name}</set>"
   end
 
+  def wildcard?
+    true
+  end
+
   private 
 
   def load_set

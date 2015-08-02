@@ -6,7 +6,7 @@ class PathMatcher
     current_node = graphmaster
 
     while (current_node)
-      path_match_result = get_path_match_result(current_node, input, that, topic)
+      path_match_result = get_path_match_result(graphmaster, current_node, input, that, topic)
       # Pluck first available child
       unvisited_children = current_node.children.reject{|child| visited_nodes.include?(child)}
       if (unvisited_children.empty? || !path_match_result)
@@ -26,7 +26,7 @@ class PathMatcher
 
   private
 
-  def get_path_match_result(node, input, that, topic)
+  def get_path_match_result(graphmaster, node, input, that, topic)
     match = true
     path = node.path
     path_mappings = {}
@@ -40,11 +40,12 @@ class PathMatcher
         match = false
         break
       else
+        path_mappings[node] = matching_tokens
         input_tokens.shift(matching_tokens.length)
       end
     end
 
-    match ? PathMatchResult.new(path, path_mappings) : nil
+    match ? PathMatchResult.new(path, path_mappings, graphmaster) : nil
   end
   
 end

@@ -13,8 +13,7 @@ class Chat
 
     sentences.each do |sentence|
       path_result = path_matcher.get_matching_path(GRAPHMASTER, sentence, '*', '*')
-      template = path_result.path.last
-      normalized_responses << template.apply(self, GRAPHMASTER)
+      normalized_responses << path_result.apply_template()
     end
 
     response = normalized_responses.join(' ') # for now. We need to denormalize responses.
