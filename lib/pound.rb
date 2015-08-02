@@ -1,6 +1,6 @@
 require 'graphmaster_node'
 
-class Pound < Word
+class Pound < Text
 
   def matching_tokens(input_tokens, next_node, that = '*', topic = '*')
     if (input_tokens.empty?)

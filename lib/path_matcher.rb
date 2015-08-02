@@ -1,8 +1,9 @@
 class PathMatcher
 
   def get_matching_path(graphmaster, input, that = '*', topic = '*')
+    @node_count = 0
     result = nil
-    visited_nodes = Set.new
+    visited_nodes = init_visited_nodes(graphmaster, input)
     current_node = graphmaster
 
     while (current_node)
@@ -20,13 +21,14 @@ class PathMatcher
         current_node = unvisited_children.first
       end
     end
-
+    puts @node_count
     result
   end
 
   private
 
   def get_path_match_result(graphmaster, node, input, that, topic)
+    @node_count += 1
     match = true
     path = node.path
     path_mappings = {}
@@ -47,5 +49,16 @@ class PathMatcher
 
     match ? PathMatchResult.new(path, path_mappings, graphmaster) : nil
   end
-  
+
+  # Optimization to avoid processing nodes with words that are not in the input
+  def init_visited_nodes(graphmaster, input)
+    result = Set.new
+    graphmaster.word_nodes.each do |node|
+      if input !~ /#{node.value}/ 
+        result << node
+      end
+    end
+
+    result
+  end
 end

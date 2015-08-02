@@ -15,4 +15,8 @@ class PriorityWord < Text
     1
   end
 
+  def word?
+    true
+  end
+
 end

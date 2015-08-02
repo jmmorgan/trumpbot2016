@@ -15,4 +15,8 @@ class Word < Text
     4
   end
 
+  def word?
+    true
+  end
+
 end

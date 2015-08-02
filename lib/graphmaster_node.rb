@@ -41,4 +41,8 @@ class GraphmasterNode
   def wildcard?
     false
   end
+
+  def word?
+    false
+  end
 end

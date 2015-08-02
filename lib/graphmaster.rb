@@ -1,18 +1,18 @@
 class Graphmaster < GraphmasterNode
 
   def initialize
-    @category_to_pattern_map = {}
+    @word_nodes = Set.new
     super()
   end
 
   def add_category(category)
     tokens = category.pattern.tokens
-    @category_to_pattern_map[tokens.join(' ')] = category
     current_node = self
     current_token = tokens.shift
 
     while (current_token)
       current_node = current_node.find_or_append_child(current_token)
+      @word_nodes << current_node if current_node.word?
       current_token = tokens.shift
     end
 
@@ -27,8 +27,7 @@ class Graphmaster < GraphmasterNode
     []
   end
 
-  def find_category(pattern)
-    @category_to_pattern_map[pattern]
+  def word_nodes
+    @word_nodes
   end
-
 end
