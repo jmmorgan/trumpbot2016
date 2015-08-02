@@ -6,5 +6,5 @@ and an AIML 2.0 interpreter.
 # Next up TODOs
 
 - Now that a quick and dirty PoC is done take a step back and think about design.
-  - Store conversation in persisted Chat object
   - Get basic requests/responses working through Chat (write at least one test for each TemplateContentNode class).
+- Switch from SQLite to PostgreSQL

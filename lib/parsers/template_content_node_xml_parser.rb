@@ -6,6 +6,7 @@ module Parsers
       if (template_content_node_element)
         template_content_node.raw_xml = template_content_node_element.children.to_s
         template_content_node.tokens = parse_tokens(template_content_node_element.children)
+        template_content_node.attributes = to_attributes(template_content_node_element.attributes)
       end
       template_content_node
     end
@@ -30,6 +31,13 @@ module Parsers
 
     def to_text_node(token)
       return token # TODO: Do we need to wrap this?
+    end
+
+    def to_attributes(element_attributes)
+      element_attributes.inject({}) do |memo, attribute|
+        memo[attribute[1].name] = attribute[1].value
+        memo
+      end
     end
 
 

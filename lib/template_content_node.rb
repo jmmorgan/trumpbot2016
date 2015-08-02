@@ -1,5 +1,5 @@
 module TemplateContentNode
-  attr_accessor :raw_xml, :tokens
+  attr_accessor :raw_xml, :tokens, :attributes
 
   # Classes including this module should override this method to return a normalized response 
   # fragment, or nil when appropriate.
