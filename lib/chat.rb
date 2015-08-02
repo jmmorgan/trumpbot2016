@@ -71,6 +71,7 @@ class Chat
 
     # Clean out leading spaces before punctuation (may need to to tweak this as we go along)
     result = result.collect{|sentence| sentence.gsub(/\s+([\.\?!,])/, '\1')}
+    result = result.collect{|sentence| sentence.humanize}
 
     result
   end
