@@ -27,7 +27,7 @@ describe Chat do
         it 'returns the expected response' do
           response = chat.respond('How old are you?')
 
-          expect(response).to match /I am \d+ years old\.$/
+          expect(response).to match /I'm \d+ years old\.$/
         end
       end
 

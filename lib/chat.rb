@@ -1,10 +1,11 @@
 class Chat
-  attr_accessor :requests, :responses, :predicates
+  attr_accessor :requests, :responses, :predicates, :original_case_format_map
 
   def initialize
     @requests = []
     @responses = []
     @predicates = {}
+    @original_case_format_map = {}
   end
 
   def respond(input)
@@ -33,7 +34,8 @@ class Chat
     {
       'requests' => @requests,
       'responses' => @responses,
-      'predicates' => @predicates
+      'predicates' => @predicates,
+      'original_case_format_map' => @original_case_format_map
       }.to_json
   end
 
@@ -43,6 +45,7 @@ class Chat
     result.requests = hash['requests'] || []
     result.responses = hash['responses'] || []
     result.predicates = hash['predicates'] || {}
+    result.original_case_format_map = hash['original_case_format_map'] || {}
     result
   end
 
@@ -59,7 +62,12 @@ class Chat
 
     sentences.each_index do |i|
       # Normalize interword spaces and convert to caps
-      sentences[i] = sentences[i].split.join(' ').upcase
+      original_tokens = sentences[i].split
+      upcase_tokens = original_tokens.map(&:upcase)
+      original_tokens.each_index do |j|
+        @original_case_format_map[upcase_tokens[j]] = original_tokens[j]
+      end
+      sentences[i] = upcase_tokens.join(' ')
     end
     
     sentences
@@ -67,11 +75,20 @@ class Chat
 
   def denormalize(normalized_responses)
     result = normalized_responses
-    # TODO: Apply substitutions found in substituition map file
+    result.each do |sentence|
+      # First substitute an all CAPS words
+      sentence.scan(/\b[A-Z0-9]+\b/).each do |word|
+        sentence.gsub!(/\b#{word}\b/, @original_case_format_map[word] || word)
+      end
+
+      DENORMAL_SUBSTITUTION_MAP_FILE.each_pair do |key, value|
+        sentence.gsub!(/(#{Regexp.quote(key)})/i, value)
+      end
+    end
 
     # Clean out leading spaces before punctuation (may need to to tweak this as we go along)
-    result = result.collect{|sentence| sentence.gsub(/\s+([\.\?!,])/, '\1')}
-    result = result.collect{|sentence| sentence.humanize}
+    result = result.collect{|sentence| sentence.gsub(/\s+([\.\?!,])/, '\1').strip}
+
 
     result
   end

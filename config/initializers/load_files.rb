@@ -7,6 +7,7 @@ PROPERTIES_MAP_FILE.merge!(MapFile.new("#{Rails.root}/lib/system/trump.propertie
 
 # Load substituion files
 NORMAL_SUBSTITUTION_MAP_FILE = MapFile.new("#{Rails.root}/lib/substitutions/normal.substitution")
+DENORMAL_SUBSTITUTION_MAP_FILE = MapFile.new("#{Rails.root}/lib/substitutions/denormal.substitution")
 
 # Load AIML files
 GRAPHMASTER = Graphmaster.new
