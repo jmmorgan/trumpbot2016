@@ -21,7 +21,6 @@ module Parsers
         else
           name = node.name
           template_content_node_class = TEMPLATE_CONTENT_NODE_MAP[name] || Template
-          raise "Unexpected element '#{name}' found in #{nodes.to_s}" if !template_content_node_class
           tokens << TemplateContentNodeXmlParser.new.parse(node, template_content_node_class)
         end
       end

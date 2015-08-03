@@ -39,6 +39,15 @@ describe Chat do
           expect(response).to match /My Facebook page/
         end
       end
+
+      context 'template contains a think element' do
+
+        it 'returns the expected response' do
+          response = chat.respond('My name is Joe')
+
+          expect(response).to match /\bJoe\b/
+        end
+      end
     end
   end
 

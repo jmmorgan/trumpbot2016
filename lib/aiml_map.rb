@@ -4,7 +4,6 @@ class AimlMap
   attr_accessor :name, :map
 
   def apply(path_match_result, graphmastet, predicates)
-    byebug
     name = attributes['name']
     if (name)
       result = map(name)[tokens.first.apply(path_match_result, graphmastet, predicates)]
@@ -37,6 +36,6 @@ class AimlMap
 
   def load_map(name)
     # Load map files
-    MapFile.new("#{Rails.root}/lib/maps/{name}.map")
+    MapFile.new("#{Rails.root}/lib/maps/#{name}.map")
   end
 end
