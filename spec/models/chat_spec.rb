@@ -48,6 +48,70 @@ describe Chat do
           expect(response).to match /\bJoe\b/
         end
       end
+
+      context 'template contains a vocabulary element' do
+
+        it 'returns the expected response' do
+          response = chat.respond('VOCABULARY')
+
+          expect(response).to match /I am able to recognize \d+ individual words/
+        end
+      end
+
+      context 'template contains a size element' do
+
+        it 'returns the expected response' do
+          response = chat.respond('SIZE')
+
+          expect(response).to match /My brain contains \d+ categories/
+        end
+      end
+
+      context 'template contains a uppercase element' do
+
+        it 'returns the expected response' do
+          response = chat.respond('SPELL baseball')
+
+          expect(response).to match /baseball: B A S E B A L L/
+        end
+      end
+
+      context 'template contains a get_likes element' do
+
+        it 'returns the expected response' do
+          response = chat.respond('I like to fish')
+          response = chat.respond('Do I like reading?')
+
+          expect(response).to match /I know you like fish/
+        end
+      end
+
+      context 'template contains a br element' do
+
+        it 'returns the expected response' do
+          response = chat.respond('SING')
+
+          expect(response).to match /<br\/>/
+        end
+      end
+
+      context 'template contains an anchor tag' do
+
+        it 'returns the expected response' do
+          response = chat.respond('HOW DO I EXECUTE YOU')
+
+          expect(response).to match /Maybe you should read <a /
+        end
+      end
+
+      context 'template contains a normalize tag' do
+
+        it 'returns the expected response' do
+          response = chat.respond('NORMALIZE e l v i s')
+
+          expect(response).to match /elvis/
+        end
+      end
     end
   end
 

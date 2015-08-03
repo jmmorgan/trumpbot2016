@@ -62,6 +62,7 @@ module Parsers
       'eval' => Eval,
       'lowercase' => Lowercase,
       'uppercase' => Uppercase,
+      'explode' => Explode,
       'date' => AimlDate,
       'map' => AimlMap,
       'person' => Person,
@@ -73,7 +74,6 @@ module Parsers
       'request' => AimlRequest,
       'response' => AimlResponse,
       'that' => That,
-      'comment' => Comment,
       'normalize' => Normalize,
       'item' => Item,
       'first' => First

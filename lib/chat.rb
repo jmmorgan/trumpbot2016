@@ -51,14 +51,17 @@ class Chat
 
   private
 
+  # TODO: This current implementation is somewhat brittle in that the order that entries in the
+  # map file are applied affects the 'normalized' result. Should revisit if this project develops legs.
   def normalize(input)
-    sentences = input.split(/[#{Regexp.quote(PROPERTIES_MAP_FILE['sentence-splitters'])}]/)
-    sentences = sentences.map{|sentence| sentence.rjust(sentence.length + 1)}
+    sentences = input.split(/[#{Regexp.quote(PROPERTIES_MAP_FILE['sentence-splitters'])}](\s+|$)/).reject(&:blank?)
+    sentences = sentences.map{|sentence| " #{sentence} "} # Pad with spaces for normal substitutions
     sentences.each do |sentence|
       NORMAL_SUBSTITUTION_MAP_FILE.each_pair do |key, value|
         sentence.gsub!(/(#{Regexp.quote(key)})/i, value)
       end
     end
+    sentences.map(&:strip!)
 
     sentences.each_index do |i|
       # Normalize interword spaces and convert to caps
@@ -82,12 +85,12 @@ class Chat
       end
 
       DENORMAL_SUBSTITUTION_MAP_FILE.each_pair do |key, value|
-        sentence.gsub!(/(#{Regexp.quote(key)})/i, value)
+        sentence.gsub!(/(#{Regexp.quote(key)})/, value)
       end
     end
 
     # Clean out leading spaces before punctuation (may need to to tweak this as we go along)
-    result = result.collect{|sentence| sentence.gsub(/\s+([\.\?!,])/, '\1').strip}
+    result = result.collect{|sentence| sentence.gsub(/\s+([\.\?!,\:;])/, '\1').strip}
 
 
     result

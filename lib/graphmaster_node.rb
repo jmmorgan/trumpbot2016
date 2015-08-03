@@ -55,4 +55,9 @@ class GraphmasterNode
   def word?
     false
   end
+
+  def size
+    # For now
+    1 + (@children.map(&:size).inject(&:+) || 0)
+  end
 end

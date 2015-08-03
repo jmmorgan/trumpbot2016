@@ -1,8 +1,8 @@
-class Lowercase
+class Explode
   include TemplateContentNode
 
   def apply(path_match_result, graphmaster, predicates)
-    super.downcase
+    super.chars.join(' ')
   end
 
 end
