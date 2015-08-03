@@ -23,7 +23,7 @@ class AimlSet < GraphmasterNode
   end
 
   def set
-    @set ||= load_set
+    @set ||= (SPECIAL_SETS[name] || load_set)
   end
 
   def to_s
@@ -52,4 +52,14 @@ class AimlSet < GraphmasterNode
     
     result
   end
+
+  class NumberSet
+    def include?(input)
+      input[0] && input[0].to_i.to_s == input[0]
+    end
+  end
+
+  SPECIAL_SETS = {
+    'number' => NumberSet.new
+  }
 end

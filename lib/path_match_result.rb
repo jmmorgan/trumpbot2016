@@ -19,7 +19,6 @@ class PathMatchResult
   end
 
   def apply_template(predicates)
-    puts "@path=#{@path.to_s}"
     @path.last.apply(self, @graphmaster, predicates)
   end
 

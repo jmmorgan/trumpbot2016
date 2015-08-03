@@ -2,6 +2,7 @@ class Srai
   include TemplateContentNode
 
   def apply(path_match_result, graphmaster, predicates)
+    puts "RAWXML = #{raw_xml}"
     result = nil
     pattern = super(path_match_result, graphmaster, predicates)
     next_path_match_result = PathMatcher.new.get_matching_path(graphmaster, pattern)
