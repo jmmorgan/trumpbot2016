@@ -31,4 +31,8 @@ class Asterisk < Text
     true
   end
 
+  def dynamic?
+    true
+  end
+
 end

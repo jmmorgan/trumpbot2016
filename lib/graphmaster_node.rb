@@ -52,6 +52,10 @@ class GraphmasterNode
     false
   end
 
+  def dynamic?
+    false
+  end
+
   def word?
     false
   end

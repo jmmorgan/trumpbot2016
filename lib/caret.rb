@@ -31,4 +31,8 @@ class Caret < Text
     true
   end
 
+  def dynamic?
+    true
+  end
+
 end

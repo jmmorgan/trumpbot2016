@@ -30,7 +30,7 @@ class AimlSet < GraphmasterNode
     "<set>#{name}</set>"
   end
 
-  def wildcard?
+  def dynamic?
     true
   end
 

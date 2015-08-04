@@ -7,13 +7,13 @@ class PathMatchResult
     @graphmaster = graphmaster
   end
 
-  # Returns Array of tuples. Each tuple represents a wilcard node
+  # Returns Array of tuples. Each tuple represents a node with dynamic value (wildcard, set, etc.)
   # in the order it is found in the @path. Each tuple is an Array of two value:
-  #   [0]: The wildcard node
+  #   [0]: The node
   #   [2]: The array of pattern tokens mapped to the given wilcard node
   def star_mappings
     @path_mappings.inject([]) do |memo, (key, value)|
-      memo << [key, value] if (key.wildcard?)
+      memo << [key, value] if (key.dynamic?)
       memo
     end
   end
