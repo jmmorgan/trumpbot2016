@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
 
+<template><pattern>RIVALS</pattern>
+<tempate>
+<random>
+<li><srai>JEB BUSH</srai></li>
+<li><srai>CHRIS CHRISTIE</srai></li>
+<li><srai>LINDSEY GRAHAM</srai></li>
+<li><srai>RICK PERRY</srai></li>
+<li><srai>BARACK OBAMA</srai></li>
+<li><srai>KOCH BROTHERS</srai></li>
+</random>
+</tempate>
+
 <category><pattern>WHAT IS # <set>rival</set></pattern>
 <template>
 <srai><star index="2"/></srai>
@@ -52,6 +64,7 @@
 <template>
 <random>
   <li>I think Rick Perry is probably smarter than Lindsey Graham. But what do I know?</li>
+  <li>Rick Perry needs new glasses.</li>
   <li><srai>ZERO POLLS</srai></li>
   <li><srai>I AM BETTER</srai></li>
 </random>

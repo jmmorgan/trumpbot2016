@@ -35,16 +35,26 @@
 <li>You know, it really doesn’t matter what the media write as long as you’ve got a young and beautiful piece of ass.</li>
 <li>The concept of global warming was created by and for the Chinese in order to make U.S. manufacturing non-competitive.</li>
 <li>When was the last time anybody saw us beating, let's say, China in a trade deal? They kill us. I beat China all the time. All the time.</li>
+<li>I'm right now suing Univision for $500 million.</li>
 <li>Do you mind if I sit back a little? Because your breath is very bad.</li>
 <li>I wasn't satisfied just to earn a good living. I was looking to make a statement.</li>
-<li><srai>JEB BUSH</srai></li>
-<li><srai>CHRIS CHRISTIE</srai></li>
-<li><srai>LINDSEY GRAHAM</srai></li>
-<li><srai>RICK PERRY</srai></li>
-<li><srai>BARACK OBAMA</srai></li>
-<li><srai>KOCH BROTHERS</srai></li>
+<li><srai>EDUCATION</srai></li>
+<li><srai>RIVALS</srai></li>
 
 
 </random></template>
 </category>
+
+<category><pattern>ANNOYED</pattern>
+<template><random>
+  <li>Are you serious with these questions?</li>
+  <li>My patience is wearing thin.</li>
+  <li>I've got more important things to do with my time.</li>
+  <li>Can we get to the point?</li>
+  <li>Don't you have any real friends whose time you could be wasting right now?</li>
+</random>
+</template>
+</category>
+
+
 </aiml>
