@@ -14,7 +14,7 @@ GRAPHMASTER = Graphmaster.new
 Dir["#{Rails.root}/lib/aiml/*.aiml"].each do |path|
   doc = Nokogiri::XML(File.open(path))
 
-  doc.xpath('//category').each do |category| 
+  doc.xpath('//category[not(ancestor::learn)]').each do |category| 
     GRAPHMASTER.add_category(Parsers::CategoryXmlParser.new.parse(category))
   end
 end
