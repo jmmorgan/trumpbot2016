@@ -9,3 +9,4 @@ and an AIML 2.0 interpreter.
 - Add button to allow user to download current transcript.
 - Log all requests/responses to database. Associate each exchange with session so conversations can be recreated.
 - Create new ChatSession in database if user clears conversation.
+- Look at improving or doing away with denormal.substitution
