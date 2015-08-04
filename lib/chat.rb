@@ -84,9 +84,9 @@ class Chat
         sentence.gsub!(/\b#{word}\b/, @original_case_format_map[word] || word)
       end
 
-      DENORMAL_SUBSTITUTION_MAP_FILE.each_pair do |key, value|
-        sentence.gsub!(/(#{Regexp.quote(key)})/, value)
-      end
+      #DENORMAL_SUBSTITUTION_MAP_FILE.each_pair do |key, value|
+        #sentence.gsub!(/(#{Regexp.quote(key)})/, value)
+      #end
     end
 
     # Clean out leading spaces before punctuation (may need to to tweak this as we go along)
