@@ -14,6 +14,10 @@ class WelcomeController < ApplicationController
     redirect_to :root
   end
 
+  def download
+    send_data @chat.transcript, filename: 'conversation.txt'
+  end
+
   private 
 
   def persist_chat

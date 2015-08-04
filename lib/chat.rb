@@ -30,6 +30,18 @@ class Chat
     @predicates.clear
   end
 
+  def transcript
+    result = ''
+    @requests.each_index do |i|
+      result << "You: #{@requests[i]}" << "\n"
+      if (response =  responses[i])
+        result << "TrumBot: #{response}" << "\n"
+      end
+    end
+
+    result
+  end
+
   def to_json
     {
       'requests' => @requests,

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'welcome#index', via: ['get', 'post']
 
   post '/reset' => 'welcome#reset'
+  post '/download' => 'welcome#download'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
