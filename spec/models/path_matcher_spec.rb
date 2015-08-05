@@ -100,7 +100,7 @@ describe PathMatcher do
       it 'returns the matching path when set contains a matching value' do
         path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'WHAT DO YOU THINK OF JEB BUSH')
         path = path_match_result.path
-        puts path
+        #puts path
         expect(path.count).to eq 9
         expect(path.slice(1,5).join(' ')).to eq 'WHAT DO YOU # <set>rival</set>'
       end

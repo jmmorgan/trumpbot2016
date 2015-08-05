@@ -29,7 +29,7 @@ module TemplateContentNode
       if (token.is_a?(TemplateContentNode))
         result << token.raw_xml
       else
-        result << token.to_s
+        result << "#{token.to_s} " 
       end
     end
 

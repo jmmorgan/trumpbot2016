@@ -113,6 +113,15 @@ describe Chat do
         end
       end
 
+      context 'template contains an sr element' do
+
+        it 'returns the expected response' do
+          response = chat.respond('Hi, Donald')
+
+          expect(response).to match /^Hi.+you/
+        end
+      end
+
       context 'template contains a learn element' do
 
         it 'returns the expected response' do
@@ -126,11 +135,11 @@ describe Chat do
 
           learned_categories = chat.predicates['_learned_categories']
           expect(learned_categories.count).to eq 5
-          expect(learned_categories[0]).to match /<pattern>WHERE IS A TURKEY \^<\/pattern>/
-          expect(learned_categories[1]).to match /<pattern>WHERE IS THAT TURKEY \^<\/pattern>/
-          expect(learned_categories[2]).to match /<pattern>WHAT IS FROM TURKEY \^<\/pattern>/
-          expect(learned_categories[3]).to match /<pattern>WHERE SHOULD I LOOK FOR A TURKEY \^<\/pattern>/
-          expect(learned_categories[4]).to match /<pattern>WHERE CAN I FIND A TURKEY \^<\/pattern>/
+          expect(learned_categories[0]).to match /<pattern>WHERE IS A TURKEY \^\s*<\/pattern>/
+          expect(learned_categories[1]).to match /<pattern>WHERE IS THAT TURKEY \^\s*<\/pattern>/
+          expect(learned_categories[2]).to match /<pattern>WHAT IS FROM TURKEY \^\s*<\/pattern>/
+          expect(learned_categories[3]).to match /<pattern>WHERE SHOULD I LOOK FOR A TURKEY \^\s*<\/pattern>/
+          expect(learned_categories[4]).to match /<pattern>WHERE CAN I FIND A TURKEY \^\s*<\/pattern>/
         end
 
         # TODO: Next step apply learned categories

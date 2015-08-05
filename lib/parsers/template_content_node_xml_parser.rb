@@ -43,7 +43,7 @@ module Parsers
     TEMPLATE_CONTENT_NODE_MAP = {
       'template' => Template,
       'srai' => Srai,
-      'sr' => Srai, 
+      'sr' => Sr, 
       'bot' => AimlBot,
       'random' => AimlRandom,
       'think' => Think,

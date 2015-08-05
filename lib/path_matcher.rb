@@ -14,7 +14,6 @@ class PathMatcher
         visited_nodes.add(current_node)
         if (current_node.is_a?(Template) && path_match_result)
           result = path_match_result
-          puts "CURRENT NODE PATH #{current_node.path}"
           break
         end
         current_node = current_node.parent

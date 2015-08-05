@@ -10,6 +10,4 @@ class Srai
     next_path_match_result.path.last.apply(next_path_match_result, graphmaster, predicates)
   end
 
-  private 
-
 end
