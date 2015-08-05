@@ -1,7 +1,6 @@
 class PathMatcher
 
   def get_matching_path(graphmaster, input, that = '*', topic = '*')
-    @node_count = 0
     result = get_cached_result(input)
     return result if result
     visited_nodes = init_visited_nodes(graphmaster, input)

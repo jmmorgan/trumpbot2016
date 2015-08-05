@@ -4,9 +4,9 @@ module Parsers
     def parse(template_content_node_element, template_content_node_class = Template)
       template_content_node = template_content_node_class.new
       if (template_content_node_element)
-        template_content_node.raw_xml = template_content_node_element.children.to_s
         template_content_node.tokens = parse_tokens(template_content_node_element.children)
         template_content_node.attributes = to_attributes(template_content_node_element.attributes)
+        template_content_node.element_name = template_content_node_element.name
       end
       template_content_node
     end

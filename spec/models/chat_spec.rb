@@ -95,7 +95,7 @@ describe Chat do
         end
       end
 
-      context 'template contains an anchor tag' do
+      context 'template contains an anchor element' do
 
         it 'returns the expected response' do
           response = chat.respond('HOW DO I EXECUTE YOU')
@@ -104,13 +104,36 @@ describe Chat do
         end
       end
 
-      context 'template contains a normalize tag' do
+      context 'template contains a normalize element' do
 
         it 'returns the expected response' do
           response = chat.respond('NORMALIZE e l v i s')
 
           expect(response).to match /elvis/
         end
+      end
+
+      context 'template contains a learn element' do
+
+        it 'returns the expected response' do
+          response = chat.respond('A turkey is from Turkey')
+
+          expect(response).to match /Is it always from Turkey?/
+        end
+
+        it 'stores learned categories' do
+          response = chat.respond('A turkey is from Turkey')
+
+          learned_categories = chat.predicates['_learned_categories']
+          expect(learned_categories.count).to eq 5
+          expect(learned_categories[0]).to match /<pattern>WHERE IS A TURKEY \^<\/pattern>/
+          expect(learned_categories[1]).to match /<pattern>WHERE IS THAT TURKEY \^<\/pattern>/
+          expect(learned_categories[2]).to match /<pattern>WHAT IS FROM TURKEY \^<\/pattern>/
+          expect(learned_categories[3]).to match /<pattern>WHERE SHOULD I LOOK FOR A TURKEY \^<\/pattern>/
+          expect(learned_categories[4]).to match /<pattern>WHERE CAN I FIND A TURKEY \^<\/pattern>/
+        end
+
+        # TODO: Next step apply learned categories
       end
     end
   end

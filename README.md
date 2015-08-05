@@ -6,6 +6,7 @@ and an AIML 2.0 interpreter.
 # Next up TODOs
 
 - Keep pushing ahead with the fun part of adding personality by editing/adding proprties files and AIML files.
+- Apply learned categories to specific chat sessions.
 - Log all requests/responses to database. Associate each exchange with session so conversations can be recreated.
 - Create new ChatSession in database if user clears conversation.
 - Look at improving or doing away with denormal.substitution

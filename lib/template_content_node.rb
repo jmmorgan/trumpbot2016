@@ -1,5 +1,5 @@
 module TemplateContentNode
-  attr_accessor :raw_xml, :tokens, :attributes
+  attr_accessor :tokens, :attributes, :element_name
 
   # Applies this template to the given PathMatchResult, Graphmaster predicates and returns
   # a normalized response.
@@ -11,4 +11,28 @@ module TemplateContentNode
     result = tokens.map{|token| token.is_a?(String) ? token : token.apply(path_match_result, graphmaster, predicates)}.join(' ')
   end
 
+  def to_s
+    raw_xml
+  end
+
+  def raw_xml
+    #TODO: Move this implementation to an XML builder class
+    result = "<#{element_name}"
+    if (!attributes.empty?)
+      attributes.keys.sort.each do |key|
+        result << " #{key}=\"#{attributes[key]}\""
+      end
+    end
+    result << ">"
+
+    tokens.each do |token|
+      if (token.is_a?(TemplateContentNode))
+        result << token.raw_xml
+      else
+        result << token.to_s
+      end
+    end
+
+    result << "</#{element_name}>"
+  end
 end
