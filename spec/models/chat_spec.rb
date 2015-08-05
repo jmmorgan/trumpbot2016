@@ -142,7 +142,13 @@ describe Chat do
           expect(learned_categories[4]).to match /<pattern>WHERE CAN I FIND A TURKEY \^\s*<\/pattern>/
         end
 
-        # TODO: Next step apply learned categories
+        it 'applies the new categories' do
+          response = chat.respond('A peacock is from Connecticut')
+
+          response = chat.respond('Where is a peacock found?')
+
+          expect(response).to match /a peacock is from Connecticut/
+        end
       end
     end
   end

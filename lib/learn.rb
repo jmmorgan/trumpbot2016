@@ -2,10 +2,12 @@ class Learn
   include TemplateContentNode
 
   def apply(path_match_result, graphmaster, predicates)
-    eval(tokens, path_match_result, graphmaster, predicates)
+    copy = deep_clone # clone this node so we can do eval transforms inside categories without affectong
+                      # contents of this node
+    eval(copy.tokens, path_match_result, graphmaster, predicates)
     # For now we will append to learned categories in predicates
     predicates['_learned_categories'] ||= []
-    tokens.each do |token|
+    copy.tokens.each do |token|
       predicates['_learned_categories'] << token.raw_xml
     end
     nil

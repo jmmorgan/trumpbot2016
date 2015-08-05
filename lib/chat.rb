@@ -21,6 +21,7 @@ class Chat
     response = denormalize(normalized_responses).join(' ') 
 
     save_exchange(input, response)
+    train()
     response
   end
 
@@ -111,5 +112,17 @@ class Chat
   def save_exchange(input, response)
     @requests << input
     @responses << response
+  end
+
+  # Apply learned categories to graphmaster
+  def train
+    learned_categories = predicates["_learned_categories"] 
+
+    if (learned_categories)
+      parser = Parsers::CategoryXmlParser.new
+      learned_categories.each do |xml|
+        GRAPHMASTER.add_category(parser.parse(Nokogiri::XML(xml).root))
+      end
+    end
   end
 end

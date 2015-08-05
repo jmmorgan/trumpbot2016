@@ -35,4 +35,12 @@ module TemplateContentNode
 
     result << "</#{element_name}>"
   end
+
+  def deep_clone
+    result = clone
+    result.element_name = element_name 
+    result.attributes = attributes ? attributes.clone() : {}
+    result.tokens = tokens.to_a.collect{|token| token.respond_to?(:deep_clone) ? token.deep_clone : token.clone}
+    result
+  end
 end
