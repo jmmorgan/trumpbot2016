@@ -160,6 +160,21 @@ describe Chat do
           expect(response2).not_to match /New York/i
         end
       end
+
+      context 'template contains a set element' do
+
+        context 'set element is preceded by a #' do
+
+          context 'set matches on multiple words' do
+            it 'returns the expected response' do
+              response = chat.respond('What do you think of Mark Cuban?')
+
+              expect(response).to match /^Mark Cuban/
+            end
+
+          end
+        end
+      end
     end
   end
 

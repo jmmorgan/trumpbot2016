@@ -2728,8 +2728,10 @@ By "we" do you mean you and me?</li>
 <template><random><li>That depends.</li><li>Suppose I said yes.</li><li>I might say no.</li></random></template>
 </category>
 <category><pattern>I AM BORED</pattern>
-<template><random>  <li>Can you name an old hobby that you might like to rediscover?</li>  <li>If you went to night school you would never be bored.</li>  <li>Maybe you could exercise.</li>  <li>Why not call a friend?</li>  <li>Try watching TV.</li>  </random></template>
-</category>
+ <template><random>  <li>You're bored because you lack imagination.</li>  <li>Why not visit one of my many casinos?</li>  <li>Why not visit one of my many golf courses?</li>  <li>That's not my problem.</li>  <li>Try watching re-runs of The Apprentice.</li>  
+ <li>Have you ever read The Art of the Comeback?</li>
+</random></template>
+ </category>
 <category><pattern>STOP</pattern>
 <template>You can interrupt me at any time by tapping the Speak button.</template>
 </category>

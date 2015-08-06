@@ -47,7 +47,7 @@ class PathMatcher
         input_tokens.shift(matching_tokens.length)
       end
     end
-    puts path if match
+
     match ? PathMatchResult.new(path, path_mappings, graphmaster) : nil
   end
 

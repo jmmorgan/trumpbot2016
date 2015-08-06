@@ -11,7 +11,6 @@ class Chat
 
   def respond(input)
     sentences = normalize(input)
-    puts "SENTENCES = #{sentences}"
     path_matcher = PathMatcher.new
     normalized_responses = []
     predicates['_chat_session_id'] = @chat_session_id

@@ -14,19 +14,19 @@
 </random>
 </tempate>
 
-<category><pattern>WHAT IS # <set>rival</set></pattern>
+<category><pattern>WHAT IS # <set>rival</set> #</pattern>
 <template>
 <srai><star index="2"/></srai>
 </template>
 </category>
 
-<category><pattern>WHAT DO YOU # <set>rival</set></pattern>
+<category><pattern>WHAT DO YOU # <set>rival</set> #</pattern>
 <template>
 <srai><star index="2"/></srai>
 </template>
 </category>
 
-<category><pattern>WHAT DID # <set>rival</set></pattern>
+<category><pattern>WHAT DID # <set>rival</set> #</pattern>
 <template>
 <srai><star index="2"/></srai>
 </template>
