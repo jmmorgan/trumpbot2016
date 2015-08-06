@@ -123,6 +123,18 @@ describe PathMatcher do
 
     end
 
+    context 'non-default <that> value is specified' do
+
+      it 'returns the matching path' do
+        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'JOE', 1, 'WHAT IS YOUR NAME')
+        path = path_match_result.path
+        #puts path
+        expect(path.count).to eq 5
+        expect(path.slice(1,2).join(' ')).to eq '<set>name</set> <that>WHAT IS YOUR NAME'
+      end
+
+    end
+ 
 
   end
 

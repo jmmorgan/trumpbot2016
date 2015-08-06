@@ -71,8 +71,8 @@ describe Chat do
 
         it 'returns the expected response' do
           response = chat.respond('SPELL baseball')
-
-          expect(response).to match /baseball: B A S E B A L L/
+          #puts response
+          expect(response).to match /Baseball: B A S E B A L L/
         end
       end
 
@@ -108,8 +108,8 @@ describe Chat do
 
         it 'returns the expected response' do
           response = chat.respond('NORMALIZE e l v i s')
-
-          expect(response).to match /elvis/
+          #puts response
+          expect(response).to match /Elvis/
         end
       end
 
@@ -146,8 +146,8 @@ describe Chat do
           response = chat.respond('A peacock is from Connecticut')
 
           response = chat.respond('Where is a peacock found?')
-
-          expect(response).to match /a peacock is from Connecticut/
+          #puts response
+          expect(response).to match /A peacock is from Connecticut/
         end
 
         it 'restricts learning to a specific chat session' do
@@ -172,6 +172,26 @@ describe Chat do
               expect(response).to match /^Mark Cuban/
             end
 
+          end
+        end
+      end
+
+      context 'category contains <that> element' do
+
+        context "the bot asks for the user's name" do
+
+          before do 
+            response = chat.respond("What's my name?")
+
+            expect(response).to match /What is your name\?$/
+
+            chat.respond('Heisenberg')
+          end
+
+          it "sets the user's name" do
+            response = chat.respond("What's my name?")
+
+            expect(response).to match /Heisenberg/
           end
         end
       end

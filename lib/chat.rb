@@ -1,28 +1,30 @@
 class Chat
-  attr_accessor :chat_session_id, :requests, :responses, :predicates, :original_case_format_map
+  attr_accessor :chat_session_id, :requests, :responses, :predicates, :that
 
   def initialize(chat_session_id)
     @chat_session_id = chat_session_id
     @requests = []
     @responses = []
     @predicates = {}
-    @original_case_format_map = {}
+    @that = '*'
   end
 
   def respond(input)
+    @requests << input
     sentences = normalize(input)
     path_matcher = PathMatcher.new
     normalized_responses = []
     predicates['_chat_session_id'] = @chat_session_id
 
     sentences.each do |sentence|
-      path_result = path_matcher.get_matching_path(GRAPHMASTER, sentence, @chat_session_id, '*', '*')
+      path_result = path_matcher.get_matching_path(GRAPHMASTER, sentence, @chat_session_id, @that, '*')
       normalized_responses << path_result.apply_template(predicates)
     end
 
+    @that = normalize(normalized_responses.last).last || '*' 
     response = denormalize(normalized_responses).join(' ') 
 
-    save_exchange(input, response)
+    @responses << response
     train()
     response
   end
@@ -51,7 +53,7 @@ class Chat
       'requests' => @requests,
       'responses' => @responses,
       'predicates' => @predicates,
-      'original_case_format_map' => @original_case_format_map
+      'that' => @that
       }.to_json
   end
 
@@ -62,7 +64,7 @@ class Chat
     result.requests = hash['requests'] || []
     result.responses = hash['responses'] || []
     result.predicates = hash['predicates'] || {}
-    result.original_case_format_map = hash['original_case_format_map'] || {}
+    result.that = hash['that'] || '*'
     result
   end
 
@@ -84,38 +86,37 @@ class Chat
       # Normalize interword spaces and convert to caps
       original_tokens = sentences[i].split
       upcase_tokens = original_tokens.map(&:upcase)
-      original_tokens.each_index do |j|
-        @original_case_format_map[upcase_tokens[j]] = original_tokens[j]
-      end
       sentences[i] = upcase_tokens.join(' ')
     end
     
     sentences
   end
 
+  # TODO: refactor.
   def denormalize(normalized_responses)
     result = normalized_responses
-    result.each do |sentence|
-      # First substitute an all CAPS words
-      sentence.scan(/\b[A-Z0-9]+\b/).each do |word|
-        sentence.gsub!(/\b#{word}\b/, @original_case_format_map[word] || word)
-      end
-
-      #DENORMAL_SUBSTITUTION_MAP_FILE.each_pair do |key, value|
-        #sentence.gsub!(/(#{Regexp.quote(key)})/, value)
-      #end
-    end
 
     # Clean out leading spaces before punctuation (may need to to tweak this as we go along)
     result = result.collect{|sentence| sentence.gsub(/\s+([\.\?!,\:;])/, '\1').strip}
 
+    # TODO: Maybe logic like below should be encapsulated in a Bot Brain (Which also encapsulate the Graphmaster)
+    # Convert ALL CAPS words to title case
+    used_words = requests.inject(Set.new){|memo, request| request.scan(/\s+(\b\w+\b)/).flatten.each {|word| memo.add(word)}; memo}
+    result.each do |sentence|
+      sentence.scan(/\b[A-Z0-9]+\b/).each do |word|
+        # For now, if the word in its title case form has been used in the chat (excluding start of a sentence)
+        # then use the title case form.  Otherwise, use the downcase.
+        # Super hacky.  See 'Bot Brain' comment above.  Getting capitalization right in almost all cases might
+        # prove very tricky.
+        titlecase = word.titlecase
+        sentence.gsub!(/\b#{word}\b/, used_words.include?(titlecase) || titlecase.length < 2 ? titlecase : word.downcase)
+      end
+      
+      # Capitalize first character in sentence ()
+      sentence[0] = sentence[0].upcase
+    end
 
     result
-  end
-
-  def save_exchange(input, response)
-    @requests << input
-    @responses << response
   end
 
   # Apply learned categories to graphmaster
