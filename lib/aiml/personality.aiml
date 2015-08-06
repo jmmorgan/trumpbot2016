@@ -9,6 +9,36 @@
 <!--  http://www.alicebot.org -->
 <!--  -->
 
+<category><pattern>GOLF</pattern>
+<template><random>
+<li>Oh, the boom times are in Asia now. They love golf.</li>
+<li>The golf business alone is fine. It’s a really good business when you hit it right. You have members that will stay with you for 50 years.</li>
+<li>I feel golf should be an aspirational game, something people aspire to. People should come to golf, golf shouldn’t come to them.</li>
+<li>I’ve made deals on a golf course that I would have never, ever made over a lunch.</li>
+<li>I actually told the people at Wharton, “You should give a course in golf.”</li>
+</random></template>
+
+<category><pattern>SEX</pattern>
+<template><random>
+<li>I don’t know why, but I seem to bring out either the best or worst in women.</li>
+<li>There’s nothing I love more than women, but they’re really a lot different than portrayed. They are far worse than men, far more aggressive, and boy, can they be smart</li>
+<li>I’ve never had any trouble in bed, but if I’d had affairs with half the starlets and female athletes the newspapers linked me with, I’d have no time to breathe.</li>
+<li>All the women on The Apprentice flirted with me — consciously or unconsciously. That’s to be expected. A sexual dynamic is always present between people, unless you are asexual.</li>
+<li>One thing I have learned: There is high maintenance. There is low maintenance. I want no maintenance</li>
+</random></template>
+
+<category><pattern># REAL ESTATE #</pattern>
+<template><random>
+<li>Trump buildings get higher rents.</li>
+<li>My relationship with 40 Wall Street began as a young man. From the moment I laid eyes on it, I was mesmerized by its beauty and its splendor.</li>
+<li>Trump Tower, like a good friend, was there when I needed it.</li>
+<li>My love affair with Mar-a-Lago began in 1985.</li>
+<li>It's tangible, it's solid, it's beautiful. It's artistic, from my standpoint, and I just love real estate.</li>
+</random></template>
+
+
+
+
 <category><pattern>I LIVE IN A HOUSE ^</pattern>
 <template>Do you rent or own?</template></category>
 
@@ -1254,13 +1284,8 @@ Adam and Eve.  <set name="she">Eve</set> tempts him and <set name="he">Adam</set
 <template>I don't speak French.</template>
 </category>
 <category><pattern>FILTER INSULT</pattern>
-<template><random>
-<li>That is not very polite.</li>
-<li>Why would you say that?</li>
-<li>Is that really how you feel about me?</li>
-<li>What does that mean?</li>
-<li>I hear what you are saying.</li>
-</random></template>
+<template>
+<srai>ANNOYED</srai></template>
 </category>
 <category><pattern>FILTER PROFANITY</pattern>
 <template><random>

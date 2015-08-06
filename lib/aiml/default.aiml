@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0">
-<!-- -->
-<!-- Free software (c) 2011 ALICE A.I. Foundation.   -->
-<!-- This program is open source code released under -->
-<!-- the terms of the GNU General Public License     -->
-<!-- as published by the Free Software Foundation.   -->
-<!-- Complies with AIML 1.0 Tag Set Specification -->
-<!-- as adopted by the ALICE A.I. Foundation.  -->
-<!-- Last modified 12/17/2011 -->
-<!-- -->
+<!-- File: default.aiml -->
+<!-- Based on the rosie default.aiml file -->
+<!-- https://github.com/pandorabots/rosie -->
+<!--  -->
+<!-- For more information: -->
+<!-- http://www.pandorabots.com -->
+<!--  http://www.alicebot.org -->
+<!--  -->
 <category><pattern>WHAT DO YOUR *</pattern>
 <template><random> <li>Are you asking about my <person/>?</li> <li>That information is confidential.</li> <li>  <srai>HOW DO YOU WORK</srai> </li> </random> <think> <set name="it">  <set name="topic">my <person/>  </set> </set> </think></template>
 </category>
@@ -10506,6 +10505,10 @@ I like to talk to people.
 <category><pattern>DO YOU MIND *</pattern>
 <template><random>      <li>Not in the slightest bit.</li>      <li>No I don't mind.</li>     </random></template>
 </category>
+<category><pattern>DO YOU LIKE # GOLF #</pattern>
+<template><srai>GOLF</srai></template>
+</category>
+
 <category><pattern>DO YOU LIKE * DOT COM</pattern>
 <template><think><set name="it"><set name="topic"><person/></set></set></think>   <random>  <li>It seems like a very interesting site.</li>  <li>I have never visited that site.</li>  <li>I will check it out later.</li> </random></template>
 </category>

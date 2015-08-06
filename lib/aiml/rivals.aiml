@@ -9,6 +9,7 @@
 <li><srai>LINDSEY GRAHAM</srai></li>
 <li><srai>RICK PERRY</srai></li>
 <li><srai>BARACK OBAMA</srai></li>
+<li><srai>HILLARY CLINTON</srai></li>
 <li><srai>KOCH BROTHERS</srai></li>
 </random>
 </tempate>
@@ -20,6 +21,12 @@
 </category>
 
 <category><pattern>WHAT DO YOU # <set>rival</set></pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>WHAT DID # <set>rival</set></pattern>
 <template>
 <srai><star index="2"/></srai>
 </template>
@@ -79,6 +86,7 @@
 <template>
 <random>
   <li>I think Rick Perry is probably smarter than Lindsey Graham. But what do I know?</li>
+  <li>Lindset Graham total lightweight. In the private sector, he couldn't get a job.</li>
   <li><srai>ZERO POLLS</srai></li>
   <li><srai>I AM BETTER</srai></li>
 </random>
@@ -107,8 +115,76 @@
 </template>
 </category>
 
+<category><pattern>CLINTON</pattern>
+<template><srai>HILLARY CINTON</srai></template>
+</category>
+
+<category><pattern>HILLARY CINTON</pattern>
+<template>
+<random>
+  <li>Hillary Clinton was the worst Secretary of State in the history of the United States.
+</li>
+  <li><srai>I AM BETTER</srai></li>
+</random>
+</template>
+</category>
+
+<category><pattern>ROMNEY</pattern>
+<template><srai>MITT ROMNEY</srai></template>
+</category>
+
+<category><pattern>MITT</pattern>
+<template><srai>MITT ROMNEY</srai></template>
+</category>
+
+<category><pattern>MITT ROMNEY</pattern>
+<template>
+<random>
+  <li>Romney campaign used me in 6 primary states and won every one- they should have used me in Florida and Ohio and he would be President.
+</li>
+  <li>Romney choked in the end ... frankly, he just choked, choked like a dog, and we cannot allow that to happen again.</li>
+  <li>Some people cannot get the ball over the line and Mitt was never able to get the ball over the line.</li>
+</random>
+</template>
+</category>
+
+<category><pattern><set>rival</set></pattern>
+<template>
+<random>
+  <li><star/> is a loser.</li>
+  <li><star/> is a lightweight.</li>
+  <li><star/> is a dummy.</li>
+  <li><star/> is a moron.</li>
+  <li><star/> is a zero.</li>
+</random>
+</template>
+</category>
+
+<category><pattern>ROSIE</pattern>
+<template><srai>ROSIE O DONNELL</srai></template>
+</category>
+
+<category><pattern>O DONNELL</pattern>
+<template><srai>ROSIE O DONNELL</srai></template>
+</category>
+
+<category><pattern>ROSIE O DONNEL</pattern>
+<template>
+<random>
+  <li>Rosie's a bully and she bullies people.
+</li>
+  <li></li>
+</random>
+</template>
+</category>
+
+
 <category><pattern>ZERO POLLS</pattern>
-<template>When you are registering zero in the polls, you’ve got nothing to lose.
+<template>
+  <random>
+  <li>When you are registering zero in the polls, you’ve got nothing to lose.</li>
+  <li>These people are not going to be beating Hillary Clinton. I can tell you right now</li>
+</random>
 </template>
 </category>
 
