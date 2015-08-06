@@ -13,6 +13,6 @@ class ApplicationController < ActionController::Base
     @request = r.with_indifferent_access
     # Initializing chat here for now.
     @chat_session = ChatSession.find_or_create_by(session_id: session.id)
-    @request[:chat] = (@chat_session.chat : Chat.new(@chat_session.id))
+    @request[:chat] = @chat = (@chat_session.chat || Chat.new(@chat_session.id))
   end
 end
