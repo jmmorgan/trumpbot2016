@@ -10,7 +10,8 @@ class WelcomeController < ApplicationController
   end
 
   def reset
-    @chat.clear
+    # Clear chat session ID so new chat will be created (and old one will be preserved in database)
+    session[:chat_session_id] = nil
     redirect_to :root
   end
 

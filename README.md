@@ -7,6 +7,5 @@ and an AIML 2.0 interpreter.
 
 - Keep pushing ahead with the fun part of adding personality by editing/adding proprties files and AIML files.
 - Log all requests/responses to database. Associate each exchange with session so conversations can be recreated.
-- Create new ChatSession in database if user clears conversation.
-- Look at implementing support for <that> (then maybe <topic>).
+- Look at implementing support for `<that>` (then maybe `<topic>`).
 - Look at improving or doing away with denormal.substitution
