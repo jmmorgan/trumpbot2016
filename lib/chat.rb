@@ -1,7 +1,8 @@
 class Chat
-  attr_accessor :requests, :responses, :predicates, :original_case_format_map
+  attr_accessor :chat_session_id, :requests, :responses, :predicates, :original_case_format_map
 
-  def initialize
+  def initialize(chat_session_id)
+    @chat_session_id = chat_session_id
     @requests = []
     @responses = []
     @predicates = {}
@@ -12,9 +13,10 @@ class Chat
     sentences = normalize(input)
     path_matcher = PathMatcher.new
     normalized_responses = []
+    predicates['_chat_session_id'] = @chat_session_id
 
     sentences.each do |sentence|
-      path_result = path_matcher.get_matching_path(GRAPHMASTER, sentence, '*', '*')
+      path_result = path_matcher.get_matching_path(GRAPHMASTER, sentence, @chat_session_id, '*', '*')
       normalized_responses << path_result.apply_template(predicates)
     end
 
@@ -45,6 +47,7 @@ class Chat
 
   def to_json
     {
+      'chat_session_id' => @chat_session_id,
       'requests' => @requests,
       'responses' => @responses,
       'predicates' => @predicates,
@@ -54,7 +57,8 @@ class Chat
 
   def self.from_json(json)
     hash = JSON.parse(json)
-    result = Chat.new
+    result = self.allocate
+    result.chat_session_id = hash["chat_session_id"]
     result.requests = hash['requests'] || []
     result.responses = hash['responses'] || []
     result.predicates = hash['predicates'] || {}
@@ -121,7 +125,7 @@ class Chat
     if (learned_categories)
       parser = Parsers::CategoryXmlParser.new
       learned_categories.each do |xml|
-        GRAPHMASTER.add_category(parser.parse(Nokogiri::XML(xml).root))
+        GRAPHMASTER.add_category(parser.parse(Nokogiri::XML(xml).root), @chat_session_id)
       end
     end
   end

@@ -1,7 +1,7 @@
 class PathMatcher
 
-  def get_matching_path(graphmaster, input, that = '*', topic = '*')
-    result = get_cached_result(input)
+  def get_matching_path(graphmaster, input, chat_session_id = nil, that = '*', topic = '*')
+    result = get_cached_result(input, chat_session_id)
     return result if result
     visited_nodes = init_visited_nodes(graphmaster, input)
     current_node = graphmaster
@@ -9,7 +9,9 @@ class PathMatcher
     while (current_node)
       path_match_result = get_path_match_result(graphmaster, current_node, input, that, topic)
       # Pluck first available child
-      unvisited_children = current_node.children.reject{|child| visited_nodes.include?(child)}
+      unvisited_children = current_node.children.reject{|child| 
+        visited_nodes.include?(child) || (child.chat_session_id && child.chat_session_id != chat_session_id)
+      }
       if (unvisited_children.empty? || !path_match_result)
         visited_nodes.add(current_node)
         if (current_node.is_a?(Template) && path_match_result)
@@ -22,7 +24,7 @@ class PathMatcher
       end
     end
 
-    put_cached_result(input, result)
+    put_cached_result(input, chat_session_id, result)
   end
 
   private
@@ -61,11 +63,11 @@ class PathMatcher
     result
   end
 
-  def get_cached_result(input)
-    (@@cached_results ||= {})[input]
+  def get_cached_result(input, chat_session_id)
+    (@@cached_results ||= {})[[input, chat_session_id]]
   end
 
-  def put_cached_result(input, pattern_match_result)
-    (@@cached_results ||= {})[input] = pattern_match_result
+  def put_cached_result(input, chat_session_id, pattern_match_result)
+    (@@cached_results ||= {})[[input, chat_session_id]] = pattern_match_result
   end
 end

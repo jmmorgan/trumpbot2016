@@ -5,7 +5,7 @@ describe Chat do
   describe '#respond' do
 
     context 'Chat with no history' do
-      let(:chat) { Chat.new }
+      let(:chat) { Chat.new(1) }
 
       it 'returns an expected response' do
         response = chat.respond('Hello')
@@ -149,12 +149,22 @@ describe Chat do
 
           expect(response).to match /a peacock is from Connecticut/
         end
+
+        it 'restricts learning to a specific chat session' do
+          response = chat.respond('A woodchuck is from New York')
+
+          response1 = chat.respond('Where is a woodchuck found?')
+          response2 = Chat.new(99).respond('Where is a woodchuck found?')
+
+          expect(response1).to match /a woodchuck is from New York/i
+          expect(response2).not_to match /New York/i
+        end
       end
     end
   end
 
   describe 'JSON serialization/deserialization' do
-    let(:chat_in) { Chat.new }
+    let(:chat_in) { Chat.new(1) }
     let(:requests) { ['Good', 'Bad', 'Ugly'] }
     let(:responses) { ['Clint Eastwood', 'Lee Van Cleef', 'Eli Wallach'] }
 

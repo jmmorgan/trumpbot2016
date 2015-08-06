@@ -1,18 +1,19 @@
 class GraphmasterNode
   attr_accessor :parent
   attr_accessor :children
+  attr_accessor :chat_session_id
 
   def initialize
     @children ||= []
   end
 
   def find_or_append_child(node)
-    result = @children.select{|n| n == node}.first
+    result = @children.select{|n| n == node && n.chat_session_id == node.chat_session_id}.first
     unless result
       result = node
       node.parent = self
       @children << node
-      @children.sort!{|a,b| a.priority <=> b.priority}
+      @children.sort!{|a,b| a._priority <=> b._priority}
     end
 
     result
@@ -63,5 +64,10 @@ class GraphmasterNode
   def size
     # For now
     1 + (@children.map(&:size).inject(&:+) || 0)
+  end
+
+  def _priority
+    # Ensures that nodes specific to chat sessions come before public nodes of the same priority level
+    priority - (chat_session_id ? 0.01 : 0)
   end
 end

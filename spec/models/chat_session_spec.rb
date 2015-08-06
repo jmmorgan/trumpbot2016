@@ -6,7 +6,7 @@ RSpec.describe ChatSession, type: :model do
     let(:requests) { ['Good', 'Bad', 'Ugly'] }
     let(:responses) { ['Clint Eastwood', 'Lee Van Cleef', 'Eli Wallach'] }
     let(:chat_in) { 
-      chat = Chat.new
+      chat = Chat.new(nil)
       chat.requests = requests
       chat.responses = responses
       chat

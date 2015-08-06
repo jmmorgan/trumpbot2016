@@ -5,12 +5,16 @@ class Graphmaster < GraphmasterNode
     super()
   end
 
-  def add_category(category)
+  # Adds the given Category to this Graphmaster. If chat_session_id is nil this
+  # category is available to all chat sessions. Otherwise it is only available
+  # to the chat session having the given ID.
+  def add_category(category, chat_session_id = nil)
     tokens = category.pattern.tokens
     current_node = self
     current_token = tokens.shift
 
     while (current_token)
+      current_token.chat_session_id = chat_session_id
       current_node = current_node.find_or_append_child(current_token)
       @word_nodes << current_node if current_node.word?
       current_token = tokens.shift
