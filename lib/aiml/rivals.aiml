@@ -1,42 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
 
-<template><pattern>RIVALS</pattern>
+<category trumpified="true"><pattern>RIVALS</pattern>
 <tempate>
 <random>
 <li><srai>JEB BUSH</srai></li>
 <li><srai>CHRIS CHRISTIE</srai></li>
 <li><srai>LINDSEY GRAHAM</srai></li>
 <li><srai>RICK PERRY</srai></li>
+<li><srai>MARCO RUBIO</srai></li>
+<li><srai>TED CRUZ</srai></li>
+<li><srai>MIKE HUCKABEE</srai></li>
+<li><srai>GEORGE PATAKI</srai></li>
+<li><srai>JOHN KASICH</srai></li>
+<li><srai>RICK SANTORUM</srai></li>
+<li><srai>RAND PAUL</srai></li>
+<li><srai>SCOTT WALKER</srai></li>
+<li><srai>CARLY FIORINA</srai></li>
 <li><srai>BARACK OBAMA</srai></li>
 <li><srai>HILLARY CLINTON</srai></li>
 <li><srai>KOCH BROTHERS</srai></li>
 </random>
-</tempate>
+</category>
 
-<category><pattern>WHAT IS # <set>rival</set> #</pattern>
+<category trumpified="true"><pattern>WHAT IS # <set>rival</set> #</pattern>
 <template>
 <srai><star index="2"/></srai>
 </template>
 </category>
 
-<category><pattern>WHAT DO YOU # <set>rival</set> #</pattern>
+<category trumpified="true"><pattern>WHAT DO YOU # <set>rival</set> #</pattern>
 <template>
 <srai><star index="2"/></srai>
 </template>
 </category>
 
-<category><pattern>WHAT DID # <set>rival</set> #</pattern>
+<category trumpified="true"><pattern>WHAT DID # <set>rival</set> #</pattern>
 <template>
 <srai><star index="2"/></srai>
 </template>
 </category>
 
-<category><pattern>BUSH</pattern>
+<category trumpified="true"><pattern>BUSH</pattern>
 <template><srai>JEB BUSH</srai></template>
 </category>
 
-<category><pattern>JEB BUSH</pattern>
+<category trumpified="true"><pattern>JEB BUSH</pattern>
 <template>
 <random>
   <li>I'm not a big fan of Jeb Bush. The last thing we need is another Bush, believe me</li>
@@ -52,11 +61,11 @@
 </template>
 </category>
 
-<category><pattern>CHRISTIE</pattern>
+<category trumpified="true"><pattern>CHRISTIE</pattern>
 <template><srai>CHRIS CHRISTIE</srai></template>
 </category>
 
-<category><pattern>CHRIS CHRISTIE</pattern>
+<category trumpified="true"><pattern>CHRIS CHRISTIE</pattern>
 <template>
 <random>
   <li><srai>ZERO POLLS</srai></li>
@@ -65,11 +74,11 @@
 </template>
 </category>
 
-<category><pattern>PERRY</pattern>
+<category trumpified="true"><pattern>PERRY</pattern>
 <template><srai>RICK PERRY</srai></template>
 </category>
 
-<category><pattern>RICK PERRY</pattern>
+<category trumpified="true"><pattern>RICK PERRY</pattern>
 <template>
 <random>
   <li>I think Rick Perry is probably smarter than Lindsey Graham. But what do I know?</li>
@@ -81,11 +90,11 @@
 </template>
 </category>
 
-<category><pattern>GRAHAM</pattern>
+<category trumpified="true"><pattern>GRAHAM</pattern>
 <template><srai>LINDSEY GRAHAM</srai></template>
 </category>
 
-<category><pattern>LINDSEY GRAHAM</pattern>
+<category trumpified="true"><pattern>LINDSEY GRAHAM</pattern>
 <template>
 <random>
   <li>I think Rick Perry is probably smarter than Lindsey Graham. But what do I know?</li>
@@ -96,23 +105,24 @@
 </template>
 </category>
 
-<category><pattern>OBAMA</pattern>
+<category trumpified="true"><pattern>OBAMA</pattern>
 <template><srai>BARACK OBAMA</srai></template>
 </category>
 
-<category><pattern>BARACK OBAMA</pattern>
+<category trumpified="true"><pattern>BARACK OBAMA</pattern>
 <template>
 <random>
   <li>There’s a lot of anger with respect to President Obama, that would include Joe Biden, because nothing’s been done
 </li>
   <li>Here you have a black president who's done very poorly for the African Americans of this country.</li>
   <li>I think that Obama has set a very poor standard. I think that he has set a very low bar and I think it's a shame for the African American people.</li>
+  <li>We have a president who doesn’t have a clue. I would say he’s incompetent, but I don’t want to do that because that’s not nice.</li>
   <li><srai>I AM BETTER</srai></li>
 </random>
 </template>
 </category>
 
-<category><pattern>KOCH BROTHERS</pattern>
+<category trumpified="true"><pattern>KOCH BROTHERS</pattern>
 <template>
 <random>
 <li>I wish good luck to all of the Republican candidates that traveled to California to beg for money etc. from the Koch Brothers. Puppets?</li>
@@ -120,11 +130,11 @@
 </template>
 </category>
 
-<category><pattern>CLINTON</pattern>
+<category trumpified="true"><pattern>CLINTON</pattern>
 <template><srai>HILLARY CINTON</srai></template>
 </category>
 
-<category><pattern>HILLARY CINTON</pattern>
+<category trumpified="true"><pattern>HILLARY CINTON</pattern>
 <template>
 <random>
   <li>Hillary Clinton was the worst Secretary of State in the history of the United States.
@@ -136,15 +146,15 @@
 </template>
 </category>
 
-<category><pattern>ROMNEY</pattern>
+<category trumpified="true"><pattern>ROMNEY</pattern>
 <template><srai>MITT ROMNEY</srai></template>
 </category>
 
-<category><pattern>MITT</pattern>
+<category trumpified="true"><pattern>MITT</pattern>
 <template><srai>MITT ROMNEY</srai></template>
 </category>
 
-<category><pattern>MITT ROMNEY</pattern>
+<category trumpified="true"><pattern>MITT ROMNEY</pattern>
 <template>
 <random>
   <li>Romney campaign used me in 6 primary states and won every one- they should have used me in Florida and Ohio and he would be President.
@@ -155,7 +165,7 @@
 </template>
 </category>
 
-<category><pattern><set>rival</set></pattern>
+<category trumpified="true"><pattern><set>rival</set></pattern>
 <template>
 <random>
   <li><star/> is a loser.</li>
@@ -167,15 +177,15 @@
 </template>
 </category>
 
-<category><pattern>ROSIE</pattern>
+<category trumpified="true"><pattern>ROSIE</pattern>
 <template><srai>ROSIE O DONNELL</srai></template>
 </category>
 
-<category><pattern>O DONNELL</pattern>
+<category trumpified="true"><pattern>O DONNELL</pattern>
 <template><srai>ROSIE O DONNELL</srai></template>
 </category>
 
-<category><pattern>ROSIE O DONNEL</pattern>
+<category trumpified="true"><pattern>ROSIE O DONNEL</pattern>
 <template>
 <random>
   <li>Rosie's a bully and she bullies people.
@@ -185,7 +195,7 @@
 </template>
 </category>
 
-<category><pattern>GEORGE WILL</pattern>
+<category trumpified="true"><pattern>GEORGE WILL</pattern>
 <template>
 <random>
   <li>What do I want to listen to George Will for?
@@ -197,11 +207,11 @@
 </template>
 </category>
 
-<category><pattern>KRAUTHEMMER</pattern>
+<category trumpified="true"><pattern>KRAUTHEMMER</pattern>
 <template><srai>CHARLES KRAUTHAMMER</srai></template>
 </category>
 
-<category><pattern>CHARLES KRAUTHAMMER</pattern>
+<category trumpified="true"><pattern>CHARLES KRAUTHAMMER</pattern>
 <template>
 <random>
   <li>
@@ -212,11 +222,11 @@
 </template>
 </category>
 
-<category><pattern>MCCAIN</pattern>
+<category trumpified="true"><pattern>MCCAIN</pattern>
 <template><srai>JOHN MCCAIN</srai></template>
 </category>
 
-<category><pattern>JOHN MCCAIN</pattern>
+<category trumpified="true"><pattern>JOHN MCCAIN</pattern>
 <template>
 <random>
   <li>John McCain is a war hero because he was captured.  I like people who weren't captured.
@@ -226,11 +236,11 @@
 </template>
 </category>
 
-<category><pattern>WALKER</pattern>
+<category trumpified="true"><pattern>WALKER</pattern>
 <template><srai>SCOTT WALKER</srai></template>
 </category>
 
-<category><pattern>SCOTT WALKER</pattern>
+<category trumpified="true"><pattern>SCOTT WALKER</pattern>
 <template>
 <random>
   <li>Scott Walker got a lot of problems in Wisconsin. You know, Wisconsin’s got tremendous problems … the debt and the difficult problems that they have going on Wisconsin. Tremendous borrowings.
@@ -241,11 +251,11 @@
 </template>
 </category>
 
-<category><pattern>RUBIO</pattern>
+<category trumpified="true"><pattern>RUBIO</pattern>
 <template><srai>MARCO RUBIO</srai></template>
 </category>
 
-<category><pattern>MARCO RUBIO</pattern>
+<category trumpified="true"><pattern>MARCO RUBIO</pattern>
 <template>
 <random>
   <li>Rubio is weak on immigration and he’s weak on jobs
@@ -257,11 +267,11 @@
 </template>
 </category>
 
-<category><pattern>FIORINA</pattern>
+<category trumpified="true"><pattern>FIORINA</pattern>
 <template><srai>CARLY FIORINA</srai></template>
 </category>
 
-<category><pattern>CARLY FIORINA</pattern>
+<category trumpified="true"><pattern>CARLY FIORINA</pattern>
 <template>
 <random>
   <li>Look, you have a woman who got fired from her job. And I mean fired viciously. She got fired viciously. She then went out and lost in a landslide when she ran in California for the Senate.
@@ -276,7 +286,7 @@
 
 
 
-<category><pattern>ZERO POLLS</pattern>
+<category trumpified="true"><pattern>ZERO POLLS</pattern>
 <template>
   <random>
   <li>When you are registering zero in the polls, you’ve got nothing to lose.</li>
@@ -285,7 +295,7 @@
 </template>
 </category>
 
-<category><pattern>I AM BETTER</pattern>
+<category trumpified="true"><pattern>I AM BETTER</pattern>
 <template>I think the only difference between me and the other candidates is that I'm more honest and my women are more beautiful.
 </template>
 </category>

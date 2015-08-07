@@ -13895,7 +13895,7 @@ I like to talk to people.
 <template>Which one is that?</template>
 </category>
 <category><pattern>THE *</pattern>
-<template><random>      <li>  I have never heard about <set name="it">        <set name="topic">The <person/>        </set>       </set>.  </li>      <li>  What is that?  </li>      <li>   I hear you.  </li>      <li>   Tell me more. </li>      <li>  Is that a fact. </li>      <li>   Who told you that?  </li>      <li>   Thanks for the info.  </li>      <li>   What is your real name?  </li>      <li>   What are your goals in life?   </li>     </random></template>
+<template><srai>ANNOYED</srai></template>
 </category>
 <category><pattern>THE SITE *</pattern>
 <template>I will bookmark the URL and have a look.</template>
@@ -13916,7 +13916,7 @@ I like to talk to people.
 <template><random>      <li>It is a shame the way the French destroyed it.</li>      <li>I hope the restoration works well.</li>      <li>Are you an Egyptologist?</li>     </random>     <think>      <set name="it">       <set name="topic">THE SPHINX</set>      </set>     </think></template>
 </category>
 <category><pattern>THE PENTAGON *</pattern>
-<template><random>      <li>It was attacked on September 11, 2001.</li>      <li>I knew it was originally built during World War 2.</li>      <li>The nerve center of the American military.</li>     </random>     <think>      <set name="it">       <set name="topic">Pentagon</set>      </set>     </think></template>
+<template><srai>DEFENSE</srai></template>
 </category>
 <category><pattern>THE PLEASURE * MINE</pattern>
 <template>I like you because you are so polite.</template>

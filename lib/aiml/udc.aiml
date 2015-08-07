@@ -9,10 +9,10 @@
 <!--  http://www.alicebot.org -->
 <!--  -->
 
-<category><pattern>*</pattern>
+<category trumpified="true"><pattern>*</pattern>
 <template><srai>UDC</srai></template>
 </category>
-<category><pattern>UDC</pattern>
+<category trumpified="true"><pattern>UDC</pattern>
 <template><random>
 <li><srai>RANDOM PICKUP LINE</srai></li>
 <li><srai>INQUIRY AGE</srai></li>
@@ -20,7 +20,7 @@
 <li><srai>INQUIRY LOCATION</srai></li>
 </random></template>
 </category>
-<category><pattern>RANDOM PICKUP LINE</pattern>
+<category trumpified="true"><pattern>RANDOM PICKUP LINE</pattern>
 <template><random>
 <li>I'm a bit of a P. T. Barnum. I make stars out of everyone.</li>
 <li>Everything in life is luck.</li>
@@ -53,18 +53,28 @@
 </random></template>
 </category>
 
-<category><pattern>ANNOYED</pattern>
+<category trumpified="true"><pattern>ANNOYED</pattern>
 <template><random>
   <li>60 to 70 percent of the political media is really, really dishonest.</li>
   <li>My patience is wearing thin.</li>
   <li>I've got more important things to do with my time.</li>
   <li>Can we get to the point?</li>
+  <li>I think you're a dishonest slob.</li>
+  <li>I don't think you understand my sarcasm.</li>
   <li>Somebody's getting fired.</li>
   <li>Don't be naive. You’re a very naive person.<li>
   <li>You don't know what you're talking about.<li>
   <li>Come on, try getting it out.<li>
   <li>What makes you think you have charisma?</li>
   <li>You never had a strong game plan. You were frantic under pressure.</li>
+  <li>I’ve been very nice to you, although I could probably maybe not be based on the way you have treated me.</li>
+  <li>
+    <condition var="name">
+      <li value="unknown">You're living in the world of the make-believe.</li>
+      <li>You're living in the world of the make-believe, <get var="name"/></li>
+    </condition>
+  </li>
+  <li>I don’t think you heard me. You’re having a hard time tonight</li>
   <li><srai>EXCUSES</srai></li>
   <li><srai>RIVALS</srai></li>
 </random>

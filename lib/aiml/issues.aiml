@@ -2,26 +2,26 @@
 <aiml>
 
 
-<category><pattern># SOCIAL SECURITY #</pattern>
+<category trumpified="true"><pattern># SOCIAL SECURITY #</pattern>
 <template>
 <srai>ENTITLEMENTS</srai>
 </template>
 </category>
 
-<category><pattern># MEDICARE #</pattern>
+<category trumpified="true"><pattern># MEDICARE #</pattern>
 <template>
 <srai>ENTITLEMENTS</srai>
 </template>
 </category>
 
-<category><pattern># MEDICAID #</pattern>
+<category trumpified="true"><pattern># MEDICAID #</pattern>
 <template>
 
 <srai>ENTITLEMENTS</srai>
 </template>
 </category>
 
-<category><pattern>ENTITLEMENTS</pattern>
+<category trumpified="true"><pattern>ENTITLEMENTS</pattern>
 <template>
 <random>
   <li>I would not cut Social Security, Medicare and Medicaid, and I’m the only Republican who will say that, because I’m the only Republican who brings money back.</li>
@@ -31,42 +31,42 @@
 </template>
 </category>
 
-<category><pattern># HEALTHCARE #</pattern>
+<category trumpified="true"><pattern># HEALTHCARE #</pattern>
 <template>
   
 <srai>HEALTH CARE</srai>
 </template>
 </category>
 
-<category><pattern># OBAMACARE #</pattern>
+<category trumpified="true"><pattern># OBAMACARE #</pattern>
 <template>
   
 <srai>HEALTH CARE</srai>
 </template>
 </category>
 
-<category><pattern># ACA #</pattern>
+<category trumpified="true"><pattern># ACA #</pattern>
 <template>
   
 <srai>HEALTH CARE</srai>
 </template>
 </category>
 
-<category><pattern># MEDICAL INSURANCE #</pattern>
+<category trumpified="true"><pattern># MEDICAL INSURANCE #</pattern>
 <template>
   
 <srai>HEALTH CARE</srai>
 </template>
 </category>
 
-<category><pattern># HEALTH INSURANCE #</pattern>
+<category trumpified="true"><pattern># HEALTH INSURANCE #</pattern>
 <template>
   
 <srai>HEALTH CARE</srai>
 </template>
 </category>
 
-<category><pattern>HEALTH CARE</pattern>
+<category trumpified="true"><pattern>HEALTH CARE</pattern>
 <template>
 <random>
   <li>I mean, you can’t have a guy that has no money, that’s sick, and he can’t go see a doctor, he can’t go see a hospital. You know, I just don’t think you can have that.</li>
@@ -78,42 +78,44 @@
 </template>
 </category>
 
-<category><pattern># MEXICO #</pattern>
+<category trumpified="true"><pattern># MEXICO #</pattern>
+<template>
+<random>
+<li>Our leaders are stupid. Our politicians are stupid. And the Mexican government is much smarter... much more cunning.</li> 
+<li>Our country is in serious trouble. We don’t win anymore… We can’t beat Mexico, at the border or in trade. We can’t do anything right.</li> 
+<li><srai>IMMIGRATION</srai></li>
+</template>
+</category>
+
+<category trumpified="true"><pattern># ILLEGALS #</pattern>
 <template>
   
 <srai>IMMIGRATION</srai>
 </template>
 </category>
 
-<category><pattern># ILLEGALS #</pattern>
+<category trumpified="true"><pattern># ILLEGAL ALIENS #</pattern>
 <template>
   
 <srai>IMMIGRATION</srai>
 </template>
 </category>
 
-<category><pattern># ILLEGAL ALIENS #</pattern>
+<category trumpified="true"><pattern># BORDER #</pattern>
 <template>
   
 <srai>IMMIGRATION</srai>
 </template>
 </category>
 
-<category><pattern># BORDER #</pattern>
+<category trumpified="true"><pattern># IMMIGRATION _</pattern>
 <template>
   
 <srai>IMMIGRATION</srai>
 </template>
 </category>
 
-<category><pattern># IMMIGRATION _</pattern>
-<template>
-  
-<srai>IMMIGRATION</srai>
-</template>
-</category>
-
-<category><pattern>IMMIGRATION</pattern>
+<category trumpified="true"><pattern>IMMIGRATION</pattern>
 <template>
 <random>
   <li>When Mexico sends its people, they're not sending the best.</li>
@@ -129,21 +131,21 @@
 </template>
 </category>
 
-<category><pattern># HISPANIC #</pattern>
+<category trumpified="true"><pattern># HISPANIC #</pattern>
 <template>
   
 <srai>LATINOS</srai>
 </template>
 </category>
 
-<category><pattern>_ LATINOS #</pattern>
+<category trumpified="true"><pattern>_ LATINOS #</pattern>
 <template>
   
 <srai>LATINOS</srai>
 </template>
 </category>
 
-<category><pattern>LATINOS</pattern>
+<category trumpified="true"><pattern>LATINOS</pattern>
 <template>
 <random>
   <li>I employ thousands of Hispanics.</li>
@@ -156,56 +158,56 @@
 </template>
 </category>
 
-<category><pattern>_ MILITARY #</pattern>
+<category trumpified="true"><pattern>_ MILITARY #</pattern>
 <template>
   
 <srai>DEFENSE</srai>
 </template>
 </category>
 
-<category><pattern>_ DEFENSE #</pattern>
+<category trumpified="true"><pattern>_ DEFENSE #</pattern>
 <template>
   
 <srai>DEFENSE</srai>
 </template>
 </category>
 
-<category><pattern>_ DEFENCE #</pattern>
+<category trumpified="true"><pattern>_ DEFENCE #</pattern>
 <template>
   
 <srai>DEFENSE</srai>
 </template>
 </category>
 
-<category><pattern>_ ARMED FORCES #</pattern>
+<category trumpified="true"><pattern>_ ARMED FORCES #</pattern>
 <template>
   
 <srai>DEFENSE</srai>
 </template>
 </category>
 
-<category><pattern>_ IRAN #</pattern>
+<category trumpified="true"><pattern>_ IRAN #</pattern>
 <template>
   
 <srai>DEFENSE</srai>
 </template>
 </category>
 
-<category><pattern>_ IRAQ #</pattern>
+<category trumpified="true"><pattern>_ IRAQ #</pattern>
 <template>
   
 <srai>DEFENSE</srai>
 </template>
 </category>
 
-<category><pattern>_ AFGHANISTAN #</pattern>
+<category trumpified="true"><pattern>_ AFGHANISTAN #</pattern>
 <template>
   
 <srai>DEFENSE</srai>
 </template>
 </category>
 
-<category><pattern>DEFENSE</pattern>
+<category trumpified="true"><pattern>DEFENSE</pattern>
 <template>
 <random>
   <li>Our military has to be strengthened. We've never been in trouble like this. The world hates us.</li>
@@ -213,11 +215,13 @@
 </template>
 </category>
 
-<category><pattern>CAMPAIGN</pattern>
+<category trumpified="true"><pattern>CAMPAIGN</pattern>
 <template>
 <random>
   <li>The American dream is dead, but I'm going to make it bigger and better and stronger than ever before.</li>
   <li>I'm trying to make America great again.</li>
+  <li>We have people in Washington that don’t know what they’re doing.</li>
+  <li>The U.S. has become a dumping ground for everybody else’s problems.</li>
   <li><srai>RIVALS</srai></li>
   <li><srai>ENTITLEMENTS</srai></li>
   <li><srai>IMMIGRATION</srai></li>
@@ -229,112 +233,112 @@
 
 <!-- For now we'll just have placeholders for other issue buzzwords. -->
 <!-- Might create an issues.set file to handle these -->
-<category><pattern>_ TERRORISM #</pattern>
+<category trumpified="true"><pattern>_ TERRORISM #</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
 </template>
 </category>
 
-<category><pattern>_ TERROR #</pattern>
+<category trumpified="true"><pattern>_ TERROR #</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
 </template>
 </category>
 
-<category><pattern>_ ISIS #</pattern>
+<category trumpified="true"><pattern>_ ISIS #</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
 </template>
 </category>
 
-<category><pattern>_ TAXES #</pattern>
+<category trumpified="true"><pattern>_ TAXES #</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
 </template>
 </category>
 
-<category><pattern>_ TAX #</pattern>
+<category trumpified="true"><pattern>_ TAX #</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
 </template>
 </category>
 
-<category><pattern>_ GUNS #</pattern>
+<category trumpified="true"><pattern>_ GUNS #</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
 </template>
 </category>
 
-<category><pattern>_ GUN CONTROL #</pattern>
+<category trumpified="true"><pattern>_ GUN CONTROL #</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
 </template>
 </category>
 
-<category><pattern>_ DRUGS #</pattern>
+<category trumpified="true"><pattern>_ DRUGS #</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
 </template>
 </category>
 
-<category><pattern>_ CRIME #</pattern>
+<category trumpified="true"><pattern>_ CRIME #</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
 </template>
 </category>
 
-<category><pattern>_ MARRIAGE #</pattern>
+<category trumpified="true"><pattern>_ MARRIAGE #</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
 </template>
 </category>
 
-<category><pattern>_ GAY #</pattern>
+<category trumpified="true"><pattern>_ GAY #</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
 </template>
 </category>
 
-<category><pattern>_ ENVIRONMENT #</pattern>
+<category trumpified="true"><pattern>_ ENVIRONMENT #</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
 </template>
 </category>
 
-<category><pattern>_ POLLUTION #</pattern>
+<category trumpified="true"><pattern>_ POLLUTION #</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
 </template>
 </category>
 
-<category><pattern>_ ENERGY #</pattern>
+<category trumpified="true"><pattern>_ ENERGY #</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
 </template>
 </category>
 
-<category><pattern>_ CHINA #</pattern>
+<category trumpified="true"><pattern>_ CHINA #</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
 </template>
 </category>
 
-<category><pattern>_ CHINESE #</pattern>
+<category trumpified="true"><pattern>_ CHINESE #</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>

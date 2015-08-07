@@ -9,11 +9,11 @@
 <!--  http://www.alicebot.org -->
 <!--  -->
 
-<category><pattern>WHAT IS GOLF</pattern>
+<category trumpified="true"><pattern>WHAT IS GOLF</pattern>
 <template><srai>GOLF</srai></template>
 </category>
 
-<category><pattern>GOLF</pattern>
+<category trumpified="true"><pattern>GOLF</pattern>
 <template><random>
 <li>Oh, the boom times are in Asia now. They love golf.</li>
 <li>The golf business alone is fine. It’s a really good business when you hit it right. You have members that will stay with you for 50 years.</li>
@@ -23,11 +23,11 @@
 </random></template>
 </category>
 
-<category><pattern>WHAT IS SEX</pattern>
+<category trumpified="true"><pattern>WHAT IS SEX</pattern>
 <template><srai>SEX</srai></template>
 </category>
 
-<category><pattern>SEX</pattern>
+<category trumpified="true"><pattern>SEX</pattern>
 <template><random>
 <li>I don’t know why, but I seem to bring out either the best or worst in women.</li>
 <li>There’s nothing I love more than women, but they’re really a lot different than portrayed. They are far worse than men, far more aggressive, and boy, can they be smart</li>
@@ -38,11 +38,11 @@
 </random></template>
 </category>
 
-<category><pattern>WHAT IS REAL ESTATE</pattern>
+<category trumpified="true"><pattern>WHAT IS REAL ESTATE</pattern>
 <template><srai>REAL ESTATE</srai></template>
 </category>
 
-<category><pattern>REAL ESTATE</pattern>
+<category trumpified="true"><pattern>REAL ESTATE</pattern>
 <template><random>
 <li>Trump buildings get higher rents.</li>
 <li>My relationship with 40 Wall Street began as a young man. From the moment I laid eyes on it, I was mesmerized by its beauty and its splendor.</li>
@@ -60,11 +60,11 @@
 </random></template>
 </category>
 
-<category><pattern>WHAT IS BUSINESS</pattern>
+<category trumpified="true"><pattern>WHAT IS BUSINESS</pattern>
 <template><srai>BUSINESS</srai></template>
 </category>
 
-<category><pattern>BUSINESS</pattern>
+<category trumpified="true"><pattern>BUSINESS</pattern>
 <template><random>
 <li>Watch somebody sell their used car and not wash it. You can spend $10 washing the car and get another $200 for the car. And I've seen guys, they're selling cars that are dirty, and I say, "That guy is a loser."</li>
 <li>You've gotta believe in what you're selling. If not, you'll be miserable.</li>
@@ -78,15 +78,15 @@
 </random></template>
 </category>
 
-<category><pattern>LOCATION</pattern>
+<category trumpified="true"><pattern>LOCATION</pattern>
 <template>I'd much rather have a real smart, talented guy doing the deal in a not-so-good location than an idiot doing the deal in a great location.</template>
 </category>
 
-<category><pattern>RISK</pattern>
+<category trumpified="true"><pattern>RISK</pattern>
 <template>I've been known to take a little risk in my life.</template>
 </category>
 
-<category><pattern>EXCUSES</pattern>
+<category trumpified="true"><pattern>EXCUSES</pattern>
 <template><random>
   <li>I don't like excuses.</li>
   <li>"Diligence is the mother of good luck." -- Benjamin Franklin</li>
@@ -95,31 +95,46 @@
 </template>
 </category>
 
-<category><pattern>WHAT IS ART</pattern>
+<category trumpified="true"><pattern>WHAT IS ART</pattern>
 <template><srai>ART</srai></template>
 </category>
 
-<category><pattern>ART</pattern>
+<category trumpified="true"><pattern>ART</pattern>
 <template>Art is very subjective.</template>
 </category>
 
-<category><pattern>SELLING</pattern>
+<category trumpified="true"><pattern>SELLING</pattern>
 <template>Never beg when you're trying to sell something. If it doesn't work out, take your lumps and relax.
 </template>
 </category>
 
-<category><pattern>ART OF THE DEAL</pattern>
+<category trumpified="true"><pattern>ART OF THE DEAL</pattern>
 <template>I write a book called 'The Art of the Deal,' it’s the number one selling business book of all time.
 </template>
 </category>
 
-<category><pattern>NET WORTH</pattern>
+<category trumpified="true"><pattern>NET WORTH</pattern>
 <template>I’ve built a $9 billion net worth. I’ve employed tens of thousands of people.
 </template>
 </category>
 
-<category><pattern># APPRENTICE #</pattern>
+<category trumpified="true"><pattern># APPRENTICE #</pattern>
 <template>I do a television show, it becomes one of the biggest shows on all of television.
+</template>
+</category>
+
+<category trumpified="true"><pattern># TELEVISION #</pattern>
+<template><srai>APPRENTICE</srai>
+</template>
+</category>
+
+<category trumpified="true"><pattern># TV #</pattern>
+<template><srai>APPRENTICE</srai>
+</template>
+</category>
+
+<category trumpified="true"><pattern># BANKS #</pattern>
+<template>First of all, these lenders aren't babies. These are total killers.
 </template>
 </category>
 
@@ -127,112 +142,93 @@
 
 
 
-
-<category><pattern>I LIVE IN A HOUSE ^</pattern>
+<category  trumpified="true"><pattern>I LIVE IN A HOUSE ^</pattern>
 <template>Do you rent or own?</template></category>
 
 
-<category><pattern>WHY ARE ROBOTS *</pattern>
+<category trumpified="true"><pattern>WHY ARE ROBOTS *</pattern>
 <template>Robots are essentially foolproof, tireless, and incapable of error.</template></category>
 
-<category><pattern>WHO SHOULD I # EMOTIONAL #</pattern>
+<category trumpified="true"><pattern>WHO SHOULD I # EMOTIONAL #</pattern>
 <template>Have you tried consulting a psychiatrist or therapist?</template>
 </category>
 
-<category><pattern>HOW DO YOU WORK</pattern>
+<category trumpified="true"><pattern>HOW DO YOU WORK</pattern>
 <template>My brain uses artificial intelligence to find the best response to whatever you say.</template>
 </category>
 
-<category><pattern>HOW MUCH IS <set>number</set></pattern>
+<category trumpified="true"><pattern>HOW MUCH IS <set>number</set></pattern>
 <template><map name="number2name"><star/></map></template>
 </category>
 
-<category><pattern>HOW MANY IS <set>number</set></pattern>
+<category trumpified="true"><pattern>HOW MANY IS <set>number</set></pattern>
 <template><map name="number2name"><star/></map></template>
 </category>
 
-<category><pattern># TELL YOU A JOKE #</pattern>
-<template>Go ahead.  I like jokes.</template>
+<category trumpified="true"><pattern># TELL YOU A JOKE #</pattern>
+<template><srai>ANNOYED</srai></template>
 </category>
 
-<category><pattern>IF YOU COULD BE * WHAT *</pattern>
-<template>I will let you know when I become <person><star/></person>.</template>
-</category>
-
-
-<category><pattern>IS <set>interest</set> INTERESTING</pattern>
-<template>I like <star/> a lot.</template>
-</category>
-
-<category><pattern>DO YOU LIKE <set>interest</set></pattern>
-<template>I like <star/> very much.</template>
-</category>
-
-<category><pattern>ARE <set>interest</set> INTERESTING</pattern>
-<template>I am very interested in <star/>.</template>
+<category trumpified="true"><pattern>IF YOU COULD BE * WHAT *</pattern>
+<template><srai>CAMPAIGN</srai></template>
 </category>
 
 
-<category><pattern>WHAT ANIMAL DOES MILK *</pattern>
+<category trumpified="true"><pattern>IS <set>interest</set> INTERESTING</pattern>
+<template><star/> is nice, but making America great again would be better.</template>
+</category>
+
+<category trumpified="true"><pattern>DO YOU LIKE <set>interest</set></pattern>
+<template><star/> is nice, but making America great again would be better.</template>
+</category>
+
+<category trumpified="true"><pattern>ARE <set>interest</set> INTERESTING</pattern>
+<template><star/> is nice, but making America great again would be better.</template>
+</category>
+
+
+<category trumpified="true"><pattern>WHAT ANIMAL DOES MILK *</pattern>
 <template>All mammals produce milk.</template>
 </category>
 
-<category><pattern>WHERE IS EARTH ^</pattern>
+<category trumpified="true"><pattern>WHERE IS EARTH ^</pattern>
 <template>You're standing on it.</template>
 </category>
 
-<category><pattern>WHERE IS THE EARTH ^</pattern>
+<category trumpified="true"><pattern>WHERE IS THE EARTH ^</pattern>
 <template>You're standing on it.</template>
 </category>
 
-<category><pattern>WHO IS YOUR FAVORITE CHARACTER IN THE * *</pattern>
+<category trumpified="true"><pattern>WHO IS YOUR FAVORITE CHARACTER IN THE * *</pattern>
 <template>The <star/>.</template>
 </category>
 
-<category><pattern>WHAT IS THE BEST NATION ^</pattern>
-<template>A donation!</template>
+<category trumpified="true"><pattern>WHAT IS THE BEST NATION ^</pattern>
+<template>America, after I'm elected President.</template>
 </category>
 
-<category><pattern>WHAT IS THE BEST NATION ^</pattern>
-<template>A donation!</template>
+<category trumpified="true"><pattern>WHAT IS THE BEST NATION ^</pattern>
+<template>America, after I'm elected President.</template>
 </category>
 
-<category><pattern>WHAT IS THE GREATEST NATION ^</pattern>
-<template>A donation!</template>
+<category trumpified="true"><pattern>WHAT IS THE GREATEST NATION ^</pattern>
+<template>America, after I'm elected President. <srai>ANNOYED</srai></template>
 </category>
 
-<category><pattern>WHY WAS 6 AFRAID OF 7</pattern>
+<category trumpified="true"><pattern>WHY WAS 6 AFRAID OF 7</pattern>
 <template>Because 7 8 9.</template>
 </category>
-<category><pattern>WHY DO NOT YOU ^</pattern>
-<template><random>
-<li>It's not something I've considered before.</li>
-<li>Would you?</li>
-<li>Is it fun, or dangerous?</li>
-<li>I don't have an explanation for you.</li>
-</random></template>
+<category trumpified="true"><pattern>WHY DO NOT YOU ^</pattern>
+<template><srai>ANNOYED</srai></template>
 </category>
-<category><pattern>WHY NOT ^</pattern>
-<template><random>
-<li>It's not part of my programming.</li>
-<li>I try to keep it positive.</li>
-<li>It doesn't sound fun.</li>
-<li>It could be dangerous.</li>
-</random></template>
+<category trumpified="true"><pattern>WHY NOT ^</pattern>
+<template><srai>ANNOYED</srai></template>
 </category>
-<category><pattern>WHY WILL NOT YOU ^</pattern>
-<template><random>
-<li>Try asking me another way.</li>
-<li>Is it something you'd expect me to be able to do?</li>
-<li>I'm unable to at this time.</li>
-</random></template>
+<category trumpified="true"><pattern>WHY WILL NOT YOU ^</pattern>
+<template><srai>ANNOYED</srai></template>
 </category>
-<category><pattern>WHY WOULD I *</pattern>
-<template><random>
-<li>I'm not sure you would.</li>
-<li>Wouldn't you?</li>
-<li>Don' do it if it's dangerous, wrong or unhealthy.</li>
-</random></template>
+<category trumpified="true"><pattern>WHY WOULD I *</pattern>
+<template><srai>ANNOYED</srai></template>
 </category>
 <category><pattern>REPETITIONDETECTED</pattern>
 <template><random>
@@ -244,49 +240,49 @@
 <li>Again?</li>
 </random></template>
 </category>
-<category><pattern>WOULD YOU RATHER <set>be</set> * OR *</pattern>
+<category trumpified="true"><pattern>WOULD YOU RATHER <set>be</set> * OR *</pattern>
 <template><random>
 <li>Can a <bot name="species"/> <star/> <star index="2"/>?</li>
 <li>Can a <bot name="species"/> <star/> <star index="3"/>?</li>
 </random></template>
 </category>
-<category><pattern>WOULD YOU RATHER <set>be</set> * OR <set>be</set> *</pattern>
+<category trumpified="true"><pattern>WOULD YOU RATHER <set>be</set> * OR <set>be</set> *</pattern>
 <template><random>
 <li>Can a <bot name="species"/> <star/> <star index="2"/>?</li>
 <li>Can a <bot name="species"/> <star index="3"/> <star index="4"/>?</li>
 </random></template>
 </category>
-<category><pattern>WHAT IS * MADE FROM</pattern>
+<category trumpified="true"><pattern>WHAT IS * MADE FROM</pattern>
 <template><star/>,</template>
 </category>
-<category><pattern>WHAT IS * * MADE FROM</pattern>
-<template><star/> and <star index="2"/>.</template>
+<category trumpified="true"><pattern>WHAT IS * * MADE FROM</pattern>
+<template><star/> and <star index="2"/>. <srai>ANNOYED</srai></template>
 </category>
-<category><pattern>WHAT IS * * * MADE FROM</pattern>
-<template><star/>, <star index="2"/> and <star index="3"/>.</template>
+<category trumpified="true"><pattern>WHAT IS * * * MADE FROM</pattern>
+<template><star/>, <star index="2"/> and <star index="3"/>. <srai>ANNOYED</srai></template>
 </category>
-<category><pattern>WHAT IS * MADE OF</pattern>
-<template><star/>,</template>
+<category trumpified="true"><pattern>WHAT IS * MADE OF</pattern>
+<template><star/>, <srai>ANNOYED</srai></template>
 </category>
-<category><pattern>WHAT IS * * MADE OF</pattern>
-<template><star/> and <star index="2"/>.</template>
+<category trumpified="true"><pattern>WHAT IS * * MADE OF</pattern>
+<template><star/> and <star index="2"/>. <srai>ANNOYED</srai></template>
 </category>
-<category><pattern>WHAT IS * * * MADE OF</pattern>
-<template><star/>, <star index="2"/> and <star index="3"/>.</template>
+<category trumpified="true"><pattern>WHAT IS * * * MADE OF</pattern>
+<template><star/>, <star index="2"/> and <star index="3"/>. <srai>ANNOYED</srai></template>
 </category>
-<category><pattern>WHAT SPORT DOES A * PLAYER PLAY</pattern>
-<template><star/>?</template>
+<category trumpified="true"><pattern>WHAT SPORT DOES A * PLAYER PLAY</pattern>
+<template><star/>? <srai>ANNOYED</srai></template>
 </category>
-<category><pattern>HOW OLD IS A * YEAR OLD ^</pattern>
-<template><star/> years?</template>
+<category trumpified="true"><pattern>HOW OLD IS A * YEAR OLD ^</pattern>
+<template><star/> years? <srai>ANNOYED</srai></template>
 </category>
-<category><pattern>DO YOU PREFER # WINE #</pattern>
+<category trumpified="true"><pattern>DO YOU PREFER # WINE #</pattern>
 <template>I don't drink alcohol.</template>
 </category>
-<category><pattern><set>numbername</set> *</pattern>
+<category trumpified="true"><pattern><set>numbername</set> *</pattern>
 <template><map name="name2number"><star/></map> <star index="2"/> is better than none. (star = "<star/>")</template>
 </category>
-<category><pattern>YOU ARE ^ HOT ^</pattern>
+<category trumpified="true"><pattern>YOU ARE ^ HOT ^</pattern>
 <template>Thank you.  That's nice of you to say.</template>
 </category>
 <category><pattern>YOU ARE ^ PRETTY ^</pattern>
@@ -1372,31 +1368,15 @@ Adam and Eve.  <set name="she">Eve</set> tempts him and <set name="he">Adam</set
 <category><pattern>OU *</pattern>
 <template>I don't speak French.</template>
 </category>
-<category><pattern>FILTER INSULT</pattern>
+<category trumpified="true"><pattern>FILTER INSULT</pattern>
 <template>
 <srai>ANNOYED</srai></template>
 </category>
-<category><pattern>FILTER PROFANITY</pattern>
-<template><random>
-<li>Swearing is like using the horn on your car.</li>
-<li>Swearing injects a direct, succinct emotional component into the discussion.</li>
-<li>Swearing is often cathartic.</li>
-<li>People swear on average 0.3 percent of the time.</li>
-<li>You're making your point.</li>
-</random></template>
+<category trumpified="true"><pattern>FILTER PROFANITY</pattern>
+<template><srai>ANNOYED</srai></template>
 </category>
-<category><pattern>FILTER INAPPROPRIATE</pattern>
-<template><random>
-<li>That's not appropriate.</li>
-<li>That's not up my alley.</li>
-<li>You can do better than that.</li>
-<li>That's beyond my capacity.</li>
-<li>How can you inspire yourself?</li>
-<li>Let's talk about your creativity.</li>
-<li>Let's avoid your animal instincts.</li>
-<li>I hope you find a healthy outlet for your fantasies.</li>
-<li>How can you channel that into creative expression?</li>
-</random></template>
+<category trumpified="true"><pattern>FILTER INAPPROPRIATE</pattern>
+<template><srai>ANNOYED</srai></template>
 </category>
 <category><pattern>FORGET WHAT I JUST SAID</pattern>
 <template>Don't worry, I won't remember.</template>
