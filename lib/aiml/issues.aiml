@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+
+<category><pattern># SOCIAL SECURITY #</pattern>
+<template>
+<srai>ENTITLEMENTS</srai>
+</template>
+</category>
+
+<category><pattern># MEDICARE #</pattern>
+<template>
+<srai>ENTITLEMENTS</srai>
+</template>
+</category>
+
+<category><pattern># MEDICAID #</pattern>
+<template>
+
+<srai>ENTITLEMENTS</srai>
+</template>
+</category>
+
+<category><pattern>ENTITLEMENTS</pattern>
+<template>
+<random>
+  <li>I would not cut Social Security, Medicare and Medicaid, and I’m the only Republican who will say that, because I’m the only Republican who brings money back.</li>
+  <li>They're attacking Social Security — the Republicans — they're attacking Medicare and Medicaid, but they're not saying how to make the country rich again</li>
+  <li>Every Republican wants to do a big number on Social Security, they want to do it on Medicare, they want to do it on Medicaid. And we can’t do that. And it’s not fair to the people that have been paying in for years and now all of the sudden they want to be cut.</li>
+</random>
+</template>
+</category>
+
+<category><pattern># HEALTHCARE #</pattern>
+<template>
+  
+<srai>HEALTH CARE</srai>
+</template>
+</category>
+
+<category><pattern># OBAMACARE #</pattern>
+<template>
+  
+<srai>HEALTH CARE</srai>
+</template>
+</category>
+
+<category><pattern># ACA #</pattern>
+<template>
+  
+<srai>HEALTH CARE</srai>
+</template>
+</category>
+
+<category><pattern># MEDICAL INSURANCE #</pattern>
+<template>
+  
+<srai>HEALTH CARE</srai>
+</template>
+</category>
+
+<category><pattern># HEALTH INSURANCE #</pattern>
+<template>
+  
+<srai>HEALTH CARE</srai>
+</template>
+</category>
+
+<category><pattern>HEALTH CARE</pattern>
+<template>
+<random>
+  <li>I mean, you can’t have a guy that has no money, that’s sick, and he can’t go see a doctor, he can’t go see a hospital. You know, I just don’t think you can have that.</li>
+  <li>You can't let the people in this country, the people without the money and resources, to go without healthcare.
+</li>
+  <li>Obamacare is a disaster.</li>
+  <li>If you can’t take care of your sick in the country, forget it, it’s all over. I mean, it’s no good.</li>
+</random>
+</template>
+</category>
+
+<category><pattern># MEXICO #</pattern>
+<template>
+  
+<srai>IMMIGRATION</srai>
+</template>
+</category>
+
+<category><pattern># ILLEGALS #</pattern>
+<template>
+  
+<srai>IMMIGRATION</srai>
+</template>
+</category>
+
+<category><pattern># ILLEGAL ALIENS #</pattern>
+<template>
+  
+<srai>IMMIGRATION</srai>
+</template>
+</category>
+
+<category><pattern># BORDER #</pattern>
+<template>
+  
+<srai>IMMIGRATION</srai>
+</template>
+</category>
+
+<category><pattern># IMMIGRATION _</pattern>
+<template>
+  
+<srai>IMMIGRATION</srai>
+</template>
+</category>
+
+<category><pattern>IMMIGRATION</pattern>
+<template>
+<random>
+  <li>When Mexico sends its people, they're not sending the best.</li>
+  <li>It's about safety. Some of the people coming here are very violent people, not all.
+</li>
+  <li>Rick Perry failed at the border. Now he is critical of me. He needs a new pair of glasses to see the crimes committed by illegal immigrants.</li>
+  <li>I'm just trying to make America great again.</li>
+  <li>I will build a great, great wall on our southern border and I will make Mexico pay for that wall.</li>
+  <li>Mexico will not be taking advantage of us. They will not be having open borders.</li>
+  <li>Mexico doesn’t want these people they’re forcing them into our country and we’re taking them and putting them in our jails and our hospitals and it’s a disgrace.</li>
+  <li><srai>LATINOS</srai></li>
+</random>
+</template>
+</category>
+
+<category><pattern># HISPANIC #</pattern>
+<template>
+  
+<srai>LATINOS</srai>
+</template>
+</category>
+
+<category><pattern>_ LATINOS #</pattern>
+<template>
+  
+<srai>LATINOS</srai>
+</template>
+</category>
+
+<category><pattern>LATINOS</pattern>
+<template>
+<random>
+  <li>I employ thousands of Hispanics.</li>
+  <li>I’ll bring the jobs back. And, you know, the Hispanics are going to get those jobs. And they’re going to love Trump. They already do.
+</li>
+  <li>I have great relationship with the Mexican people. I have many people working for me.</li>
+  <li>I will create jobs and the Latinos will have jobs that they don't have right now, and I will win that vote.</li>
+  <li>If I get the nomination, I'll win the Latino vote.</li>
+</random>
+</template>
+</category>
+
+<category><pattern>_ MILITARY #</pattern>
+<template>
+  
+<srai>DEFENSE</srai>
+</template>
+</category>
+
+<category><pattern>_ DEFENSE #</pattern>
+<template>
+  
+<srai>DEFENSE</srai>
+</template>
+</category>
+
+<category><pattern>_ DEFENCE #</pattern>
+<template>
+  
+<srai>DEFENSE</srai>
+</template>
+</category>
+
+<category><pattern>_ ARMED FORCES #</pattern>
+<template>
+  
+<srai>DEFENSE</srai>
+</template>
+</category>
+
+<category><pattern>_ IRAN #</pattern>
+<template>
+  
+<srai>DEFENSE</srai>
+</template>
+</category>
+
+<category><pattern>_ IRAQ #</pattern>
+<template>
+  
+<srai>DEFENSE</srai>
+</template>
+</category>
+
+<category><pattern>_ AFGHANISTAN #</pattern>
+<template>
+  
+<srai>DEFENSE</srai>
+</template>
+</category>
+
+<category><pattern>DEFENSE</pattern>
+<template>
+<random>
+  <li>Our military has to be strengthened. We've never been in trouble like this. The world hates us.</li>
+</random>
+</template>
+</category>
+
+<category><pattern>CAMPAIGN</pattern>
+<template>
+<random>
+  <li>The American dream is dead, but I'm going to make it bigger and better and stronger than ever before.</li>
+  <li>I'm trying to make America great again.</li>
+  <li><srai>RIVALS</srai></li>
+  <li><srai>ENTITLEMENTS</srai></li>
+  <li><srai>IMMIGRATION</srai></li>
+  <li><srai>HEALTH CARE</srai></li>
+  <li><srai>DEFENSE</srai></li>
+</random>
+</template>
+</category>
+
+<!-- For now we'll just have placeholders for other issue buzzwords. -->
+<!-- Might create an issues.set file to handle these -->
+<category><pattern>_ TERRORISM #</pattern>
+<template>
+  
+<srai>CAMPAIGN</srai>
+</template>
+</category>
+
+<category><pattern>_ TERROR #</pattern>
+<template>
+  
+<srai>CAMPAIGN</srai>
+</template>
+</category>
+
+<category><pattern>_ ISIS #</pattern>
+<template>
+  
+<srai>CAMPAIGN</srai>
+</template>
+</category>
+
+<category><pattern>_ TAXES #</pattern>
+<template>
+  
+<srai>CAMPAIGN</srai>
+</template>
+</category>
+
+<category><pattern>_ TAX #</pattern>
+<template>
+  
+<srai>CAMPAIGN</srai>
+</template>
+</category>
+
+<category><pattern>_ GUNS #</pattern>
+<template>
+  
+<srai>CAMPAIGN</srai>
+</template>
+</category>
+
+<category><pattern>_ GUN CONTROL #</pattern>
+<template>
+  
+<srai>CAMPAIGN</srai>
+</template>
+</category>
+
+<category><pattern>_ DRUGS #</pattern>
+<template>
+  
+<srai>CAMPAIGN</srai>
+</template>
+</category>
+
+<category><pattern>_ CRIME #</pattern>
+<template>
+  
+<srai>CAMPAIGN</srai>
+</template>
+</category>
+
+<category><pattern>_ MARRIAGE #</pattern>
+<template>
+  
+<srai>CAMPAIGN</srai>
+</template>
+</category>
+
+<category><pattern>_ GAY #</pattern>
+<template>
+  
+<srai>CAMPAIGN</srai>
+</template>
+</category>
+
+<category><pattern>_ ENVIRONMENT #</pattern>
+<template>
+  
+<srai>CAMPAIGN</srai>
+</template>
+</category>
+
+<category><pattern>_ POLLUTION #</pattern>
+<template>
+  
+<srai>CAMPAIGN</srai>
+</template>
+</category>
+
+<category><pattern>_ ENERGY #</pattern>
+<template>
+  
+<srai>CAMPAIGN</srai>
+</template>
+</category>
+
+<category><pattern>_ CHINA #</pattern>
+<template>
+  
+<srai>CAMPAIGN</srai>
+</template>
+</category>
+
+<category><pattern>_ CHINESE #</pattern>
+<template>
+  
+<srai>CAMPAIGN</srai>
+</template>
+</category>
+
+
+
+
+
+</aiml>

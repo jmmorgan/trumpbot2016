@@ -27,6 +27,9 @@ class Chat
     @responses << response
     train()
     response
+  rescue => e
+    # For now we'll just return a default response and move forward
+    (@responses << "I'm having trouble understanding you").last
   end
 
   def clear

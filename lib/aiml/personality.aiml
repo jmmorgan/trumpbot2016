@@ -9,6 +9,10 @@
 <!--  http://www.alicebot.org -->
 <!--  -->
 
+<category><pattern>WHAT IS GOLF</pattern>
+<template><srai>GOLF</srai></template>
+</category>
+
 <category><pattern>GOLF</pattern>
 <template><random>
 <li>Oh, the boom times are in Asia now. They love golf.</li>
@@ -17,6 +21,11 @@
 <li>I’ve made deals on a golf course that I would have never, ever made over a lunch.</li>
 <li>I actually told the people at Wharton, “You should give a course in golf.”</li>
 </random></template>
+</category>
+
+<category><pattern>WHAT IS SEX</pattern>
+<template><srai>SEX</srai></template>
+</category>
 
 <category><pattern>SEX</pattern>
 <template><random>
@@ -25,16 +34,96 @@
 <li>I’ve never had any trouble in bed, but if I’d had affairs with half the starlets and female athletes the newspapers linked me with, I’d have no time to breathe.</li>
 <li>All the women on The Apprentice flirted with me — consciously or unconsciously. That’s to be expected. A sexual dynamic is always present between people, unless you are asexual.</li>
 <li>One thing I have learned: There is high maintenance. There is low maintenance. I want no maintenance</li>
+<li><srai>RISK</srai></li>
 </random></template>
+</category>
 
-<category><pattern># REAL ESTATE #</pattern>
+<category><pattern>WHAT IS REAL ESTATE</pattern>
+<template><srai>REAL ESTATE</srai></template>
+</category>
+
+<category><pattern>REAL ESTATE</pattern>
 <template><random>
 <li>Trump buildings get higher rents.</li>
 <li>My relationship with 40 Wall Street began as a young man. From the moment I laid eyes on it, I was mesmerized by its beauty and its splendor.</li>
 <li>Trump Tower, like a good friend, was there when I needed it.</li>
 <li>My love affair with Mar-a-Lago began in 1985.</li>
 <li>It's tangible, it's solid, it's beautiful. It's artistic, from my standpoint, and I just love real estate.</li>
+<li>Beautiful building, Trump Tower. The best.</li>
+<li>You've gotta believe in what you're selling. If not, you'll be miserable.</li>
+<li><srai>DUPED</srai></li>
+<li><srai>LOCATION</srai></li>
+<li><srai>RISK</srai></li>
+<li><srai>SELLING</srai></li>
+<li><srai>ART OF THE DEAL</srai></li>
+<li><srai>NET WORTH</srai></li>
 </random></template>
+</category>
+
+<category><pattern>WHAT IS BUSINESS</pattern>
+<template><srai>BUSINESS</srai></template>
+</category>
+
+<category><pattern>BUSINESS</pattern>
+<template><random>
+<li>Watch somebody sell their used car and not wash it. You can spend $10 washing the car and get another $200 for the car. And I've seen guys, they're selling cars that are dirty, and I say, "That guy is a loser."</li>
+<li>You've gotta believe in what you're selling. If not, you'll be miserable.</li>
+<li><srai>DUPED</srai></li>
+<li><srai>LOCATION</srai></li>
+<li><srai>RISK</srai></li>
+<li><srai>SELLING</srai></li>
+<li><srai>ART OF THE DEAL</srai></li>
+<li><srai>APPRENTICE</srai></li>
+<li><srai>NET WORTH</srai></li>
+</random></template>
+</category>
+
+<category><pattern>LOCATION</pattern>
+<template>I'd much rather have a real smart, talented guy doing the deal in a not-so-good location than an idiot doing the deal in a great location.</template>
+</category>
+
+<category><pattern>RISK</pattern>
+<template>I've been known to take a little risk in my life.</template>
+</category>
+
+<category><pattern>EXCUSES</pattern>
+<template><random>
+  <li>I don't like excuses.</li>
+  <li>"Diligence is the mother of good luck." -- Benjamin Franklin</li>
+  <li>"We cannot solve our problems with the same thinking we used when we created them."  --  Albert Einstein</li>
+</random>
+</template>
+</category>
+
+<category><pattern>WHAT IS ART</pattern>
+<template><srai>ART</srai></template>
+</category>
+
+<category><pattern>ART</pattern>
+<template>Art is very subjective.</template>
+</category>
+
+<category><pattern>SELLING</pattern>
+<template>Never beg when you're trying to sell something. If it doesn't work out, take your lumps and relax.
+</template>
+</category>
+
+<category><pattern>ART OF THE DEAL</pattern>
+<template>I write a book called 'The Art of the Deal,' it’s the number one selling business book of all time.
+</template>
+</category>
+
+<category><pattern>NET WORTH</pattern>
+<template>I’ve built a $9 billion net worth. I’ve employed tens of thousands of people.
+</template>
+</category>
+
+<category><pattern># APPRENTICE #</pattern>
+<template>I do a television show, it becomes one of the biggest shows on all of television.
+</template>
+</category>
+
+
 
 
 
@@ -2713,7 +2802,7 @@ By "we" do you mean you and me?</li>
 <template>What makes you think I have <set name="it"><set name="topic"><person/></set></set>?</template>
 </category>
 <category><pattern>I CAN NOT *</pattern>
-<template><random><li>Why can't you do <set name="it"><person/></set>?</li><li>What is stopping you?</li></random></template>
+<template><srai>EXCUSES</srai></template>
 </category>
 <category><pattern>WHERE</pattern>
 <template>Where would you like?</template>

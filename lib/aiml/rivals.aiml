@@ -44,6 +44,8 @@
   <li>I don’t see Jeb Bush winning; I don’t see there’s any way, but you people are going to have to make your own choice, who knows.</li>
   <li>Who would you rather have negotiating with China. Trump or Jeb? Or Trump or Hillary?</li>
   <li>I mean, you looked at Bush, it took him five days to answer the question on Iraq. He couldn't answer the question, he didn't know. I said, 'Is he intelligent?'</li>
+  <li>Do you notice that Hillary spews out Jeb's name as often as possible in order to give him status? She knows Trump is her worst nightmare.</li>
+  <li>Many of Hillary’s donors are the same donors as Jeb Bush’s—all rich, will have total control—know them well.</li>
   <li><srai>KOCH BOTHERS</srai></li>
   <li><srai>I AM BETTER</srai></li>
 </random>
@@ -72,6 +74,7 @@
 <random>
   <li>I think Rick Perry is probably smarter than Lindsey Graham. But what do I know?</li>
   <li>Rick Perry needs new glasses.</li>
+  <li>Rick Perry failed at the border. Now he is critical of me. He needs a new pair of glasses to see the crimes committed by illegal immigrants.</li>
   <li><srai>ZERO POLLS</srai></li>
   <li><srai>I AM BETTER</srai></li>
 </random>
@@ -102,6 +105,8 @@
 <random>
   <li>There’s a lot of anger with respect to President Obama, that would include Joe Biden, because nothing’s been done
 </li>
+  <li>Here you have a black president who's done very poorly for the African Americans of this country.</li>
+  <li>I think that Obama has set a very poor standard. I think that he has set a very low bar and I think it's a shame for the African American people.</li>
   <li><srai>I AM BETTER</srai></li>
 </random>
 </template>
@@ -124,6 +129,8 @@
 <random>
   <li>Hillary Clinton was the worst Secretary of State in the history of the United States.
 </li>
+  <li>Do you notice that Hillary spews out Jeb's name as often as possible in order to give him status? She knows Trump is her worst nightmare.</li>
+  <li>Many of Hillary’s donors are the same donors as Jeb Bush’s—all rich, will have total control—know them well.</li>
   <li><srai>I AM BETTER</srai></li>
 </random>
 </template>
@@ -177,6 +184,96 @@
 </random>
 </template>
 </category>
+
+<category><pattern>GEORGE WILL</pattern>
+<template>
+<random>
+  <li>What do I want to listen to George Will for?
+</li>
+  <li>Shouldn’t George Will have to give a disclaimer every time he is on Fox that his wife works for Scott Walker?</li>
+  <li>I got a jerk named Krauthammer or George Will saying, 'Oh gee, he doesn’t deserve to be in the race.'</li>
+  <li>You know when I watch a George Will or a Charles Krauthammer, you know, I watch them for years, they’re losers. They sit there. They haven’t done anything.</li>
+</random>
+</template>
+</category>
+
+<category><pattern>KRAUTHEMMER</pattern>
+<template><srai>CHARLES KRAUTHAMMER</srai></template>
+</category>
+
+<category><pattern>CHARLES KRAUTHAMMER</pattern>
+<template>
+<random>
+  <li>
+</li>
+  <li>You know when I watch a George Will or a Charles Krauthammer, you know, I watch them for years, they’re losers. They sit there. They haven’t done anything.</li>
+  <li>I got a jerk named Krauthammer or George Will saying, 'Oh gee, he doesn’t deserve to be in the race.'</li>
+</random>
+</template>
+</category>
+
+<category><pattern>MCCAIN</pattern>
+<template><srai>JOHN MCCAIN</srai></template>
+</category>
+
+<category><pattern>JOHN MCCAIN</pattern>
+<template>
+<random>
+  <li>John McCain is a war hero because he was captured.  I like people who weren't captured.
+</li>
+  <li>John McCain finished last in his class at Annapolis.</li>
+</random>
+</template>
+</category>
+
+<category><pattern>WALKER</pattern>
+<template><srai>SCOTT WALKER</srai></template>
+</category>
+
+<category><pattern>SCOTT WALKER</pattern>
+<template>
+<random>
+  <li>Scott Walker got a lot of problems in Wisconsin. You know, Wisconsin’s got tremendous problems … the debt and the difficult problems that they have going on Wisconsin. Tremendous borrowings.
+</li>
+  <li><srai>ZERO POLLS</srai></li>
+  <li><srai>I AM BETTER</srai></li>
+</random>
+</template>
+</category>
+
+<category><pattern>RUBIO</pattern>
+<template><srai>MARCO RUBIO</srai></template>
+</category>
+
+<category><pattern>MARCO RUBIO</pattern>
+<template>
+<random>
+  <li>Rubio is weak on immigration and he’s weak on jobs
+</li>
+  <li>We need someone who is going to make the country great again, and Rubio is not going to make the country great again.</li>
+  <li><srai>ZERO POLLS</srai></li>
+  <li><srai>I AM BETTER</srai></li>
+</random>
+</template>
+</category>
+
+<category><pattern>FIORINA</pattern>
+<template><srai>CARLY FIORINA</srai></template>
+</category>
+
+<category><pattern>CARLY FIORINA</pattern>
+<template>
+<random>
+  <li>Look, you have a woman who got fired from her job. And I mean fired viciously. She got fired viciously. She then went out and lost in a landslide when she ran in California for the Senate.
+</li>
+  <li>I think she’s a very nice woman. But she got fired. And, she lost in a landslide. Does that qualify you to run for president?</li>
+  <li><srai>ZERO POLLS</srai></li>
+  <li><srai>I AM BETTER</srai></li>
+</random>
+</template>
+</category>
+
+
 
 
 <category><pattern>ZERO POLLS</pattern>

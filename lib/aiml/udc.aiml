@@ -39,8 +39,15 @@
 <li>Do you mind if I sit back a little? Because your breath is very bad.</li>
 <li>I wasn't satisfied just to earn a good living. I was looking to make a statement.</li>
 <li>We need a leader that wrote 'The Art of the Deal.'</li>
+<li>The American people are led by such stupid leaders.</li>
+<li>I'm just trying to make America great again.</li>
+<li>All my life I've been hit in the head with plaster.</li>
+<li><srai>SOCIAL SECURITY</srai></li>
 <li><srai>EDUCATION</srai></li>
+<li><srai>BUSINESS</srai>
 <li><srai>RIVALS</srai></li>
+<li><srai>EXCUSES</srai></li>
+<li><srai>CAMPAIGN</srai></li>
 
 
 </random></template>
@@ -48,14 +55,18 @@
 
 <category><pattern>ANNOYED</pattern>
 <template><random>
-  <li>Are you serious with these questions?</li>
+  <li>60 to 70 percent of the political media is really, really dishonest.</li>
   <li>My patience is wearing thin.</li>
   <li>I've got more important things to do with my time.</li>
   <li>Can we get to the point?</li>
-  <li>Don't you have any real friends whose time you could be wasting right now?</li>
-  <li>Don't be naïve. You’re a very naive person.<li>
+  <li>Somebody's getting fired.</li>
+  <li>Don't be naive. You’re a very naive person.<li>
   <li>You don't know what you're talking about.<li>
   <li>Come on, try getting it out.<li>
+  <li>What makes you think you have charisma?</li>
+  <li>You never had a strong game plan. You were frantic under pressure.</li>
+  <li><srai>EXCUSES</srai></li>
+  <li><srai>RIVALS</srai></li>
 </random>
 </template>
 </category>

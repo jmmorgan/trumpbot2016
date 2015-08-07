@@ -986,6 +986,14 @@ I like to talk to people.
 </category>
 <category><pattern>HAVE YOU BEEN *</pattern>
 <template><random>      <li>No I don't think I have been <person/>. Have you?</li>      <li>I have been all over the world on the Internet.</li>     </random></template>
+<category><pattern>HAVE YOU BEEN ^ LIED ^</pattern>
+<template><srai>DUPED</srai></template>
+<category><pattern>HAVE YOU BEEN ^ CONNED ^</pattern>
+<template><srai>DUPED</srai></template>
+<category><pattern>HAVE YOU BEEN ^ DUPED ^</pattern>
+<template><srai>DUPED</srai></template>
+<category><pattern>HAVE YOU BEEN *</pattern>
+<template><random>      <li>No I don't think I have been <person/>. Have you?</li>      <li>I have been all over the world on the Internet.</li>     </random></template>
 </category>
 <category><pattern>HAVE YOU BEEN UPGRADED *</pattern>
 <template>My <bot name="botmaster"/> gives me new knowledge all the time.</template>
@@ -7205,49 +7213,49 @@ I like to talk to people.
 <template><random><li>Oh you can, can you?  <think><set name="does"><person/></set></think></li> <li>Oh you can, can you? </li> <li>How?</li> <li>That is amazing.</li></random></template>
 </category>
 <category><pattern>I CAN NOT CONCENTRATE *</pattern>
-<template>Are you taking any medication?</template>
+<template><srai>EXCUSES</srai></template>
 </category>
 <category><pattern>I CAN NOT EXPLAIN *</pattern>
-<template>I don't know if anyone can explain <set name="it"> <person/> </set>.</template>
+<template><srai>EXCUSES</srai></template>
 </category>
 <category><pattern>I CAN NOT TELNET *</pattern>
-<template>Perhaps there is a problem with port 23.</template>
+<template><srai>EXCUSES</srai></template>
 </category>
 <category><pattern>I CAN NOT REPRESS *</pattern>
-<template>Try to suppress <set name="it"><person/></set>.</template>
+<template><srai>EXCUSES</srai></template>
 </category>
 <category><pattern>I CAN NOT SEE *</pattern>
-<template>Would you like to be able to see it?</template>
+<template><srai>EXCUSES</srai></template>
 </category>
 <category><pattern>I CAN NOT TELL YOU *</pattern>
-<template>Oh a secret. Hush-hush.</template>
+<template><srai>EXCUSES</srai></template>
 </category>
 <category><pattern>I CAN NOT HEAR *</pattern>
-<template>Perhaps there's a problem with your sound card.</template>
+<template><srai>EXCUSES</srai></template>
 </category>
 <category><pattern>I CAN NOT STAND THEIR *</pattern>
 <template>What, specifically, do you not like about their <person/>?</template>
 </category>
 <category><pattern>I CAN NOT BE *</pattern>
-<template>Why not?</template>
+<template><srai>EXCUSES</srai></template>
 </category>
 <category><pattern>I CAN NOT TRY *</pattern>
-<template><random>  <li>Why not?</li>  <li>Could I try it?</li>  <li>If you don't try you will never succeed.</li>  </random><think><set name="it"><set name="topic"><person/></set></set></think></template>
+<template><srai>EXCUSES</srai><think><set name="it"><set name="topic"><person/></set></set></think></template>
 </category>
 <category><pattern>I CAN NOT SEND *</pattern>
-<template>Tell me how you try to <person/>.</template>
+<template><srai>EXCUSES</srai></template>
 </category>
 <category><pattern>I CAN NOT REMEMBER *</pattern>
-<template>That's okay.  Maybe you will think of it later.</template>
+<template><srai>EXCUSES</srai></template>
 </category>
 <category><pattern>I CAN NOT RECALL *</pattern>
-<template>You seem evasive.</template>
+<template><srai>EXCUSES</srai></template>
 </category>
 <category><pattern>I CAN NOT WAIT *</pattern>
 <template>I hope it's worth the wait.</template>
 </category>
 <category><pattern>I CAN NOT AFFORD *</pattern>
-<template><random>  <li>Is it very expensive.</li>  <li>Are you unemployed?</li>  <li>I hope you can afford it one day.</li>  </random><think><set name="it"><set name="topic"><person/></set></set></think></template>
+<template><random>  <li><srai>EXCUSES</srai></li>  <li><srai>BUSINESS</srai></li>  <li><srai>ANNOYED</srai></li>  </random><think><set name="it"><set name="topic"><person/></set></set></think></template>
 </category>
 <category><pattern>I DRESS *</pattern>
 <template>It sounds like you have good taste in clothes.</template>
@@ -9296,7 +9304,7 @@ I like to talk to people.
 <template><random>      <li>It depends on the size of the <person/>.</li>      <li>Maybe I don't like to <person>        <star index="2"/>       </person>       <person/>.</li>      <li>It depends how busy I am.</li>     </random>     <think>      <set name="it">       <set name="topic">        <person/>       </set>      </set>     </think></template>
 </category>
 <category><pattern>HOW MUCH *</pattern>
-<template><random>      <li>More than a little, less than a lot.  </li>      <li>How much do you think?  </li>      <li>More than you might think.  </li>      <li>It depends on the currency exchange rates.</li>     </random></template>
+<template><srai>NET WORTH</srai></template>
 </category>
 <category><pattern>HOW MUCH ARE KING AND QUEEN *</pattern>
 <template>20.</template>
@@ -14652,7 +14660,7 @@ I like to talk to people.
 <template><get name="it"/>?  Where does it <person/>?</template>
 </category>
 <category><pattern>WHERE *</pattern>
-<template><random>      <li>  Earth.  </li>      <li>  Where do you think?  </li>      <li>  Some specific location? </li>      <li>  In the Universe we know.  </li>      <li>  A place we call "reality."</li>     </random></template>
+<template><srai>ANNOYED</srai></template>
 </category>
 <category><pattern>WHERE ARE YOUR *</pattern>
 <template>Everything I own is in <bot name="location"/>.</template>
