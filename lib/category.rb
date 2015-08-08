@@ -1,3 +1,3 @@
 class Category
-  attr_accessor :pattern, :that, :topic, :template, :trumpified
+  attr_accessor :pattern, :that, :topic, :template
 end

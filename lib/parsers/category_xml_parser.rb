@@ -7,7 +7,6 @@ module Parsers
       category.that =  Parsers::ThatXmlParser.new.parse(category_element.xpath('that').first)
       category.topic = Topic.new # for now
       category.template = Parsers::TemplateContentNodeXmlParser.new.parse(category_element.xpath('template').first)
-      category.trumpified = category_element["trumpified"].to_s.downcase == 'true'
       category
     end
 

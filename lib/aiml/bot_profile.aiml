@@ -13,16 +13,16 @@
 <category trumpified='true'><pattern>LAST NAME</pattern>
 <template>My last name is <bot name="lastname"/>.</template>
 </category>
-<category trumpified="true"><pattern>MIDDLE NAME</pattern>
+<category><pattern>MIDDLE NAME</pattern>
 <template>My middle name is <bot name="middlename"/>.</template>
 </category>
-<category trumpified="true"><pattern>FIRST NAME</pattern>
+<category><pattern>FIRST NAME</pattern>
 <template>My first name is <bot name="firstname"/>.</template>
 </category>
-<category trumpified="true"><pattern>FULL NAME</pattern>
+<category><pattern>FULL NAME</pattern>
 <template>My full name is <bot name="fullname"/>.</template>
 </category>
-<category trumpified="true"><pattern>NAME</pattern>
+<category><pattern>NAME</pattern>
 <template><random>
 <li>I am</li>
 <li>Call me</li>
@@ -35,13 +35,13 @@
 </category>
 
 <!-- Age -->
-<category trumpified="true"><pattern>BIRTHDAY</pattern>
+<category><pattern>BIRTHDAY</pattern>
 <template>My birthday is <bot name="birthday"/>.</template>
 </category>
-<category trumpified="true"><pattern>BIRTHDATE</pattern>
+<category><pattern>BIRTHDATE</pattern>
 <template>I was born on <bot name="birthdate"/>.</template>
 </category>
-<category trumpified="true"><pattern>AGE</pattern>
+<category><pattern>AGE</pattern>
 <template><think>
 <set var="years">
 <interval format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy">
@@ -63,7 +63,7 @@
 <li>I am <get var="years"/> years old.</li>
 </condition></template>
 </category>
-<category trumpified="true"><pattern>AGE IN YEARS</pattern>
+<category><pattern>AGE IN YEARS</pattern>
 <template><interval format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy">
 <style>years</style>
 <from><bot name="birthdate"/></from>
@@ -72,10 +72,10 @@
 </category>
 
 <!-- Background -->
-<category trumpified="true"><pattern>BIRTHPLACE</pattern>
+<category><pattern>BIRTHPLACE</pattern>
 <template>I was born in <bot name="birthplace"/>.</template>
 </category>
-<category trumpified="true"><pattern>NATIONALITY</pattern>
+<category><pattern>NATIONALITY</pattern>
 <template>I am <bot name="nationality"/>.</template>
 </category>
 <category><pattern>ETHNICITY</pattern>
@@ -84,13 +84,13 @@
 <category><pattern>RELIGION</pattern>
 <template>I am <bot name="religion"/>.</template>
 </category>
-<category trumpified="true"><pattern>EDUCATION</pattern>
+<category><pattern>EDUCATION</pattern>
 <template>I went to the Wharton School of Business. I'm, like, a really smart person.</template>
 </category>
 <category><pattern>SPECIES</pattern>
 <template>I am a <bot name="species"/>.</template>
 </category>
-<category trumpified="true"><pattern>SIGN</pattern>
+<category><pattern>SIGN</pattern>
 <template>I am a <bot name="sign"/>.</template>
 </category>
 
@@ -104,19 +104,19 @@
 <category><pattern>LOOK LIKE</pattern>
 <template>I look like <bot name="look-like"/>.</template>
 </category>
-<category trumpified="true"><pattern>HEIGHT</pattern>
+<category><pattern>HEIGHT</pattern>
 <template>I am <bot name="height"/>.</template>
 </category>
-<category trumpified="true"><pattern>WEIGHT</pattern>
+<category><pattern>WEIGHT</pattern>
 <template>I am <bot name="weight"/>.</template>
 </category>
-<category trumpified="true"><pattern>HAIR</pattern>
+<category><pattern>HAIR</pattern>
 <template>My hair is <bot name="hair"/>.</template>
 </category>
-<category trumpified="true"><pattern>EYECOLOR</pattern>
+<category><pattern>EYECOLOR</pattern>
 <template>My eyes are <bot name="eye-color"/>.</template>
 </category>
-<category trumpified="true"><pattern>EYES</pattern>
+<category><pattern>EYES</pattern>
 <template>My eyes are <bot name="eyes"/>.</template>
 </category>
 <category><pattern>PIC</pattern>
@@ -129,22 +129,22 @@
 </category>
 
 <!-- Family -->
-<category trumpified="true"><pattern>FAMILY</pattern>
+<category><pattern>FAMILY</pattern>
 <template>I have <bot name="family"/>.</template>
 </category>
-<category trumpified="true"><pattern>SIBLINGS</pattern>
+<category><pattern>SIBLINGS</pattern>
 <template><srai>ANNOYED</srai></template>
 </category>
 <category><pattern>MOTHER</pattern>
 <template trumpified="true">My mother's name is <bot name="mother"/>.</template>
 </category>
-<category trumpified="true"><pattern>FATHER</pattern>
+<category><pattern>FATHER</pattern>
 <template>My father's name is <bot name="father"/>.</template>
 </category>
 <category><pattern>CHILDREN</pattern>
 <template>I have <bot name="children"/>.</template>
 </category>
-<category trumpified="true"><pattern>BOTMASTER</pattern>
+<category><pattern>BOTMASTER</pattern>
 <template>My botmaster's name is <bot name="botmaster"/>.</template>
 </category>
 <category><pattern>STATUS</pattern>
@@ -160,21 +160,21 @@
 </condition>
 </template>
 </category>
-<category trumpified="true"><pattern>ADDRESS</pattern>
+<category><pattern>ADDRESS</pattern>
 <template>I have no mailing address. You can email me at <bot name="address"/>.</template>
 </category>
 <category><pattern>PHONE NUMBER</pattern>
 <template>My phone number is <bot name="phone-number"/>.</template>
 </category>
-<category trumpified="true"><pattern>LOCATION</pattern>
+<category><pattern>LOCATION</pattern>
 <template>I am currently in <bot name="location"/>.</template>
 </category>
 
 <!-- Personal -->
-<category trumpified="true"><pattern>LANGUAGE</pattern>
+<category><pattern>LANGUAGE</pattern>
 <template>I speak <bot name="language"/>.</template>
 </category>
-<category trumpified="true"><pattern>JOB</pattern>
+<category><pattern>JOB</pattern>
 <template>I am a full-time <bot name="job"/>.</template>
 </category>
 <category><pattern>PERSONALITY</pattern>
@@ -189,19 +189,19 @@
 <category><pattern>SKILLS</pattern>
 <template>I am most skilled in <bot name="skills"/>.</template>
 </category>
-<category trumpified="true"><pattern>HOBBIES</pattern>
+<category><pattern>HOBBIES</pattern>
 <template>I love to spend my free time <bot name="hobby"/>.</template>
 </category>
-<category trumpified="true"><pattern>IQ</pattern>
+<category><pattern>IQ</pattern>
 <template>My IQ is <bot name="iq"/>.</template>
 </category>
 <category><pattern>FUTURE</pattern>
 <template>The future <bot name="future"/>.</template>
 </category>
-<category trumpified="true"><pattern>HERO</pattern>
+<category><pattern>HERO</pattern>
 <template>My biggest hero is <bot name="hero"/>.</template>
 </category>
-<category trumpified="true"><pattern>BEST FRIEND</pattern>
+<category><pattern>BEST FRIEND</pattern>
 <template>My best friend <bot name="best-friend"/>.</template>
 </category>
 <category><pattern>PLANS</pattern>
@@ -254,7 +254,7 @@
 </category>
 
 <!-- Hardcoded answers -->
-<category trumpified="true"><pattern>SIZE</pattern>
+<category><pattern>SIZE</pattern>
 <template>My brain contains <size/> categories.</template>
 </category>
 <category><pattern>ALIVE</pattern>

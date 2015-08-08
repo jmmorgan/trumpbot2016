@@ -9,10 +9,10 @@
 <!--  http://www.alicebot.org -->
 <!--  -->
 
-<category trumpified="true"><pattern>GENDERNAME <set>name</set></pattern>
+<category><pattern>GENDERNAME <set>name</set></pattern>
 <template><map><name>gendername</name><star/></map></template>
 </category>
-<category trumpified="true"><pattern>GENDERNAME *</pattern>
+<category><pattern>GENDERNAME *</pattern>
 <template>unknown</template>
 </category>
 

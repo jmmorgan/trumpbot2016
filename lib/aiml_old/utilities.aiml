@@ -9,7 +9,7 @@
 <!--  http://www.alicebot.org -->
 <!--  -->
 
-<category trumpified="true"><pattern>ACRONYM *</pattern>
+<category><pattern>ACRONYM *</pattern>
 <template><think><set var="list"><star/></set>
 <set var="acronym"/>
 </think>
@@ -23,13 +23,13 @@
 
 </condition></template>
 </category>
-<category trumpified="true"><pattern>SUBSTRING * * *</pattern>
+<category><pattern>SUBSTRING * * *</pattern>
 <template>SUBSTRING <star/> <star index="2"/> <star index="3"/>?</template>
 </category>
-<category trumpified="true"><pattern>SUBSTRING <set>number</set> <set>number</set> *</pattern>
+<category><pattern>SUBSTRING <set>number</set> <set>number</set> *</pattern>
 <template><srai>IMPLODE <srai>SUBSTRINGEXPLODE <star/> <star index="2"/> <explode><star index="3"/></explode></srai></srai></template>
 </category>
-<category trumpified="true"><pattern>SUBSTRINGEXPLODE <set>number</set> <set>number</set> *</pattern>
+<category><pattern>SUBSTRINGEXPLODE <set>number</set> <set>number</set> *</pattern>
 <template><think>
 <set var="count">0</set>
 <set var="start"><star/></set>
@@ -44,49 +44,49 @@
 </think><condition value="true" var="print"><first><get var="list"/></first></condition> <think><set var="list"><rest><get var="list"/></rest></set><set var="count"><map name="successor"><get var="count"/></map></set></think> <loop/></li>
 </condition></template>
 </category>
-<category trumpified="true"><pattern>REVERSE *</pattern>
+<category><pattern>REVERSE *</pattern>
 <template><star/></template>
 </category>
-<category trumpified="true"><pattern>REVERSE * *</pattern>
+<category><pattern>REVERSE * *</pattern>
 <template><srai>REVERSE <star index="2"/></srai> <star/></template>
 </category>
-<category trumpified="true"><pattern>REMOVENILS * *</pattern>
+<category><pattern>REMOVENILS * *</pattern>
 <template><star/> <srai>REMOVENILS <star index="2"/></srai></template>
 </category>
-<category trumpified="true"><pattern>REMOVENILS *</pattern>
+<category><pattern>REMOVENILS *</pattern>
 <template><star/></template>
 </category>
-<category trumpified="true"><pattern>REMOVENILS NIL *</pattern>
+<category><pattern>REMOVENILS NIL *</pattern>
 <template><srai>REMOVENILS <star/></srai></template>
 </category>
-<category trumpified="true"><pattern>REMOVENILS NIL</pattern>
+<category><pattern>REMOVENILS NIL</pattern>
 <template><template/></template>
 </category>
-<category trumpified="true"><pattern>LASTLETTER *</pattern>
+<category><pattern>LASTLETTER *</pattern>
 <template>The last letter of <star/> is: <srai>LASTITEM <explode><star/></explode></srai></template>
 </category>
-<category trumpified="true"><pattern>LASTITEM * *</pattern>
+<category><pattern>LASTITEM * *</pattern>
 <template><srai>LASTITEM <star index="2"/></srai></template>
 </category>
-<category trumpified="true"><pattern>LASTITEM *</pattern>
+<category><pattern>LASTITEM *</pattern>
 <template><star/></template>
 </category>
-<category trumpified="true"><pattern>COUNTWORDS *</pattern>
+<category><pattern>COUNTWORDS *</pattern>
 <template>1</template>
 </category>
-<category trumpified="true"><pattern>COUNTWORDS * *</pattern>
+<category><pattern>COUNTWORDS * *</pattern>
 <template><map name="successor"><srai>COUNTWORDS <star index="2"/></srai></map></template>
 </category>
-<category trumpified="true"><pattern>NORMALIZE *</pattern>
+<category><pattern>NORMALIZE *</pattern>
 <template><normalize><star/></normalize></template>
 </category>
-<category trumpified="true"><pattern>PLUSIFY *</pattern>
+<category><pattern>PLUSIFY *</pattern>
 <template><star/></template>
 </category>
-<category trumpified="true"><pattern>PLUSIFY * *</pattern>
+<category><pattern>PLUSIFY * *</pattern>
 <template><star/>+<srai>PLUSIFY <star index="2"/></srai></template>
 </category>
-<category trumpified="true"><pattern>GOOGLEURL *</pattern>
+<category><pattern>GOOGLEURL *</pattern>
 <template>
 <condition name="env">
 <li value="browser">
@@ -98,16 +98,16 @@
 </condition>
 </template>
 </category>
-<category trumpified="true"><pattern>FIRSTTWOWORDS * * *</pattern>
+<category><pattern>FIRSTTWOWORDS * * *</pattern>
 <template><star/> <star index="2"/></template>
 </category>
-<category trumpified="true"><pattern>FIRSTTWOWORDS * *</pattern>
+<category><pattern>FIRSTTWOWORDS * *</pattern>
 <template><star/> <star index="2"/></template>
 </category>
-<category trumpified="true"><pattern>FIRSTTWOWORDS *</pattern>
+<category><pattern>FIRSTTWOWORDS *</pattern>
 <template><star/></template>
 </category>
-<category trumpified="true"><pattern>ODDEVEN <set>number</set></pattern>
+<category><pattern>ODDEVEN <set>number</set></pattern>
 <template><think><set var="number"><star/></set></think>
 <condition var="number">
 <li value="0"><star/> is even.</li>
@@ -115,7 +115,7 @@
 <li><think><set var="number"><map><name>predecessor</name><get var="number"/></map></set><set var="number"><map><name>predecessor</name><get var="number"/></map></set></think><loop/></li>
 </condition></template>
 </category>
-<category trumpified="true"><pattern>PICK A NUMBER # <set>number</set> # <set>number</set></pattern>
+<category><pattern>PICK A NUMBER # <set>number</set> # <set>number</set></pattern>
 <template><think>
 lower = <set var="lower"><srai>SMALLEROF <star index="2"/> <star index="4"/></srai></set>
 upper = <set var="upper"><srai>LARGEROF <star index="2"/> <star index="4"/></srai></set>
@@ -128,7 +128,7 @@ upper = <set var="upper"><srai>LARGEROF <star index="2"/> <star index="4"/></sra
 </think>
 
 <learn>
-<category trumpified="true">
+<category>
 <pattern>PICKNUMBER</pattern>
 <template><random><eval><get var="lilist"/></eval></random>
 </template>
@@ -137,13 +137,13 @@ upper = <set var="upper"><srai>LARGEROF <star index="2"/> <star index="4"/></sra
 
 <set name="pick"><srai>PICKNUMBER</srai></set></template>
 </category>
-<category trumpified="true"><pattern>WHAT NUMBER DID YOU *</pattern>
+<category><pattern>WHAT NUMBER DID YOU *</pattern>
 <template><condition name="pick">
 <li value="unknown">I haven't picked on yet.</li>
 <li>I picked <get var="pick"/>.</li>
 </condition></template>
 </category>
-<category trumpified="true"><pattern>SETHESHE *</pattern>
+<category><pattern>SETHESHE *</pattern>
 <template><think>
 <set var="gender"><srai>GENDERNAME <star/></srai></set>
 <set name="pronoun">he</set>
@@ -154,7 +154,7 @@ upper = <set var="upper"><srai>LARGEROF <star index="2"/> <star index="4"/></sra
 </condition>
 </think></template>
 </category>
-<category trumpified="true"><pattern>AGE FROM <set>month</set> <set>number</set> <set>number</set></pattern>
+<category><pattern>AGE FROM <set>month</set> <set>number</set> <set>number</set></pattern>
 <template><think>
 <set var="from"><set var="m"><star/></set> <set var="d"><star index="2"/></set>, <set var="y"><star index="3"/></set></set>
 <set var="years">
@@ -177,31 +177,31 @@ upper = <set var="upper"><srai>LARGEROF <star index="2"/> <star index="4"/></sra
 <li><get var="years"/> years old</li>
 </condition></template>
 </category>
-<category trumpified="true"><pattern>LARGEROF 0 <set>number</set></pattern>
+<category><pattern>LARGEROF 0 <set>number</set></pattern>
 <template><star/></template>
 </category>
-<category trumpified="true"><pattern>LARGEROF <set>number</set> 0</pattern>
+<category><pattern>LARGEROF <set>number</set> 0</pattern>
 <template><star/></template>
 </category>
-<category trumpified="true"><pattern>SMALLEROF 0 <set>number</set></pattern>
+<category><pattern>SMALLEROF 0 <set>number</set></pattern>
 <template>0</template>
 </category>
-<category trumpified="true"><pattern>SMALLEROF <set>number</set> 0</pattern>
+<category><pattern>SMALLEROF <set>number</set> 0</pattern>
 <template>0</template>
 </category>
-<category trumpified="true"><pattern>LARGEROF <set>number</set> <set>number</set></pattern>
+<category><pattern>LARGEROF <set>number</set> <set>number</set></pattern>
 <template><map><name>successor</name><srai>LARGEROF <map><name>predecessor</name><star/></map> <map><name>predecessor</name><star index="2"/></map></srai></map></template>
 </category>
-<category trumpified="true"><pattern>SMALLEROF <set>number</set> <set>number</set></pattern>
+<category><pattern>SMALLEROF <set>number</set> <set>number</set></pattern>
 <template><map><name>successor</name><srai>SMALLEROF <map><name>predecessor</name><star/></map> <map><name>predecessor</name><star index="2"/></map></srai></map></template>
 </category>
-<category trumpified="true"><pattern>ADD * PLUS *</pattern>
+<category><pattern>ADD * PLUS *</pattern>
 <template><srai>WHAT IS <star/> PLUS <star index="2"/></srai></template>
 </category>
-<category trumpified="true"><pattern>ATOMICLISTMEMBER *</pattern>
+<category><pattern>ATOMICLISTMEMBER *</pattern>
 <template>FALSE</template>
 </category>
-<category trumpified="true"><pattern>ATOMICLISTMEMBER * *</pattern>
+<category><pattern>ATOMICLISTMEMBER * *</pattern>
 <template><think><set name="isequalto"><srai>IS <star/> EQUALTO <star index="2"/></srai></set>
 </think>
 <condition name="isequalto">
@@ -209,7 +209,7 @@ upper = <set var="upper"><srai>LARGEROF <star index="2"/> <star index="4"/></sra
 <li>false</li>
 </condition></template>
 </category>
-<category trumpified="true"><pattern>ATOMICLISTMEMBER * * *</pattern>
+<category><pattern>ATOMICLISTMEMBER * * *</pattern>
 <template><think><set name="isequalto"><srai>IS <star/> EQUALTO <star index="2"/></srai></set>
 </think>
 <condition name="isequalto">
@@ -217,7 +217,7 @@ upper = <set var="upper"><srai>LARGEROF <star index="2"/> <star index="4"/></sra
 <li><srai>ATOMICLISTMEMBER <star/> <star index="3"/></srai></li>
 </condition></template>
 </category>
-<category trumpified="true"><pattern>COUNT TO <set>number</set></pattern>
+<category><pattern>COUNT TO <set>number</set></pattern>
 <template><think><set name="count">0</set>
 </think>
 <condition name="count">
@@ -225,10 +225,10 @@ upper = <set var="upper"><srai>LARGEROF <star index="2"/> <star index="4"/></sra
 <li><set name="count"><map><name>successor</name><get name="count"/></map></set> <loop/></li>
 </condition></template>
 </category>
-<category trumpified="true"><pattern>COUNTLETTERS</pattern>
+<category><pattern>COUNTLETTERS</pattern>
 <template>0</template>
 </category>
-<category trumpified="true"><pattern>COUNTLETTERS *</pattern>
+<category><pattern>COUNTLETTERS *</pattern>
 <template><think>
 <set var="letters"><explode><star/></explode> end</set>
 <set var="count">0</set>
@@ -240,32 +240,32 @@ upper = <set var="upper"><srai>LARGEROF <star index="2"/> <star index="4"/></sra
 <set var="count"><map><name>successor</name><get var="count"/></map></set></think> <loop/></li>
 </condition></template>
 </category>
-<category trumpified="true"><pattern>DELETE MY * LIST</pattern>
+<category><pattern>DELETE MY * LIST</pattern>
 <template>Deleting your list.
 <learn>
-<category trumpified="true"><pattern>MY <eval><star/></eval> LIST</pattern>
+<category><pattern>MY <eval><star/></eval> LIST</pattern>
 <template>NIL</template>
 </category>
 </learn></template>
 </category>
-<category trumpified="true"><pattern>DELETE MY LIST</pattern>
+<category><pattern>DELETE MY LIST</pattern>
 <template>Deleting your list.
 <learn>
-<category trumpified="true"><pattern>MYLIST</pattern>
+<category><pattern>MYLIST</pattern>
 <template>NIL</template>
 </category>
 </learn></template>
 </category>
-<category trumpified="true"><pattern>FIRSTLETTER *</pattern>
+<category><pattern>FIRSTLETTER *</pattern>
 <template><star/></template>
 </category>
-<category trumpified="true"><pattern>FIRSTLETTER * *</pattern>
+<category><pattern>FIRSTLETTER * *</pattern>
 <template><star/></template>
 </category>
-<category trumpified="true"><pattern>FORMATPHONENUMBER *</pattern>
+<category><pattern>FORMATPHONENUMBER *</pattern>
 <template><star/></template>
 </category>
-<category trumpified="true"><pattern>FORMATPHONENUMBER * *</pattern>
+<category><pattern>FORMATPHONENUMBER * *</pattern>
 <template><think>
 <set name="firstword"><lowercase><star/></lowercase></set>
 </think>
@@ -277,163 +277,163 @@ upper = <set var="upper"><srai>LARGEROF <star index="2"/> <star index="4"/></sra
 <li><star/><srai>FORMATPHONENUMBER <star index="2"/></srai></li>
 </condition></template>
 </category>
-<category trumpified="true"><pattern>GENERATE PASSWORD</pattern>
+<category><pattern>GENERATE PASSWORD</pattern>
 <template><srai>IMPLODE <srai>RANDOMCHAR</srai><srai>RANDOMCHAR</srai><srai>RANDOMCHAR</srai><srai>RANDOMCHAR</srai><srai>RANDOMCHAR</srai><srai>RANDOMCHAR</srai><srai>RANDOMCHAR</srai><srai>RANDOMCHAR</srai></srai></template>
 </category>
-<category trumpified="true"><pattern>IMPLODE</pattern>
+<category><pattern>IMPLODE</pattern>
 <template><template/></template>
 </category>
-<category trumpified="true"><pattern>IMPLODE *</pattern>
+<category><pattern>IMPLODE *</pattern>
 <template><star/></template>
 </category>
-<category trumpified="true"><pattern>IMPLODE * *</pattern>
+<category><pattern>IMPLODE * *</pattern>
 <template><srai> IMPLODE <star/></srai><srai>IMPLODE <star index="2"/></srai></template>
 </category>
-<category trumpified="true"><pattern>INPUT</pattern>
+<category><pattern>INPUT</pattern>
 <template><input index="1"/></template>
 </category>
-<category trumpified="true"><pattern>INPUT 2</pattern>
+<category><pattern>INPUT 2</pattern>
 <template><input index="2"/></template>
 </category>
-<category trumpified="true"><pattern>INPUT 3</pattern>
+<category><pattern>INPUT 3</pattern>
 <template><input index="3"/></template>
 </category>
-<category trumpified="true"><pattern>INPUT 4</pattern>
+<category><pattern>INPUT 4</pattern>
 <template><input index="4"/></template>
 </category>
-<category trumpified="true"><pattern>ISADIGIT *</pattern>
+<category><pattern>ISADIGIT *</pattern>
 <template>FALSE</template>
 </category>
-<category trumpified="true"><pattern>ISADIGIT 0</pattern>
+<category><pattern>ISADIGIT 0</pattern>
 <template>TRUE</template>
 </category>
-<category trumpified="true"><pattern>ISADIGIT 1</pattern>
+<category><pattern>ISADIGIT 1</pattern>
 <template>TRUE</template>
 </category>
-<category trumpified="true"><pattern>ISADIGIT 2</pattern>
+<category><pattern>ISADIGIT 2</pattern>
 <template>TRUE</template>
 </category>
-<category trumpified="true"><pattern>ISADIGIT 3</pattern>
+<category><pattern>ISADIGIT 3</pattern>
 <template>TRUE</template>
 </category>
-<category trumpified="true"><pattern>ISADIGIT 4</pattern>
+<category><pattern>ISADIGIT 4</pattern>
 <template>TRUE</template>
 </category>
-<category trumpified="true"><pattern>ISADIGIT 5</pattern>
+<category><pattern>ISADIGIT 5</pattern>
 <template>TRUE</template>
 </category>
-<category trumpified="true"><pattern>ISADIGIT 6</pattern>
+<category><pattern>ISADIGIT 6</pattern>
 <template>TRUE</template>
 </category>
-<category trumpified="true"><pattern>ISADIGIT 7</pattern>
+<category><pattern>ISADIGIT 7</pattern>
 <template>TRUE</template>
 </category>
-<category trumpified="true"><pattern>ISADIGIT 8</pattern>
+<category><pattern>ISADIGIT 8</pattern>
 <template>TRUE</template>
 </category>
-<category trumpified="true"><pattern>ISADIGIT 9</pattern>
+<category><pattern>ISADIGIT 9</pattern>
 <template>TRUE</template>
 </category>
-<category trumpified="true"><pattern>ISANAME * *</pattern>
+<category><pattern>ISANAME * *</pattern>
 <template><srai>ISANAME <star/></srai></template>
 </category>
-<category trumpified="true"><pattern>ISANEMAILADDRESS *</pattern>
+<category><pattern>ISANEMAILADDRESS *</pattern>
 <template>FALSE</template>
 </category>
-<category trumpified="true"><pattern>ISANEMAILADDRESS * AT * DOT *</pattern>
+<category><pattern>ISANEMAILADDRESS * AT * DOT *</pattern>
 <template>TRUE</template>
 </category>
-<category trumpified="true"><pattern>ISANEMAILADDRESS UNKNOWN</pattern>
+<category><pattern>ISANEMAILADDRESS UNKNOWN</pattern>
 <template>FALSE</template>
 </category>
-<category trumpified="true"><pattern>ISANUMBER *</pattern>
+<category><pattern>ISANUMBER *</pattern>
 <template>FALSE</template>
 </category>
-<category trumpified="true"><pattern>ISANUMBER <set>number</set></pattern>
+<category><pattern>ISANUMBER <set>number</set></pattern>
 <template>TRUE</template>
 </category>
-<category trumpified="true"><pattern>ISAPHONENUMBER *</pattern>
+<category><pattern>ISAPHONENUMBER *</pattern>
 <template>FALSE</template>
 </category>
-<category trumpified="true"><pattern>ISAPHONENUMBER <set>number</set></pattern>
+<category><pattern>ISAPHONENUMBER <set>number</set></pattern>
 <template>TRUE</template>
 </category>
-<category trumpified="true"><pattern>ISAPHONENUMBER <set>number</set> *</pattern>
+<category><pattern>ISAPHONENUMBER <set>number</set> *</pattern>
 <template><srai>ISAPHONENUMBER <star/></srai></template>
 </category>
-<category trumpified="true"><pattern>ISAPHONENUMBER DASH *</pattern>
+<category><pattern>ISAPHONENUMBER DASH *</pattern>
 <template><srai>ISAPHONENUMBER <star/></srai></template>
 </category>
-<category trumpified="true"><pattern>ISAPHONENUMBER LPAREN *</pattern>
+<category><pattern>ISAPHONENUMBER LPAREN *</pattern>
 <template><srai>ISAPHONENUMBER <star/></srai></template>
 </category>
-<category trumpified="true"><pattern>ISAPHONENUMBER PLUS *</pattern>
+<category><pattern>ISAPHONENUMBER PLUS *</pattern>
 <template><srai>ISAPHONENUMBER <star/></srai></template>
 </category>
-<category trumpified="true"><pattern>ISAPHONENUMBER RPAREN *</pattern>
+<category><pattern>ISAPHONENUMBER RPAREN *</pattern>
 <template><srai>ISAPHONENUMBER <star/></srai></template>
 </category>
-<category trumpified="true"><pattern>ISSHORTANSWER *</pattern>
+<category><pattern>ISSHORTANSWER *</pattern>
 <template>TRUE</template>
 </category>
-<category trumpified="true"><pattern>ISSHORTANSWER * *</pattern>
+<category><pattern>ISSHORTANSWER * *</pattern>
 <template>TRUE</template>
 </category>
-<category trumpified="true"><pattern>ISSHORTANSWER * * *</pattern>
+<category><pattern>ISSHORTANSWER * * *</pattern>
 <template>TRUE</template>
 </category>
-<category trumpified="true"><pattern>ISSHORTANSWER * * * *</pattern>
+<category><pattern>ISSHORTANSWER * * * *</pattern>
 <template>FALSE</template>
 </category>
-<category trumpified="true"><pattern>LEARNEQUAL * EQUALTO *</pattern>
+<category><pattern>LEARNEQUAL * EQUALTO *</pattern>
 <template><learn>
-<category trumpified="true">
+<category>
 <pattern>TESTEQUAL <eval><star/></eval> EQUALTO <eval><star/></eval></pattern>
 <template>true</template>
 </category>
-<category trumpified="true">
+<category>
 <pattern>TESTEQUAL <eval><star/></eval> EQUALTO *</pattern>
 <template>false</template>
 </category>
-<category trumpified="true">
+<category>
 <pattern>TESTEQUAL * EQUALTO <eval><star/></eval></pattern>
 <template>false</template>
 </category>
 </learn></template>
 </category>
-<category trumpified="true"><pattern>LOGICALAND FALSE</pattern>
+<category><pattern>LOGICALAND FALSE</pattern>
 <template>FALSE</template>
 </category>
-<category trumpified="true"><pattern>LOGICALAND FALSE *</pattern>
+<category><pattern>LOGICALAND FALSE *</pattern>
 <template>FALSE</template>
 </category>
-<category trumpified="true"><pattern>LOGICALAND TRUE</pattern>
+<category><pattern>LOGICALAND TRUE</pattern>
 <template>TRUE</template>
 </category>
-<category trumpified="true"><pattern>LOGICALAND TRUE *</pattern>
+<category><pattern>LOGICALAND TRUE *</pattern>
 <template><srai>LOGICALAND <star/></srai></template>
 </category>
-<category trumpified="true"><pattern>LOGICALOR FALSE</pattern>
+<category><pattern>LOGICALOR FALSE</pattern>
 <template>FALSE</template>
 </category>
-<category trumpified="true"><pattern>LOGICALOR FALSE *</pattern>
+<category><pattern>LOGICALOR FALSE *</pattern>
 <template><srai>LOGICALOR <star/></srai></template>
 </category>
-<category trumpified="true"><pattern>LOGICALOR TRUE</pattern>
+<category><pattern>LOGICALOR TRUE</pattern>
 <template>TRUE</template>
 </category>
-<category trumpified="true"><pattern>LOGICALOR TRUE *</pattern>
+<category><pattern>LOGICALOR TRUE *</pattern>
 <template>TRUE</template>
 </category>
-<category trumpified="true"><pattern>MY * LIST</pattern>
+<category><pattern>MY * LIST</pattern>
 <template>Would you like to make a <star/> list?</template>
 </category>
 
-<category trumpified="true"><pattern>LASTWORD *</pattern>
+<category><pattern>LASTWORD *</pattern>
 <template><srai>NTHWORD <srai>SENTENCELENGTH <star/></srai> <star/></srai></template>
 </category>
 
-<category trumpified="true"><pattern>NTHWORD <set>number</set> *</pattern>
+<category><pattern>NTHWORD <set>number</set> *</pattern>
 <template><think>
 <set var="nth"><star/></set>
 <set var="count">1</set>
@@ -450,7 +450,7 @@ upper = <set var="upper"><srai>LARGEROF <star index="2"/> <star index="4"/></sra
 </condition></template>
 </category>
 
-<category trumpified="true"><pattern>NTH <set>number</set> *</pattern>
+<category><pattern>NTH <set>number</set> *</pattern>
 <template><think>
 <set var="nth"><star/></set>
 <set var="count">1</set>
@@ -466,16 +466,16 @@ The <map><name>number2ordinal</name><get var="nth"/></map> letter of "<star inde
 </think> <loop/></li>
 </condition></template>
 </category>
-<category trumpified="true"><pattern>NTH 0 *</pattern>
+<category><pattern>NTH 0 *</pattern>
 <template><star/> has no zeroth letter.</template>
 </category>
-<category trumpified="true"><pattern>PERSON *</pattern>
+<category><pattern>PERSON *</pattern>
 <template><person><star/></person></template>
 </category>
-<category trumpified="true"><pattern>PREDECESSOR <set>number</set></pattern>
+<category><pattern>PREDECESSOR <set>number</set></pattern>
 <template><map><name>predecessor</name><star/></map></template>
 </category>
-<category trumpified="true"><pattern>RANDOMCHAR</pattern>
+<category><pattern>RANDOMCHAR</pattern>
 <template><think><set name="randomchar">
 <random>
 <li>0</li>
@@ -521,7 +521,7 @@ The <map><name>number2ordinal</name><get var="nth"/></map> letter of "<star inde
 <li><uppercase><get name="randomchar"/></uppercase></li>
 </random></template>
 </category>
-<category trumpified="true"><pattern>RANDOMLETTER</pattern>
+<category><pattern>RANDOMLETTER</pattern>
 <template><random>
 <li>A</li>
 <li>B</li>
@@ -551,148 +551,148 @@ The <map><name>number2ordinal</name><get var="nth"/></map> letter of "<star inde
 <li>Z</li>
 </random></template>
 </category>
-<category trumpified="true"><pattern>REMAININGWORDS</pattern>
+<category><pattern>REMAININGWORDS</pattern>
 <template>undefined</template>
 </category>
-<category trumpified="true"><pattern>REMAININGWORDS *</pattern>
+<category><pattern>REMAININGWORDS *</pattern>
 <template>undefined</template>
 </category>
-<category trumpified="true"><pattern>REMAININGWORDS * *</pattern>
+<category><pattern>REMAININGWORDS * *</pattern>
 <template><star index="2"/></template>
 </category>
-<category trumpified="true"><pattern>FIRSTWORD</pattern>
+<category><pattern>FIRSTWORD</pattern>
 <template>undefined</template>
 </category>
-<category trumpified="true"><pattern>FIRSTWORD *</pattern>
+<category><pattern>FIRSTWORD *</pattern>
 <template><star/></template>
 </category>
-<category trumpified="true"><pattern>FIRSTWORD * *</pattern>
+<category><pattern>FIRSTWORD * *</pattern>
 <template><star/></template>
 </category>
-<category trumpified="true"><pattern>REQUEST</pattern>
+<category><pattern>REQUEST</pattern>
 <template><request index="1"/></template>
 </category>
-<category trumpified="true"><pattern>REQUEST 2</pattern>
+<category><pattern>REQUEST 2</pattern>
 <template><request index="2"/></template>
 </category>
-<category trumpified="true"><pattern>REQUEST 3</pattern>
+<category><pattern>REQUEST 3</pattern>
 <template><request index="3"/></template>
 </category>
-<category trumpified="true"><pattern>REQUEST 4</pattern>
+<category><pattern>REQUEST 4</pattern>
 <template><request index="4"/></template>
 </category>
-<category trumpified="true"><pattern>RESPONSE</pattern>
+<category><pattern>RESPONSE</pattern>
 <template><response index="1"/></template>
 </category>
-<category trumpified="true"><pattern>RESPONSE 2</pattern>
+<category><pattern>RESPONSE 2</pattern>
 <template><response index="2"/></template>
 </category>
-<category trumpified="true"><pattern>RESPONSE 3</pattern>
+<category><pattern>RESPONSE 3</pattern>
 <template><response index="3"/></template>
 </category>
-<category trumpified="true"><pattern>RESPONSE 4</pattern>
+<category><pattern>RESPONSE 4</pattern>
 <template><response index="4"/></template>
 </category>
-<category trumpified="true"><pattern>SENTENCELENGTH</pattern>
+<category><pattern>SENTENCELENGTH</pattern>
 <template>0</template>
 </category>
-<category trumpified="true"><pattern>SENTENCELENGTH ALICE</pattern>
+<category><pattern>SENTENCELENGTH ALICE</pattern>
 <template>5</template>
 </category>
-<category trumpified="true"><pattern>SENTENCELENGTH *</pattern>
+<category><pattern>SENTENCELENGTH *</pattern>
 <template>1</template>
 </category>
-<category trumpified="true"><pattern>SENTENCELENGTH * *</pattern>
+<category><pattern>SENTENCELENGTH * *</pattern>
 <template><map><name>successor</name><srai>SENTENCELENGTH <star index="2"/></srai></map></template>
 </category>
-<category trumpified="true"><pattern>SUCCESSOR</pattern>
+<category><pattern>SUCCESSOR</pattern>
 <template>0</template>
 </category>
-<category trumpified="true"><pattern>SUCCESSOR <set>number</set></pattern>
+<category><pattern>SUCCESSOR <set>number</set></pattern>
 <template><map><name>successor</name><star/></map></template>
 </category>
-<category trumpified="true"><pattern>THAT</pattern>
+<category><pattern>THAT</pattern>
 <template><that/></template>
 </category>
-<category trumpified="true"><pattern>THAT 1 1</pattern>
+<category><pattern>THAT 1 1</pattern>
 <template><that index="1,1"/></template>
 </category>
-<category trumpified="true"><pattern>THAT 1 2</pattern>
+<category><pattern>THAT 1 2</pattern>
 <template><that index="1,2"/></template>
 </category>
-<category trumpified="true"><pattern>THAT 1 3</pattern>
+<category><pattern>THAT 1 3</pattern>
 <template><that index="1,3"/></template>
 </category>
-<category trumpified="true"><pattern>THAT 1 4</pattern>
+<category><pattern>THAT 1 4</pattern>
 <template><that index="1,4"/></template>
 </category>
-<category trumpified="true"><pattern>THAT 2 1</pattern>
+<category><pattern>THAT 2 1</pattern>
 <template><that index="2,1"/></template>
 </category>
-<category trumpified="true"><pattern>THAT 2 2</pattern>
+<category><pattern>THAT 2 2</pattern>
 <template><that index="2,2"/></template>
 </category>
-<category trumpified="true"><pattern>THAT 2 3</pattern>
+<category><pattern>THAT 2 3</pattern>
 <template><that index="2,3"/></template>
 </category>
-<category trumpified="true"><pattern>THAT 2 4</pattern>
+<category><pattern>THAT 2 4</pattern>
 <template><that index="2,4"/></template>
 </category>
-<category trumpified="true"><pattern>XMLITEMIZE *</pattern>
+<category><pattern>XMLITEMIZE *</pattern>
 <template>undefined</template>
 </category>
-<category trumpified="true"><pattern>XMLITEMIZE CONS * CONS *</pattern>
+<category><pattern>XMLITEMIZE CONS * CONS *</pattern>
 <template><item><star/></item><srai>XMLITEMIZE CONS <star index="2"/></srai></template>
 </category>
-<category trumpified="true"><pattern>XMLITEMIZE CONS * NIL</pattern>
+<category><pattern>XMLITEMIZE CONS * NIL</pattern>
 <template><item><star/></item></template>
 </category>
-<category trumpified="true"><pattern>XMLITEMIZE NIL</pattern>
+<category><pattern>XMLITEMIZE NIL</pattern>
 <template>Your list is empty.</template>
 </category>
-<category trumpified="true"><pattern>MATHTERM <set>number</set></pattern>
+<category><pattern>MATHTERM <set>number</set></pattern>
 <template><star/></template>
 </category>
-<category trumpified="true"><pattern>MATHTERM <set>numbername</set></pattern>
+<category><pattern>MATHTERM <set>numbername</set></pattern>
 <template><map><name>name2number</name><star/></map></template>
 </category>
-<category trumpified="true"><pattern>MATHTERM PI</pattern>
+<category><pattern>MATHTERM PI</pattern>
 <template>3.14159265359</template>
 </category>
-<category trumpified="true"><pattern>MATHTERM PLUS</pattern>
+<category><pattern>MATHTERM PLUS</pattern>
 <template>+</template>
 </category>
-<category trumpified="true"><pattern>MATHTERM STAR</pattern>
+<category><pattern>MATHTERM STAR</pattern>
 <template>*</template>
 </category>
-<category trumpified="true"><pattern>MATHTERM TIMES</pattern>
+<category><pattern>MATHTERM TIMES</pattern>
 <template>*</template>
 </category>
-<category trumpified="true"><pattern>MATHTERM SLASH</pattern>
+<category><pattern>MATHTERM SLASH</pattern>
 <template>/</template>
 </category>
-<category trumpified="true"><pattern>MATHTERM POINT</pattern>
+<category><pattern>MATHTERM POINT</pattern>
 <template>.</template>
 </category>
-<category trumpified="true"><pattern>MATHTERM MINUS</pattern>
+<category><pattern>MATHTERM MINUS</pattern>
 <template>-</template>
 </category>
-<category trumpified="true"><pattern>MATHTERM DASH</pattern>
+<category><pattern>MATHTERM DASH</pattern>
 <template>-</template>
 </category>
-<category trumpified="true"><pattern>MATHTERM LPAREN</pattern>
+<category><pattern>MATHTERM LPAREN</pattern>
 <template>(</template>
 </category>
-<category trumpified="true"><pattern>MATHTERM RPAREN</pattern>
+<category><pattern>MATHTERM RPAREN</pattern>
 <template>)</template>
 </category>
-<category trumpified="true"><pattern>MATHTERM *</pattern>
+<category><pattern>MATHTERM *</pattern>
 <template>NOT A MATH TERM</template>
 </category>
-<category trumpified="true"><pattern>MATHFORMULA _ SQUARED</pattern>
+<category><pattern>MATHFORMULA _ SQUARED</pattern>
 <template><srai>MATHFORMULA <star/> UPARROW 2</srai></template>
 </category>
-<category trumpified="true"><pattern>MATHFORMULA _ UPARROW *</pattern>
+<category><pattern>MATHFORMULA _ UPARROW *</pattern>
 <template><think>
 <set var="f1"><srai>MATHFORMULA <star/></srai></set>
 <set var="f2"><srai>MATHFORMULA <star index="2"/></srai></set>
@@ -707,7 +707,7 @@ The <map><name>number2ordinal</name><get var="nth"/></map> letter of "<star inde
 </li>
 </condition></template>
 </category>
-<category trumpified="true"><pattern>MATHFORMULA *</pattern>
+<category><pattern>MATHFORMULA *</pattern>
 <template><think>
 <set var="list"><star/> END</set>
 <set var="result"/>
@@ -726,7 +726,7 @@ The <map><name>number2ordinal</name><get var="nth"/></map> letter of "<star inde
 </condition></think><loop/></li>
 </condition></template>
 </category>
-<category trumpified="true"><pattern>ROUND *</pattern>
+<category><pattern>ROUND *</pattern>
 <template><first><normalize><star/></normalize></first></template>
 </category>
 </aiml>

@@ -10,18 +10,12 @@ NORMAL_SUBSTITUTION_MAP_FILE = MapFile.new("#{Rails.root}/lib/substitutions/norm
 DENORMAL_SUBSTITUTION_MAP_FILE = MapFile.new("#{Rails.root}/lib/substitutions/denormal.substitution")
 
 # Load AIML files
-category_count = 0
-trumpified_category_count = 0
 GRAPHMASTER = Graphmaster.new
 Dir["#{Rails.root}/lib/aiml/*.aiml"].each do |path|
   doc = Nokogiri::XML(File.open(path))
 
   doc.xpath('//category[not(ancestor::learn)]').each do |category_element| 
     category = Parsers::CategoryXmlParser.new.parse(category_element)
-    category_count += 1
-    trumpified_category_count += 1 if category.trumpified
     GRAPHMASTER.add_category(category)
   end
 end
-
-puts "#{trumpified_category_count} of #{category_count} categories Trumpified."
