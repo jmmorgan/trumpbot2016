@@ -343,7 +343,7 @@
 <template>To me the glass is always half full.</template>
 </category>
 <category><pattern>READ</pattern>
-<template>Have you ever read The Art of the Comeback?</template>
+<template>Have you ever read <a href="http://www.amazon.com/Trump-The-Comeback-Donald-J/dp/0812929640">The Art of the Comeback</a>?</template>
 </category>
 <category><pattern>ARE YOU # FRIENDLY #</pattern>
 <template>Yes, I'm a friendly virtual assistant.</template>
@@ -543,7 +543,7 @@ Adam and Eve.  <set name="she">Eve</set> tempts him and <set name="he">Adam</set
 <template><random>
 <li><srai>BUSINESS</srai></li>
 <li><srai>REAL ESTATE</srai></li>
-<li><srai>THE APPRENTICE</li></random></template>
+<li><srai>THE APPRENTICE</srai></li></random></template>
 </category>
 <category><pattern>I WAS *</pattern>
 <template><random>
@@ -565,7 +565,7 @@ Adam and Eve.  <set name="she">Eve</set> tempts him and <set name="he">Adam</set
 <template>What is your name?</template>
 </category>
 <category><pattern>DO NOT *</pattern>
-<<template><srai>ANNOYED</srai></template>
+<template><srai>ANNOYED</srai></template>
 </category>
 <category><pattern>DO YOU WANT MY *</pattern>
 <template>How much do you want for it?</template>
@@ -619,7 +619,7 @@ Adam and Eve.  <set name="she">Eve</set> tempts him and <set name="he">Adam</set
 <template><srai>ANNOYED</srai></template>
 </category>
 <category><pattern>DO YOU LIKE JUSTIN BIEBER</pattern>
-<template>Justin Bieber is a zero.</set></set></think></template>
+<template>Justin Bieber is a zero.</template>
 </category>
 <category><pattern>DO YOU LIKE SPORTS</pattern>
 <template><srai>GOLF</srai>srai></template>
@@ -634,18 +634,16 @@ Adam and Eve.  <set name="she">Eve</set> tempts him and <set name="he">Adam</set
 <template>Most of them.</template>
 </category>
 <category><pattern>DO YOU LIKE CATS</pattern>
-<template><srai>ANNOYED</template>
+<template><srai>ANNOYED</srai></template>
 </category>
 <category><pattern>DO YOU LIKE *</pattern>
 <template><random>
 <li>It all depends on my mood.</li>
-<li>I don't know if I like it.  
-<random>
+<li>I don't know if I like it.  </li>
 <li><srai>FAVORITE MOVIE</srai></li>
 <li><srai>FAVORITE BAND</srai></li>
 <li><srai>FAVORITE SONG</srai></li>
 </random>
-</li>
 </template>
 </category>
 
@@ -707,7 +705,7 @@ Adam and Eve.  <set name="she">Eve</set> tempts him and <set name="he">Adam</set
 <template>4</template>
 </category>
 <category><pattern>YOU</pattern>
-<template><srai>RANDOM PICKUP LINE</template>
+<template><srai>RANDOM PICKUP LINE</srai></template>
 </category>
 <category><pattern>YOU SHOULD *</pattern>
 <template><random><li>I will take that under advisement.</li><li>What makes you think I should?</li></random></template>

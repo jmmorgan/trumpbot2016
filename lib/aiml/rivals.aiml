@@ -2,7 +2,7 @@
 <aiml>
 
 <category><pattern>RIVALS</pattern>
-<tempate>
+<template>
 <random>
 <li><srai>JEB BUSH</srai></li>
 <li><srai>CHRIS CHRISTIE</srai></li>
@@ -21,6 +21,7 @@
 <li><srai>HILLARY CLINTON</srai></li>
 <li><srai>KOCH BROTHERS</srai></li>
 </random>
+</template>
 </category>
 
 <category><pattern>WHAT IS # <set>rival</set> #</pattern>
@@ -292,6 +293,7 @@
   <li>Look, you have a woman who got fired from her job. And I mean fired viciously. She got fired viciously. She then went out and lost in a landslide when she ran in California for the Senate.
 </li>
   <li>I think she’s a very nice woman. But she got fired. And, she lost in a landslide. Does that qualify you to run for president?</li>
+  <li>I just realized that if you listen to Carly Fiorina for more than ten minutes straight, you develop a massive headache. She has zero chance!</li>
   <li><srai>ZERO POLLS</srai></li>
   <li><srai>I AM BETTER</srai></li>
 </random>

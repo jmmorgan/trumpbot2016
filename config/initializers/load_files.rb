@@ -12,7 +12,8 @@ DENORMAL_SUBSTITUTION_MAP_FILE = MapFile.new("#{Rails.root}/lib/substitutions/de
 # Load AIML files
 GRAPHMASTER = Graphmaster.new
 Dir["#{Rails.root}/lib/aiml/*.aiml"].each do |path|
-  doc = Nokogiri::XML(File.open(path))
+  puts "Loading #{path}"
+  doc = Nokogiri::XML(File.open(path)) {|config| config.strict}
 
   doc.xpath('//category[not(ancestor::learn)]').each do |category_element| 
     category = Parsers::CategoryXmlParser.new.parse(category_element)

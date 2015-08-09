@@ -31,11 +31,11 @@ describe PathMatcher do
     context 'pattern contains one leading *' do
 
       it 'returns the matching path' do
-        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'COWS PRODUCE MILK')
+        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'TABLE SALT IS WHITE')
         path = path_match_result.path
         #puts path
-        expect(path.count).to eq 6
-        expect(path.slice(1,2).join(' ')).to eq '* MILK'
+        expect(path.count).to eq 7
+        expect(path.slice(1,3).join(' ')).to eq '* IS <set>color</set>'
       end
     end
 
@@ -46,7 +46,7 @@ describe PathMatcher do
         path = path_match_result.path
         #puts path
         expect(path.count).to eq 7
-        expect(path.slice(1,3).join(' ')).to eq '* GAVE *'
+        expect(path.slice(1,3).join(' ')).to eq '* <set>was</set> *'
       end
     end
 
@@ -114,11 +114,11 @@ describe PathMatcher do
       end
 
       it 'returns the appropriate path when set does not contains a matching value' do
-        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'WHAT DOES A VELOCIRAPTOR SAY')
+        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'IS A VELOCIRAPTOR A BIRD')
         path = path_match_result.path
         #puts path
         expect(path.count).to eq 8
-        expect(path.slice(1,4).join(' ')).to eq 'WHAT DOES A *'
+        expect(path.slice(1,4).join(' ')).to eq 'IS * A BIRD'
       end
 
     end

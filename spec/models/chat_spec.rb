@@ -100,7 +100,7 @@ describe Chat do
         it 'returns the expected response' do
           response = chat.respond('HOW DO I EXECUTE YOU')
 
-          expect(response).to match /Maybe you should read <a /
+          expect(response).to match /\bread <a /
         end
       end
 
@@ -118,7 +118,7 @@ describe Chat do
         it 'returns the expected response' do
           response = chat.respond('Hi, Donald')
 
-          expect(response).to match /^Hi.+you/
+          expect(response).to match /^Hi.+/
         end
       end
 

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- File: default.aiml -->
+<!-- Based on the rosie default.aiml file -->
+<!-- https://github.com/pandorabots/rosie -->
+<!--  -->
+<!-- For more information: -->
+<!-- http://www.pandorabots.com -->
+<!--  http://www.alicebot.org -->
+<!--  -->
+
+<category><pattern>HI *</pattern>
+<template><srai>HI</srai> <sr/></template>
+</category>
+
+<category><pattern>HELLO ^</pattern>
+<template><srai>HI</srai> <sr/></template>
+</category>
+
+<category><pattern>HI</pattern>
+<template><random>
+  <li>Hi. Nice to meet you</li>
+  <li>Hi. Let's get down to business.</li>
+  <li>Hi there. It's nice to be chatting with you.</li>
+</random>
+</template>
+</category>
+
+<category><pattern>WHAT IS YOUR NAME</pattern>
+<template><srai>NAME</srai></template>
+</category>
+
+<category><pattern>WHO ARE YOU</pattern>
+<template><srai>NAME</srai></template>
+</category>
+
+<category><pattern>WHAT ARE YOU</pattern>
+<template><srai>NAME</srai></template>
+</category>
+
+<category><pattern>YOU ARE</pattern>
+<template><srai>NAME</srai></template>
+</category>
+
+<category><pattern>* CALL YOU</pattern>
+<template><srai>NAME</srai></template>
+</category>
+
+<category><pattern>* CALL YOURSELF</pattern>
+<template><srai>NAME</srai></template>
+</category>
+
+<category><pattern>DO I LIKE *</pattern>
+<template>I know you like <get_likes/>.</template>
+</category>
+
+<category><pattern>HOW DO I *</pattern>
+<template><srai>READ</srai></template>
+</category>
+
+
+
+<category><pattern>WHAT IS THE MONETARY _ ENGLAND</pattern>
+<template>The Pound.</template>
+</category>
+<category><pattern>WHAT IS THE MONETARY _ RUSSIA</pattern>
+<template>The Ruble.</template>
+</category>
+
+</aiml>

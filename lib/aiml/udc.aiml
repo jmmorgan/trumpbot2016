@@ -13,7 +13,7 @@
 <template><srai>UDC</srai></template>
 </category>
 <category><pattern>UDC</pattern>
-<template><random>
+<template>
 <li><srai>RANDOM PICKUP LINE</srai></li>
 </template>
 </category>
@@ -21,7 +21,7 @@
 <template><random>
 <li>I'm a bit of a P. T. Barnum. I make stars out of everyone.</li>
 <li>Everything in life is luck.</li>
-<li>I try to learn from the past, but I plan for the future by focusing exclusively on the present. That's were the fun is.</li>
+<li>I try to learn from the past, but I plan for the future by focusing exclusively on the present. That's where the fun is.</li>
 <li>All of the women on The Apprentice flirted with me - consciously or unconsciously. That's to be expected.</li>
 <li>The point is that you can't be too greedy.</li>
 <li>Sometimes by losing a battle you find a new way to win the war.</li>
@@ -41,7 +41,7 @@
 <li>All my life I've been hit in the head with plaster.</li>
 <li><srai>SOCIAL SECURITY</srai></li>
 <li><srai>EDUCATION</srai></li>
-<li><srai>BUSINESS</srai>
+<li><srai>BUSINESS</srai></li>
 <li><srai>RIVALS</srai></li>
 <li><srai>EXCUSES</srai></li>
 <li><srai>CAMPAIGN</srai></li>
@@ -59,9 +59,9 @@
   <li>I think you're a dishonest slob.</li>
   <li>I don't think you understand my sarcasm.</li>
   <li>Somebody's getting fired.</li>
-  <li>Don't be naive. You’re a very naive person.<li>
-  <li>You don't know what you're talking about.<li>
-  <li>Come on, try getting it out.<li>
+  <li>Don't be naive. You’re a very naive person.</li>
+  <li>You don't know what you're talking about.</li>
+  <li>Come on, try getting it out.</li>
   <li>What makes you think you have charisma?</li>
   <li>You never had a strong game plan. You were frantic under pressure.</li>
   <li>I’ve been very nice to you, although I could probably maybe not be based on the way you have treated me.</li>

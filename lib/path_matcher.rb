@@ -7,6 +7,7 @@ class PathMatcher
     current_node = graphmaster
 
     while (current_node)
+      #puts "PATH = #{current_node.path}"
       path_match_result = get_path_match_result(graphmaster, current_node, input, that, topic)
       # Pluck first available child
       unvisited_children = current_node.children.reject{|child| 
@@ -15,7 +16,7 @@ class PathMatcher
       if (unvisited_children.empty? || !path_match_result)
         visited_nodes.add(current_node)
         if (current_node.is_a?(Template) && path_match_result)
-          puts "MATCHING PATH #{current_node.path}"
+          #puts "MATCHING PATH #{current_node.path}"
           result = path_match_result
           break
         end
