@@ -5,7 +5,6 @@ class WelcomeController < ApplicationController
   def index
     if (input = params[:input])
       @response = Interactors::QueryBot.new(@request).call
-      output = @response[:output]
     end
   end
 
