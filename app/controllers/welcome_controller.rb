@@ -18,9 +18,4 @@ class WelcomeController < ApplicationController
     send_data @chat.transcript, filename: 'conversation.txt'
   end
 
-  private 
-
-  def persist_chat
-    @chat_session.update_attributes(chat_json: @chat.to_json)
-  end
 end

@@ -16,4 +16,8 @@ class ApplicationController < ActionController::Base
     session[:chat_session_id] = @chat_session.id
     @request[:chat] = @chat = (@chat_session.chat || Chat.new(@chat_session.id))
   end
+
+  def persist_chat
+    @chat_session.update_attributes(chat_json: @chat.to_json)
+  end
 end

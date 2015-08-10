@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   post '/reset' => 'welcome#reset'
   post '/download' => 'welcome#download'
 
+  match '/train', to: 'training#index', via: ['get', 'post']
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
