@@ -5,7 +5,5 @@ and an AIML 2.0 interpreter.
 
 # Next up TODOs
 
-- Keep pushing ahead with the fun part of adding personality by editing/adding proprties files and AIML files.
-- Log all requests/responses to database. Associate each exchange with session so conversations can be recreated.
-- Look at implementing support for `<that>` (then maybe `<topic>`).
-- Look at improving or doing away with denormal.substitution
+- Build a training interface to accelerate the building of TrumpBot's brain (maybe use Pandarobots trainer as a guide)
+- Implement support for `<topic>`
