@@ -10,7 +10,7 @@ describe Chat do
       it 'returns an expected response' do
         response = chat.respond('Hello')
 
-        expect(response).to match /^Hi.*/
+        expect(response.outputs.first).to match /^Hi.*/
       end
 
       context 'template contains bot element' do
@@ -18,7 +18,7 @@ describe Chat do
         it 'returns the expected response' do
           response = chat.respond('What is your name?')
 
-          expect(response).to match /TrumpBot\.$/
+          expect(response.outputs.first).to match /TrumpBot\.$/
         end
       end
 
@@ -27,7 +27,7 @@ describe Chat do
         it 'returns the expected response' do
           response = chat.respond('How old are you?')
 
-          expect(response).to match /\d+ years old\.$/
+          expect(response.outputs.first).to match /\d+ years old\.$/
         end
       end
 
@@ -36,7 +36,7 @@ describe Chat do
         it 'returns the expected response' do
           response = chat.respond('Are you on Facebook?')
 
-          expect(response).to match /My Facebook page/
+          expect(response.outputs.first).to match /My Facebook page/
         end
       end
 
@@ -45,7 +45,7 @@ describe Chat do
         it 'returns the expected response' do
           response = chat.respond('My name is Joe')
 
-          expect(response).to match /\bJoe\b/
+          expect(response.outputs.first).to match /\bJoe\b/
         end
       end
 
@@ -54,7 +54,7 @@ describe Chat do
         it 'returns the expected response' do
           response = chat.respond('VOCABULARY')
 
-          expect(response).to match /I am able to recognize \d+ individual words/
+          expect(response.outputs.first).to match /I am able to recognize \d+ individual words/
         end
       end
 
@@ -63,7 +63,7 @@ describe Chat do
         it 'returns the expected response' do
           response = chat.respond('SIZE')
 
-          expect(response).to match /My brain contains \d+ categories/
+          expect(response.outputs.first).to match /My brain contains \d+ categories/
         end
       end
 
@@ -72,7 +72,7 @@ describe Chat do
         it 'returns the expected response' do
           response = chat.respond('SPELL baseball')
           #puts response
-          expect(response).to match /Baseball: B A S E B A L L/
+          expect(response.outputs.first).to match /Baseball: B A S E B A L L/
         end
       end
 
@@ -82,7 +82,7 @@ describe Chat do
           response = chat.respond('I like to fish')
           response = chat.respond('Do I like reading?')
 
-          expect(response).to match /I know you like fish/
+          expect(response.outputs.first).to match /I know you like fish/
         end
       end
 
@@ -91,7 +91,7 @@ describe Chat do
         it 'returns the expected response' do
           response = chat.respond('SING')
 
-          expect(response).to match /<br\/>/
+          expect(response.outputs.first).to match /<br\/>/
         end
       end
 
@@ -100,7 +100,7 @@ describe Chat do
         it 'returns the expected response' do
           response = chat.respond('HOW DO I EXECUTE YOU')
 
-          expect(response).to match /\bread <a /
+          expect(response.outputs.first).to match /\bread <a /
         end
       end
 
@@ -109,7 +109,7 @@ describe Chat do
         it 'returns the expected response' do
           response = chat.respond('NORMALIZE e l v i s')
           #puts response
-          expect(response).to match /Elvis/
+          expect(response.outputs.first).to match /Elvis/
         end
       end
 
@@ -118,7 +118,7 @@ describe Chat do
         it 'returns the expected response' do
           response = chat.respond('Hi, Donald')
 
-          expect(response).to match /^Hi.+/
+          expect(response.outputs.first).to match /^Hi.+/
         end
       end
 
@@ -127,7 +127,7 @@ describe Chat do
         it 'returns the expected response' do
           response = chat.respond('A turkey is from Turkey')
 
-          expect(response).to match /Is it always from Turkey?/
+          expect(response.outputs.first).to match /Is it always from Turkey?/
         end
 
         it 'stores learned categories' do
@@ -147,7 +147,7 @@ describe Chat do
 
           response = chat.respond('Where is a peacock found?')
           #puts response
-          expect(response).to match /A peacock is from Connecticut/
+          expect(response.outputs.first).to match /A peacock is from Connecticut/
         end
 
         it 'restricts learning to a specific chat session' do
@@ -156,7 +156,7 @@ describe Chat do
           response1 = chat.respond('Where is a woodchuck found?')
           response2 = Chat.new(99).respond('Where is a woodchuck found?')
 
-          expect(response1).to match /a woodchuck is from New York/i
+          expect(response1.outputs.first).to match /a woodchuck is from New York/i
           expect(response2).not_to match /New York/i
         end
       end
@@ -169,7 +169,7 @@ describe Chat do
             it 'returns the expected response' do
               response = chat.respond('What do you think of Mark Cuban?')
 
-              expect(response).to match /^Mark Cuban/
+              expect(response.outputs.first).to match /^Mark Cuban/
             end
 
           end
@@ -183,7 +183,7 @@ describe Chat do
           before do 
             response = chat.respond("What's my name?")
 
-            expect(response).to match /What is your name\?$/
+            expect(response.outputs.first).to match /What is your name\?$/
 
             chat.respond('Heisenberg')
           end
@@ -191,7 +191,7 @@ describe Chat do
           it "sets the user's name" do
             response = chat.respond("What's my name?")
 
-            expect(response).to match /Heisenberg/
+            expect(response.outputs.first).to match /Heisenberg/
           end
         end
       end

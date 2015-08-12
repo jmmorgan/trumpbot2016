@@ -61,3 +61,22 @@
  a:link, a:visited {
    color: white;
  }
+
+.train {
+   font-weight: bold;
+   color: white;
+   text-align: left;
+ }
+
+ .spacer {
+   display: block;
+   height: 30px;
+ }
+
+ .train-response {
+   width: 500px;
+   margin: 0 auto;
+   color: white;
+   text-align: left;
+   line-height: 20px;
+ }

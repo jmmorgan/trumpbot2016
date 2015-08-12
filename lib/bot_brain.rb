@@ -6,6 +6,7 @@ class BotBrain
   def respond(input, previous_requests, predicates)
     result = {}
     sentences = normalize(input)
+    result[:inputs] = sentences
     path_matcher = PathMatcher.new
     normalized_responses = []
     sentences.each do |sentence|
@@ -15,7 +16,7 @@ class BotBrain
     end
 
     predicates['that'] = normalize(normalized_responses.last.to_s).last || '*' 
-    result[:response] =  denormalize(normalized_responses, previous_requests).join(' ') 
+    result[:responses] =  denormalize(normalized_responses, previous_requests)
     train(predicates)
     result
   end

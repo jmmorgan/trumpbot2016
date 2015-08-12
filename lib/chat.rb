@@ -12,11 +12,11 @@ class Chat
     @requests << input
     @predicates['_chat_session_id'] = @chat_session_id
     
-    brain_bot_response = BotBrain.new.respond(input, @requests, predicates)
-    response = brain_bot_response[:response]
+    bot_brain_response = BotBrain.new.respond(input, @requests, predicates)
+    response = bot_brain_response[:responses].join(' ')
 
     @responses << response
-    response
+    ChatResponse.new(bot_brain_response)
   end
 
   def clear

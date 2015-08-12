@@ -1,1 +1,29 @@
 .title Training Interface
+
+%form{method: 'post'}
+  %p.train 
+    Human:
+    %input{type: 'text', size: '60', name: 'input'}
+    %input{type: 'submit', value: 'Talk'}
+  .spacer
+  %p.train 
+    That:
+    %input{type: 'text', size: '60', name: 'that'}
+    .spacer
+  %p.train 
+    Topic:
+    %input{type: 'text', size: '60', name: 'topic'}
+    %input{type: 'hidden', name: 'authenticity_token', value: form_authenticity_token}
+
+- if @response
+  %hr
+
+  .train-response
+    %b Human:
+    = params[:input]
+    .spacer
+    %b Matched:
+    = @response[:matched_pattern]
+    .spacer
+    %b TrumBot2016:
+    = @response[:output]
