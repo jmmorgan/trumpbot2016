@@ -42,6 +42,19 @@
 </template>
 </category>
 
+<category><pattern># <set>rival</set> <set>be</set> _</pattern>
+<template>
+<srai><star index="1"/></srai>
+</template>
+</category>
+
+<category><pattern># <set>rival</set> <set>was</set> _</pattern>
+<template>
+<srai><star index="1"/></srai>
+</template>
+</category>
+
+
 <category><pattern>BUSH</pattern>
 <template><srai>JEB BUSH</srai></template>
 </category>

@@ -5,134 +5,195 @@ describe PathMatcher do
   let(:path_matcher) { PathMatcher.new }
 
   describe '#get_matching_path' do
+    let(:chat_session_id) { 1 }
+    let(:that) { '*' }
+    let(:path_match_result) { path_matcher.get_matching_path(GRAPHMASTER, input_pattern, chat_session_id, that) }
+    let(:path) { path_match_result.path }
+
+    before do
+      #puts path
+    end
 
     context 'pattern contains text only' do
+      let(:input_pattern) { 'HOW DO YOU WORK' }
 
       it 'returns the matching path' do
-        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'HOW DO YOU WORK')
-        path = path_match_result.path
-        #puts path
         expect(path.count).to eq 8
         expect(path.slice(1,4).join(' ')).to eq 'HOW DO YOU WORK'
+      end
+
+      it 'returns the matching pattern' do
+        expect(path_match_result.pattern.to_s).to eq 'HOW DO YOU WORK'
       end
     end
 
     context 'pattern contains one trailing *' do
+      let(:input_pattern) { 'MY FAVORITE COLOR IS PLAID' }
 
       it 'returns the matching path' do
-        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'MY FAVORITE COLOR IS PLAID')
-        path = path_match_result.path
-        #puts path
         expect(path.count).to eq 9
         expect(path.slice(1,5).join(' ')).to eq 'MY FAVORITE COLOR IS *'
+      end
+
+      it 'returns the matching pattern' do
+        expect(path_match_result.pattern.to_s).to eq 'MY FAVORITE COLOR IS *'
       end
     end
 
     context 'pattern contains one leading *' do
+      let(:input_pattern) { 'TABLE SALT IS WHITE' }
 
       it 'returns the matching path' do
-        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'TABLE SALT IS WHITE')
-        path = path_match_result.path
-        #puts path
         expect(path.count).to eq 7
         expect(path.slice(1,3).join(' ')).to eq '* IS <set>color</set>'
+      end
+
+      it 'returns the matching pattern' do
+        expect(path_match_result.pattern.to_s).to eq '* IS <set>color</set>'
       end
     end
 
     context 'pattern contains leading and trailing *' do
+      let(:input_pattern) { 'TRIXIEBEAN GAVE ME A SCARE' }
 
       it 'returns the matching path' do
-        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'TRIXIEBEAN GAVE ME A SCARE')
-        path = path_match_result.path
-        #puts path
         expect(path.count).to eq 7
         expect(path.slice(1,3).join(' ')).to eq '* <set>was</set> *'
+      end
+
+      it 'returns the matching pattern' do
+        expect(path_match_result.pattern.to_s).to eq '* <set>was</set> *'
       end
     end
 
     context 'pattern contains $' do
+      let(:input_pattern) { 'EMAIL JON TO SAY I AM GOING' }
+
       it 'returns the matching path' do
-        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'EMAIL JON TO SAY I AM GOING')
-        path = path_match_result.path
-        #puts path
         expect(path.count).to eq 9
         expect(path.slice(1,5).join(' ')).to eq '$EMAIL * TO SAY *'
+      end
+
+      it 'returns the matching pattern' do
+        expect(path_match_result.pattern.to_s).to eq '$EMAIL * TO SAY *'
       end
     end
 
     context 'pattern contains #' do
-      it 'returns the matching path when words are matched' do
-        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'IN WHICH ROOMS DO YOU WATCH PORN')
-        path = path_match_result.path
-        #puts path
-        expect(path.count).to eq 10
-        expect(path.slice(1,6).join(' ')).to eq '# DO YOU WATCH PORN #'
+      let(:input_pattern) { 'HOW DO YOU WORK' }
+
+      context 'words are matched' do
+        let(:input_pattern) { 'IN WHICH ROOMS DO YOU WATCH PORN' }
+
+        it 'returns the matching path' do
+          expect(path.count).to eq 10
+          expect(path.slice(1,6).join(' ')).to eq '# DO YOU WATCH PORN #'
+        end
+
+        it 'returns the matching pattern' do
+          expect(path_match_result.pattern.to_s).to eq '# DO YOU WATCH PORN #'
+        end
       end
 
-      it 'returns the matching path when zero words match' do
-        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'DO YOU WATCH PORN')
-        path = path_match_result.path
-        #puts path
-        expect(path.count).to eq 10
-        expect(path.slice(1,6).join(' ')).to eq '# DO YOU WATCH PORN #'
+      context 'words are matched' do
+        let(:input_pattern) { 'DO YOU WATCH PORN' }
+
+        it 'returns the matching path when zero words match' do
+          expect(path.count).to eq 10
+          expect(path.slice(1,6).join(' ')).to eq '# DO YOU WATCH PORN #'
+        end
+
+        it 'returns the matching pattern' do
+          expect(path_match_result.pattern.to_s).to eq '# DO YOU WATCH PORN #'
+        end
       end
     end
 
     context 'pattern contains _' do
-      it 'returns the matching path when words are matched' do
-        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'WHAT IS THE MONETARY UNIT IN ENGLAND')
-        path = path_match_result.path
-        #puts path
-        expect(path.count).to eq 10
-        expect(path.slice(1,6).join(' ')).to eq 'WHAT IS THE MONETARY _ ENGLAND'
+      context 'words are matched' do
+        let(:input_pattern) { 'WHAT IS THE MONETARY UNIT IN ENGLAND' }
+
+        it 'returns the matching path' do
+          expect(path.count).to eq 10
+          expect(path.slice(1,6).join(' ')).to eq 'WHAT IS THE MONETARY _ ENGLAND'
+        end
+
+        it 'returns the matching pattern' do
+          expect(path_match_result.pattern.to_s).to eq 'WHAT IS THE MONETARY _ ENGLAND'
+        end
       end
 
-      it 'returns the default when zero words match' do
-        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'WHAT IS THE MONETARY ENGLAND')
-        path = path_match_result.path
-        #puts path
-        expect(path.count).to eq 8
-        expect(path.slice(1,4).join(' ')).to eq '* IS THE *'
+
+      context 'zero words match' do
+        let(:input_pattern) { 'WHAT IS THE MONETARY ENGLAND' }
+
+        it 'returns the default when zero words match' do
+          expect(path.count).to eq 8
+          expect(path.slice(1,4).join(' ')).to eq '* IS THE *'
+        end
+
+        it 'returns the matching pattern' do
+          expect(path_match_result.pattern.to_s).to eq '* IS THE *'
+        end
       end
     end
 
     context 'patters contains a <set> element' do
-      it 'returns the matching path when set contains a matching value' do
-        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'WHAT DO YOU THINK OF JEB BUSH')
-        path = path_match_result.path
-        #puts path
-        expect(path.count).to eq 10
-        expect(path.slice(1,6).join(' ')).to eq 'WHAT DO YOU # <set>rival</set> #'
+      context 'set contains a matching value' do
+        let(:input_pattern) { 'WHAT DO YOU THINK OF JEB BUSH' }
+
+        it 'returns the matching path' do
+          expect(path.count).to eq 10
+          expect(path.slice(1,6).join(' ')).to eq 'WHAT DO YOU # <set>rival</set> #'
+        end
+
+        it 'returns the matching pattern' do
+          expect(path_match_result.pattern.to_s).to eq 'WHAT DO YOU # <set>rival</set> #'
+        end
       end
 
-      it 'returns the matching path when set contains a matching multi-word value' do
-        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'IS ROAD RUNNER A BIRD')
-        path = path_match_result.path
-        #puts path
-        expect(path.count).to eq 8
-        expect(path.slice(1,4).join(' ')).to eq 'IS <set>bird</set> A BIRD'
+      context 'set contains a matching multi-word value' do
+        let(:input_pattern) { 'IS ROAD RUNNER A BIRD' }
+
+        it 'returns the matching path' do
+          expect(path.count).to eq 8
+          expect(path.slice(1,4).join(' ')).to eq 'IS <set>bird</set> A BIRD'
+        end
+
+        it 'returns the matching pattern' do
+          expect(path_match_result.pattern.to_s).to eq 'IS <set>bird</set> A BIRD'
+        end
       end
 
-      it 'returns the appropriate path when set does not contains a matching value' do
-        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'IS A VELOCIRAPTOR A BIRD')
-        path = path_match_result.path
-        #puts path
-        expect(path.count).to eq 8
-        expect(path.slice(1,4).join(' ')).to eq 'IS * A BIRD'
+      context 'set does not contains a matching value' do
+        let(:input_pattern) { 'IS A VELOCIRAPTOR A BIRD' }
+        
+        it 'returns the appropriate path' do
+          expect(path.count).to eq 8
+          expect(path.slice(1,4).join(' ')).to eq 'IS * A BIRD'
+        end
+
+        it 'returns the matching pattern' do
+          expect(path_match_result.pattern.to_s).to eq 'IS * A BIRD'
+        end
       end
 
     end
 
     context 'non-default <that> value is specified' do
+      let(:chat_session_id) { 1 }
+      let(:that) { 'WHAT IS YOUR NAME' }
+      let(:input_pattern) { 'JOE' }
+     
 
       it 'returns the matching path' do
-        path_match_result = path_matcher.get_matching_path(GRAPHMASTER, 'JOE', 1, 'WHAT IS YOUR NAME')
-        path = path_match_result.path
-        #puts path
         expect(path.count).to eq 5
         expect(path.slice(1,2).join(' ')).to eq '<set>name</set> <that>WHAT IS YOUR NAME'
       end
 
+      it 'returns the matching pattern' do
+        expect(path_match_result.pattern.to_s).to eq '<set>name</set>'
+      end
     end
  
 

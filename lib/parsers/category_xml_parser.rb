@@ -2,12 +2,11 @@ module Parsers
   class CategoryXmlParser
 
     def parse(category_element)
-      category = Category.new
-      category.pattern = Parsers::PatternXmlParser.new.parse(category_element.xpath('pattern').first)
-      category.that =  Parsers::ThatXmlParser.new.parse(category_element.xpath('that').first)
-      category.topic = Topic.new # for now
-      category.template = Parsers::TemplateContentNodeXmlParser.new.parse(category_element.xpath('template').first)
-      category
+      pattern = Parsers::PatternXmlParser.new.parse(category_element.xpath('pattern').first)
+      that =  Parsers::ThatXmlParser.new.parse(category_element.xpath('that').first)
+      topic = Topic.new # for now
+      template = Parsers::TemplateContentNodeXmlParser.new.parse(category_element.xpath('template').first)
+      Category.new(pattern, that, topic, template)
     end
 
   end

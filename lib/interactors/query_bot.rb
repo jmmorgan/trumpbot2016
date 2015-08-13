@@ -6,6 +6,7 @@ class Interactors::QueryBot < Interactor
     chat_response = chat.respond(@request[:input])
     @response[:outputs] = chat_response.outputs
     @response[:inputs] = chat_response.inputs
+    @response[:matched_patterns] = chat_response.matched_patterns
     @response
   end
 end

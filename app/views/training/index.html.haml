@@ -16,14 +16,15 @@
     %input{type: 'hidden', name: 'authenticity_token', value: form_authenticity_token}
 
 - if @response
-  %hr
+  - @response[:inputs].reverse.each_index do |i|
+    %hr
 
-  .train-response
-    %b Human:
-    = params[:input]
-    .spacer
-    %b Matched:
-    = @response[:matched_pattern]
-    .spacer
-    %b TrumBot2016:
-    = @response[:output]
+    .train-response
+      %b Human:
+      = @response[:inputs][i]
+      .spacer
+      %b Matched:
+      = @response[:matched_patterns][i]
+      .spacer
+      %b TrumBot2016:
+      = @response[:outputs][i]
