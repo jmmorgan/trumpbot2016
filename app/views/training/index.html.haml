@@ -25,6 +25,10 @@
       .spacer
       %b Matched:
       = @response[:matched_patterns][i]
+      - if (source_file = @response[:source_files][i])
+        &nbsp;(from 
+        %a{href: source_file} #{source_file}
+        ) 
       .spacer
       %b TrumBot2016:
       = @response[:outputs][i]

@@ -25,6 +25,10 @@ describe PathMatcher do
       it 'returns the matching pattern' do
         expect(path_match_result.pattern.to_s).to eq 'HOW DO YOU WORK'
       end
+
+      it 'returns the file where the matching pattern was found' do
+        expect(path_match_result.source_file).to eq 'personality.aiml'
+      end
     end
 
     context 'pattern contains one trailing *' do
@@ -37,6 +41,10 @@ describe PathMatcher do
 
       it 'returns the matching pattern' do
         expect(path_match_result.pattern.to_s).to eq 'MY FAVORITE COLOR IS *'
+      end
+
+      it 'returns the file where the matching pattern was found' do
+        expect(path_match_result.source_file).to eq 'client_profile.aiml'
       end
     end
 
@@ -51,6 +59,10 @@ describe PathMatcher do
       it 'returns the matching pattern' do
         expect(path_match_result.pattern.to_s).to eq '* IS <set>color</set>'
       end
+
+      it 'returns the file where the matching pattern was found' do
+        expect(path_match_result.source_file).to eq 'train.aiml'
+      end
     end
 
     context 'pattern contains leading and trailing *' do
@@ -64,6 +76,10 @@ describe PathMatcher do
       it 'returns the matching pattern' do
         expect(path_match_result.pattern.to_s).to eq '* <set>was</set> *'
       end
+
+      it 'returns the file where the matching pattern was found' do
+        expect(path_match_result.source_file).to eq 'train.aiml'
+      end
     end
 
     context 'pattern contains $' do
@@ -76,6 +92,10 @@ describe PathMatcher do
 
       it 'returns the matching pattern' do
         expect(path_match_result.pattern.to_s).to eq '$EMAIL * TO SAY *'
+      end
+
+      it 'returns the file where the matching pattern was found' do
+        expect(path_match_result.source_file).to eq 'reductions2.aiml'
       end
     end
 
@@ -93,6 +113,10 @@ describe PathMatcher do
         it 'returns the matching pattern' do
           expect(path_match_result.pattern.to_s).to eq '# DO YOU WATCH PORN #'
         end
+
+        it 'returns the file where the matching pattern was found' do
+          expect(path_match_result.source_file).to eq 'inappropriate.aiml'
+        end
       end
 
       context 'words are matched' do
@@ -105,6 +129,10 @@ describe PathMatcher do
 
         it 'returns the matching pattern' do
           expect(path_match_result.pattern.to_s).to eq '# DO YOU WATCH PORN #'
+        end
+
+        it 'returns the file where the matching pattern was found' do
+          expect(path_match_result.source_file).to eq 'inappropriate.aiml'
         end
       end
     end
@@ -121,6 +149,10 @@ describe PathMatcher do
         it 'returns the matching pattern' do
           expect(path_match_result.pattern.to_s).to eq 'WHAT IS THE MONETARY _ ENGLAND'
         end
+
+        it 'returns the file where the matching pattern was found' do
+          expect(path_match_result.source_file).to eq 'default.aiml'
+        end
       end
 
 
@@ -134,6 +166,10 @@ describe PathMatcher do
 
         it 'returns the matching pattern' do
           expect(path_match_result.pattern.to_s).to eq '* IS THE *'
+        end
+
+        it 'returns the file where the matching pattern was found' do
+          expect(path_match_result.source_file).to eq 'train.aiml'
         end
       end
     end
@@ -150,6 +186,10 @@ describe PathMatcher do
         it 'returns the matching pattern' do
           expect(path_match_result.pattern.to_s).to eq 'WHAT DO YOU # <set>rival</set> #'
         end
+
+        it 'returns the file where the matching pattern was found' do
+          expect(path_match_result.source_file).to eq 'rivals.aiml'
+        end
       end
 
       context 'set contains a matching multi-word value' do
@@ -163,6 +203,10 @@ describe PathMatcher do
         it 'returns the matching pattern' do
           expect(path_match_result.pattern.to_s).to eq 'IS <set>bird</set> A BIRD'
         end
+
+        it 'returns the file where the matching pattern was found' do
+          expect(path_match_result.source_file).to eq 'knowledge.aiml'
+        end
       end
 
       context 'set does not contains a matching value' do
@@ -175,6 +219,10 @@ describe PathMatcher do
 
         it 'returns the matching pattern' do
           expect(path_match_result.pattern.to_s).to eq 'IS * A BIRD'
+        end
+
+        it 'returns the file where the matching pattern was found' do
+          expect(path_match_result.source_file).to eq 'knowledge.aiml'
         end
       end
 

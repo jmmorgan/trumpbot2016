@@ -22,6 +22,10 @@ class PathMatchResult
     @graphmaster.category_for_template(@path.last).pattern
   end
 
+  def source_file
+    @graphmaster.category_for_template(@path.last).source_file
+  end
+
   def apply_template(predicates)
     #puts "APPLYING TEMPLATE FOR PATH #{@path}"
     @path.last.apply(self, @graphmaster, predicates)

@@ -16,7 +16,10 @@ Dir["#{Rails.root}/lib/aiml/*.aiml"].each do |path|
   doc = Nokogiri::XML(File.open(path)) {|config| config.strict}
 
   doc.xpath('//category[not(ancestor::learn)]').each do |category_element| 
-    category = Parsers::CategoryXmlParser.new.parse(category_element)
+    category = Parsers::CategoryXmlParser.new.parse(category_element, File.basename(path))
     GRAPHMASTER.add_category(category)
   end
+
+  # Copy file to public
+  `cp #{path} #{Rails.root}/public`
 end
