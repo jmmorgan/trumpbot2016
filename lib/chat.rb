@@ -16,7 +16,7 @@ class Chat
     response = bot_brain_response[:responses].join(' ')
 
     @responses << response
-    ChatResponse.new(bot_brain_response)
+    ChatResponse.new(bot_brain_response, predicates)
   end
 
   def clear

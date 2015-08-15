@@ -6,7 +6,6 @@ and an AIML 2.0 interpreter.
 # Next up TODOs
 
 * Build a training interface to accelerate the building of TrumpBot's brain (maybe use Pandorabots trainer as a guide)
-    * Populate THAT field correctly
     * Populate TOPIC field correctly
     * Implement basic Say Instead
     * Add more items to this list once above are completed.

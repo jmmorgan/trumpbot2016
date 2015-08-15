@@ -1,34 +1,45 @@
-.title Training Interface
+.container
+  .row
 
-%form{method: 'post'}
-  %p.train 
-    Human:
-    %input{type: 'text', size: '60', name: 'input'}
-    %input{type: 'submit', value: 'Talk'}
-  .spacer
-  %p.train 
-    That:
-    %input{type: 'text', size: '60', name: 'that'}
-    .spacer
-  %p.train 
-    Topic:
-    %input{type: 'text', size: '60', name: 'topic'}
-    %input{type: 'hidden', name: 'authenticity_token', value: form_authenticity_token}
+    .title Training Interface
+
+  .row
+    .col-md-5
+
+      - that = @response ? @response['that'] : ''
+
+      %form.form-vertical{method: 'post', role: 'form'}
+        .form-group
+          %label{'for' => 'input'} Human:
+          %input.form_control{type: 'text', size: '60', name: 'input', id: 'input'}
+        .form-group
+          %label{'for' => 'that'} That:
+          %input.form_control{type: 'text', size: '60', name: 'that', id: 'that', value: that}
+        .form-group
+          %label{'for' => 'thopic'} Topic:
+          %input.form_control{type: 'text', size: '60', name: 'topic', id: 'topic'}
+        %button.btn.btn-default{type: 'submit'} Talk
+       
+
+        %input{type: 'hidden', name: 'authenticity_token', value: form_authenticity_token}
 
 - if @response
   - @response[:inputs].reverse.each_index do |i|
-    %hr
+    .row
+      %hr
 
-    .train-response
-      %b Human:
-      = @response[:inputs][i]
-      .spacer
-      %b Matched:
-      = @response[:matched_patterns][i]
-      - if (source_file = @response[:source_files][i])
-        &nbsp;(from 
-        %a{href: source_file} #{source_file}
-        ) 
-      .spacer
-      %b TrumBot2016:
-      = @response[:outputs][i]
+    .row
+
+      .train-response
+        %b Human:
+        = @response[:inputs][i]
+        .spacer
+        %b Matched:
+        = @response[:matched_patterns][i]
+        - if (source_file = @response[:source_files][i])
+          &nbsp;(from 
+          %a{href: source_file} #{source_file}
+          ) 
+        .spacer
+        %b TrumBot2016:
+        = @response[:outputs][i]
