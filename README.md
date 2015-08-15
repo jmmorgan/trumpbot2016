@@ -10,6 +10,9 @@ and an AIML 2.0 interpreter.
     * Populate TOPIC field correctly
     * Implement basic Say Instead
     * Add more items to this list once above are completed.
+* Chat interface improvements
+    * Replace placeholder timestamps with real values
+    * Replace form submissions and page reloads with AJAX calls and DOM updates.	
 * Implement support for `<topic>`
 * Make PatternMatcher and Chat specs independent of production Graphmaster instance.
 * Move away from quick and dirty stuffing of JSON object into chat_sessions table.

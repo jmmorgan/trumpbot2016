@@ -1,36 +1,111 @@
-.title TrumpBot2016
-
 - session_inputs = @chat.requests
 - session_outputs = @chat.responses
 
-- if (last_input = session_inputs.last)
-  .exchange
-    You said: #{last_input}
-    %br
-    TrumpBot2016: #{raw session_outputs.last}
+.container
+  .row
+    .title TrumpBot2016
 
-%form{method: 'post'}
-  %p.ask 
-    Talk:
-    %input{type: 'hidden', name: 'authenticity_token', value: form_authenticity_token}
-    %input{type: 'text', size: '60', name: 'input'}
-    %input{type: 'submit', value: 'Talk'}
+  -# Chat UI grokked from http://bootsnipp.com/snippets/featured/chat-widget
+  .row
+    .col-md-5
+      .panel.panel-primary
+        .panel-heading
+          %span.glyphicon.glyphicon-comment Chat
+          .btn-group.pull-right
+            %button.btn.btn-default.btn-xs.dropdown-toggle{type: "button", 'data-toggle' => "dropdown"}
+              %span.glyphicon.glyphicon-chevron-down
+            %ul.dropdown-menu.slidedown
+              %li
+                %a{href: "#", id: 'download-transcript'}
+                  %span.glyphicon.glyphicon-download
+                    Download Transcript
+              %li
+                %a{href: "#", id: 'reset-conversation'}
+                  %span.glyphicon.glyphicon-erase
+                    Reset Conversation
 
-- if (session_inputs.present?)
-  .conversation
-    .title
-      Conversation
-    - session_inputs.each_index do |i|
-      You said: #{session_inputs[i]}
-      %br
-      TrumpBot2016: #{raw session_outputs[i]}
-      %br
+        .panel-body
+          %ul.chat
+            - session_inputs.each_index do |i|
+              %li.left.clearfix
+                %span.chat-img.pull-left
+                  %img.img-circle{src: "http://placehold.it/50/55C1E7/fff&text=ME", alt: "User Avatar"}
+                .chat-body.clearfix
+                  .header
+                    %strong.primary-font Me 
+                    %small.pull-right.text-muted
+                      %span.glyphicon.glyphicon-time 
+                      14 mins ago
 
-- if (session_inputs.present?)
+                  %p 
+                    #{session_inputs[i]}
+              %li.right.clearfix
+                %span.chat-img.pull-right
+                  %img.img-circle{src: "#{asset_path 'DJT_Headshot_V2_400x400.jpg'}", alt: "TrumpBot Avatar", height: 50}
+                .chat-body.clearfix
+                  .header
+                    %small.text-muted
+                      %span.glyphicon.glyphicon-time 
+                      12 mins ago
+                    %strong.pull-right.primary-font TrumpBot2016 
 
-  %form{method: 'post', action: 'reset'}
-    %input{type: 'hidden', name: 'authenticity_token', value: form_authenticity_token}
-    %input{type: 'submit', value: 'Reset Conversation'}
-  %form{method: 'post', action: 'download'}
-    %input{type: 'hidden', name: 'authenticity_token', value: form_authenticity_token}
-    %input{type: 'submit', value: 'Download Transcript'}
+                  %p 
+                    #{raw session_outputs[i]}
+                    
+                                   
+
+
+        .panel-footer
+          .input-group
+            %input.form-control.input-sm{id: "btn-input", type: "text", placeholder: "Type your message here..."}
+            %span.input-group-btn
+              %button.btn.btn-warning.btn-sm{id: "btn-chat"}
+                Send
+                        
+                            
+
+  .div{style: 'display: none;'}
+
+
+    %form{method: 'post', id: 'send-message-form'}
+      %p.ask 
+        Talk:
+        %input{type: 'hidden', name: 'authenticity_token', value: form_authenticity_token}
+        %input{type: 'text', size: '60', name: 'input', id: 'input'}
+        %input{type: 'submit', value: 'Talk'}
+ 
+
+    %form{method: 'post', action: 'reset', id: 'reset-conversation-form'}
+      %input{type: 'hidden', name: 'authenticity_token', value: form_authenticity_token}
+      %input{type: 'submit', value: 'Reset Conversation'}
+    %form{method: 'post', action: 'download', id: 'download-transcript-form'}
+      %input{type: 'hidden', name: 'authenticity_token', value: form_authenticity_token}
+      %input{type: 'submit', value: 'Download Transcript'}
+
+:javascript
+
+  $(document).ready(function(){
+    $('#download-transcript').on('click', function(){
+      $('#download-transcript-form').submit();
+    });
+    $('#reset-conversation').on('click', function(){
+      $('#reset-conversation-form').submit();
+    });
+    $('#btn-chat').on('click', function(){
+      $('#input').val($('#btn-input').val());
+      $('#send-message-form').submit();
+      $('#btn-input').val('');
+    });
+    
+    $('#btn-input').focus();
+
+    $('#btn-input').on('keypress', function(e){
+      if (e.keyCode == 13){
+        $('#btn-chat').click();
+      }
+    });
+  });
+
+  $(window).load(function() {
+    $('.panel-body').scrollTop($('.panel-body')[0].scrollHeight);
+  });
