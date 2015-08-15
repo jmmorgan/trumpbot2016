@@ -2,6 +2,11 @@ class That < GraphmasterNode
   include TemplateContentNode
   attr_accessor :expression
 
+  def initialize(expression='*')
+    @expression = expression
+    super()
+  end
+
   def ==(other_object)
     return other_object.is_a?(That) && other_object.expression == @expression
   end

@@ -13,8 +13,8 @@ and an AIML 2.0 interpreter.
     * Replace placeholder timestamps with real values
     * Replace form submissions and page reloads with AJAX calls and DOM updates.	
 * Implement support for `<topic>`
-* Make PatternMatcher and Chat specs independent of production Graphmaster instance.
+* Make Chat spec independent of production Graphmaster instance.
 * Move away from quick and dirty stuffing of JSON object into chat_sessions table.
 * Is the whole BotBrain response -> ChatResponse -> QueryBot response flow necessary? Perhaps we should simplify.
-
+* Try to treat TemplateContentNode implementations as immutables (limit setting of ivars to initializer)
 

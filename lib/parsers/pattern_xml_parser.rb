@@ -8,9 +8,7 @@ module Parsers
   class PatternXmlParser
 
     def parse(pattern_element)
-      pattern = Pattern.new
-      pattern.tokens = parse_tokens(pattern_element.children)
-      pattern
+      Pattern.new(parse_tokens(pattern_element.children))
     end
 
     private

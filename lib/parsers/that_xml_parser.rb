@@ -2,9 +2,7 @@ module Parsers
   class ThatXmlParser
 
     def parse(that_element)
-      that = That.new
-      that.expression = that_element ? that_element.content : '*'
-      that
+      That.new(that_element ? that_element.content : '*')
     end
   end
 end

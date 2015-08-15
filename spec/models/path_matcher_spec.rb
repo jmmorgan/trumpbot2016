@@ -3,15 +3,28 @@ require 'rails_helper'
 
 describe PathMatcher do
   let(:path_matcher) { PathMatcher.new }
+  let(:graphmaster) { Graphmaster.new }
 
   describe '#get_matching_path' do
     let(:chat_session_id) { 1 }
     let(:that) { '*' }
-    let(:path_match_result) { path_matcher.get_matching_path(GRAPHMASTER, input_pattern, chat_session_id, that) }
+    let(:path_match_result) { path_matcher.get_matching_path(graphmaster, input_pattern, chat_session_id, that) }
     let(:path) { path_match_result.path }
 
     before do
-      #puts path
+      [
+        ["*", 'udc.aiml'], ["HOW DO YOU WORK", 'personality.aiml'], ['MY FAVORITE COLOR IS *', 'client_profile.aiml'],
+        ["* IS <set>color</set>", 'train.aiml'], ["* <set>was</set> *", 'train.aiml'], 
+        ['$EMAIL * TO SAY *', 'reductions2.aiml'], ["# DO YOU WATCH PORN #", 'inappropriate.aiml'],
+        ['WHAT IS THE MONETARY _ ENGLAND', 'default.aiml'], ["* IS THE *", 'train.aiml'],
+        ['WHAT DO YOU # <set>rival</set> #', 'rivals.aiml'], ["IS <set>bird</set> A BIRD", 'knowledge.aiml'],
+        ["IS * A BIRD", 'knowledge.aiml'], ["<set>name<set>", 'train.aiml', 'WHAT IS YOUR NAME']
+      ].each do |tuple|
+
+        template = Template.new
+        template.tokens = ["I'm confused"] # TODO: Refactor Template so all ivars can be set in initializer
+        graphmaster.add_category(Category.new(parse_input_pattern(tuple[0]), That.new(tuple[2] || '*'), Topic.new('*'), template, tuple[1]))
+      end
     end
 
     context 'pattern contains text only' do
@@ -245,6 +258,10 @@ describe PathMatcher do
     end
  
 
+  end
+
+  def parse_input_pattern(input_pattern)
+    Parsers::PatternXmlParser.new.parse(Nokogiri::XML("<pattern>#{input_pattern}</pattern>").root)
   end
 
 end
