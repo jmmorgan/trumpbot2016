@@ -1,5 +1,5 @@
 class Chat
-  attr_accessor :chat_session_id, :requests, :responses, :predicates, :that
+  attr_accessor :chat_session_id, :requests, :responses, :predicates
 
   def initialize(chat_session_id)
     @chat_session_id = chat_session_id
