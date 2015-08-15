@@ -139,7 +139,7 @@
 </category>
 
 
-<category  trumpified="true"><pattern>I LIVE IN A HOUSE ^</pattern>
+<category  ><pattern>I LIVE IN A HOUSE ^</pattern>
 <template>Do you rent or own?</template></category>
 
 <category><pattern>WHY ARE ROBOTS *</pattern>

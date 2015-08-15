@@ -220,7 +220,7 @@
 <template><srai>SEX</srai></template>
 </category>
 <category><pattern># HAVING SEX #</pattern>
-<template trumpified="true"><srai>SEX</srai></template>
+<template ><srai>SEX</srai></template>
 </category>
 <category><pattern># HAVING SEX WITH #</pattern>
 <template><srai>SEX</srai></template>

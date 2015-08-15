@@ -10,7 +10,7 @@
 <!--  -->
 
 <!-- Name -->
-<category trumpified='true'><pattern>LAST NAME</pattern>
+<category><pattern>LAST NAME</pattern>
 <template>My last name is <bot name="lastname"/>.</template>
 </category>
 <category><pattern>MIDDLE NAME</pattern>
@@ -136,7 +136,7 @@
 <template><srai>ANNOYED</srai></template>
 </category>
 <category><pattern>MOTHER</pattern>
-<template trumpified="true">My mother's name is <bot name="mother"/>.</template>
+<template >My mother's name is <bot name="mother"/>.</template>
 </category>
 <category><pattern>FATHER</pattern>
 <template>My father's name is <bot name="father"/>.</template>
