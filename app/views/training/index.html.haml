@@ -29,17 +29,23 @@
       %hr
 
     .row
+      .col-md-5
 
-      .train-response
-        %b Human:
-        = @response[:inputs][i]
-        .spacer
-        %b Matched:
-        = @response[:matched_patterns][i]
-        - if (source_file = @response[:source_files][i])
-          &nbsp;(from 
-          %a{href: source_file} #{source_file}
-          ) 
-        .spacer
-        %b TrumBot2016:
-        = @response[:outputs][i]
+        .train-response
+          %b Human:
+          = @response[:inputs][i]
+          .spacer
+          %b Matched:
+          = @response[:matched_patterns][i]
+          - if (source_file = @response[:source_files][i])
+            &nbsp;(from 
+            %a{href: source_file} #{source_file}
+            ) 
+          .spacer
+          %b TrumBot2016:
+          = @response[:outputs][i]
+
+          %form.form-vertical{method: 'post', role: 'form'}
+            %input.form_control{type: 'text', size: '60', name: 'say-instead', id: 'say-instead'}
+            %button.btn.btn-default{type: 'submit'} Say Instead
+            %input{type: 'hidden', name: 'authenticity_token', value: form_authenticity_token}

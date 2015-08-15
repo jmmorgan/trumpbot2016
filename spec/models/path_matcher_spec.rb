@@ -3,7 +3,7 @@ require 'rails_helper'
 
 describe PathMatcher do
   let(:path_matcher) { PathMatcher.new }
-  let(:graphmaster) { Graphmaster.new }
+  let(:graphmaster) { Graphmaster.send(:new, false) }
 
   describe '#get_matching_path' do
     let(:chat_session_id) { 1 }

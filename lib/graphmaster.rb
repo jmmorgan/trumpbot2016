@@ -1,9 +1,13 @@
-class Graphmaster < GraphmasterNode
+require 'singleton'
 
-  def initialize
+class Graphmaster < GraphmasterNode
+  include Singleton
+
+  def initialize(load_aiml_files = true)
     @word_nodes = Set.new
     @category_for_template = {}
     super()
+    load_categories if load_aiml_files
   end
 
   # Adds the given Category to this Graphmaster. If chat_session_id is nil this
@@ -40,5 +44,22 @@ class Graphmaster < GraphmasterNode
 
   def word_nodes
     @word_nodes
+  end
+
+  private 
+
+  def load_categories
+    Dir["#{Rails.root}/lib/aiml/*.aiml"].each do |path|
+      puts "Loading #{path}"
+      doc = Nokogiri::XML(File.open(path)) {|config| config.strict}
+
+      doc.xpath('//category[not(ancestor::learn)]').each do |category_element| 
+        category = Parsers::CategoryXmlParser.new.parse(category_element, File.basename(path))
+        add_category(category)
+      end
+
+      # Copy file to public
+      `cp #{path} #{Rails.root}/public`
+    end
   end
 end

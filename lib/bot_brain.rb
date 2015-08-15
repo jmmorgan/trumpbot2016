@@ -10,7 +10,7 @@ class BotBrain
     path_matcher = PathMatcher.new
     normalized_responses = []
     sentences.each do |sentence|
-      path_result = path_matcher.get_matching_path(GRAPHMASTER, sentence, predicates['_chat_session_id'], 
+      path_result = path_matcher.get_matching_path(Graphmaster.instance, sentence, predicates['_chat_session_id'], 
         predicates['that'] || '*', '*')
       result[:matched_patterns] << path_result.pattern
       result[:source_files] << path_result.source_file
@@ -80,7 +80,7 @@ class BotBrain
     if (learned_categories)
       parser = Parsers::CategoryXmlParser.new
       learned_categories.each do |xml|
-        GRAPHMASTER.add_category(parser.parse(Nokogiri::XML(xml).root), chat_session_id)
+        Graphmaster.instance.add_category(parser.parse(Nokogiri::XML(xml).root), chat_session_id)
       end
     end
   end
