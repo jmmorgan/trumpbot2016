@@ -7,4 +7,8 @@ class ChatResponse
     @matched_patterns = bot_brain_response[:matched_patterns]
     @source_files = bot_brain_response[:source_files]
   end
+
+  def [](key)
+    self.send(key)
+  end
 end

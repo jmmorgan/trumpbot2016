@@ -1,9 +1,8 @@
 class Interactor
-  attr_reader :request, :response
+  attr_reader :request
 
   def initialize(request)
     @request = request
-    @response = Response.new
   end
 
 end
