@@ -19,12 +19,6 @@ class Chat
     ChatResponse.new(bot_brain_response, predicates)
   end
 
-  def clear
-    @requests.clear
-    @responses.clear
-    @predicates.clear
-  end
-
   def transcript
     result = ''
     @requests.each_index do |i|

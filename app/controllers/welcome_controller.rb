@@ -15,7 +15,7 @@ class WelcomeController < ApplicationController
   end
 
   def download
-    send_data @chat.transcript, filename: 'conversation.txt'
+    send_data @chat_session.transcript, filename: 'conversation.txt'
   end
 
 end

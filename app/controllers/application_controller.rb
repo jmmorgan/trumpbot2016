@@ -14,10 +14,10 @@ class ApplicationController < ActionController::Base
     # Initializing chat here for now.
     @chat_session = ChatSession.find_by(id: session[:chat_session_id]) || ChatSession.create!(session_id: session.id)
     session[:chat_session_id] = @chat_session.id
-    @request[:chat] = @chat = (@chat_session.chat || Chat.new(@chat_session.id))
+    @request[:chat_session] = @chat_session
   end
 
   def persist_chat
-    @chat_session.update_attributes(chat_json: @chat.to_json)
+    @chat_session.save!
   end
 end

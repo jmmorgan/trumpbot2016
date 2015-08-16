@@ -53,8 +53,7 @@ describe WelcomeController do
   end
 
   describe 'POST download' do
-    let (:chat) { double('chat', transcript: "You: Hi\nTrumBot: Greetings")}
-    let (:chat_session) { double('chat_session', id: 1, chat: chat, update_attributes: true)}
+    let (:chat_session) { double('chat_session', id: 1, update_attributes: true, transcript: "You: Hi\nTrumBot: Greetings", save!: true)}
 
     before do
       allow(ChatSession).to receive(:create!) { chat_session }
