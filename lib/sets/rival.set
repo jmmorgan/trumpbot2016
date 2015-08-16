@@ -25,6 +25,8 @@
   ["Carson"],
   ["George", "Pataki"],
   ["Pataki"],
+  ["Jim", "Gilmore"],
+  ["Gilmore"],
   ["Mitt", "Romney"],
   ["Mitt"],
   ["Romney"],
@@ -53,9 +55,20 @@
   ["Rick", "Santorum"],
   ["Santorum"],
   ["John", "Kasich"],
+  ["Kasich"],
   ["Anderson Cooper"],
   ["Megyn", "Kelly"],
   ["Megan", "Kelly"],
-  ["Meghan", "Kelly"]
+  ["Meghan", "Kelly"],
+  ["Elizabeth", "Warren"],
+  ["Bill", "De", "Blasio"],
+  ["Bill", "DeBlasio"],
+  ["De", "Blasio"],
+  ["DeBlasio"],
+  ["Bernie", "Sanders"],
+  ["Sanders"],
+  ["John", "Kerry"],
+  ["Kerry"],
+  ["Roger", "Stone"]
 
 ]

@@ -57,9 +57,6 @@ class Graphmaster < GraphmasterNode
         category = Parsers::CategoryXmlParser.new.parse(category_element, File.basename(path))
         add_category(category)
       end
-
-      # Copy file to public
-      `cp #{path} #{Rails.root}/public`
     end
   end
 end

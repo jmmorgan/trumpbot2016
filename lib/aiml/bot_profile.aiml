@@ -167,7 +167,11 @@
 <template>My phone number is <bot name="phone-number"/>.</template>
 </category>
 <category><pattern>LOCATION</pattern>
-<template>I am currently in <bot name="location"/>.</template>
+<template><random>
+  <li>I am currently in <bot name="location"/>.</li>
+  <li>I show my apartment to very few people. Presidents, Kings... and they walk in, they look around, and they really can't believe what they're seeing.</li>
+</random>
+</template>
 </category>
 
 <!-- Personal -->

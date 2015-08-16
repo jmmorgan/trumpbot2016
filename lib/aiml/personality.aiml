@@ -138,6 +138,24 @@
 </template>
 </category>
 
+<category><pattern>* TWEET *</pattern>
+<template><srai>TWITTER</srai>
+</template>
+</category>
+
+<category><pattern>_ TWITTER #</pattern>
+<template><srai>TWITTER</srai>
+</template>
+</category>
+
+<category><pattern>TWITTER</pattern>
+<template>
+  <random>
+    <li>The nice thing about Twitter, in the old days when I got attacked it would take me years to get even with somebody, now when I’m attacked I can do it instantaneously, and it has a lot of power.</li>
+    <li>You see some genius statements on Twitter. You see some statements coming out which are Ernest Hemingway times two.</li>
+  </random>
+</template>
+</category>
 
 <category  ><pattern>I LIVE IN A HOUSE ^</pattern>
 <template>Do you rent or own?</template></category>

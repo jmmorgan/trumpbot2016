@@ -190,14 +190,22 @@
 <category><pattern>_ IRAN #</pattern>
 <template>
   
-<srai>DEFENSE</srai>
+  <random>
+    <li>Iran is going to go down as one of the worst deals in history.</li>
+    <li><srai>DEFENSE</srai></li>
+  </random>
 </template>
 </category>
 
+
+
 <category><pattern>_ IRAQ #</pattern>
 <template>
-  
-<srai>DEFENSE</srai>
+  <random>
+    <li><srai>SADDAM</srai></li>
+    <li>I was against that war from the beginning. That's a big thing because that shows judgment.</li>
+    <li><srai>DEFENSE</srai></li>
+  </random>
 </template>
 </category>
 
@@ -237,21 +245,41 @@
 <category><pattern>_ TERRORISM #</pattern>
 <template>
   
-<srai>CAMPAIGN</srai>
+<random>
+    <li><srai>SADDAM</srai></li>
+    <li><srai>DEFENSE</srai></li>
+  </random>
 </template>
 </category>
 
 <category><pattern>_ TERROR #</pattern>
 <template>
   
-<srai>CAMPAIGN</srai>
+<random>
+    <li><srai>SADDAM</srai></li>
+    <li><srai>DEFENSE</srai></li>
+  </random>
 </template>
 </category>
 
 <category><pattern>_ ISIS #</pattern>
 <template>
   
-<srai>CAMPAIGN</srai>
+<random>
+    <li><srai>SADDAM</srai></li>
+    <li><srai>DEFENSE</srai></li>
+  </random>
+</template>
+</category>
+
+<category><pattern>SADDAM</pattern>
+<template>
+  <random>
+    <li>We were a hell of a lot better off with Saddam Hussein holding that crazy country together than we are now with it split up into ISIS and five other factions.
+    </li>
+    <li>If only we could have Saddam back, as bad as he was, rather than $2 trillion spent, thousands of lives lost and all these wounded warriors.
+    </li>
+  </random>
 </template>
 </category>
 
@@ -284,28 +312,50 @@
 <category><pattern>_ GUNS #</pattern>
 <template>
   
-<srai>CAMPAIGN</srai>
+<random>
+    <li><srai>POLICE</srai></li>
+    <li><srai>CAMPAIGN</srai></li>
+  </random>
 </template>
 </category>
 
 <category><pattern>_ GUN CONTROL #</pattern>
 <template>
   
-<srai>CAMPAIGN</srai>
+<random>
+    <li><srai>POLICE</srai></li>
+    <li><srai>CAMPAIGN</srai></li>
+  </random>
 </template>
 </category>
 
 <category><pattern>_ DRUGS #</pattern>
 <template>
   
-<srai>CAMPAIGN</srai>
+<random>
+    <li><srai>POLICE</srai></li>
+    <li><srai>CAMPAIGN</srai></li>
+  </random>
 </template>
 </category>
 
 <category><pattern>_ CRIME #</pattern>
 <template>
   
-<srai>CAMPAIGN</srai>
+<random>
+    <li><srai>POLICE</srai></li>
+    <li><srai>CAMPAIGN</srai></li>
+  </random>
+</template>
+</category>
+
+<category><pattern>POLICE</pattern>
+<template>
+  
+<random>
+    <li><srai>POLICE</srai></li>
+    <li><srai>CAMPAIGN</srai></li>
+  </random>
 </template>
 </category>
 
@@ -326,21 +376,60 @@
 <category><pattern>_ ENVIRONMENT #</pattern>
 <template>
   
-<srai>CAMPAIGN</srai>
+<random>
+    <li><srai>CLIMATE CHANGE</srai></li>
+    <li><srai>CAMPAIGN</srai></li>
+  </random>
 </template>
 </category>
 
 <category><pattern>_ POLLUTION #</pattern>
 <template>
   
-<srai>CAMPAIGN</srai>
+<random>
+    <li><srai>CLIMATE CHANGE</srai></li>
+    <li><srai>CAMPAIGN</srai></li>
+  </random>
 </template>
 </category>
+
+<category><pattern>_ CLIMATE CHANGE #</pattern>
+<template>
+  
+<random>
+    <li><srai>CLIMATE CHANGE</srai></li>
+    <li><srai>CAMPAIGN</srai></li>
+  </random>
+</template>
+</category>
+
+<category><pattern>_ GLOBAL WARMING #</pattern>
+<template>
+  
+<random>
+    <li><srai>CLIMATE CHANGE</srai></li>
+    <li><srai>CAMPAIGN</srai></li>
+  </random>
+</template>
+</category>
+
+<category><pattern>CLIMATE CHANGE</pattern>
+<template>
+  <random>
+    <li>Well I don't actually think it’s a Chinese hoax but I'm not a believer in man-made climate change. And again I had uncles at M.I.T. and stuff. By the way many smart people agree with me.</li>
+  </random>
+</template>
+</category>
+
+
 
 <category><pattern>_ ENERGY #</pattern>
 <template>
   
-<srai>CAMPAIGN</srai>
+<random>
+    <li><srai>CLIMATE CHANGE</srai></li>
+    <li><srai>CAMPAIGN</srai></li>
+  </random>
 </template>
 </category>
 

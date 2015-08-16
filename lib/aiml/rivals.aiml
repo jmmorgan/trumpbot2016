@@ -17,6 +17,8 @@
 <li><srai>RAND PAUL</srai></li>
 <li><srai>SCOTT WALKER</srai></li>
 <li><srai>CARLY FIORINA</srai></li>
+<li><srai>BOBBY JINDAL</srai></li>
+<li><srai>JIM GILMORE</srai></li>
 <li><srai>BARACK OBAMA</srai></li>
 <li><srai>HILLARY CLINTON</srai></li>
 <li><srai>KOCH BROTHERS</srai></li>
@@ -119,6 +121,7 @@
   <li>I mean, you looked at Bush, it took him five days to answer the question on Iraq. He couldn't answer the question, he didn't know. I said, 'Is he intelligent?'</li>
   <li>Do you notice that Hillary spews out Jeb's name as often as possible in order to give him status? She knows Trump is her worst nightmare.</li>
   <li>Many of Hillary’s donors are the same donors as Jeb Bush’s—all rich, will have total control—know them well.</li>
+  <li>Jeb's a stiff. The guy can't even talk. He has zero energy. You would fall asleep interviewing him.</li>
   <li><srai>KOCH BOTHERS</srai></li>
   <li><srai>I AM BETTER</srai></li>
 </random>
@@ -132,11 +135,28 @@
 <category><pattern>CHRIS CHRISTIE</pattern>
 <template>
 <random>
+  <li>Chris is a friend of mine but he missed his time. If he would have done it four years ago he would have beaten Romney and he could be president right now. But this is a different time.</li>
   <li><srai>ZERO POLLS</srai></li>
   <li><srai>I AM BETTER</srai></li>
 </random>
 </template>
 </category>
+
+<category><pattern>PATAKI</pattern>
+<template><srai>GEORGE PATAKI</srai></template>
+</category>
+
+<category><pattern>GEORGE PATAKI</pattern>
+<template>
+<random>
+  <li>Pataki is at zero. Who has zero? He doesn't have one vote. He was a terrible governor who did a terrible job in New York state.
+</li>
+  <li><srai>ZERO POLLS</srai></li>
+  <li><srai>I AM BETTER</srai></li>
+</random>
+</template>
+</category>
+
 
 <category><pattern>PERRY</pattern>
 <template><srai>RICK PERRY</srai></template>
@@ -162,12 +182,63 @@
 <template>
 <random>
   <li>I think Rick Perry is probably smarter than Lindsey Graham. But what do I know?</li>
-  <li>Lindset Graham total lightweight. In the private sector, he couldn't get a job.</li>
+  <li>Lindsey Graham total lightweight. In the private sector, he couldn't get a job.</li>
+  <li>Lindsey Graham has registered zero in the polls after a vicious attack on me and I think he's a totally irrelevant person.</li>
   <li><srai>ZERO POLLS</srai></li>
   <li><srai>I AM BETTER</srai></li>
 </random>
 </template>
 </category>
+
+<category><pattern>PAUL</pattern>
+<template><srai>RAND PAUL</srai></template>
+</category>
+
+<category><pattern>RAND PAUL</pattern>
+<template>
+<random>
+  <li>Rand Paul is a tiny little guy. Did you see the press release I put out about Rand Paul? Pretty brutal, right?</li>
+  <li>Rand Paul is a nasty, nasty guy. I gave him a lot of money for his eye center.</li>
+  <li>Rand Paul is a golfer and I killed him. I could play him a thousand times and never lose to him.</li>
+  <li><srai>ZERO POLLS</srai></li>
+  <li><srai>I AM BETTER</srai></li>
+</random>
+</template>
+</category>
+
+<category><pattern>KASICH</pattern>
+<template><srai>JOHN KASICH</srai></template>
+</category>
+
+<category><pattern>JOHN KASICH</pattern>
+<template>
+<random>
+  <li>Kasich's been very nice to me. It's hard for me to hit somebody who's not hitting me.</li>
+  <li><srai>ZERO POLLS</srai></li>
+  <li><srai>I AM BETTER</srai></li>
+</random>
+</template>
+</category>
+
+<category><pattern>CRUZ</pattern>
+<template><srai>TED CRUZ</srai></template>
+</category>
+
+<category><pattern>TED CRUZ</pattern>
+<template>
+<random>
+  <li>Ted Cruz has been terrific to me, so supportive.</li>
+  <li><srai>ZERO POLLS</srai></li>
+  <li><srai>I AM BETTER</srai></li>
+</random>
+</template>
+</category>
+
+
+Bobby Jindal, the governor of Louisiania, said the worst thing anyone can do is ask Trump a tough question, a mean question, because that’s when he performs best.
+
+
+
 
 <category><pattern>OBAMA</pattern>
 <template><srai>BARACK OBAMA</srai></template>
@@ -180,7 +251,9 @@
 </li>
   <li>Here you have a black president who's done very poorly for the African Americans of this country.</li>
   <li>I think that Obama has set a very poor standard. I think that he has set a very low bar and I think it's a shame for the African American people.</li>
-  <li>We have a president who doesn’t have a clue. I would say he’s incompetent, but I don’t want to do that because that’s not nice.</li>
+  <li>We have a president who doesn't have a clue. I would say he's incompetent, but I don’t want to do that because that's not nice.</li>
+  <li>Obama is going to like me very, very much because when he's done with his term, he will be at my golf courses because I have the best golf courses in the world. He's going to go off to greener pastures, I guess.</li>
+  <li>Putin hates Obama. We don't get along with anybody, every country hates Obama. They don't like his attitude. They don't like his style. They don't like him, they don't like that he's not available.</li>
   <li><srai>I AM BETTER</srai></li>
 </random>
 </template>
@@ -205,10 +278,88 @@
 </li>
   <li>Do you notice that Hillary spews out Jeb's name as often as possible in order to give him status? She knows Trump is her worst nightmare.</li>
   <li>Many of Hillary’s donors are the same donors as Jeb Bush’s—all rich, will have total control—know them well.</li>
+  <li>Hillary is a highly complex person who can't help going over the edge. She just can’t stay true to herself. She has a real bad thing going with the emails.</li> 
+  <li>What Hillary did was illegal. She could be having more fun. But this is no fun for her. The F.B.I. is checking everything.</li>
   <li><srai>I AM BETTER</srai></li>
 </random>
 </template>
 </category>
+
+<category><pattern>BIDEN</pattern>
+<template><srai>JOE BIDEN</srai></template>
+</category>
+
+<category><pattern>JOE BIDEN</pattern>
+<template>
+<random>
+  <li>Biden was very loyal to the president, which I respect. I'd love to run against him because it's going to be an election based on competence and I'm really competent.
+</li>
+  <li><srai>I AM BETTER</srai></li>
+</random>
+</template>
+</category>
+
+<category><pattern>KERRY</pattern>
+<template><srai>JOHN KERRY</srai></template>
+</category>
+
+<category><pattern>JOHN KERRY</pattern>
+<template>
+<random>
+  <li>John Kerry goes into a bicycle race at 73, falls down and breaks his leg. These people are incompetent.
+</li>
+</random>
+</template>
+</category>
+
+
+<category><pattern>ELIZABETH WARREN</pattern>
+<template>
+<random>
+  <li>Elizabeth Warren’s caught a little wave. Perhaps it’s her Indian upbringing.
+</li>
+  <li><srai>I AM BETTER</srai></li>
+</random>
+</template>
+</category>
+
+<category><pattern>DE BLASIO</pattern>
+<template><srai>BILL DE BLASIO</srai></template>
+</category>
+
+<category><pattern>DEBLASIO</pattern>
+<template><srai>BILL DE BLASIO</srai></template>
+</category>
+
+<category><pattern>BILL DEBLASIO</pattern>
+<template><srai>BILL DE BLASIO</srai></template>
+</category>
+
+<category><pattern>BILL DE BLASIO</pattern>
+<template>
+<random>
+  <li>De Blasio's having an awfully hard time being the mayor of New York and people are very upset. There is a lot of restlessness with crime, squeegees all of a sudden, and we are seeing things that we haven't seen for a long time.
+</li>
+</random>
+</template>
+</category>
+
+<category><pattern>SANDERS</pattern>
+<template><srai>BERNIE SANDERS</srai></template>
+</category>
+
+<category><pattern>BERNIE SANDERS</pattern>
+<template>
+<random>
+  <li>I thought it was a disgrace for Bernie Sanders to let that microphone be ripped out of his mouth.
+</li>
+  <li><srai>I AM BETTER</srai></li>
+</random>
+</template>
+</category>
+
+
+
 
 <category><pattern>ROMNEY</pattern>
 <template><srai>MITT ROMNEY</srai></template>
@@ -324,6 +475,7 @@
 <random>
   <li>Scott Walker got a lot of problems in Wisconsin. You know, Wisconsin’s got tremendous problems … the debt and the difficult problems that they have going on Wisconsin. Tremendous borrowings.
 </li>
+  <li>I hit Scott so hard. I said his state was a disaster. So there's a lot of power there. He went from Number 1 to Number 4 in Iowa. I went to Number 1.</li>
   <li><srai>ZERO POLLS</srai></li>
   <li><srai>I AM BETTER</srai></li>
 </random>
@@ -340,6 +492,7 @@
   <li>Rubio is weak on immigration and he’s weak on jobs
 </li>
   <li>We need someone who is going to make the country great again, and Rubio is not going to make the country great again.</li>
+  <li>Don't know Rubio. Got to know him behind the lectern. Really nice guy. Highly thought of. Very young. But I have better hair than he does.</li>
   <li><srai>ZERO POLLS</srai></li>
   <li><srai>I AM BETTER</srai></li>
 </random>
@@ -357,8 +510,19 @@
 </li>
   <li>I think she’s a very nice woman. But she got fired. And, she lost in a landslide. Does that qualify you to run for president?</li>
   <li>I just realized that if you listen to Carly Fiorina for more than ten minutes straight, you develop a massive headache. She has zero chance!</li>
+  <li>She's a fine woman but it's not gonna happen. She was viciously fired from Hewlett-Packard and the company still hasn't recovered. The stock went down to nothing.</li>
   <li><srai>ZERO POLLS</srai></li>
   <li><srai>I AM BETTER</srai></li>
+</random>
+</template>
+</category>
+
+<category><pattern>ROGER STONE</pattern>
+<template>
+<random>
+  <li>
+Ever since I fired Roger Stone, he's been on TV saying nice things about me. I should have fired him sooner.
+</li>
 </random>
 </template>
 </category>
