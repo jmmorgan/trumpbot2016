@@ -19,3 +19,5 @@
 /public/*.aiml
 
 *.sublime*
+
+/spec/support/conversation_output.txt

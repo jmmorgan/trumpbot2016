@@ -258,14 +258,26 @@
 <category><pattern>_ TAXES #</pattern>
 <template>
   
-<srai>CAMPAIGN</srai>
+<srai><star/> TAXATION</srai>
 </template>
 </category>
 
 <category><pattern>_ TAX #</pattern>
 <template>
   
-<srai>CAMPAIGN</srai>
+<srai><star/> TAXATION</srai>
+</template>
+</category>
+
+<category><pattern>_ TAXATION #</pattern>
+<template>
+  
+<random>
+  <li>Frankly, what we should do is start it off by simplifying our current system, put H&amp;R Block out of business, knock them out, put them out of business.</li>
+  <li>You have to simplify this tax code. And from that point on, you can maybe do something else. But before we do anything, simplify it. Make it nice and easy for people to understand, and reduce taxes.</li>
+  <li>Our tax code is too complicated, and we can simplify it so easily.</li>
+  <li>You can have a Fair Tax, you can have a flat tax, or you can leave the system alone, which is probably the simplest at this point.</li>
+</random>
 </template>
 </category>
 

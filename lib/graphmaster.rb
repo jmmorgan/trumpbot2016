@@ -50,7 +50,7 @@ class Graphmaster < GraphmasterNode
 
   def load_categories
     Dir["#{Rails.root}/lib/aiml/*.aiml"].each do |path|
-      puts "Loading #{path}"
+      #puts "Loading #{path}"
       doc = Nokogiri::XML(File.open(path)) {|config| config.strict}
 
       doc.xpath('//category[not(ancestor::learn)]').each do |category_element| 

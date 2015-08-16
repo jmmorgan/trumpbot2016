@@ -30,6 +30,12 @@
 </template>
 </category>
 
+<category><pattern>WHO IS # <set>rival</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
 <category><pattern>WHAT DO YOU # <set>rival</set> #</pattern>
 <template>
 <srai><star index="2"/></srai>
@@ -42,15 +48,59 @@
 </template>
 </category>
 
-<category><pattern># <set>rival</set> <set>be</set> _</pattern>
+<category><pattern>CAN # <set>rival</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>COULD # <set>rival</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>WILL # <set>rival</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>WOULD # <set>rival</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>ARE YOU * THAN <set>rival</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>IS <set>rival</set> * THAN YOU #</pattern>
 <template>
 <srai><star index="1"/></srai>
 </template>
 </category>
 
+
+
+<category><pattern># <set>rival</set> <set>be</set> _</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern># <set>rival</set> <set>is</set> _</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
 <category><pattern># <set>rival</set> <set>was</set> _</pattern>
 <template>
-<srai><star index="1"/></srai>
+<srai><star index="2"/></srai>
 </template>
 </category>
 
