@@ -19,7 +19,7 @@
 
       .panel-body
         %ul.chat
-          - chat_session.messages.each do |message|
+          - messages.each do |message|
             - if (message.inbound)
               %li.left.clearfix
                 %span.chat-img.pull-left
@@ -46,7 +46,26 @@
 
                   %p 
                     #{raw message.message_text}
-                  
+
+          #current-exchange{style: 'display: none;'}
+            %li.left.clearfix
+              %span.chat-img.pull-left
+                %img.img-circle{src: "http://placehold.it/50/55C1E7/fff&text=ME", alt: "User Avatar"}
+              .chat-body.clearfix
+                .header
+                  %strong.primary-font Me 
+                  %small.pull-right.text-muted
+                    %span.glyphicon.glyphicon-time 
+                    Just now
+
+                %p{id: 'current-input'} 
+                  \.\.\.
+
+            %li.right.clearfix 
+              .chat-body.clearfix
+                .header
+                  %small.text-muted
+                    TrumpBot is typing...
                                  
 
 

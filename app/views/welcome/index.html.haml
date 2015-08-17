@@ -5,7 +5,7 @@
     .title TrumpBot2016
   
   #chat-ui
-    = render partial: 'chat_ui', locals: {chat_session: @chat_session}
+    = render partial: 'chat_ui', locals: {messages: @chat_session.messages}
                         
                             
 
@@ -49,7 +49,14 @@
       $('#reset-conversation-form').submit();
     });
     $('#btn-chat').on('click', function(){
-      $('#input').val($('#btn-input').val());
+      input = $('#btn-input').val()
+
+      $('#current-input').text(input);
+      $('#current-exchange').css('display', 'block');
+      scrollToBottomOfChatUI();
+      $('#input').val(input);
+
+
       $.ajax({
         url: 'talk.js',
         method: 'POST',

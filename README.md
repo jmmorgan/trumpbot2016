@@ -5,7 +5,6 @@ and an AIML 2.0 interpreter.
 
 # Next up TODOs
 
-* Have submitted input message show up in Chat view immediately and put a thinking/typing placeholder for TrumpBot (responsiveness improvements)
 * Build a training interface to accelerate the building of TrumpBot's brain (maybe use Pandorabots trainer as a guide)
     * Populate TOPIC field correctly
     * Implement basic Say Instead
