@@ -11,7 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150801231150) do
+ActiveRecord::Schema.define(version: 20150817013630) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "chat_sessions", force: :cascade do |t|
     t.string   "session_id"
@@ -20,6 +23,15 @@ ActiveRecord::Schema.define(version: 20150801231150) do
     t.text     "chat_json"
   end
 
-  add_index "chat_sessions", ["session_id"], name: "index_chat_sessions_on_session_id"
+  add_index "chat_sessions", ["session_id"], name: "index_chat_sessions_on_session_id", using: :btree
+
+  create_table "predicates", force: :cascade do |t|
+    t.integer  "chat_session_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.text     "predicates_json"
+  end
+
+  add_index "predicates", ["chat_session_id"], name: "index_predicates_on_chat_session_id", using: :btree
 
 end

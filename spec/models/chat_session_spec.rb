@@ -172,7 +172,7 @@ RSpec.describe ChatSession, type: :model do
           response = chat_session.respond('A woodchuck is from New York')
 
           response1 = chat_session.respond('Where is a woodchuck found?')
-          response2 = Chat.new(99).respond('Where is a woodchuck found?')
+          response2 = ChatSession.new.respond('Where is a woodchuck found?')
 
           expect(response1.outputs.first).to match /a woodchuck is from New York/i
           expect(response2).not_to match /New York/i

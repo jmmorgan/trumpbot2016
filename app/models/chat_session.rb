@@ -1,6 +1,9 @@
 class ChatSession < ActiveRecord::Base
 
   before_save :update_chat_json
+  after_initialize :ensure_predicates
+
+  has_one :predicates
 
   def chat
     @chat ||= Chat.from_json(self.chat_json || '{}')
@@ -11,11 +14,7 @@ class ChatSession < ActiveRecord::Base
   end
 
   def respond(input)
-    chat.respond(input) # TODO: We will be getting rid of Chat soon
-  end
-
-  def predicates
-    chat.predicates # TODO: We will be getting rid of Chat soon
+    chat.respond(input, predicates) # TODO: We will be getting rid of Chat soon
   end
 
   def requests
@@ -36,5 +35,9 @@ class ChatSession < ActiveRecord::Base
 
   def update_chat_json
     self.chat_json = chat.to_json
+  end
+
+  def ensure_predicates
+    self.predicates ||= build_predicates
   end
 end

@@ -1,16 +1,15 @@
 class Chat
-  attr_accessor :chat_session_id, :requests, :responses, :predicates
+  attr_accessor :chat_session_id, :requests, :responses
 
   def initialize(chat_session_id)
     @chat_session_id = chat_session_id
     @requests = []
     @responses = []
-    @predicates = {}
   end
 
-  def respond(input)
+  def respond(input, predicates)
     @requests << input
-    @predicates['_chat_session_id'] = @chat_session_id
+    predicates['_chat_session_id'] = @chat_session_id
     
     bot_brain_response = BotBrain.new.respond(input, @requests, predicates)
     response = bot_brain_response[:responses].join(' ')
@@ -35,8 +34,7 @@ class Chat
     {
       'chat_session_id' => @chat_session_id,
       'requests' => @requests,
-      'responses' => @responses,
-      'predicates' => @predicates,
+      'responses' => @responses
       }.to_json
   end
 
@@ -46,7 +44,6 @@ class Chat
     result.chat_session_id = hash["chat_session_id"]
     result.requests = hash['requests'] || []
     result.responses = hash['responses'] || []
-    result.predicates = hash['predicates'] || {}
     result
   end
 end
