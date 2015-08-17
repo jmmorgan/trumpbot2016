@@ -11,7 +11,7 @@ describe WelcomeController do
 
   end
 
-  describe 'POST index' do
+  describe 'POST talk' do
     let(:query_bot) { double('query_bot', call: true)}
 
     before do
@@ -19,20 +19,27 @@ describe WelcomeController do
     end
 
     it 'renders the index template' do
-      post :index
-      expect(response).to render_template('index')
+      xhr :post, :talk
+      expect(response).to render_template('welcome/talk')
     end
 
     context 'input is present' do
       it 'invokes a QueryBot interactor' do
-        post :index, input: "Who are you?"
+        xhr :post, :talk, input: "Who are you?"
         expect(query_bot).to have_received(:call)
       end
     end
 
     context 'input is not present' do
       it 'does not invoke a QueryBot interactor' do
-        post :index
+        xhr :post, :talk
+        expect(query_bot).to_not have_received(:call)
+      end
+    end
+
+    context 'input is blank' do
+      it 'does not invoke a QueryBot interactor' do
+        xhr :post, :talk, input: '  '
         expect(query_bot).to_not have_received(:call)
       end
     end

@@ -1,0 +1,5 @@
+javascript:
+  
+$("#chat-ui").html("#{escape_javascript(render partial: 'chat_ui', locals: { chat_session: @chat_session } )}");
+doDocumentReady();
+scrollToBottomOfChatUI();

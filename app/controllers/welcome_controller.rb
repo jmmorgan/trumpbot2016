@@ -3,7 +3,11 @@ class WelcomeController < ApplicationController
   after_filter :persist_chat
 
   def index
-    if (input = params[:input])
+    
+  end
+
+  def talk
+    if ((input = params[:input]) && !input.blank?)
       @response = Interactors::QueryBot.new(@request).call
     end
   end

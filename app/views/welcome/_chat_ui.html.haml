@@ -1,0 +1,58 @@
+-# Chat UI grokked from http://bootsnipp.com/snippets/featured/chat-widget
+.row
+  .col-md-5
+    .panel.panel-primary
+      .panel-heading
+        %span.glyphicon.glyphicon-comment Chat
+        .btn-group.pull-right
+          %button.btn.btn-default.btn-xs.dropdown-toggle{type: "button", 'data-toggle' => "dropdown"}
+            %span.glyphicon.glyphicon-chevron-down
+          %ul.dropdown-menu.slidedown
+            %li
+              %a{href: "#", id: 'download-transcript'}
+                %span.glyphicon.glyphicon-download
+                  Download Transcript
+            %li
+              %a{href: "#", id: 'reset-conversation'}
+                %span.glyphicon.glyphicon-erase
+                  Reset Conversation
+
+      .panel-body
+        %ul.chat
+          - chat_session.messages.each do |message|
+            - if (message.inbound)
+              %li.left.clearfix
+                %span.chat-img.pull-left
+                  %img.img-circle{src: "http://placehold.it/50/55C1E7/fff&text=ME", alt: "User Avatar"}
+                .chat-body.clearfix
+                  .header
+                    %strong.primary-font Me 
+                    %small.pull-right.text-muted
+                      %span.glyphicon.glyphicon-time 
+                      = format_time_diff(message.created_at, Time.now)
+
+                  %p 
+                    #{message.message_text}
+            -else
+              %li.right.clearfix
+                %span.chat-img.pull-right
+                  %img.img-circle{src: "#{asset_path 'DJT_Headshot_V2_400x400.jpg'}", alt: "TrumpBot Avatar", height: 50}
+                .chat-body.clearfix
+                  .header
+                    %small.text-muted
+                      %span.glyphicon.glyphicon-time 
+                      = format_time_diff(message.created_at, Time.now)
+                    %strong.pull-right.primary-font TrumpBot2016 
+
+                  %p 
+                    #{raw message.message_text}
+                  
+                                 
+
+
+      .panel-footer
+        .input-group
+          %input.form-control.input-sm{id: "btn-input", type: "text", placeholder: "Type your message here..."}
+          %span.input-group-btn
+            %button.btn.btn-warning.btn-sm{id: "btn-chat"}
+              Send

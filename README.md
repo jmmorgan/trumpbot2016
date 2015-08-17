@@ -9,8 +9,6 @@ and an AIML 2.0 interpreter.
     * Populate TOPIC field correctly
     * Implement basic Say Instead
     * Add more items to this list once above are completed.
-* Chat interface improvements
-    * Replace form submissions and page reloads with AJAX calls and DOM updates.	
 * Implement support for `<topic>`
 * Make ChatSession spec independent of production Graphmaster instance.
 * Is the whole BotBrain response -> ChatResponse -> QueryBot response flow necessary? Perhaps we should simplify.

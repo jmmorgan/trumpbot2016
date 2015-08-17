@@ -11,9 +11,9 @@ class ChatSession < ActiveRecord::Base
     reqs = self.requests
     resps = self.responses
     reqs.each_index do |i|
-      result << "You: #{@reqs[i]}" << "\n"
+      result << "You: #{reqs[i].message_text}" << "\n"
       if (response = resps[i])
-        result << "TrumBot: #{response}" << "\n"
+        result << "TrumBot: #{response.message_text}" << "\n"
       end
     end
 
