@@ -49,3 +49,7 @@ group :development, :test do
   gem 'spring'
 end
 
+group :test do
+  gem 'shoulda-matchers', require: false
+end
+
