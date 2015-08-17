@@ -1,43 +1,50 @@
 class ChatSession < ActiveRecord::Base
 
-  has_one :predicates, autosave: true
+  has_one :predicates
+  has_many :messages
 
-  before_save :update_chat_json
   after_initialize :ensure_predicates
-
-  def chat
-    @chat ||= Chat.from_json(self.chat_json || '{}')
-  end
+  after_initialize :ensure_messages
 
   def transcript
-    chat.transcript # TODO: We will be getting rid of Chat soon
+    result = ''
+    reqs = self.requests
+    resps = self.responses
+    reqs.each_index do |i|
+      result << "You: #{@reqs[i]}" << "\n"
+      if (response = resps[i])
+        result << "TrumBot: #{response}" << "\n"
+      end
+    end
+
+    result
   end
 
   def respond(input)
-    chat.respond(input, predicates) # TODO: We will be getting rid of Chat soon
+    self.messages << Message.new(message_text: input, inbound: true)
+    predicates['_chat_session_id'] = self.id
+    bot_brain_response = BotBrain.new.respond(input, self.requests.map(&:message_text), predicates)
+    response = bot_brain_response[:responses].join(' ')
+
+    self.messages << Message.new(message_text: response, inbound: false)
+    ChatResponse.new(bot_brain_response, predicates)
   end
 
   def requests
-    chat.requests # TODO: We will be getting rid of Chat soon
+    self.messages.select{|msg| msg.inbound == true}
   end
 
   def responses
-    chat.responses # TODO: We will be getting rid of Chat soon
+    self.messages.select{|msg| msg.inbound == false}
   end
 
   private 
 
-  def build_chat
-    result = Chat.from_json(self.chat_json || '{}')
-    result.chat_session_id = self.id
-    result
-  end
-
-  def update_chat_json
-    self.chat_json = chat.to_json
-  end
-
   def ensure_predicates
     self.predicates ||= build_predicates
+  end
+
+  def ensure_messages
+    self.messages ||= []
   end
 end

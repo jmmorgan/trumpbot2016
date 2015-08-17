@@ -13,6 +13,7 @@ class Predicates < ActiveRecord::Base
   def []=(key, value)
     result = (predicates_hash[key] = value)
     build_json
+    save! if self.valid?
   end
 
   def predicates_hash

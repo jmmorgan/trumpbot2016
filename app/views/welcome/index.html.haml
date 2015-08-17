@@ -1,5 +1,4 @@
-- session_inputs = @chat_session.requests
-- session_outputs = @chat_session.responses
+
 
 .container
   .row
@@ -26,31 +25,33 @@
 
         .panel-body
           %ul.chat
-            - session_inputs.each_index do |i|
-              %li.left.clearfix
-                %span.chat-img.pull-left
-                  %img.img-circle{src: "http://placehold.it/50/55C1E7/fff&text=ME", alt: "User Avatar"}
-                .chat-body.clearfix
-                  .header
-                    %strong.primary-font Me 
-                    %small.pull-right.text-muted
-                      %span.glyphicon.glyphicon-time 
-                      14 mins ago
+            - @chat_session.messages.each do |message|
+              - if (message.inbound)
+                %li.left.clearfix
+                  %span.chat-img.pull-left
+                    %img.img-circle{src: "http://placehold.it/50/55C1E7/fff&text=ME", alt: "User Avatar"}
+                  .chat-body.clearfix
+                    .header
+                      %strong.primary-font Me 
+                      %small.pull-right.text-muted
+                        %span.glyphicon.glyphicon-time 
+                        14 mins ago
 
-                  %p 
-                    #{session_inputs[i]}
-              %li.right.clearfix
-                %span.chat-img.pull-right
-                  %img.img-circle{src: "#{asset_path 'DJT_Headshot_V2_400x400.jpg'}", alt: "TrumpBot Avatar", height: 50}
-                .chat-body.clearfix
-                  .header
-                    %small.text-muted
-                      %span.glyphicon.glyphicon-time 
-                      12 mins ago
-                    %strong.pull-right.primary-font TrumpBot2016 
+                    %p 
+                      #{message.message_text}
+              -else
+                %li.right.clearfix
+                  %span.chat-img.pull-right
+                    %img.img-circle{src: "#{asset_path 'DJT_Headshot_V2_400x400.jpg'}", alt: "TrumpBot Avatar", height: 50}
+                  .chat-body.clearfix
+                    .header
+                      %small.text-muted
+                        %span.glyphicon.glyphicon-time 
+                        12 mins ago
+                      %strong.pull-right.primary-font TrumpBot2016 
 
-                  %p 
-                    #{raw session_outputs[i]}
+                    %p 
+                      #{raw message.message_text}
                     
                                    
 

@@ -10,7 +10,7 @@ RSpec.describe Predicates, type: :model do
     it { should validate_presence_of(:predicates_json) }
   end
 
-  describe 'associations' do
+  describe 'Associations' do
     it { should belong_to(:chat_session) }
   end
 
