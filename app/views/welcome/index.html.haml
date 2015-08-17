@@ -35,7 +35,7 @@
                       %strong.primary-font Me 
                       %small.pull-right.text-muted
                         %span.glyphicon.glyphicon-time 
-                        14 mins ago
+                        = format_time_diff(message.created_at, Time.now)
 
                     %p 
                       #{message.message_text}
@@ -47,7 +47,7 @@
                     .header
                       %small.text-muted
                         %span.glyphicon.glyphicon-time 
-                        12 mins ago
+                        = format_time_diff(message.created_at, Time.now)
                       %strong.pull-right.primary-font TrumpBot2016 
 
                     %p 

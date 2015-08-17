@@ -10,7 +10,6 @@ and an AIML 2.0 interpreter.
     * Implement basic Say Instead
     * Add more items to this list once above are completed.
 * Chat interface improvements
-    * Replace placeholder timestamps with real values
     * Replace form submissions and page reloads with AJAX calls and DOM updates.	
 * Implement support for `<topic>`
 * Make ChatSession spec independent of production Graphmaster instance.
