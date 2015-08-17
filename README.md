@@ -15,7 +15,6 @@ and an AIML 2.0 interpreter.
 * Implement support for `<topic>`
 * Make Chat spec independent of production Graphmaster instance.
 * Move away from quick and dirty stuffing of JSON object into chat_sessions table.
-  * Move predicates to its won table.
   * Move requests to their own table.
   * Move responses to their own table.
   * Do away with Chat class and chat_json field.
