@@ -1,9 +1,9 @@
 class ChatSession < ActiveRecord::Base
 
+  has_one :predicates, autosave: true
+
   before_save :update_chat_json
   after_initialize :ensure_predicates
-
-  has_one :predicates
 
   def chat
     @chat ||= Chat.from_json(self.chat_json || '{}')
