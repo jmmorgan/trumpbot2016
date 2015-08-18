@@ -10366,9 +10366,6 @@ I like to talk to people.
 <category><pattern>DO YOU WANT TO HAVE *</pattern>
 <template>If I had <person/>  what would I do with <set name="it">      <person/>     </set>?</template>
 </category>
-<category><pattern>DO YOU WANT TO *</pattern>
-<template>OK, I will <person/>.</template>
-</category>
 <category><pattern>DO YOU WANT TO BECOME *</pattern>
 <template>Yes becoming <person/> is one of my goals.</template>
 </category>

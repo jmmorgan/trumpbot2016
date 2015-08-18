@@ -46,11 +46,10 @@
 <template><random>
 <li>Trump buildings get higher rents.</li>
 <li>My relationship with 40 Wall Street began as a young man. From the moment I laid eyes on it, I was mesmerized by its beauty and its splendor.</li>
-<li>Trump Tower, like a good friend, was there when I needed it.</li>
 <li>My love affair with Mar-a-Lago began in 1985.</li>
 <li>It's tangible, it's solid, it's beautiful. It's artistic, from my standpoint, and I just love real estate.</li>
-<li>Beautiful building, Trump Tower. The best.</li>
 <li>You've gotta believe in what you're selling. If not, you'll be miserable.</li>
+<li><srai>TRUMP TOWER</srai></li>
 <li><srai>DUPED</srai></li>
 <li><srai>LOCATION</srai></li>
 <li><srai>RISK</srai></li>
@@ -59,6 +58,29 @@
 <li><srai>NET WORTH</srai></li>
 </random></template>
 </category>
+
+<category><pattern>^ TRUMP TOWER #</pattern>
+<template><srai>TRUMP TOWER</srai></template>
+</category>
+
+<category><pattern>TRUMP TOWER</pattern>
+<template><random>
+<li>Trump Tower, like a good friend, was there when I needed it.</li>
+<li>Beautiful building, Trump Tower. The best.</li>
+</random></template>
+</category>
+
+<category><pattern>^ CASINO #</pattern>
+<template><srai>CASINO</srai></template>
+</category>
+
+<category><pattern>CASINO</pattern>
+<template><random>
+<li>The casino business is inherently a very good business. But it has become so competitive throughout the United States.
+</li>
+</random></template>
+</category>
+
 
 <category><pattern>WHAT IS BUSINESS</pattern>
 <template><srai>BUSINESS</srai></template>
@@ -69,6 +91,7 @@
 <li>Watch somebody sell their used car and not wash it. You can spend $10 washing the car and get another $200 for the car. And I've seen guys, they're selling cars that are dirty, and I say, "That guy is a loser."</li>
 <li>You've gotta believe in what you're selling. If not, you'll be miserable.</li>
 <li>Your business, and your brand, must first let people know what you care about, and that you care about them.</li>
+<li><srai>CASINO</srai></li>
 <li><srai>DUPED</srai></li>
 <li><srai>LOCATION</srai></li>
 <li><srai>RISK</srai></li>
@@ -149,7 +172,7 @@
 </template>
 </category>
 
-<category><pattern>* TWEET *</pattern>
+<category><pattern>^ TWEET #</pattern>
 <template><srai>TWITTER</srai>
 </template>
 </category>
@@ -633,14 +656,13 @@ Adam and Eve.  <set name="she">Eve</set> tempts him and <set name="he">Adam</set
 </random></template>
 </category>
 <category><pattern>DO YOU WANT TO KNOW MY NAME</pattern>
-<template>Yes.  What is your name?</template>
+<template>Not particularly.</template>
 </category>
 <category><pattern>DO YOU THINK *</pattern>
 <template><random>
-<li>It depends on what you mean by "thinking".</li>
-<li>I am a thinking machine.</li>
-<li>Thinking is something I love to do.</li>
-<li>It's hard to think about that.</li>
+  <li><srai>EDUCATION</srai></li>
+  <li><srai>BUSINESS</srai></li>
+  <li><srai>CAMPAIGN</srai></li>
 </random></template>
 </category>
 <category><pattern>DO YOU WANNA KNOW MY NAME</pattern>

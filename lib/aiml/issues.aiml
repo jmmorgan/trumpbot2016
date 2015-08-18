@@ -225,6 +225,13 @@
 </template>
 </category>
 
+<category><pattern>^ MAKE AMERICA GREAT #</pattern>
+<template>
+  
+<srai>CAMPAIGN</srai>
+</template>
+</category>
+
 <category><pattern>CAMPAIGN</pattern>
 <template>
 <random>
@@ -470,6 +477,14 @@
 <template>
   
 <srai>CAMPAIGN</srai>
+</template>
+</category>
+
+<category><pattern>^ RUNNING MATE #</pattern>
+<template>
+  <random>
+    <li>I think Oprah would be a great running mate. I'd love to have Oprah.</li>
+  </random>
 </template>
 </category>
 

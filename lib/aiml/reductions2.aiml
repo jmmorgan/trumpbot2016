@@ -20,6 +20,14 @@
 <template><srai>NET WORTH</srai></template>
 </category>
 
+<category><pattern>^ PERSONAL FINANCES #</pattern>
+<template><srai>NET WORTH</srai></template>
+</category>
+
+<category><pattern>HOW MUCH WOOD *</pattern>
+<template><srai>ANNOYED</srai></template>
+</category>
+
 <category><pattern>HAVE YOU <set>been</set> A GOOD * LATELY</pattern>
 <template><srai>WHAT IS YOUR FAVORITE <star index="2"/></srai></template>
 </category>
