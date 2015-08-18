@@ -13,4 +13,4 @@ and an AIML 2.0 interpreter.
 * Make ChatSession spec independent of production Graphmaster instance.
 * Is the whole BotBrain response -> ChatResponse -> QueryBot response flow necessary? Perhaps we should simplify.
 * Try to treat TemplateContentNode implementations as immutables (limit setting of ivars to initializer)
-
+* Look into organizing AIML files in a way that makes more logical and/or intuitive sense for TrumpBot.

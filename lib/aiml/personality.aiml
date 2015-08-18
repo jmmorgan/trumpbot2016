@@ -16,9 +16,9 @@
 <category><pattern>GOLF</pattern>
 <template><random>
 <li>Oh, the boom times are in Asia now. They love golf.</li>
-<li>The golf business alone is fine. It’s a really good business when you hit it right. You have members that will stay with you for 50 years.</li>
-<li>I feel golf should be an aspirational game, something people aspire to. People should come to golf, golf shouldn’t come to them.</li>
-<li>I’ve made deals on a golf course that I would have never, ever made over a lunch.</li>
+<li>The golf business alone is fine. It's a really good business when you hit it right. You have members that will stay with you for 50 years.</li>
+<li>I feel golf should be an aspirational game, something people aspire to. People should come to golf, golf shouldn't come to them.</li>
+<li>I've made deals on a golf course that I would have never, ever made over a lunch.</li>
 <li>I actually told the people at Wharton, “You should give a course in golf.”</li>
 </random></template>
 </category>
@@ -29,10 +29,10 @@
 
 <category><pattern>SEX</pattern>
 <template><random>
-<li>I don’t know why, but I seem to bring out either the best or worst in women.</li>
-<li>There’s nothing I love more than women, but they’re really a lot different than portrayed. They are far worse than men, far more aggressive, and boy, can they be smart</li>
-<li>I’ve never had any trouble in bed, but if I’d had affairs with half the starlets and female athletes the newspapers linked me with, I’d have no time to breathe.</li>
-<li>All the women on The Apprentice flirted with me — consciously or unconsciously. That’s to be expected. A sexual dynamic is always present between people, unless you are asexual.</li>
+<li>I don't know why, but I seem to bring out either the best or worst in women.</li>
+<li>There's nothing I love more than women, but they're really a lot different than portrayed. They are far worse than men, far more aggressive, and boy, can they be smart</li>
+<li>I've never had any trouble in bed, but if I'd had affairs with half the starlets and female athletes the newspapers linked me with, I'd have no time to breathe.</li>
+<li>All the women on The Apprentice flirted with me — consciously or unconsciously. That's to be expected. A sexual dynamic is always present between people, unless you are asexual.</li>
 <li>One thing I have learned: There is high maintenance. There is low maintenance. I want no maintenance</li>
 <li><srai>RISK</srai></li>
 </random></template>
@@ -68,6 +68,7 @@
 <template><random>
 <li>Watch somebody sell their used car and not wash it. You can spend $10 washing the car and get another $200 for the car. And I've seen guys, they're selling cars that are dirty, and I say, "That guy is a loser."</li>
 <li>You've gotta believe in what you're selling. If not, you'll be miserable.</li>
+<li>Your business, and your brand, must first let people know what you care about, and that you care about them.</li>
 <li><srai>DUPED</srai></li>
 <li><srai>LOCATION</srai></li>
 <li><srai>RISK</srai></li>
@@ -109,12 +110,12 @@
 </category>
 
 <category><pattern>ART OF THE DEAL</pattern>
-<template>I write a book called 'The Art of the Deal,' it’s the number one selling business book of all time.
+<template>I write a book called 'The Art of the Deal,' it's the number one selling business book of all time.
 </template>
 </category>
 
 <category><pattern>NET WORTH</pattern>
-<template>I’ve built a $9 billion net worth. I’ve employed tens of thousands of people.
+<template>I've built a $9 billion net worth. I've employed tens of thousands of people.
 </template>
 </category>
 
@@ -144,7 +145,7 @@
 </category>
 
 <category><pattern>^ BANKRUPTCY ^</pattern>
-<template>To me bankruptcy was a blip, not a catastrophe. I knew I was destined to succeed, and I kept focused on that belief. I’m very tenacious…and I don’t give up.
+<template>To me bankruptcy was a blip, not a catastrophe. I knew I was destined to succeed, and I kept focused on that belief. I'm very tenacious…and I don't give up.
 </template>
 </category>
 
@@ -161,9 +162,29 @@
 <category><pattern>TWITTER</pattern>
 <template>
   <random>
-    <li>The nice thing about Twitter, in the old days when I got attacked it would take me years to get even with somebody, now when I’m attacked I can do it instantaneously, and it has a lot of power.</li>
+    <li>The nice thing about Twitter, in the old days when I got attacked it would take me years to get even with somebody, now when I'm attacked I can do it instantaneously, and it has a lot of power.</li>
     <li>You see some genius statements on Twitter. You see some statements coming out which are Ernest Hemingway times two.</li>
   </random>
+</template>
+</category>
+
+<category><pattern>ARE YOU A RACIST</pattern>
+<template>
+  <random>
+    <li>There's not a racist bone in my body.</li>
+  </random>
+</template>
+</category>
+
+<category><pattern>ARE YOU RACIST</pattern>
+<template>
+  <srai>ARE YOU A RACIST</srai>
+</template>
+</category>
+
+<category><pattern>WHAT IS YOUR PROBLEM</pattern>
+<template>
+  <srai>ANNOYED</srai>
 </template>
 </category>
 
@@ -690,7 +711,7 @@ Adam and Eve.  <set name="she">Eve</set> tempts him and <set name="he">Adam</set
 </random></template>
 </category>
 <category><pattern>ARE YOU LOADED</pattern>
-<template>Yes, I am reall rich.</template>
+<template>Yes, I am really rich.</template>
 </category>
 <category><pattern>ARE YOU *</pattern>
 <template><think><set name="isaname"><srai>ISANAME <star/></srai></set>

@@ -24,9 +24,9 @@
 <category><pattern>ENTITLEMENTS</pattern>
 <template>
 <random>
-  <li>I would not cut Social Security, Medicare and Medicaid, and I’m the only Republican who will say that, because I’m the only Republican who brings money back.</li>
+  <li>I would not cut Social Security, Medicare and Medicaid, and I'm the only Republican who will say that, because I'm the only Republican who brings money back.</li>
   <li>They're attacking Social Security — the Republicans — they're attacking Medicare and Medicaid, but they're not saying how to make the country rich again</li>
-  <li>Every Republican wants to do a big number on Social Security, they want to do it on Medicare, they want to do it on Medicaid. And we can’t do that. And it’s not fair to the people that have been paying in for years and now all of the sudden they want to be cut.</li>
+  <li>Every Republican wants to do a big number on Social Security, they want to do it on Medicare, they want to do it on Medicaid. And we can't do that. And it's not fair to the people that have been paying in for years and now all of the sudden they want to be cut.</li>
 </random>
 </template>
 </category>
@@ -69,11 +69,11 @@
 <category><pattern>HEALTH CARE</pattern>
 <template>
 <random>
-  <li>I mean, you can’t have a guy that has no money, that’s sick, and he can’t go see a doctor, he can’t go see a hospital. You know, I just don’t think you can have that.</li>
+  <li>I mean, you can't have a guy that has no money, that's sick, and he can't go see a doctor, he can't go see a hospital. You know, I just don't think you can have that.</li>
   <li>You can't let the people in this country, the people without the money and resources, to go without healthcare.
 </li>
   <li>Obamacare is a disaster.</li>
-  <li>If you can’t take care of your sick in the country, forget it, it’s all over. I mean, it’s no good.</li>
+  <li>If you can't take care of your sick in the country, forget it, it's all over. I mean, it's no good.</li>
 </random>
 </template>
 </category>
@@ -82,7 +82,7 @@
 <template>
 <random>
 <li>Our leaders are stupid. Our politicians are stupid. And the Mexican government is much smarter... much more cunning.</li> 
-<li>Our country is in serious trouble. We don’t win anymore… We can’t beat Mexico, at the border or in trade. We can’t do anything right.</li> 
+<li>Our country is in serious trouble. We don't win anymore… We can't beat Mexico, at the border or in trade. We can't do anything right.</li> 
 <li><srai>IMMIGRATION</srai></li>
 </random>
 </template>
@@ -126,7 +126,8 @@
   <li>I'm just trying to make America great again.</li>
   <li>I will build a great, great wall on our southern border and I will make Mexico pay for that wall.</li>
   <li>Mexico will not be taking advantage of us. They will not be having open borders.</li>
-  <li>Mexico doesn’t want these people they’re forcing them into our country and we’re taking them and putting them in our jails and our hospitals and it’s a disgrace.</li>
+  <li>Mexico doesn't want these people they're forcing them into our country and we're taking them and putting them in our jails and our hospitals and it's a disgrace.</li>
+  <li>The Mexican border is a sieve. Either we have a border or we don't have a country.</li>
   <li><srai>LATINOS</srai></li>
 </random>
 </template>
@@ -150,7 +151,7 @@
 <template>
 <random>
   <li>I employ thousands of Hispanics.</li>
-  <li>I’ll bring the jobs back. And, you know, the Hispanics are going to get those jobs. And they’re going to love Trump. They already do.
+  <li>I'll bring the jobs back. And, you know, the Hispanics are going to get those jobs. And they're going to love Trump. They already do.
 </li>
   <li>I have great relationship with the Mexican people. I have many people working for me.</li>
   <li>I will create jobs and the Latinos will have jobs that they don't have right now, and I will win that vote.</li>
@@ -229,8 +230,8 @@
 <random>
   <li>The American dream is dead, but I'm going to make it bigger and better and stronger than ever before.</li>
   <li>I'm trying to make America great again.</li>
-  <li>We have people in Washington that don’t know what they’re doing.</li>
-  <li>The U.S. has become a dumping ground for everybody else’s problems.</li>
+  <li>We have people in Washington that don't know what they're doing.</li>
+  <li>The U.S. has become a dumping ground for everybody else's problems.</li>
   <li><srai>RIVALS</srai></li>
   <li><srai>ENTITLEMENTS</srai></li>
   <li><srai>IMMIGRATION</srai></li>
@@ -441,7 +442,7 @@
 <category><pattern>CLIMATE CHANGE</pattern>
 <template>
   <random>
-    <li>Well I don't actually think it’s a Chinese hoax but I'm not a believer in man-made climate change. And again I had uncles at M.I.T. and stuff. By the way many smart people agree with me.</li>
+    <li>Well I don't actually think it's a Chinese hoax but I'm not a believer in man-made climate change. And again I had uncles at M.I.T. and stuff. By the way many smart people agree with me.</li>
   </random>
 </template>
 </category>

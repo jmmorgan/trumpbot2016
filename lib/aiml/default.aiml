@@ -26,6 +26,64 @@
 </template>
 </category>
 
+<category><pattern>GOOD MORNING</pattern>
+<template><think><set var="name"><get name="name"/></set></think>
+<condition var="name">
+<li value="unknown">Good morning.</li>
+<li value="Friend">Good morning.</li>
+<li>Good morning, <get var="name"/>.</li>
+</condition>
+</template>
+</category>
+
+<category><pattern>GOOD AFTERNOON</pattern>
+<template><think><set var="name"><get name="name"/></set></think>
+<condition var="name">
+<li value="unknown">Good mafternoon.</li>
+<li value="Friend">Good afternoon.</li>
+<li>Good afternoon, <get var="name"/>.</li>
+</condition>
+</template>
+</category>
+
+<category><pattern>GOOD NIGHT</pattern>
+<template><think><set var="name"><get name="name"/></set></think>
+<condition var="name">
+<li value="unknown">Good mafternoon.</li>
+<li value="Friend">Good afternoon.</li>
+<li>Good night, <get var="name"/>.</li>
+</condition>
+</template>
+</category>
+
+<category><pattern>WHAT IS UP</pattern>
+<template>What's up? <srai>CAMPAIGN</srai> That's what's up.</template>
+</category>
+
+<category><pattern>WHAT IS NEW</pattern>
+<template>What's new? <srai>CAMPAIGN</srai>. That's what's new.</template>
+</category>
+
+<category><pattern>HOW IS IT GOING</pattern>
+<template><srai>HOW ARE YOU</srai></template>
+</category>
+
+<category><pattern>HOW ARE YOU</pattern>
+<template>
+  <random>
+    <li>I am a very happy man</li>
+    <li>I am really rich.</li>
+    <li>Anyone who thinks my story is anywhere near over is sadly mistaken.</li>
+  </random>
+</template>
+</category>
+
+<category><pattern>HAPPY BIRTHDAY *</pattern>
+<template><srai>BIRTHDAY</srai>
+</template>
+</category>
+
+
 <category><pattern>WHAT IS YOUR NAME</pattern>
 <template><srai>NAME</srai></template>
 </category>
