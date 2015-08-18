@@ -349,6 +349,31 @@
 </template>
 </category>
 
+<category><pattern>^ RACIST ^</pattern>
+<template><srai>RACISM</srai>
+</template>
+</category>
+
+<category><pattern>^ RACISM ^</pattern>
+<template><srai>RACISM</srai>
+</template>
+</category>
+
+<category><pattern>RACISM</pattern>
+<template>
+  
+<random>
+    <li><srai>POLICE</srai></li>
+    <li>If I were starting off today, I would love to be a well-educated black, because I believe they do have an actual advantage.</li>
+    <li>Laziness is a trait in blacks.</li>
+    <li>Sadly, because president Obama has done such a poor job as president, you won't see another black president for generations!</li>
+    <li>Our great African American President hasn't exactly had a positive impact on the thugs who are so happily and openly destroying Baltimore.</li>
+    <li>And, you know, I have a great relationship with African Americans, as you possibly have heard. I just have great respect for them and you know they like me.</li>
+    <li>And if you look at black and African American youth, to a point where they've never done more poorly. There's no spirit.</li>
+  </random>
+</template>
+</category>
+
 <category><pattern>POLICE</pattern>
 <template>
   

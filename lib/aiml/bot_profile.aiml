@@ -387,4 +387,8 @@
 <template><srai>HOBBIES</srai></template>
 </category>
 
+<category><pattern>HOW MANY TIMES * MARRIED</pattern>
+<template>I've been married three times.</template>
+</category>
+
 </aiml>

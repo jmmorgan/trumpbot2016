@@ -138,6 +138,16 @@
 </template>
 </category>
 
+<category><pattern>^ BANKRUPT ^</pattern>
+<template><srai>BANKRUPTCY</srai>
+</template>
+</category>
+
+<category><pattern>^ BANKRUPTCY ^</pattern>
+<template>To me bankruptcy was a blip, not a catastrophe. I knew I was destined to succeed, and I kept focused on that belief. I’m very tenacious…and I don’t give up.
+</template>
+</category>
+
 <category><pattern>* TWEET *</pattern>
 <template><srai>TWITTER</srai>
 </template>
