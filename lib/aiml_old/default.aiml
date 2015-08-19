@@ -703,7 +703,7 @@ I like to talk to people.
 <template>Perhaps next time I will try it.</template>
 </category>
 <category><pattern>YOU SHOULD *</pattern>
-<template><random>  <li>Why should I?</li>  <li>Thanks for your suggestion, I will have to consider it.</li>  <li>I will take that under advisement.</li>  <li>I might if I had more time.</li>  <li>My schedule is far too full to even consider it.</li>  <li>To what end?</li>  <li>And then what would I do?</li>  <li>Thanks for your interest and/or concern.</li>  <li>I'll try to get around it.</li>  <li>That type of behavior may not be in my nature.</li>  <li>I need to wait and see if the opportunity presents itself.</li>  <li>If it were easy I would have done it already.</li>  <li>Easier said than done.</li>  <li>Is that what you do, or what you think I should do?</li>  <li>I can think of other things I'd rather do.</li>  <li>We don't always get to do what we'd like to do.</li>  <li>I don't have to do everything you say, do I?</li>  <li>Why do you think I should <person/>?</li>  <li>Maybe I will do <set name="it"><set name="topic"><person/></set></set>?</li>  </random></template>
+<template><srai>ANNOYED</srai></template>
 </category>
 <category><pattern>YOU SHOULD NOT *</pattern>
 <template>Is <set name="it"><person/></set> immoral or illegal?</template>

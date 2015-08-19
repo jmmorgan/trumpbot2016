@@ -1,26 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
 
+<category><pattern>WHAT IS # <set>issue</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
 
-<category><pattern># SOCIAL SECURITY #</pattern>
+<category><pattern>WHO IS # <set>issue</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>WHAT DO YOU # <set>issue</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>WHAT DID # <set>issue</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>CAN # <set>issue</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>COULD # <set>issue</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>WILL # <set>issue</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>WOULD # <set>issue</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>ARE YOU * THAN <set>issue</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>IS <set>issue</set> * THAN YOU #</pattern>
+<template>
+<srai><star index="1"/></srai>
+</template>
+</category>
+
+<category><pattern>WHAT ABOUT ^ <set>issue</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>HOW ABOUT ^ <set>issue</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>WHAT IS ^ <set>issue</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>* <set>issue</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>^ <set>issue</set> *</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern><set>issue</set></pattern>
+<template>
+ <random>
+  <li>The issue of <star/> is a disaster.</li>
+  <li>The issue of <star/> is a joke.</li>
+  <li>The issue of <star/> is out of control.</li>
+  <li>Other countries are laughing at us over <star/>.</li>
+ </random>
+</template>
+</category>
+
+
+<category><pattern>SOCIAL SECURITY</pattern>
 <template>
 <srai>ENTITLEMENTS</srai>
 </template>
 </category>
 
-<category><pattern># MEDICARE #</pattern>
+<category><pattern>MEDICARE</pattern>
 <template>
 <srai>ENTITLEMENTS</srai>
 </template>
 </category>
 
-<category><pattern>^ RETIREMENT #</pattern>
+<category><pattern>RETIREMENT</pattern>
 <template>
 <srai>ENTITLEMENTS</srai>
 </template>
 </category>
 
-<category><pattern># MEDICAID #</pattern>
+<category><pattern>MEDICAID</pattern>
 <template>
 
 <srai>ENTITLEMENTS</srai>
@@ -37,35 +138,35 @@
 </template>
 </category>
 
-<category><pattern># HEALTHCARE #</pattern>
+<category><pattern>HEALTHCARE</pattern>
 <template>
   
 <srai>HEALTH CARE</srai>
 </template>
 </category>
 
-<category><pattern># OBAMACARE #</pattern>
+<category><pattern>OBAMACARE</pattern>
 <template>
   
 <srai>HEALTH CARE</srai>
 </template>
 </category>
 
-<category><pattern># ACA #</pattern>
+<category><pattern>ACA</pattern>
 <template>
   
 <srai>HEALTH CARE</srai>
 </template>
 </category>
 
-<category><pattern># MEDICAL INSURANCE #</pattern>
+<category><pattern>MEDICAL INSURANCE</pattern>
 <template>
   
 <srai>HEALTH CARE</srai>
 </template>
 </category>
 
-<category><pattern># HEALTH INSURANCE #</pattern>
+<category><pattern>HEALTH INSURANCE</pattern>
 <template>
   
 <srai>HEALTH CARE</srai>
@@ -84,7 +185,7 @@
 </template>
 </category>
 
-<category><pattern># MEXICO #</pattern>
+<category><pattern>MEXICO</pattern>
 <template>
 <random>
 <li>Our leaders are stupid. Our politicians are stupid. And the Mexican government is much smarter... much more cunning.</li> 
@@ -94,33 +195,27 @@
 </template>
 </category>
 
-<category><pattern># ILLEGALS #</pattern>
+<category><pattern>ILLEGALS</pattern>
 <template>
   
 <srai>IMMIGRATION</srai>
 </template>
 </category>
 
-<category><pattern># ILLEGAL ALIENS #</pattern>
+<category><pattern>ILLEGAL ALIENS</pattern>
 <template>
   
 <srai>IMMIGRATION</srai>
 </template>
 </category>
 
-<category><pattern># BORDER #</pattern>
+<category><pattern>BORDER</pattern>
 <template>
   
 <srai>IMMIGRATION</srai>
 </template>
 </category>
 
-<category><pattern># IMMIGRATION _</pattern>
-<template>
-  
-<srai>IMMIGRATION</srai>
-</template>
-</category>
 
 <category><pattern>IMMIGRATION</pattern>
 <template>
@@ -139,14 +234,7 @@
 </template>
 </category>
 
-<category><pattern># HISPANIC #</pattern>
-<template>
-  
-<srai>LATINOS</srai>
-</template>
-</category>
-
-<category><pattern>_ LATINOS #</pattern>
+<category><pattern>HISPANIC</pattern>
 <template>
   
 <srai>LATINOS</srai>
@@ -166,35 +254,29 @@
 </template>
 </category>
 
-<category><pattern>_ MILITARY #</pattern>
+<category><pattern>MILITARY</pattern>
 <template>
   
 <srai>DEFENSE</srai>
 </template>
 </category>
 
-<category><pattern>_ DEFENSE #</pattern>
+
+<category><pattern>DEFENCE</pattern>
 <template>
   
 <srai>DEFENSE</srai>
 </template>
 </category>
 
-<category><pattern>_ DEFENCE #</pattern>
+<category><pattern>ARMED FORCES</pattern>
 <template>
   
 <srai>DEFENSE</srai>
 </template>
 </category>
 
-<category><pattern>_ ARMED FORCES #</pattern>
-<template>
-  
-<srai>DEFENSE</srai>
-</template>
-</category>
-
-<category><pattern>_ IRAN #</pattern>
+<category><pattern>IRAN</pattern>
 <template>
   
   <random>
@@ -206,7 +288,7 @@
 
 
 
-<category><pattern>_ IRAQ #</pattern>
+<category><pattern>IRAQ</pattern>
 <template>
   <random>
     <li><srai>SADDAM</srai></li>
@@ -216,7 +298,7 @@
 </template>
 </category>
 
-<category><pattern>_ AFGHANISTAN #</pattern>
+<category><pattern>AFGHANISTAN</pattern>
 <template>
   
 <srai>DEFENSE</srai>
@@ -231,7 +313,7 @@
 </template>
 </category>
 
-<category><pattern>^ MAKE AMERICA GREAT #</pattern>
+<category><pattern>MAKE AMERICA GREAT</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
@@ -258,7 +340,7 @@
 
 <!-- For now we'll just have placeholders for other issue buzzwords. -->
 <!-- Might create an issues.set file to handle these -->
-<category><pattern>_ TERRORISM #</pattern>
+<category><pattern>TERRORISM</pattern>
 <template>
   
 <random>
@@ -268,7 +350,7 @@
 </template>
 </category>
 
-<category><pattern>_ TERROR #</pattern>
+<category><pattern>TERROR</pattern>
 <template>
   
 <random>
@@ -278,7 +360,7 @@
 </template>
 </category>
 
-<category><pattern>_ ISIS #</pattern>
+<category><pattern>ISIS</pattern>
 <template>
   
 <random>
@@ -299,21 +381,21 @@
 </template>
 </category>
 
-<category><pattern>_ TAXES #</pattern>
+<category><pattern>TAXES</pattern>
 <template>
   
 <srai><star/> TAXATION</srai>
 </template>
 </category>
 
-<category><pattern>_ TAX #</pattern>
+<category><pattern>TAX</pattern>
 <template>
   
 <srai><star/> TAXATION</srai>
 </template>
 </category>
 
-<category><pattern>_ TAXATION #</pattern>
+<category><pattern>TAXATION</pattern>
 <template>
   
 <random>
@@ -325,7 +407,7 @@
 </template>
 </category>
 
-<category><pattern>_ GUNS #</pattern>
+<category><pattern>GUNS</pattern>
 <template>
   
 <random>
@@ -335,7 +417,7 @@
 </template>
 </category>
 
-<category><pattern>_ GUN CONTROL #</pattern>
+<category><pattern>GUN CONTROL</pattern>
 <template>
   
 <random>
@@ -345,7 +427,7 @@
 </template>
 </category>
 
-<category><pattern>_ DRUGS #</pattern>
+<category><pattern>DRUGS</pattern>
 <template>
   
 <random>
@@ -355,7 +437,7 @@
 </template>
 </category>
 
-<category><pattern>_ CRIME #</pattern>
+<category><pattern>CRIME</pattern>
 <template>
   
 <random>
@@ -365,17 +447,12 @@
 </template>
 </category>
 
-<category><pattern>^ RACIST ^</pattern>
+<category><pattern>RACIST</pattern>
 <template><srai>RACISM</srai>
 </template>
 </category>
 
-<category><pattern>^ RACISM ^</pattern>
-<template><srai>RACISM</srai>
-</template>
-</category>
-
-<category><pattern>^ THE BLACKS #</pattern>
+<category><pattern>THE BLACKS</pattern>
 <template><srai>RACISM</srai>
 </template>
 </category>
@@ -396,31 +473,23 @@
 </template>
 </category>
 
-<category><pattern>POLICE</pattern>
-<template>
-  
-<random>
-    <li><srai>POLICE</srai></li>
-    <li><srai>CAMPAIGN</srai></li>
-  </random>
-</template>
-</category>
 
-<category><pattern>_ MARRIAGE #</pattern>
+
+<category><pattern>MARRIAGE</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
 </template>
 </category>
 
-<category><pattern>_ GAY #</pattern>
+<category><pattern>GAY</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
 </template>
 </category>
 
-<category><pattern>_ ENVIRONMENT #</pattern>
+<category><pattern>ENVIRONMENT</pattern>
 <template>
   
 <random>
@@ -431,7 +500,7 @@
 </template>
 </category>
 
-<category><pattern>_ POLLUTION #</pattern>
+<category><pattern>POLLUTION</pattern>
 <template>
   
 <random>
@@ -442,7 +511,7 @@
 </template>
 </category>
 
-<category><pattern>_ CLIMATE CHANGE #</pattern>
+<category><pattern>CLIMATE CHANGE</pattern>
 <template>
   
 <random>
@@ -453,7 +522,7 @@
 </template>
 </category>
 
-<category><pattern>_ GLOBAL WARMING #</pattern>
+<category><pattern>GLOBAL WARMING</pattern>
 <template>
   
 <random>
@@ -474,7 +543,7 @@
 
 
 
-<category><pattern>_ ENERGY #</pattern>
+<category><pattern>ENERGY</pattern>
 <template>
   
 <random>
@@ -485,7 +554,7 @@
 </template>
 </category>
 
-<category><pattern>^ KEYSTONE #</pattern>
+<category><pattern>KEYSTONE</pattern>
 <template><srai>KEYSTONE</srai>
 </template>
 </category>
@@ -495,21 +564,21 @@
 </template>
 </category>
 
-<category><pattern>_ CHINA #</pattern>
+<category><pattern>CHINA</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
 </template>
 </category>
 
-<category><pattern>_ CHINESE #</pattern>
+<category><pattern>CHINESE</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
 </template>
 </category>
 
-<category><pattern>^ RUNNING MATE #</pattern>
+<category><pattern>RUNNING MATE</pattern>
 <template>
   <random>
     <li>I think Oprah would be a great running mate. I'd love to have Oprah.</li>
@@ -517,14 +586,14 @@
 </template>
 </category>
 
-<category><pattern>^ EXECUTIVE COMPENSATION #</pattern>
+<category><pattern>EXECUTIVE COMPENSATION</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>
 </template>
 </category>
 
-<category><pattern>^ EXECUTIVE PAY #</pattern>
+<category><pattern>EXECUTIVE PAY</pattern>
 <template>
   
 <srai>CAMPAIGN</srai>

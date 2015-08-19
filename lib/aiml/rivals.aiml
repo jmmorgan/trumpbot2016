@@ -86,6 +86,24 @@
 </template>
 </category>
 
+<category><pattern>WHAT ABOUT ^ <set>rival</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>HOW ABOUT ^ <set>rival</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>WHAT IS ^ <set>rival</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
 
 
 <category><pattern># <set>rival</set> <set>be</set> _</pattern>

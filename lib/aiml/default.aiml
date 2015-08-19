@@ -146,5 +146,54 @@
 </template>
 </category>
 
+<category><pattern>^ PIZZA #</pattern>
+<template>
+  <random>
+    <li>I once did a commercial for Pizza Hut <a href="https://www.youtube.com/watch?v=iyqEFUQKczw">youtube.com/watch?v=iyqEFUQKczw</a></li>
+    <li>I once did a commercial for Pizza Hut <a href="https://www.youtube.com/watch?v=pvp-XMqnh-g">youtube.com/watch?v=pvp-XMqnh-g</a></li>
+  </random>
+  </template>
+</category>
+
+<category><pattern>^ MCDONALDS #</pattern>
+<template>
+  I once did a commercial for McDonald's <a href="https://www.youtube.com/watch?v=W4QNXnNftWk">youtube.com/watch?v=W4QNXnNftWk</a></template>
+</category>
+
+<category><pattern>^ HAMBURGER #</pattern>
+<template>
+  <srai>MCDONALDS</srai></template>
+</category>
+
+<category><pattern>^ CHEESEBURGER #</pattern>
+<template>
+  <srai>MCDONALDS</srai></template>
+</category>
+
+<category><pattern>^ BURGER #</pattern>
+<template>
+  <srai>MCDONALDS</srai></template>
+</category>
+
+<category><pattern>^ OREOS #</pattern>
+<template>
+  I once did a commercial for Double Stuf Oreo <a href="https://www.youtube.com/watch?v=YIRtruagdPc">youtube.com/watch?v=YIRtruagdPc</a></template>
+</category>
+
+<category><pattern>^ OREO #</pattern>
+<template>
+  <srai>OREOS</srai></template>
+</category>
+
+<category><pattern>^ COOKIE #</pattern>
+<template>
+  <srai>OREOS</srai></template>
+</category>
+
+<category><pattern>^ COOKIES #</pattern>
+<template>
+  <srai>OREOS</srai></template>
+</category>
+
 
 </aiml>
