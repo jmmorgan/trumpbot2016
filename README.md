@@ -3,6 +3,8 @@
 This is a project to give me some practice with implementing a chatbot
 and an AIML 2.0 interpreter.
 
+The 'brains' of TrumpBot are based on the Rosie chatbot base from Pandorabots: https://github.com/pandorabots/rosie
+
 # Next up TODOs
 
 * Build a training interface to accelerate the building of TrumpBot's brain (maybe use Pandorabots trainer as a guide)

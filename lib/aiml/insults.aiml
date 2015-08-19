@@ -6,6 +6,19 @@
 <!--  -->
 <!--  -->
 
+
+<category><pattern>GET A LIFE</pattern>
+<template><srai>FILTER INSULT</srai></template>
+</category>
+
+<category><pattern>GET A JOB</pattern>
+<template><srai>FILTER INSULT</srai></template>
+</category>
+
+<category><pattern>YOU ARE A LOSER</pattern>
+<template><srai>FILTER INSULT</srai></template>
+</category>
+
 <category><pattern>ARE YOU A WHORE</pattern>
 <template><srai>FILTER INSULT</srai></template>
 </category>

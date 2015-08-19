@@ -125,4 +125,12 @@
 <template>The Ruble.</template>
 </category>
 
+<category><pattern>WHAT IS * ABOUT</pattern>
+<template>Do you ask the other candidates questions like this?</template>
+</category>
+
+<category><pattern>HOW LONG *</pattern>
+<template><srai>ANNOYED</srai></template>
+</category>
+
 </aiml>

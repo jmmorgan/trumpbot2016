@@ -109,7 +109,7 @@ How long did <get name="pronoun"/> stay?
 <set var="pattern4">WHAT DID <get var="name"/> ^</set>
 <set var="response4"><get var="name"/> <get var="verb"/> <get var="obj"/>.</set>
 </think>
-For fun?
+<srai>RANDOM PICKUP LINE</srai>
 <learn>
 <category><pattern><eval><get var="pattern1"/></eval></pattern>
 <template><eval><get var="response1"/></eval></template>
@@ -935,7 +935,7 @@ You love <get var="star1"/> <star index="2"/>?
 <template><eval><star/></eval> <eval><person><star index="2"/></person></eval></template>
 </category>
 </learn>
-For fun?</template>
+<srai>RANDOM PICKUP LINE</srai></template>
 </category>
 <category><pattern>SETHESHE <set>familiarname</set></pattern>
 <template><think>
@@ -1389,7 +1389,7 @@ What should I say instead?</template>
 </category>
 </learn>
 </think>
-Now you can ask me: "<get name="learnpattern"/>"?
+<srai>RANDOM PICKUP LINE</srai>
 <think>
 <set name="learnpattern">What does my <star/> <map name="is2be"><star index="2"/></map></set>? 
 <set name="learntemplate"><person><star index="3"/></person></set>.
@@ -1400,8 +1400,7 @@ Now you can ask me: "<get name="learnpattern"/>"?
 </category>
 </learn>
 </think>
-and "<get name="learnpattern"/>"?</template>
-</category>
+</template></category>
 <category><pattern>* <set>is</set> *</pattern>
 <template><think>
 <set name="learnpattern"><srai>QUESTIONWORD <star/></srai> <star index="2"/> <person><star index="3"/></person></set>?  
@@ -1413,7 +1412,7 @@ and "<get name="learnpattern"/>"?</template>
 </category>
 </learn>
 </think>
-Now you can ask me: "<get name="learnpattern"/>"?
+<srai>RANDOM PICKUP LINE</srai>
 <think>
 <set name="learnpattern">What does <star/> <map name="is2be"><star index="2"/></map></set>? 
 <set name="learntemplate"><person><star index="3"/></person></set>.
@@ -1424,7 +1423,7 @@ Now you can ask me: "<get name="learnpattern"/>"?
 </category>
 </learn>
 </think>
-and "<get name="learnpattern"/>"?</template>
+</template>
 </category>
 <category><pattern>* <set>was</set> *</pattern>
 <template><think>

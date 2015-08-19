@@ -26,6 +26,7 @@ class BotBrain
   # TODO: This current implementation is somewhat brittle in that the order that entries in the
   # map file are applied affects the 'normalized' result. Should revisit if this project develops legs.
   def normalize(input)
+    input = replace_smart_quotes(input)
     sentences = input.split(/[#{Regexp.quote(PROPERTIES_MAP_FILE['sentence-splitters'])}](\s+|$)/).reject(&:blank?)
     sentences = sentences.map{|sentence| " #{sentence} "} # Pad with spaces for normal substitutions
     sentences.each do |sentence|
@@ -83,6 +84,19 @@ class BotBrain
         Graphmaster.instance.add_category(parser.parse(Nokogiri::XML(xml).root), chat_session_id)
       end
     end
+  end
+
+  private 
+
+  def replace_smart_quotes(input)
+    # Grokked from http://axonflux.com/handy-regexes-for-smart-quotes
+    result = input
+    #result = result.gsub(/[\x84\x93\x94]/, '"')
+    result = result.gsub(/[\u201C\u201D\u201E\u201F\u2033\u2036]/, '"')
+    #result = result.gsub(/[\x82\x91\x92]/, "'")
+    result = result.gsub(/[\u2018\u2019\u201A\u201B\u2032\u2035]/, "'")
+
+    result
   end
   
 end

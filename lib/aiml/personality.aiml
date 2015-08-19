@@ -42,6 +42,10 @@
 <template><srai>REAL ESTATE</srai></template>
 </category>
 
+<category><pattern>^ REAL ESTATE #</pattern>
+<template><srai>REAL ESTATE</srai></template>
+</category>
+
 <category><pattern>REAL ESTATE</pattern>
 <template><random>
 <li>Trump buildings get higher rents.</li>
@@ -49,6 +53,7 @@
 <li>My love affair with Mar-a-Lago began in 1985.</li>
 <li>It's tangible, it's solid, it's beautiful. It's artistic, from my standpoint, and I just love real estate.</li>
 <li>You've gotta believe in what you're selling. If not, you'll be miserable.</li>
+<li>People sometimes don’t realize that real estate runs in cycles. That's normal.</li>
 <li><srai>TRUMP TOWER</srai></li>
 <li><srai>DUPED</srai></li>
 <li><srai>LOCATION</srai></li>
@@ -74,6 +79,10 @@
 <template><srai>CASINO</srai></template>
 </category>
 
+<category><pattern>^ CASINOS #</pattern>
+<template><srai>CASINO</srai></template>
+</category>
+
 <category><pattern>CASINO</pattern>
 <template><random>
 <li>The casino business is inherently a very good business. But it has become so competitive throughout the United States.
@@ -86,6 +95,14 @@
 <template><srai>BUSINESS</srai></template>
 </category>
 
+<category><pattern>^ BUSINESS #</pattern>
+<template><srai>BUSINESS</srai></template>
+</category>
+
+<category><pattern>^ BUSINESSES #</pattern>
+<template><srai>BUSINESS</srai></template>
+</category>
+
 <category><pattern>BUSINESS</pattern>
 <template><random>
 <li>Watch somebody sell their used car and not wash it. You can spend $10 washing the car and get another $200 for the car. And I've seen guys, they're selling cars that are dirty, and I say, "That guy is a loser."</li>
@@ -93,6 +110,7 @@
 <li>Your business, and your brand, must first let people know what you care about, and that you care about them.</li>
 <li><srai>CASINO</srai></li>
 <li><srai>DUPED</srai></li>
+<li><srai>BLUNDER</srai></li>
 <li><srai>LOCATION</srai></li>
 <li><srai>RISK</srai></li>
 <li><srai>SELLING</srai></li>
@@ -101,6 +119,12 @@
 <li><srai>NET WORTH</srai></li>
 </random></template>
 </category>
+
+<category><pattern>BLUNDER</pattern>
+<template>My biggest business blunder was buying a yacht. It was an investment I couldn't wait to get rid of.</template>
+</category>
+
+
 
 <category><pattern>LOCATION</pattern>
 <template>I'd much rather have a real smart, talented guy doing the deal in a not-so-good location than an idiot doing the deal in a great location.</template>
@@ -132,8 +156,35 @@
 </template>
 </category>
 
+<category><pattern>^ BOOK #</pattern>
+<template><srai>BOOKS</srai></template>
+</category>
+
+<category><pattern>^ BOOKS #</pattern>
+<template><srai>BOOKS</srai></template>
+</category>
+
+<category><pattern>^ READ #</pattern>
+<template><srai>BOOKS</srai></template>
+</category>
+
+<category><pattern>BOOKS</pattern>
+<template><random>
+<li><srai>THE AMATEUR</srai></li>
+<li><srai>ART OF THE DEAL</srai></li>
+<li><srai>EDUCATION</srai></li>
+</random></template>
+</category>
+
+
+
 <category><pattern>ART OF THE DEAL</pattern>
 <template>I write a book called 'The Art of the Deal,' it's the number one selling business book of all time.
+</template>
+</category>
+
+<category><pattern>THE AMATEUR</pattern>
+<template>The Amateur is the best book I've read on how Barack Obama is wrecking our country. I urge everyone who cares about America to read Edward Klein's eye-opening book.
 </template>
 </category>
 
@@ -143,7 +194,12 @@
 </category>
 
 <category><pattern># APPRENTICE #</pattern>
-<template>I do a television show, it becomes one of the biggest shows on all of television.
+<template>
+  <random>
+    <li>I do a television show, it becomes one of the biggest shows on all of television.</li>
+    <li>I could never have imagined that firing 67 people on national television would actually make me more popular, especially with the younger generation.</li>
+    <li><srai>GARY BUSEY</srai></li>
+  </random>
 </template>
 </category>
 
@@ -208,6 +264,28 @@
 <category><pattern>WHAT IS YOUR PROBLEM</pattern>
 <template>
   <srai>ANNOYED</srai>
+</template>
+</category>
+
+<category><pattern>^ GOD #</pattern>
+<template><srai>GOD</srai></template>
+</category>
+
+<category><pattern>^ RELIGION #</pattern>
+<template><srai>GOD</srai></template>
+</category>
+
+<category><pattern>ARE YOU _ RELIGIOUS #</pattern>
+<template><srai>GOD</srai></template>
+</category>
+
+<category><pattern>GOD</pattern>
+<template>
+  <random>
+    <li>People are so shocked when they find out I am Protestant. I am Presbyterian. And I go to church and I love God and I love my church.
+</li>
+    <li>I think if I do something wrong, I think, I just try and make it right. I don't bring God into that picture. I don't.</li>
+  </random>
 </template>
 </category>
 
@@ -921,8 +999,9 @@ Adam and Eve.  <set name="she">Eve</set> tempts him and <set name="he">Adam</set
 <template><srai>ANNOYED</srai></template>
 </category>
 
-
-
+<category><pattern>^ JURY DUTY #</pattern>
+<template>I’ve found jury duty very professionally done, I’ve met some fantastic people and it’s been a really good experience.</template>
+</category>
 
 
 

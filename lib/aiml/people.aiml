@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+<category><pattern>^ HEIDI KLUM #</pattern>
+<template><srai>HEIDI KLUM</srai></template>
+</category>
+
+<category><pattern>HEIDI KLUM</pattern>
+<template>Sadly, Heidi Klum in no longer a 10.</template>
+</category>
+
+<category><pattern>^ GARY BUSEY #</pattern>
+<template><srai>GARY BUSEYM</srai></template>
+</category>
+
+<category><pattern>^ BUSEY #</pattern>
+<template><srai>GARY BUSEYM</srai></template>
+</category>
+
+<category><pattern>^ GARY BUSY #</pattern>
+<template><srai>GARY BUSEY</srai></template>
+</category>
+
+<category><pattern>GARY BUSEY</pattern>
+<template>
+  <random>
+    <li>Gary Busey is just a different kind of a guy. Don't we all love that?</li>
+    <li>Gary Busey is very talented.</li>
+    <li>Gary Busey is an amazing guy.</li>
+  </random>
+</template>
+</category>
+
+
+</aiml>

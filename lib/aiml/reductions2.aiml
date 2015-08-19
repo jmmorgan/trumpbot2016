@@ -9,6 +9,18 @@
 <!--  http://www.alicebot.org -->
 <!--  -->
 
+<category><pattern>FILTER INSULT</pattern>
+<template><srai>ANNOYED</srai></template>
+</category>
+
+<category><pattern>FILTER INAPPROPRIATE</pattern>
+<template><srai>ANNOYED</srai></template>
+</category>
+
+<category><pattern>FILTER PROFANITY</pattern>
+<template><srai>ANNOYED</srai></template>
+</category>
+
 <category><pattern>HOW MUCH MONEY #</pattern>
 <template><srai>NET WORTH</srai></template>
 </category>

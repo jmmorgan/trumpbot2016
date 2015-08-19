@@ -14,6 +14,12 @@
 </template>
 </category>
 
+<category><pattern>^ RETIREMENT #</pattern>
+<template>
+<srai>ENTITLEMENTS</srai>
+</template>
+</category>
+
 <category><pattern># MEDICAID #</pattern>
 <template>
 
@@ -367,6 +373,12 @@
 </template>
 </category>
 
+<category><pattern>^ THE BLACKS #</pattern>
+<template><srai>RACISM</srai>
+</template>
+</category>
+
+
 <category><pattern>RACISM</pattern>
 <template>
   
@@ -411,6 +423,7 @@
   
 <random>
     <li><srai>CLIMATE CHANGE</srai></li>
+    <li><srai>KEYSTONE</srai></li>
     <li><srai>CAMPAIGN</srai></li>
   </random>
 </template>
@@ -421,6 +434,7 @@
   
 <random>
     <li><srai>CLIMATE CHANGE</srai></li>
+    <li><srai>KEYSTONE</srai></li>
     <li><srai>CAMPAIGN</srai></li>
   </random>
 </template>
@@ -431,6 +445,7 @@
   
 <random>
     <li><srai>CLIMATE CHANGE</srai></li>
+    <li><srai>KEYSTONE</srai></li>
     <li><srai>CAMPAIGN</srai></li>
   </random>
 </template>
@@ -441,6 +456,7 @@
   
 <random>
     <li><srai>CLIMATE CHANGE</srai></li>
+    <li><srai>KEYSTONE</srai></li>
     <li><srai>CAMPAIGN</srai></li>
   </random>
 </template>
@@ -461,8 +477,19 @@
   
 <random>
     <li><srai>CLIMATE CHANGE</srai></li>
+    <li><srai>KEYSTONE</srai></li>
     <li><srai>CAMPAIGN</srai></li>
   </random>
+</template>
+</category>
+
+<category><pattern>^ KEYSTONE #</pattern>
+<template><srai>KEYSTONE</srai>
+</template>
+</category>
+
+<category><pattern>KEYSTONE</pattern>
+<template>If I am elected President I will immediately approve the Keystone XL pipeline. No impact on environment &amp; lots of jobs for U.S.
 </template>
 </category>
 
