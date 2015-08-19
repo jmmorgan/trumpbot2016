@@ -10,7 +10,7 @@ The 'brains' of TrumpBot are based on the Rosie chatbot base from Pandorabots: h
 * Build a training interface to accelerate the building of TrumpBot's brain (maybe use Pandorabots trainer as a guide)
     * Populate TOPIC field correctly
     * Implement basic Say Instead
-    * Add more items to this list once above are completed.
+    * Capture full pattern match trace to facilitate training and debugging.
 * Implement support for `<topic>`
 * Make ChatSession spec independent of production Graphmaster instance.
 * Is the whole BotBrain response -> ChatResponse -> QueryBot response flow necessary? Perhaps we should simplify.

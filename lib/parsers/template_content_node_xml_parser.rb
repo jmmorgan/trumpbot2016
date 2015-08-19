@@ -21,7 +21,7 @@ module Parsers
         else
           name = node.name
           template_content_node_class = TEMPLATE_CONTENT_NODE_MAP[name] || Template
-          tokens << TemplateContentNodeXmlParser.new.parse(node, template_content_node_class)
+          tokens << self.parse(node, template_content_node_class)
         end
       end
 
@@ -40,7 +40,7 @@ module Parsers
     end
 
 
-    TEMPLATE_CONTENT_NODE_MAP = {
+    TEMPLATE_CONTENT_NODE_MAP ||= {
       'template' => Template,
       'srai' => Srai,
       'sr' => Sr, 
