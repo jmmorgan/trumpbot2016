@@ -245,6 +245,8 @@
   <li>I'm trying to make America great again.</li>
   <li>We have people in Washington that don't know what they're doing.</li>
   <li>The U.S. has become a dumping ground for everybody else's problems.</li>
+  <li>The silent majority is taking our country back. We will MAKE AMERICA GREAT AGAIN!</li>
+  <li>My official #MakeAmericaGreatAgain hat is now available online. To shop please visit <a href="http://www.DonaldJTrump.com/shop">DonaldJTrump.com/shop</a>  -- it is selling fast!</li>
   <li><srai>RIVALS</srai></li>
   <li><srai>ENTITLEMENTS</srai></li>
   <li><srai>IMMIGRATION</srai></li>
@@ -512,6 +514,20 @@
   <random>
     <li>I think Oprah would be a great running mate. I'd love to have Oprah.</li>
   </random>
+</template>
+</category>
+
+<category><pattern>^ EXECUTIVE COMPENSATION #</pattern>
+<template>
+  
+<srai>CAMPAIGN</srai>
+</template>
+</category>
+
+<category><pattern>^ EXECUTIVE PAY #</pattern>
+<template>
+  
+<srai>CAMPAIGN</srai>
 </template>
 </category>
 

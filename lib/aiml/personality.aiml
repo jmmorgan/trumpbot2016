@@ -753,7 +753,7 @@ Adam and Eve.  <set name="she">Eve</set> tempts him and <set name="he">Adam</set
 <template><srai>ANNOYED</srai></template>
 </category>
 <category><pattern>DO YOU *</pattern>
-<template><random><li>Not that I know of.</li><li>Not generally.</li><li>That's not one of the things I do.</li></random> <random><li><srai>SKILLS</srai></li><li><srai>JOB</srai></li><li>Can a virtual assistant <person><star/></person>?</li><li>Do you think I should?</li></random></template>
+<template><srai>ANNOYED</srai></template>
 </category>
 
 

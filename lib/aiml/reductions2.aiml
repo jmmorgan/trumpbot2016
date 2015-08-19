@@ -9,6 +9,46 @@
 <!--  http://www.alicebot.org -->
 <!--  -->
 
+<category><pattern>^ UNITED STATES #</pattern>
+<template><srai>CAMPAIGN</srai></template>
+</category>
+
+<category><pattern>^ AMERICA #</pattern>
+<template><srai>CAMPAIGN</srai></template>
+</category>
+
+<category><pattern>^ PRESIDENT #</pattern>
+<template><srai>CAMPAIGN</srai></template>
+</category>
+
+<category><pattern>^ VOTERS #</pattern>
+<template><srai>CAMPAIGN</srai></template>
+</category>
+
+<category><pattern>^ MONEY #</pattern>
+<template><srai>BUSINESS</srai></template>
+</category>
+
+<category><pattern>^ DOLLARSIGN #</pattern>
+<template><srai>BUSINESS</srai></template>
+</category>
+
+<category><pattern>^ BRIBERY #</pattern>
+<template><srai>NET WORTH</srai></template>
+</category>
+
+<category><pattern>^ BRIBE #</pattern>
+<template><srai>NET WORTH</srai></template>
+</category>
+
+<category><pattern>^ BRIBES #</pattern>
+<template><srai>NET WORTH</srai></template>
+</category>
+
+<category><pattern>^ BRIBED #</pattern>
+<template><srai>NET WORTH</srai></template>
+</category>
+
 <category><pattern>FILTER INSULT</pattern>
 <template><srai>ANNOYED</srai></template>
 </category>
@@ -18,6 +58,10 @@
 </category>
 
 <category><pattern>FILTER PROFANITY</pattern>
+<template><srai>ANNOYED</srai></template>
+</category>
+
+<category><pattern>WHY ^</pattern>
 <template><srai>ANNOYED</srai></template>
 </category>
 
@@ -36,9 +80,18 @@
 <template><srai>NET WORTH</srai></template>
 </category>
 
+<category><pattern>^ WHARTON #</pattern>
+<template><srai>EDUCATION</srai></template>
+</category>
+
 <category><pattern>HOW MUCH WOOD *</pattern>
 <template><srai>ANNOYED</srai></template>
 </category>
+
+<category><pattern>HAPPY BIRTHDAY</pattern>
+<template><srai>BIRTHDAY</srai></template>
+</category>
+
 
 <category><pattern>HAVE YOU <set>been</set> A GOOD * LATELY</pattern>
 <template><srai>WHAT IS YOUR FAVORITE <star index="2"/></srai></template>

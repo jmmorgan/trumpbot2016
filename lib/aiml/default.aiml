@@ -129,8 +129,22 @@
 <template>Do you ask the other candidates questions like this?</template>
 </category>
 
+<category><pattern>WHAT IS *</pattern>
+<template><srai>ANNOYED</srai></template>
+</category>
+
+<category><pattern>WHAT IS THE BEST COMPUTER</pattern>
+<template>I don't do the email thing.</template>
+</category>
+
 <category><pattern>HOW LONG *</pattern>
 <template><srai>ANNOYED</srai></template>
 </category>
+
+<category><pattern>WHO HELPED YOU *</pattern>
+<template>My parents. They were wonderful examples, and I learned a great deal from observing their work ethic and integrity in their daily lives.
+</template>
+</category>
+
 
 </aiml>
