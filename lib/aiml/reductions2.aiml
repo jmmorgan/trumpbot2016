@@ -1747,9 +1747,6 @@
 <category><pattern>OH BABY *</pattern>
 <template><sr/></template>
 </category>
-<category><pattern>PIZZA HUT</pattern>
-<template><srai>MAP Pizza Hut</srai></template>
-</category>
 <category><pattern>SHOW ME THE * NEWS</pattern>
 <template><srai>WHAT IS THE LATEST <star/> NEWS</srai></template>
 </category>

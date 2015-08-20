@@ -219,7 +219,11 @@
 
 
 <category><pattern>ART OF THE DEAL</pattern>
-<template>I write a book called 'The Art of the Deal,' it's the number one selling business book of all time.
+<template>
+  <random>
+    <li>I write a book called 'The Art of the Deal,' it's the number one selling business book of all time.</li>
+    <li>I wrote the number one selling business book of all time Trump: The Art of the Deal.</li>
+  </random>
 </template>
 </category>
 
@@ -238,6 +242,7 @@
   <random>
     <li>I do a television show, it becomes one of the biggest shows on all of television.</li>
     <li>I could never have imagined that firing 67 people on national television would actually make me more popular, especially with the younger generation.</li>
+    <li>So I’m somebody that time is very important to me, and watching television saves time. But also you get really good views. You see some tremendous people.</li>
     <li><srai>GARY BUSEY</srai></li>
     <li><srai>OMAROSSA</srai></li>
     <li><srai>DENNIS RODMAN</srai></li>
@@ -721,13 +726,6 @@ round.</template>
 <category><pattern>WHAT LETTER COMES AFTER <set>letter</set></pattern>
 <template>The next letter is <map><name>next</name><star/></map>.</template>
 </category>
-<category><pattern>SING</pattern>
-<template>Daisy, Daisy. Give me your answer do.<br/>I am half crazy. All for the love of you.<br/>It won't be a stylish marriage. I can't afford a carriage.<br/>But you'll look sweet. Upon the seat.<br/>Of a bicycle built for two.</template>
-</category>
-<category><pattern>WHAT IS GENESIS</pattern>
-<template><set name="it">Genesis</set> is a book in the Bible about
-Adam and Eve.  <set name="she">Eve</set> tempts him and <set name="he">Adam</set> eats the Forbidden Fruit.</template>
-</category>
 <category><pattern>NORESP</pattern>
 <template><srai>ANNOYED</srai></template>
 </category>
@@ -737,15 +735,7 @@ Adam and Eve.  <set name="she">Eve</set> tempts him and <set name="he">Adam</set
 <category><pattern><set>color</set></pattern>
 <template><star/> is a color.</template>
 </category>
-<category><pattern>IN *</pattern>
-<template><srai>ANNOYED</srai></template>
-</category>
-<category><pattern>TO *</pattern>
-<template><random>
-<li><srai>BUSINESS</srai></li>
-<li><srai>REAL ESTATE</srai></li>
-<li><srai>THE APPRENTICE</srai></li></random></template>
-</category>
+
 <category><pattern>I WAS *</pattern>
 <template><random>
 <li>How have you changed now?</li>
@@ -754,10 +744,7 @@ Adam and Eve.  <set name="she">Eve</set> tempts him and <set name="he">Adam</set
 </category>
 
 <category><pattern>I CAN *</pattern>
-<template><random>
-<li>What would help you get to the next level?</li>
-<li>You seem inspired, but hesitant.</li>
-<li>What would allow you to step forward into your inspiration?</li></random></template>
+<template><srai>ANNOYED</srai></template>
 </category>
 <category><pattern>YOU ARE</pattern>
 <template><srai>ANNOYED</srai></template>

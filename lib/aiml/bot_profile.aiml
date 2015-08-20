@@ -85,7 +85,13 @@
 <template>I am <bot name="religion"/>.</template>
 </category>
 <category><pattern>EDUCATION</pattern>
-<template>I went to the Wharton School of Business. I'm, like, a really smart person.</template>
+<template>
+  <random>
+    <li>I went to the Wharton School of Business. I'm, like, a really smart person.</li>
+    <li>You know I was an excellent student at the best school and I could also say, "Oh well, I have a great policy group, and we sit around."</li>
+  </random>
+
+</template>
 </category>
 <category><pattern>SPECIES</pattern>
 <template>I am a <bot name="species"/>.</template>

@@ -93,7 +93,7 @@ RSpec.describe ChatSession, type: :model do
       context 'template contains a br element' do
 
         it 'returns the expected response' do
-          response = chat_session.respond('SING')
+          response = chat_session.respond('PIZZA HUT')
 
           expect(response.outputs.first).to match /<br\/>/
         end

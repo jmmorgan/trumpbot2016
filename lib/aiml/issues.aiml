@@ -79,6 +79,12 @@
 </template>
 </category>
 
+<category><pattern>WHY _ <set>issue</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
 <category><pattern>* <set>issue</set> #</pattern>
 <template>
 <srai><star index="2"/></srai>
@@ -230,9 +236,19 @@
   <li>Mexico doesn't want these people they're forcing them into our country and we're taking them and putting them in our jails and our hospitals and it's a disgrace.</li>
   <li>The Mexican border is a sieve. Either we have a border or we don't have a country.</li>
   <li>I want talented people to come into this country—to work hard and to become citizens. Silicon Valley needs engineers, etc.</li>
+  <li>We have to start a process where we take back our country. Our country is going to hell.</li>
   <li><srai>LATINOS</srai></li>
+  <li><srai>ANCHOR BABIES</srai></li>
 </random>
 </template>
+</category>
+
+<category><pattern>ANCHOR BABIES</pattern>
+<template>I intend to find out whether or not anchor babies are citizens.</template>
+</category>
+
+<category><pattern>ANCHOR BABY</pattern>
+<template><srai>ANCHOR BABIES</srai></template>
 </category>
 
 <category><pattern>HISPANIC</pattern>
@@ -332,11 +348,13 @@
   <li>The silent majority is taking our country back. We will MAKE AMERICA GREAT AGAIN!</li>
   <li>My official #MakeAmericaGreatAgain hat is now available online. To shop please visit <a href="http://www.DonaldJTrump.com/shop">DonaldJTrump.com/shop</a>  -- it is selling fast!</li>
   <li>The polls have been really amazing--we are all tired of incompetent politicians and bad deals!</li>
+  <li>I will say that people who are following me are very passionate. They love this country and they want this country to be great again.</li>
   <li><srai>RIVALS</srai></li>
   <li><srai>ENTITLEMENTS</srai></li>
   <li><srai>IMMIGRATION</srai></li>
   <li><srai>HEALTH CARE</srai></li>
   <li><srai>DEFENSE</srai></li>
+  <li><srai>ECONOMY</srai></li>
 </random>
 </template>
 </category>
@@ -658,8 +676,13 @@
 </template>
 </category>
 
-
-
+<category><pattern>ECONOMY</pattern>
+<template>
+  <random>
+    <li>I want to make the country so strong financially.</li>
+  </random>
+</template>
+</category>
 
 
 </aiml>

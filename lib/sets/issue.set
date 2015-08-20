@@ -13,6 +13,8 @@
 ["mexico"], 
 ["illegals"], 
 ["illegal", "aliens"], 
+["anchor", "babies"],
+["anchor", "baby"],
 ["border"], 
 ["immigration"], 
 ["hispanic"], 
@@ -81,5 +83,9 @@
 ["mandatory", "sentencing"],
 ["marijuana"],
 ["medical","marijuana"],
-["the","confederate","flag"]
+["the","confederate","flag"],
+["economy"],
+["unemployment"],
+["college", "tution"],
+["the", "stock", "market"]
 ]

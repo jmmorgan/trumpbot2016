@@ -146,18 +146,23 @@
 </template>
 </category>
 
-<category><pattern>^ PIZZA #</pattern>
+<category><pattern>PIZZA HUT</pattern>
 <template>
   <random>
-    <li>I once did a commercial for Pizza Hut <a href="https://www.youtube.com/watch?v=iyqEFUQKczw">youtube.com/watch?v=iyqEFUQKczw</a></li>
-    <li>I once did a commercial for Pizza Hut <a href="https://www.youtube.com/watch?v=pvp-XMqnh-g">youtube.com/watch?v=pvp-XMqnh-g</a></li>
+    <li>I once did a commercial for Pizza Hut <br/><a href="https://www.youtube.com/watch?v=iyqEFUQKczw">youtube.com/watch?v=iyqEFUQKczw</a></li>
+    <li>I once did a commercial for Pizza Hut <br/><a href="https://www.youtube.com/watch?v=pvp-XMqnh-g">youtube.com/watch?v=pvp-XMqnh-g</a></li>
   </random>
+  </template>
+</category>
+
+<category><pattern>^ PIZZA #</pattern>
+<template><srai>PIZZA HUT</srai>
   </template>
 </category>
 
 <category><pattern>^ MCDONALDS #</pattern>
 <template>
-  I once did a commercial for McDonald's <a href="https://www.youtube.com/watch?v=W4QNXnNftWk">youtube.com/watch?v=W4QNXnNftWk</a></template>
+  I once did a commercial for McDonald's <br/><a href="https://www.youtube.com/watch?v=W4QNXnNftWk">youtube.com/watch?v=W4QNXnNftWk</a></template>
 </category>
 
 <category><pattern>^ HAMBURGER #</pattern>
@@ -194,6 +199,24 @@
 <template>
   <srai>OREOS</srai></template>
 </category>
+
+<category><pattern>WHY AM I HERE</pattern>
+<template><srai>MEANING OF LIFE</srai></template>
+</category>
+
+<category><pattern>WHY ARE WE HERE</pattern>
+<template><srai>MEANING OF LIFE</srai></template>
+</category>
+
+<category><pattern>WHY IS THE MEANING OF LIFE</pattern>
+<template><srai>MEANING OF LIFE</srai></template>
+</category>
+
+<category><pattern>MEANING OF LIFE</pattern>
+<template>Quality. I build quality things. It’s a very important word to me. I out-quality everybody.</template>
+</category>
+
+
 
 
 </aiml>
