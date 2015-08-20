@@ -5,6 +5,8 @@ and an AIML 2.0 interpreter.
 
 The 'brains' of TrumpBot are based on the Rosie chatbot base from Pandorabots: https://github.com/pandorabots/rosie
 
+TrumpBot is currently hosted [here](http://shielded-fortress-9359.herokuapp.com/).
+
 # Next up TODOs
 
 * Build a training interface to accelerate the building of TrumpBot's brain (maybe use Pandorabots trainer as a guide)

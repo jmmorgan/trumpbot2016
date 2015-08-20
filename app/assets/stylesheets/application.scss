@@ -2,25 +2,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 .title {
    font-size: 36px;
    color: white;
    text-align: center;
  }
 
- .exchange {
-   width: 500px;
-   margin: 0 auto;
-   color: white;
-   text-align: left;
-   line-height: 20px;
- }
-
- .ask {
-   font-weight: bold;
-   color: white;
-   text-align: center;
- }
 
  label {
    color: white;
@@ -29,7 +21,19 @@
  body {
    background-image: url('https://thenypost.files.wordpress.com/2015/06/usa-election_trump1.jpg');
    background-size: cover;
+   margin-bottom: 60px;
  }
+
+
+// Grokked from http://getbootstrap.com/examples/sticky-footer/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
 
  .conversation {
    width: 500px;
