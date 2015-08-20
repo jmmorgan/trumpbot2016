@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
 
+<category><pattern>* <set>contestant</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>^ <set>contestant</set> *</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern><set>contestant</set></pattern>
+<template>
+ <star/> appeared on <map name='contestant2season'><formal><star/></formal></map> of The Apprentice and finished
+ <map name='contestant2finish'><formal><star/></formal></map>.
+</template>
+</category>
+
+<category><pattern>DO YOU LIKE # <set>contestant</set> #</pattern>
+<template>
+ <srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>WHO IS <set>contestant</set></pattern>
+<template>
+ <srai><star/></srai>
+</template>
+</category>
+
+<category><pattern>WHAT IS <set>contestant</set></pattern>
+<template>
+ <srai><star/></srai>
+</template>
+</category>
+
 <category><pattern>^ HEIDI KLUM #</pattern>
 <template><srai>HEIDI KLUM</srai></template>
 </category>
@@ -10,11 +47,11 @@
 </category>
 
 <category><pattern>^ GARY BUSEY #</pattern>
-<template><srai>GARY BUSEYM</srai></template>
+<template><srai>GARY BUSEY</srai></template>
 </category>
 
 <category><pattern>^ BUSEY #</pattern>
-<template><srai>GARY BUSEYM</srai></template>
+<template><srai>GARY BUSEY</srai></template>
 </category>
 
 <category><pattern>^ GARY BUSY #</pattern>
@@ -30,6 +67,7 @@
   </random>
 </template>
 </category>
+
 
 
 </aiml>

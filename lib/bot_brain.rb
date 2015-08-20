@@ -67,7 +67,7 @@ class BotBrain
       end
       
       # Capitalize first character in sentence ()
-      sentence[0] = sentence[0].upcase
+      sentence[0] = sentence[0].upcase if sentence.present?
     end
 
     result

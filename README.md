@@ -9,6 +9,7 @@ TrumpBot is currently hosted [here](http://shielded-fortress-9359.herokuapp.com/
 
 # Next up TODOs
 
+* Detect and gracefully handle circular srai references.
 * Build a training interface to accelerate the building of TrumpBot's brain (maybe use Pandorabots trainer as a guide)
     * Populate TOPIC field correctly
     * Implement basic Say Instead
