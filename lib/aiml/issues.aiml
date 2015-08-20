@@ -613,6 +613,51 @@
 </template>
 </category>
 
+<category><pattern>BIRTH CONTROL</pattern>
+<template>
+  <random>
+    <li><srai>PLANNED PARENTHOOD</srai></li>
+    <li><srai>SEX</srai></li>
+  </random>
+</template>
+</category>
+
+<category><pattern>REPRODUCTIVE RIGHTS</pattern>
+<template>
+  <random>
+    <li><srai>PLANNED PARENTHOOD</srai></li>
+    <li><srai>SEX</srai></li>
+  </random>
+</template>
+</category>
+
+<category><pattern>PRO CHOICE</pattern>
+<template>
+  <random>
+    <li><srai>PLANNED PARENTHOOD</srai></li>
+    <li><srai>SEX</srai></li>
+  </random>
+</template>
+</category>
+
+<category><pattern>PRO LIFE</pattern>
+<template>
+  <random>
+    <li><srai>PLANNED PARENTHOOD</srai></li>
+    <li><srai>SEX</srai></li>
+  </random>
+</template>
+</category>
+
+<category><pattern># RIGHT TO CHOOSE #</pattern>
+<template>
+  <random>
+    <li><srai>PLANNED PARENTHOOD</srai></li>
+    <li><srai>SEX</srai></li>
+  </random>
+</template>
+</category>
+
 
 
 

@@ -138,6 +138,14 @@
 <template><srai>WOMEN</srai></template>
 </category>
 
+<category><pattern>^ FEMINISM #</pattern>
+<template><srai>WOMEN</srai></template>
+</category>
+
+<category><pattern>^ FEMINIST #</pattern>
+<template><srai>WOMEN</srai></template>
+</category>
+
 <category><pattern>WOMEN</pattern>
 <template>
   <random>
