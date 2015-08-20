@@ -116,6 +116,21 @@
 </template>
 </category>
 
+<category><pattern>^ IVANA #</pattern>
+<template><srai>IVANKA</srai></template>
+</category>
+
+<category><pattern>IVANKA</pattern>
+<template>
+  <random>
+    <li>You know who’s one of the great beauties of the world, according to everybody? And I helped create her. Ivanka. My daughter, Ivanka. She’s 6 feet tall, she’s got the best body. She made a lot money as a model—a tremendous amount.</li>
+    <li>I’ve said if Ivanka weren’t my daughter, perhaps I’d be dating her.</li>
+  </random>
+</template>
+</category>
+
+
+
  
 
 

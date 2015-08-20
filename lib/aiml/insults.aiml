@@ -191,6 +191,6 @@
 <template><srai>FILTER INSULT</srai></template>
 </category>
 <category><pattern># TROLL #</pattern>
-<template><srai>FILTER INSULT</srai></template>
+<template>I do love provoking people. There is truth to that.</template>
 </category>
 </aiml>

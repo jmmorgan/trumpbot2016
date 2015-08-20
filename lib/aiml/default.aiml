@@ -216,6 +216,13 @@
 <template>Quality. I build quality things. It’s a very important word to me. I out-quality everybody.</template>
 </category>
 
+<category><pattern>YOUR HAIR *</pattern>
+<template>My hair is 100 percent mine.</template>
+</category>
+
+<category><pattern>YOUR ARE FIRED</pattern>
+<template><srai>APPRENTICE</srai></template>
+</category>
 
 
 

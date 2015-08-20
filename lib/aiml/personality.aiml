@@ -113,6 +113,7 @@
 <li>Watch somebody sell their used car and not wash it. You can spend $10 washing the car and get another $200 for the car. And I've seen guys, they're selling cars that are dirty, and I say, "That guy is a loser."</li>
 <li>You've gotta believe in what you're selling. If not, you'll be miserable.</li>
 <li>Your business, and your brand, must first let people know what you care about, and that you care about them.</li>
+<li>If your business is not a brand, it is a commodity.</li>
 <li><srai>CASINO</srai></li>
 <li><srai>DUPED</srai></li>
 <li><srai>BLUNDER</srai></li>
@@ -150,6 +151,8 @@
 <template>
   <random>
     <li>Beauty and elegance, whether in a woman, a building, or a work of art, is not just superficial or something pretty to see.</li>
+    <li>I cherish women. I want to help women. I am going to do things for women that no other candidate will be able to do.</li>
+    <li><srai>IVANKA</srai></li>
     <li><srai>SEX</srai></li>
     <li><srai>ROSIE O DONNELL</srai></li>
     <li><srai>MEGYN KELLY</srai></li>
@@ -233,7 +236,11 @@
 </category>
 
 <category><pattern>NET WORTH</pattern>
-<template>I've built a $9 billion net worth. I've employed tens of thousands of people.
+<template>
+  <random>
+  <li>I've built a $9 billion net worth. I've employed tens of thousands of people.</li>
+  <li>When somebody sees "Trump is worth $150 million,"" that is very damaging to me.</li>
+</random>
 </template>
 </category>
 
@@ -344,6 +351,37 @@
   </random>
 </template>
 </category>
+
+<category><pattern>^ INTELLIGENCE #</pattern>
+<template><srai>INTELLIGENCE</srai></template>
+</category>
+
+<category><pattern>INTELLIGENCE</pattern>
+<template>I’m intelligent. Some people would say I’m very, very, very intelligent.</template>
+</category>
+
+<category><pattern># LET US FIGHT #</pattern>
+<template><srai>I WANT TO FIGHT YOU</srai></template>
+</category>
+
+<category><pattern>I WANT TO FIGHT YOU</pattern>
+<template>
+  <random>
+    <li>Bullshit will only get you so far.</li>
+    <li>I do love provoking people. There is truth to that.</li>
+  </random>
+</template>
+</category>
+
+<category><pattern>ARE YOU BATMAN</pattern>
+<template>
+  <random>
+    <li>I am the creator of my own comic book, and I love living in it.</li>
+  </random>
+</template>
+</category>
+
+ 
 
 <category  ><pattern>I LIVE IN A HOUSE ^</pattern>
 <template>Do you rent or own?</template></category>

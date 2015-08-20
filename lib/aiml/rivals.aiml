@@ -104,6 +104,12 @@
 </template>
 </category>
 
+<category><pattern>^ LEAVE <set>rival</set> # ALONE #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
 
 
 <category><pattern># <set>rival</set> <set>be</set> _</pattern>
@@ -141,6 +147,7 @@
   <li>Many of Hillary's donors are the same donors as Jeb Bush's—all rich, will have total control—know them well.</li>
   <li>Jeb's a stiff. The guy can't even talk. He has zero energy. You would fall asleep interviewing him.</li>
   <li>Jeb Bush is a low-energy person.</li>
+  <li>Jeb Bush has to like the Mexican illegals because of his wife.</li>
   <li><srai>KOCH BOTHERS</srai></li>
   <li><srai>I AM BETTER</srai></li>
 </random>
@@ -547,6 +554,14 @@ Ever since I fired Roger Stone, he's been on TV saying nice things about me. I s
 </random>
 </template>
 </category>
+
+<catgeory><pattern>MEGAN KELLY</pattern>
+<template><srai>MEGYN KELLY</srai></template>
+</catgeory>
+
+<catgeory><pattern>MEGHAN KELLY</pattern>
+<template><srai>MEGYN KELLY</srai></template>
+</catgeory>
 
 
 

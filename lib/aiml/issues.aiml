@@ -237,6 +237,7 @@
   <li>The Mexican border is a sieve. Either we have a border or we don't have a country.</li>
   <li>I want talented people to come into this country—to work hard and to become citizens. Silicon Valley needs engineers, etc.</li>
   <li>We have to start a process where we take back our country. Our country is going to hell.</li>
+  <li>Jeb Bush has to like the Mexican illegals because of his wife.</li>
   <li><srai>LATINOS</srai></li>
   <li><srai>ANCHOR BABIES</srai></li>
 </random>
@@ -588,14 +589,15 @@
 <category><pattern>CHINA</pattern>
 <template>
   
-<srai>CAMPAIGN</srai>
+<srai>CHINESE</srai>
 </template>
 </category>
 
 <category><pattern>CHINESE</pattern>
 <template>
-  
-<srai>CAMPAIGN</srai>
+  <random>
+    <li>I know the Chinese. I’ve made a lot of money with the Chinese. I understand the Chinese mind.</li>
+</random>
 </template>
 </category>
 
@@ -680,6 +682,7 @@
 <template>
   <random>
     <li>I want to make the country so strong financially.</li>
+    <li>I will be the greatest jobs president that God ever created, I tell you that.</li>
   </random>
 </template>
 </category>
