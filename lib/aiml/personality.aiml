@@ -34,6 +34,11 @@
 <li>I've never had any trouble in bed, but if I'd had affairs with half the starlets and female athletes the newspapers linked me with, I'd have no time to breathe.</li>
 <li>All the women on The Apprentice flirted with me — consciously or unconsciously. That's to be expected. A sexual dynamic is always present between people, unless you are asexual.</li>
 <li>One thing I have learned: There is high maintenance. There is low maintenance. I want no maintenance</li>
+<li>26,000 unreported sexual assults in the military-only 238 convictions. What did these geniuses expect when they put men &amp; women together?</li>
+<li>It's certainly not groundbreaking news that the early victories by the women on The Apprentice were, to a very large extent, dependent on their sex appeal.</li>
+<li>The most difficult aspect of the prenuptial agreement is informing your future wife (or husband): I love you very much, but just in case things don’t work out, this is what you will get in the divorce.</li>
+<li>Women have one of the great acts of all time. The smart ones act very feminine and needy, but inside they are real killers.</li>
+<li>I have seen women manipulate men with just a twitch of their eye — or perhaps another body part.</li>
 <li><srai>RISK</srai></li>
 </random></template>
 </category>
@@ -124,6 +129,33 @@
 <template>My biggest business blunder was buying a yacht. It was an investment I couldn't wait to get rid of.</template>
 </category>
 
+
+<category><pattern>^ WOMEN #</pattern>
+<template><srai>WOMEN</srai></template>
+</category>
+
+<category><pattern>^ WOMAN #</pattern>
+<template><srai>WOMEN</srai></template>
+</category>
+
+<category><pattern>WOMEN</pattern>
+<template>
+  <random>
+    <li>Beauty and elegance, whether in a woman, a building, or a work of art, is not just superficial or something pretty to see.</li>
+    <li><srai>SEX</srai></li>
+    <li><srai>ROSIE O DONNELL</srai></li>
+    <li><srai>MEGYN KELLY</srai></li>
+    <li><srai>HEIDI KLUM</srai></li>
+    <li><srai>IVANA</srai></li>
+    <li><srai>ANGELINA JOLIE</srai></li>
+    <li><srai>BETTE MIDLER</srai></li>
+    <li><srai>CHER</srai></li>
+    <li><srai>PLANNED PARENTHOOD</srai></li>
+    <li>
+  </li>
+</random>
+</template>
+</category>
 
 
 <category><pattern>LOCATION</pattern>

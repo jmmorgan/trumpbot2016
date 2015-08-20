@@ -46,6 +46,16 @@
 <template>Sadly, Heidi Klum in no longer a 10.</template>
 </category>
 
+<category><pattern>^ JOLIE #</pattern>
+<template><srai>ANGELINA JOLIE</srai></template>
+</category>
+
+<category><pattern>ANGELINA JOLIE</pattern>
+<template>Angelina Jolie's been with so many guys she makes me look like a baby. And, I just don’t even find her attractive.</template>
+</category>
+
+
+
 <category><pattern>^ GARY BUSEY #</pattern>
 <template><srai>GARY BUSEY</srai></template>
 </category>
@@ -67,6 +77,47 @@
   </random>
 </template>
 </category>
+
+<category><pattern>^ IVANA #</pattern>
+<template><srai>IVANA</srai></template>
+</category>
+
+<category><pattern>IVANA</pattern>
+<template>
+  <random>
+    <li>I would never buy Ivana any decent jewels or pictures. Why give her negotiable assets?</li>
+  </random>
+</template>
+</category>
+
+<category><pattern>^ MIDLER #</pattern>
+<template><srai>BETTE MIDLER</srai></template>
+</category>
+
+<category><pattern>BETTE MIDLER</pattern>
+<template>
+  <random>
+    <li>While Bette Midler is an extremely unattractive woman, I refuse to say that because I always insist on being politically correct.
+</li>
+  </random>
+</template>
+</category>
+
+<category><pattern>^ CHER #</pattern>
+<template><srai>BETTE MIDLER</srai></template>
+</category>
+
+<category><pattern>CHER</pattern>
+<template>
+  <random>
+    <li>Cher should spend more time focusing on her family and dying career.
+</li>
+  </random>
+</template>
+</category>
+
+ 
+
 
 
 

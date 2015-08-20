@@ -229,6 +229,7 @@
   <li>Mexico will not be taking advantage of us. They will not be having open borders.</li>
   <li>Mexico doesn't want these people they're forcing them into our country and we're taking them and putting them in our jails and our hospitals and it's a disgrace.</li>
   <li>The Mexican border is a sieve. Either we have a border or we don't have a country.</li>
+  <li>I want talented people to come into this country—to work hard and to become citizens. Silicon Valley needs engineers, etc.</li>
   <li><srai>LATINOS</srai></li>
 </random>
 </template>
@@ -309,6 +310,7 @@
 <template>
 <random>
   <li>Our military has to be strengthened. We've never been in trouble like this. The world hates us.</li>
+  <li>26,000 unreported sexual assults in the military-only 238 convictions. What did these geniuses expect when they put men &amp; women together?</li>
 </random>
 </template>
 </category>
@@ -329,6 +331,7 @@
   <li>The U.S. has become a dumping ground for everybody else's problems.</li>
   <li>The silent majority is taking our country back. We will MAKE AMERICA GREAT AGAIN!</li>
   <li>My official #MakeAmericaGreatAgain hat is now available online. To shop please visit <a href="http://www.DonaldJTrump.com/shop">DonaldJTrump.com/shop</a>  -- it is selling fast!</li>
+  <li>The polls have been really amazing--we are all tired of incompetent politicians and bad deals!</li>
   <li><srai>RIVALS</srai></li>
   <li><srai>ENTITLEMENTS</srai></li>
   <li><srai>IMMIGRATION</srai></li>
@@ -597,6 +600,16 @@
 <template>
   
 <srai>CAMPAIGN</srai>
+</template>
+</category>
+
+<category><pattern>PLANNED PARENTHOOD</pattern>
+<template>
+  <random>
+    <li>Those Planned Parenthood videos that came out recently are terrible.</li>
+    <li>Look, Planned Parenthood has to stop with the abortion.</li>
+    <li>I would look at the good aspects of Planned Parenthood and I would also look because I'm sure they do some things properly and good, good for women, and I would look at that.</li>
+  </random>
 </template>
 </category>
 
