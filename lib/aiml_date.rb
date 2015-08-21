@@ -1,7 +1,7 @@
 class AimlDate
   include TemplateContentNode
 
-  def apply(path_mathcher_result, graphmaster, predicates)
+  def apply(star_mappings, graphmaster, predicates, category_stack)
     Date.today.strftime(format)
   end
 

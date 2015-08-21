@@ -26,9 +26,16 @@ class PathMatchResult
     @graphmaster.category_for_template(@path.last).source_file
   end
 
-  def apply_template(predicates)
+  def apply_template(predicates, category_stack)
     #puts "APPLYING TEMPLATE FOR PATH #{@path}"
-    @path.last.apply(self, @graphmaster, predicates)
+    category = @graphmaster.category_for_template(@path.last)
+    if (!category_stack.include?(category))
+      category_stack.push(category)
+      @path.last.apply(self.star_mappings, @graphmaster, predicates, category_stack)
+    else
+      # For now just return a default response
+      "I'm having trouble understanding you."
+    end
   end
 
 end

@@ -1,7 +1,7 @@
 class Vocabulary
   include TemplateContentNode
 
-  def apply(path_match_result, graphmaster, predicates)
+  def apply(star_mappings, graphmaster, predicates, category_stack)
     graphmaster.word_nodes.count
   end
 

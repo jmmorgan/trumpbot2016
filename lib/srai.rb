@@ -1,15 +1,13 @@
 class Srai 
   include TemplateContentNode
 
-  def apply(path_match_result, graphmaster, predicates)
+  def apply(star_mappings, graphmaster, predicates, category_stack)
     result = nil
-    pattern = super(path_match_result, graphmaster, predicates).strip
+    pattern = super(star_mappings, graphmaster, predicates, category_stack).strip
     next_path_match_result = PathMatcher.new.get_matching_path(graphmaster, pattern, predicates['_chat_session_id'])
 
-    # TODO: Possible code smells revealed here: 1) chaining, 2) called method on object and passing same object as parameter.
-    # puts "PATTERN=#{pattern} next_path_match_result=#{next_path_match_result}"
     if (next_path_match_result)
-      next_path_match_result.path.last.apply(next_path_match_result, graphmaster, predicates)
+      next_path_match_result.apply_template(predicates, category_stack)
     else
       nil
     end

@@ -260,8 +260,4 @@ describe PathMatcher do
 
   end
 
-  def parse_input_pattern(input_pattern)
-    Parsers::PatternXmlParser.new.parse(Nokogiri::XML("<pattern>#{input_pattern}</pattern>").root)
-  end
-
 end

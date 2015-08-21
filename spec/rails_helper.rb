@@ -51,3 +51,7 @@ RSpec.configure do |config|
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
 end
+
+def parse_input_pattern(input_pattern)
+  Parsers::PatternXmlParser.new.parse(Nokogiri::XML("<pattern>#{input_pattern}</pattern>").root)
+end

@@ -1,8 +1,8 @@
 class AimlRandom
   include TemplateContentNode
 
-  def apply(path_match_result, graphmaster, predicates)
-    tokens.sample.apply(path_match_result, graphmaster, predicates)
+  def apply(star_mappings, graphmaster, predicates, category_stack)
+    tokens.sample.apply(star_mappings, graphmaster, predicates, category_stack)
   end
 
 end

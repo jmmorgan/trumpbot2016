@@ -1,7 +1,7 @@
 class Lowercase
   include TemplateContentNode
 
-  def apply(path_match_result, graphmaster, predicates)
+  def apply(star_mappings, graphmaster, predicates, category_stack)
     super.downcase
   end
 

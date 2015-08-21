@@ -1,16 +1,16 @@
 class Condition
   include TemplateContentNode
 
-  def apply(path_match_result, graphmaster, predicates)
-    result = match_var(path_match_result, graphmaster, predicates) || 
-      match_name(path_match_result, graphmaster, predicates)
+  def apply(star_mappings, graphmaster, predicates, category_stack)
+    result = match_var(star_mappings, graphmaster, predicates, category_stack) || 
+      match_name(star_mappings, graphmaster, predicates, category_stack)
    
     result
   end
 
   private
 
-  def match_var(path_match_result, graphmaster, predicates)
+  def match_var(star_mappings, graphmaster, predicates, category_stack)
     result = nil
     var = attributes['var']
     if (var)
@@ -18,7 +18,7 @@ class Condition
       tokens.each do |node|
         test_value = node.attributes['value']
         if (test_value == predicates[var] || test_value.nil?)
-          result = node.apply(path_match_result, graphmaster, predicates)
+          result = node.apply(star_mappings, graphmaster, predicates, category_stack)
           break
         end
       end
@@ -27,7 +27,7 @@ class Condition
     result
   end
 
-  def match_name(path_match_result, graphmaster, predicates)
+  def match_name(star_mappings, graphmaster, predicates, category_stack)
     result = nil
     name = attributes['name']
     if (name)
@@ -35,7 +35,7 @@ class Condition
       tokens.each do |node|
         test_value = node.attributes['value']
         if (test_value == PROPERTIES_MAP_FILE[name] || test_value.nil?)
-          result = node.apply(path_match_result, graphmaster, predicates)
+          result = node.apply(star_mappings, graphmaster, predicates, category_stack)
           break
         end
       end

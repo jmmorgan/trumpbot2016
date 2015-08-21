@@ -1,7 +1,7 @@
 class Anchor
   include TemplateContentNode
 
-  def apply(path_match_result, graphmaster, predicates)
+  def apply(star_mappings, graphmaster, predicates, category_stack)
     "<a #{attributes.collect{|(key,val)| "#{key}=\"#{val}\""}.join(' ')}>#{super}</a>"
   end
 

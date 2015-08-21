@@ -3,13 +3,13 @@ class AimlMap
 
   attr_accessor :name, :map
 
-  def apply(path_match_result, graphmaster, predicates)
+  def apply(star_mappings, graphmaster, predicates, category_stack)
     name = attributes['name']
     if (name)
-      result = map(name)[tokens.first.apply(path_match_result, graphmaster, predicates)]
+      result = map(name)[tokens.first.apply(star_mappings, graphmaster, predicates, category_stack)]
     else
-      name = tokens[0].apply(path_match_result, graphmaster, predicates)
-      result = map(name)[tokens[1].apply(path_match_result, graphmaster, predicates)]
+      name = tokens[0].apply(star_mappings, graphmaster, predicates, category_stack)
+      result = map(name)[tokens[1].apply(star_mappings, graphmaster, predicates, category_stack)]
     end
 
     result
@@ -17,15 +17,15 @@ class AimlMap
 
   private
 
-  def name(path_match_result, graphmaster, predicates)
-    @name ||= load_name(path_match_result, graphmaster, predicates)
+  def name(star_mappings, graphmaster, predicates, category_stack)
+    @name ||= load_name(star_mappings, graphmaster, predicates, category_stack)
   end
 
-  def load_name(path_match_result, graphmaster, predicates)
+  def load_name(star_mappings, graphmaster, predicates, category_stack)
     result = attributes[name]
     unless result
       # pluck name from first token 
-      result = tokens.shift.apply(path_match_result, graphmaster, predicates)
+      result = tokens.shift.apply(star_mappings, graphmaster, predicates, category_stack)
     end
   end
 

@@ -9,11 +9,7 @@ TrumpBot is currently hosted [here](http://shielded-fortress-9359.herokuapp.com/
 
 # Next up TODOs
 
-* Detect and gracefully handle circular srai references.
-* Build a training interface to accelerate the building of TrumpBot's brain (maybe use Pandorabots trainer as a guide)
-    * Populate TOPIC field correctly
-    * Implement basic Say Instead
-    * Capture full pattern match trace to facilitate training and debugging.
+* Look into expanding upon trumpbot.rake to accelerate training (and maybe scrap the training controller).
 * Implement support for `<topic>`
 * Make ChatSession spec independent of production Graphmaster instance.
 * Is the whole BotBrain response -> ChatResponse -> QueryBot response flow necessary? Perhaps we should simplify.

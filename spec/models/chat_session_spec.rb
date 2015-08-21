@@ -200,5 +200,37 @@ RSpec.describe ChatSession, type: :model do
         end
       end
     end
+
+    context 'categories are introduced that create a circular chain of srai references' do
+      let(:graphmaster) { Graphmaster.instance }
+      let(:chat_session) { ChatSession.new }
+
+      before do
+
+        template = Template.new
+        srai = Srai.new
+        srai.tokens = ["THIS IS BLUE"]
+        template.tokens = [srai] # TODO: Refactor Template so all ivars can be set in initializer
+        graphmaster.add_category(Category.new(parse_input_pattern("THIS IS GREEN"), That.new('*'), Topic.new('*'), template, 'udc.aiml'))
+
+        template = Template.new
+        srai = Srai.new
+        srai.tokens = ["THIS IS BLUE"]
+        template.tokens = [srai] # TODO: Refactor Template so all ivars can be set in initializer
+        graphmaster.add_category(Category.new(parse_input_pattern("THIS IS RED"), That.new('*'), Topic.new('*'), template, 'udc.aiml'))
+
+        template = Template.new
+        srai = Srai.new
+        srai.tokens = ["THIS IS RED"]
+        template.tokens = [srai] # TODO: Refactor Template so all ivars can be set in initializer
+        graphmaster.add_category(Category.new(parse_input_pattern("THIS IS BLUE"), That.new('*'), Topic.new('*'), template, 'udc.aiml'))
+      end
+
+      it 'exists gracefully from the loop' do
+        response = chat_session.respond("This is green?")
+
+        expect(response.outputs.first).to match /I'm having trouble understanding you\./
+      end
+    end
   end
 end

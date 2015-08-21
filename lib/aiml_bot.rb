@@ -1,7 +1,7 @@
 class AimlBot < GraphmasterNode
   include TemplateContentNode
 
-  def apply(path_match_result, graphmaster, predicates)
+  def apply(star_mappings, graphmaster, predicates, category_stack)
     # For now we're accessing a global constant.
     # TODO: Make this a little more encapsulated/object-oriented?
     (PROPERTIES_MAP_FILE[attributes['name']] || '*').strip
