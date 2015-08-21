@@ -129,10 +129,31 @@
 </template>
 </category>
 
+<category><pattern>^ ICAHN #</pattern>
+<template><srai>CARL ICAHN</srai></template>
+</category>
 
+<category><pattern>CARL ICAHN</pattern>
+<template>
+  <random>
+    <li>Y
+I take a guy like Carl Icahn, you take Henry Kravis, you take so many of the guys that I know, and you say, "You know what? I'd like you to watch over the deals that are being made with China because we're getting killed on trade."
+</li>
+  </random></template>
+</category>
 
- 
+<category><pattern>^ KRAVIS #</pattern>
+<template><srai>HENRY KRAVIS</srai></template>
+</category>
 
+<category><pattern>HENRY KRAVIS</pattern>
+<template>
+  <random>
+    <li>
+I take a guy like Carl Icahn, you take Henry Kravis, you take so many of the guys that I know, and you say, "You know what? I'd like you to watch over the deals that are being made with China because we're getting killed on trade."
+</li>
+  </random></template>
+</category>
 
 
 

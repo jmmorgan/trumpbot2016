@@ -357,6 +357,7 @@
   <li><srai>HEALTH CARE</srai></li>
   <li><srai>DEFENSE</srai></li>
   <li><srai>ECONOMY</srai></li>
+  <li><srai>CHINESE</srai></li>
 </random>
 </template>
 </category>
@@ -598,6 +599,8 @@
 <template>
   <random>
     <li>I know the Chinese. I’ve made a lot of money with the Chinese. I understand the Chinese mind.</li>
+    <li>I have a great relationship with China just like I do with Mexico.</li>
+    <li>A Business Weekend story, "What are the 10 things that the Chinese most want?" One of the 10 things was anything Trump.</li>
 </random>
 </template>
 </category>
