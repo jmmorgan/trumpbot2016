@@ -1,12 +1,19 @@
 require 'rails_helper'
 
 RSpec.describe ChatSession, type: :model do
+  let(:graphmaster) { Graphmaster.send(:new, false) }
 
   describe 'Associations' do
     it { should have_many(:messages) }
   end
   
   describe '#respond' do
+
+    before do
+      allow(Graphmaster).to receive(:instance).and_return(graphmaster)
+
+      load_categories(graphmaster)
+    end
 
     context 'Chat with no history' do
       let(:chat_session) { ChatSession.new }
@@ -202,7 +209,6 @@ RSpec.describe ChatSession, type: :model do
     end
 
     context 'categories are introduced that create a circular chain of srai references' do
-      let(:graphmaster) { Graphmaster.instance }
       let(:chat_session) { ChatSession.new }
 
       before do
@@ -232,5 +238,15 @@ RSpec.describe ChatSession, type: :model do
         expect(response.outputs.first).to match /I'm having trouble understanding you\./
       end
     end
+  end
+end
+
+def load_categories(graphmaster)
+  path = "#{Rails.root}/spec/support/chat_session_spec.aiml"
+  doc = Nokogiri::XML(File.open(path)) {|config| config.strict}
+
+  doc.xpath('//category[not(ancestor::learn)]').each do |category_element| 
+    category = Parsers::CategoryXmlParser.new.parse(category_element, File.basename(path))
+    graphmaster.add_category(category)
   end
 end

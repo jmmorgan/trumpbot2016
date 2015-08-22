@@ -11,7 +11,7 @@ TrumpBot is currently hosted [here](http://shielded-fortress-9359.herokuapp.com/
 
 * Look into expanding upon trumpbot.rake to accelerate training (and maybe scrap the training controller).
 * Implement support for `<topic>`
-* Make ChatSession spec independent of production Graphmaster instance.
+* Add unit tests for Graphmaster and BotBrain.
 * Is the whole BotBrain response -> ChatResponse -> QueryBot response flow necessary? Perhaps we should simplify.
 * Try to treat TemplateContentNode implementations as immutables (limit setting of ivars to initializer)
 * Look into organizing AIML files in a way that makes more logical and/or intuitive sense for TrumpBot.

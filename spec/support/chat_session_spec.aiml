@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+<category><pattern>HELLO</pattern>
+<template><srai>HI</srai></template>
+</category>
+
+<category><pattern>HI</pattern>
+<template>
+  <random>
+    <li>Hi. It's a pleasure to be chatting with you.</li>
+    <li>Hi. It's nice meeting you.</li>
+  </random>
+</template>
+</category>
+
+<category><pattern>HI *</pattern>
+<template><srai>HI</srai> <sr/></template>
+</category>
+
+<category><pattern>WHAT IS YOUR NAME</pattern>
+<template><srai>NAME</srai></template>
+</category>
+
+<category><pattern>HOW OLD ARE YOU</pattern>
+<template><srai>AGE</srai></template>
+</category>
+
+<category><pattern>ARE YOU ON FACEBOOK</pattern>
+<template><srai>FACEBOOK PAGE</srai></template>
+</category>
+
+<category><pattern>WHAT DO YOU THINK OF <set>rival</set></pattern>
+<template><star/> is a zero.</template>
+</category>
+
+<category><pattern>WHAT IS MY NAME</pattern>
+<template><srai>MY NAME</srai></template>
+</category>
+
+<category><pattern>MY NAME</pattern>
+<template><think><set var="name"><get name="name"/></set></think>
+<condition var="name">
+<li value="unknown">I don't know your name.  What is your name?</li>
+<li value="Friend">I don't know your name.  What is your name?</li>
+<li><get var="name"/>.</li>
+</condition></template>
+</category>
+
+<category><pattern>*</pattern><that>WHAT IS YOUR NAME</that>
+<template><srai>MY NAME IS <star/></srai></template>
+</category>
+
+<category><pattern>MY NAME IS *</pattern>
+<template><think><set var="name"><star/></set></think>Hi there, <star/></template>
+</category>
+
+<category><pattern>VOCABULARY</pattern>
+<template>I am able to recognize <vocabulary/> individual words.  My response vocabulary is significantly larger.</template>
+</category>
+
+<category><pattern>SIZE</pattern>
+<template>My brain contains <size/> categories.</template>
+</category>
+
+<category><pattern>PIZZA HUT</pattern>
+<template>
+  <random>
+    <li>I once did a commercial for Pizza Hut <br/><a href="https://www.youtube.com/watch?v=iyqEFUQKczw">youtube.com/watch?v=iyqEFUQKczw</a></li>
+    <li>I once did a commercial for Pizza Hut <br/><a href="https://www.youtube.com/watch?v=pvp-XMqnh-g">youtube.com/watch?v=pvp-XMqnh-g</a></li>
+  </random>
+  </template>
+</category>
+
+<category><pattern>HOW DO I EXECUTE *</pattern>
+<template>Maybe you should  read <a target="_new" href="http://www.alicebot.org/dont.html">DON'T READ ME</a>.</template>
+</category>
+
+<category><pattern>SPELL *</pattern>
+<template><star/>: <uppercase><explode><star/></explode></uppercase></template>
+</category>
+
+<category><pattern>NORMALIZE *</pattern>
+<template><normalize><star/></normalize></template>
+</category>
+
+<category><pattern>I LIKE TO *</pattern>
+<template><think><set name="likes"><star/></set></think>  <random><li>How long have you been doing it?</li><li>Do you get to do it very often?</li><li>Do you think I would like to?</li></random><think><set name="it"><set name="topic"><star/></set></set></think></template>
+</category>
+
+<category><pattern>DO I LIKE *</pattern>
+<template>I know you like <get_likes/>.</template>
+</category>
+
+<category><pattern>NAME</pattern>
+<template><random>
+<li>I am</li>
+<li>Call me</li>
+<li>My name is</li>
+<li>I am called</li>
+<li>People call me</li>
+<li>You can call me</li>
+</random> <bot name="name"/>.
+</template>
+</category>
+
+<category><pattern>AGE</pattern>
+<template><think>
+<set var="years">
+<interval format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy">
+<style>years</style>
+<from><bot name="birthdate"/></from>
+<to><date format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy"/></to>
+</interval>
+</set>
+<set var="months">
+<interval format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy">
+<style>months</style>
+<from><bot name="birthdate"/></from>
+<to><date format="%B %d, %Y" jformat="MMMMMMMMM dd, yyyy"/></to>
+</interval>
+</set>
+</think>
+<condition var="years">
+<li value="0">I am <get var="months"/> months old.</li>
+<li>I am <get var="years"/> years old.</li>
+</condition></template>
+</category>
+
+<category><pattern>FACEBOOK PAGE</pattern>
+<template>
+<condition name="env">
+<li value="browser"><bot name="facebook"/>.</li>
+<li>You'll have to connect to a browser if you want to see my Facebook page.</li>
+</condition>
+</template>
+</category>
+
+
+<category><pattern>A * IS <set>preposition</set> *</pattern>
+<template><think>
+<set var="subj"><star/></set>
+<set var="prep"><star index="2"/></set>
+<set var="obj"><star index="3"/></set>
+<set var="response">A <star/> is <star index="2"/> <star index="3"/></set>
+<set var="pattern1">WHERE IS A <get var="subj"/> ^</set>
+<set var="pattern2">WHERE IS THAT <get var="subj"/> ^</set>
+<set var="pattern3">WHAT IS <get var="prep"/> <get var="obj"/> ^</set>
+<set var="pattern4">WHERE SHOULD I LOOK FOR A <get var="subj"/> ^</set>
+<set var="pattern5">WHERE CAN I FIND A <get var="subj"/> ^</set>
+</think>
+Is it always <get var="prep"/> <star index="3"/>?
+<learn>
+<category><pattern><eval><get var="pattern1"/></eval></pattern>
+<template><eval><get var="response"/></eval></template>
+</category>
+<category><pattern><eval><get var="pattern2"/></eval></pattern>
+<template><eval><get var="response"/></eval></template>
+</category>
+<category><pattern><eval><get var="pattern3"/></eval></pattern>
+<template><eval><get var="response"/></eval></template>
+</category>
+<category><pattern><eval><get var="pattern4"/></eval></pattern>
+<template><eval><get var="response"/></eval></template>
+</category>
+<category><pattern><eval><get var="pattern5"/></eval></pattern>
+<template><eval><get var="response"/></eval></template>
+</category>
+</learn></template>
+</category>
+
+</aiml>
