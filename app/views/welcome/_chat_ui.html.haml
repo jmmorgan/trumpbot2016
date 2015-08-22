@@ -19,7 +19,7 @@
 
       .panel-body
         %ul.chat
-          - messages.each do |message|
+          - messages.sort{|a,b| a.id <=> b.id}.each do |message|
             - if (message.inbound)
               %li.left.clearfix
                 %span.chat-img.pull-left

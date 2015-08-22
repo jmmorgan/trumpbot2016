@@ -15,3 +15,4 @@ TrumpBot is currently hosted [here](http://shielded-fortress-9359.herokuapp.com/
 * Is the whole BotBrain response -> ChatResponse -> QueryBot response flow necessary? Perhaps we should simplify.
 * Try to treat TemplateContentNode implementations as immutables (limit setting of ivars to initializer)
 * Look into organizing AIML files in a way that makes more logical and/or intuitive sense for TrumpBot.
+* Add UI tests or request tests for chat UI.
