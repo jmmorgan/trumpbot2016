@@ -8,7 +8,7 @@ module TemplateContentNode
   # fragment, or nil when appropriate.
   def apply(star_mappings, graphmaster, predicates, category_stack)
     #puts "self.class = #{self.class} #{tokens.to_s}" # For debugging for now
-    result = tokens.map{|token| token.is_a?(String) ? token : token.apply(star_mappings, graphmaster, predicates, category_stack)}.join(' ')
+    result = tokens.map{|token| token.is_a?(String) ? token : token.apply(star_mappings, graphmaster, predicates, category_stack.clone)}.join(' ')
   end
 
   def to_s

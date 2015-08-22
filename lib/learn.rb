@@ -19,9 +19,9 @@ class Learn
     tokens.each_index do |i|
       token = tokens[i]
       if (token.is_a?(Eval))
-        tokens[i] = token.apply(star_mappings, graphmaster, predicates, category_stack)
+        tokens[i] = token.apply(star_mappings, graphmaster, predicates, category_stack.clone)
       elsif (token.is_a?(TemplateContentNode))
-        eval(token.tokens, star_mappings, graphmaster, predicates, category_stack)
+        eval(token.tokens, star_mappings, graphmaster, predicates, category_stack.clone)
       end
     end
   end
