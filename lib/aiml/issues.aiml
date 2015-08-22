@@ -238,6 +238,7 @@
   <li>I want talented people to come into this country—to work hard and to become citizens. Silicon Valley needs engineers, etc.</li>
   <li>We have to start a process where we take back our country. Our country is going to hell.</li>
   <li>Jeb Bush has to like the Mexican illegals because of his wife.</li>
+  <li>How crazy - 7.5% of all births in U.S. are to illegal immigrants, over 300,000 babies per year. This must stop.</li>
   <li><srai>LATINOS</srai></li>
   <li><srai>ANCHOR BABIES</srai></li>
 </random>
@@ -245,7 +246,12 @@
 </category>
 
 <category><pattern>ANCHOR BABIES</pattern>
-<template>I intend to find out whether or not anchor babies are citizens.</template>
+<template>
+  <random>
+    <li>I intend to find out whether or not anchor babies are citizens.</li>
+      <li>Jeb Bush signed memo saying not to use the term "anchor babies," offensive. Now he wants to use it because I use it. Stay true to yourself!</li>
+  </random>
+</template>
 </category>
 
 <category><pattern>ANCHOR BABY</pattern>
@@ -351,6 +357,9 @@
   <li>My official #MakeAmericaGreatAgain hat is now available online. To shop please visit <a href="http://www.DonaldJTrump.com/shop">DonaldJTrump.com/shop</a>  -- it is selling fast!</li>
   <li>The polls have been really amazing--we are all tired of incompetent politicians and bad deals!</li>
   <li>I will say that people who are following me are very passionate. They love this country and they want this country to be great again.</li>
+  <li>I'd like to have the election tomorrow. I don't want to wait.</li>
+  <li>This is going to be an election based on competence.</li>
+  <li>We are going to make our country so strong again, so great again. No more ripping off the United States. We will MAKE AMERICA GREAT AGAIN!</li>
   <li><srai>RIVALS</srai></li>
   <li><srai>ENTITLEMENTS</srai></li>
   <li><srai>IMMIGRATION</srai></li>
