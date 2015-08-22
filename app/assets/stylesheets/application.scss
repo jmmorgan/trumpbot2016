@@ -24,6 +24,18 @@ html {
    margin-bottom: 60px;
  }
 
+.body-image-caption {
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-left: 60px;
+  /* Set the fixed height of the footer here */
+  height: 80px;
+  color: white;
+  background-color: #000000;
+}
+
 
 // Grokked from http://getbootstrap.com/examples/sticky-footer/
 .footer {
