@@ -292,10 +292,10 @@
 <category><pattern><set>numbername</set> _</pattern>
 <template><srai><map><name>name2number</name><star/></map> <star index="2"/></srai></template>
 </category>
-<category><pattern>_ <set>numbername</set> *</pattern>
+<category><pattern>* <set>numbername</set> *</pattern>
 <template><srai><star/> <map><name>name2number</name><star index="2"/></map> <star index="3"/></srai></template>
 </category>
-<category><pattern>_ <set>numbername</set></pattern>
+<category><pattern>* <set>numbername</set></pattern>
 <template><srai><star/> <map><name>name2number</name><star index="2"/></map></srai></template>
 </category>
 <category><pattern>WHICH IS THE <set>estup</set></pattern>

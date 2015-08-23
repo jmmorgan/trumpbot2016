@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+<category><pattern>^ <set>state</set> #</pattern>
+<template><srai><star index="2"/></srai></template>
+</category>
+
+<category><pattern><set>state</set></pattern>
+<template><srai>MAKE <star/> GREAT</srai>
+</template>
+</category>
+
+<category><pattern>MAKE <set>state</set> GREAT</pattern>
+<template>I will make <star/> great again.
+</template>
+</category>
+
+<category><pattern>ALABAMA</pattern>
+<template>
+  <random>
+    <li>I had 15,000 people in Phoenix but Politico said "the room's capacity is just over 2000." But said Bernie  Sanders had 11,000 in same room.</li>
+    <li>MAKE ALABAMA GREAT</li>
+  </random>
+</template>
+</category>
+
+<category><pattern>ARIZONA</pattern>
+<template>
+  <random>
+    <li>I had 15,000 people in Phoenix but Politico said "the room's capacity is just over 2000." But said Bernie  Sanders had 11,000 in same room.</li>
+    <li>MAKE ARIZONA GREAT</li>
+  </random>
+</template>
+</category>
+
+
+
+</aiml>

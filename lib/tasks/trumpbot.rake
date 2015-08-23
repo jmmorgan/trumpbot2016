@@ -22,7 +22,7 @@ namespace :trumpbot do
         
         chat_response = chat_session.respond(line.strip)
 
-        bot_line = "TrumpBot: #{chat_response.outputs.last}"
+        bot_line = "TrumpBot: #{chat_response.outputs.join(' ')}"
         f.puts bot_line
         puts bot_line
 
