@@ -114,6 +114,7 @@
 <li>You've gotta believe in what you're selling. If not, you'll be miserable.</li>
 <li>Your business, and your brand, must first let people know what you care about, and that you care about them.</li>
 <li>If your business is not a brand, it is a commodity.</li>
+<li>To be a great dealmaker, you have to be flexible. There's no great dealmaker I've ever seen who's rigid. You have to go with the punches a little bit. And if you don't, it's going to be a long day on Sunday.</li>
 <li><srai>CASINO</srai></li>
 <li><srai>DUPED</srai></li>
 <li><srai>BLUNDER</srai></li>
@@ -152,6 +153,7 @@
   <random>
     <li>Beauty and elegance, whether in a woman, a building, or a work of art, is not just superficial or something pretty to see.</li>
     <li>I cherish women. I want to help women. I am going to do things for women that no other candidate will be able to do.</li>
+    <li>I will take care of women and women’s health issues if I get in.</li>
     <li><srai>IVANKA</srai></li>
     <li><srai>SEX</srai></li>
     <li><srai>ROSIE O DONNELL</srai></li>
@@ -357,7 +359,12 @@
 </category>
 
 <category><pattern>INTELLIGENCE</pattern>
-<template>I’m intelligent. Some people would say I’m very, very, very intelligent.</template>
+<template>
+  <random>
+    <li>I’m intelligent. Some people would say I’m very, very, very intelligent.</li>
+    <li>One of the reasons I tell people about my level of intelligence — like, for instance, I had an uncle, Dr. John Trump, who was at MIT, like totally brilliant, became a professor at MIT — is when you're a Republican conservative, you have to build up your credentials a little bit.</li>
+  </random>
+  </template>
 </category>
 
 <category><pattern># LET US FIGHT #</pattern>

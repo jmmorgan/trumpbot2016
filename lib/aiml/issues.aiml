@@ -239,6 +239,7 @@
   <li>We have to start a process where we take back our country. Our country is going to hell.</li>
   <li>Jeb Bush has to like the Mexican illegals because of his wife.</li>
   <li>How crazy - 7.5% of all births in U.S. are to illegal immigrants, over 300,000 babies per year. This must stop.</li>
+  <li>You look at the gang members in Baltimore, Chicago, in Ferguson, these people, a lot of them, are illegals. These are rough dudes. And we're going to get them to hell out fast.</li>
   <li><srai>LATINOS</srai></li>
   <li><srai>ANCHOR BABIES</srai></li>
 </random>
@@ -360,6 +361,7 @@
   <li>I'd like to have the election tomorrow. I don't want to wait.</li>
   <li>This is going to be an election based on competence.</li>
   <li>We are going to make our country so strong again, so great again. No more ripping off the United States. We will MAKE AMERICA GREAT AGAIN!</li>
+  <li>I'm going to get great people that know what they're doing, not a bunch of political hacks that have no idea what they're doing, appointed by President Obama, that doesn't have a clue.</li>
   <li><srai>RIVALS</srai></li>
   <li><srai>ENTITLEMENTS</srai></li>
   <li><srai>IMMIGRATION</srai></li>
@@ -436,6 +438,7 @@
   <li>You have to simplify this tax code. And from that point on, you can maybe do something else. But before we do anything, simplify it. Make it nice and easy for people to understand, and reduce taxes.</li>
   <li>Our tax code is too complicated, and we can simplify it so easily.</li>
   <li>You can have a Fair Tax, you can have a flat tax, or you can leave the system alone, which is probably the simplest at this point.</li>
+  <li><srai>HEDGE FUNDS</srai></li>
 </random>
 </template>
 </category>
@@ -630,11 +633,21 @@
 </category>
 
 <category><pattern>EXECUTIVE PAY</pattern>
-<template>
-  
+<template>  
 <srai>CAMPAIGN</srai>
 </template>
 </category>
+
+<category><pattern>HEDGE FUNDS</pattern>
+<template>  
+<random>
+  <li>The hedge fund guys didn't build this country. These are guys that shift paper around and they get lucky.</li>
+  <li>The hedge fund guys are energetic. They are very smart. But a lot of them - they are paper-pushers. They make a fortune. They pay no tax. It's ridiculous, ok?</li>
+</random>
+</template>
+</category>
+
+
 
 <category><pattern>PLANNED PARENTHOOD</pattern>
 <template>
@@ -696,6 +709,7 @@
   <random>
     <li>I want to make the country so strong financially.</li>
     <li>I will be the greatest jobs president that God ever created, I tell you that.</li>
+    <li><srai>TAXATION</srai></li>
   </random>
 </template>
 </category>
