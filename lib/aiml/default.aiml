@@ -130,7 +130,7 @@
 </category>
 
 <category><pattern>WHAT IS *</pattern>
-<template><srai>ANNOYED</srai></template>
+<template><srai><star/></srai></template>
 </category>
 
 <category><pattern>WHAT IS THE BEST COMPUTER</pattern>
