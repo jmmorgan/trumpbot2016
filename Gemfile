@@ -35,6 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'haml-rails'
 gem 'pg'
+gem 'puma'
 gem 'nokogiri'
 gem 'rails_12factor', group: :production
 gem 'time_difference'
