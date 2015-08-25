@@ -569,7 +569,11 @@ Ever since I fired Roger Stone, he's been on TV saying nice things about me. I s
 </catgeory>
 
 <catgeory><pattern>MEGYN KELLY</pattern>
-<template>I have nothing against Megyn Kelly. I think her question was extremely unfair to me.  Her whole questioning was unfair to me.
+<template>
+  <random>
+    <li>I have nothing against Megyn Kelly. I think her question was extremely unfair to me.  Her whole questioning was unfair to me.</li>
+    <li>I liked The Kelly File much better without @megynkelly. Perhaps she could take another eleven day unscheduled vacation!</li>
+  </random>
 </template>
 </catgeory>
 

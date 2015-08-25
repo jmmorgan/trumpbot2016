@@ -49,18 +49,6 @@
 </template>
 </category>
 
-<category><pattern>ARE YOU * THAN <set>issue</set> #</pattern>
-<template>
-<srai><star index="2"/></srai>
-</template>
-</category>
-
-<category><pattern>IS <set>issue</set> * THAN YOU #</pattern>
-<template>
-<srai><star index="1"/></srai>
-</template>
-</category>
-
 <category><pattern>WHAT ABOUT ^ <set>issue</set> #</pattern>
 <template>
 <srai><star index="2"/></srai>
@@ -80,6 +68,12 @@
 </category>
 
 <category><pattern>WHY _ <set>issue</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>DO YOU * <set>issue</set> #</pattern>
 <template>
 <srai><star index="2"/></srai>
 </template>
@@ -215,6 +209,13 @@
 </template>
 </category>
 
+<category><pattern>ILLEGAL IMMIGRANTS</pattern>
+<template>
+  
+<srai>IMMIGRATION</srai>
+</template>
+</category>
+
 <category><pattern>BORDER</pattern>
 <template>
   
@@ -323,6 +324,18 @@
   </random>
 </template>
 </category>
+
+<category><pattern>ISRAEL</pattern>
+<template>
+  <random>
+    <li>
+ I speak to friends of mine that are Jewish. I say, 'How are you supporting this man?' Obama’s the worst thing that ever has happened to Israel.</li>
+    <li>We have to protect Israel.</li>
+    <li>Take a look at the deal Obama's making with Iran. If he makes that deal, Israel maybe won't exist very long. It's a disaster.</li>
+  </random>
+</template>
+</category>
+
 
 <category><pattern>AFGHANISTAN</pattern>
 <template>
@@ -613,6 +626,8 @@
     <li>I know the Chinese. I’ve made a lot of money with the Chinese. I understand the Chinese mind.</li>
     <li>I have a great relationship with China just like I do with Mexico.</li>
     <li>A Business Weekend story, "What are the 10 things that the Chinese most want?" One of the 10 things was anything Trump.</li>
+    <l1>As I have long stated, we are so tied in with China and Asia that their markets are now taking the U.S. market down. Get smart U.S.A.!</l1>
+    <li>I've been telling everybody for a long time China's taking our jobs, they're taking our money. Be careful, they'll bring us down. You have to know what you're doing</li>
 </random>
 </template>
 </category>
@@ -709,10 +724,37 @@
   <random>
     <li>I want to make the country so strong financially.</li>
     <li>I will be the greatest jobs president that God ever created, I tell you that.</li>
+    <li><srai>CHINESE</srai></li>
     <li><srai>TAXATION</srai></li>
   </random>
 </template>
 </category>
+
+<category><pattern>SURVEILLANCE</pattern>
+<template>
+  <random>
+    <li><srai>NSA</srai></li>
+  </random>
+</template>
+</category>
+
+<category><pattern>PATRIOT ACT</pattern>
+<template>
+  <random>
+    <li><srai>NSA</srai></li>
+  </random>
+</template>
+</category>
+
+<category><pattern>NSA</pattern>
+<template>
+  <random>
+    <li>I support legislation which allows the NSA to hold the bulk metadata. For oversight, I propose that a court, which is available any time on any day, is created to issue individual rulings on when this metadata can be accessed.</li>
+  </random>
+</template>
+</category>
+
+
 
 
 </aiml>

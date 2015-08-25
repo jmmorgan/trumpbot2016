@@ -13,6 +13,7 @@
 ["mexico"], 
 ["illegals"], 
 ["illegal", "aliens"], 
+["illegal", "immigrants"], 
 ["anchor", "babies"],
 ["anchor", "baby"],
 ["border"], 
@@ -25,6 +26,7 @@
 ["armed", "forces"], 
 ["iran"], 
 ["iraq"], 
+["israel"],
 ["afghanistan"], 
 ["make", "america", "great"], 
 ["campaign"], 
@@ -87,5 +89,8 @@
 ["economy"],
 ["unemployment"],
 ["college", "tution"],
-["the", "stock", "market"]
+["the", "stock", "market"],
+["nsa"],
+["surveillance"],
+["patriot", "act"]
 ]
