@@ -28,7 +28,7 @@ class BotBrain
   # map file are applied affects the 'normalized' result. Should revisit if this project develops legs.
   def normalize(input)
     input = replace_smart_quotes(input)
-    sentences = input.split(/[#{Regexp.quote(PROPERTIES_MAP_FILE['sentence-splitters'])}](\s+|$)/).reject(&:blank?)
+    sentences = input.split(/[#{Regexp.quote(PROPERTIES_MAP_FILE['sentence-splitters'])}](\s+(?=[A-Z])|$)/).reject(&:blank?)
     sentences = sentences.map{|sentence| " #{sentence} "} # Pad with spaces for normal substitutions
     sentences.each do |sentence|
       NORMAL_SUBSTITUTION_MAP_FILE.each_pair do |key, value|
