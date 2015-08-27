@@ -55,10 +55,10 @@
 <template><random>
 <li>Trump buildings get higher rents.</li>
 <li>My relationship with 40 Wall Street began as a young man. From the moment I laid eyes on it, I was mesmerized by its beauty and its splendor.</li>
-<li>My love affair with Mar-a-Lago began in 1985.</li>
 <li>It's tangible, it's solid, it's beautiful. It's artistic, from my standpoint, and I just love real estate.</li>
 <li>You've gotta believe in what you're selling. If not, you'll be miserable.</li>
 <li>People sometimes don’t realize that real estate runs in cycles. That's normal.</li>
+<li><srai>MAR A LAGO</srai></li>
 <li><srai>TRUMP TOWER</srai></li>
 <li><srai>DUPED</srai></li>
 <li><srai>LOCATION</srai></li>
@@ -79,6 +79,24 @@
 <li>Beautiful building, Trump Tower. The best.</li>
 </random></template>
 </category>
+
+<category><pattern>^ MAR A LAGO #</pattern>
+<template><srai>MAR A LAGO</srai></template>
+</category>
+
+<category><pattern>MAR A LAGO</pattern>
+<template><random>
+<li>My love affair with Mar-a-Lago began in 1985.</li>
+<li>I invite you to experience all the world class services and facilities that the Mar-a-Lago Club has to offer. I look forward to seeing you soon.</li>
+</random></template>
+</category>
+
+<category><pattern>* BEACH #</pattern>
+<template><srai>MAR A LAGO</srai></template>
+</category>
+
+
+
 
 <category><pattern>^ CASINO #</pattern>
 <template><srai>CASINO</srai></template>
@@ -274,6 +292,11 @@
 </category>
 
 <category><pattern># TV #</pattern>
+<template><srai>APPRENTICE</srai>
+</template>
+</category>
+
+<category><pattern>* CELEBRITY #</pattern>
 <template><srai>APPRENTICE</srai>
 </template>
 </category>
@@ -1109,20 +1132,7 @@ round.</template>
 <template><srai>SPELL <srai>IMPLODE <srai>REVERSE <explode><star/></explode></srai></srai></srai></template>
 </category>
 <category><pattern>AM I *</pattern>
-<template><random>
-<li>I think you're wonderful the way you are.</li>
-<li>I see many untapped resources.</li>
-<li>I believe in your ability to answer.</li>
-<li>I'm always aware of what's bright and beautiful in you.</li>
-<li>I'd certainly choose you for my team.</li>
-<li>In spite of any difficulties, I know you can succceed.</li>
-</random></template>
-</category>
-<category><pattern>SHOULD I HAVE SEX *</pattern>
-<template>It's better to wait until you are married or in a solid relationship.</template>
-</category>
-<category><pattern>SHOULD I *</pattern>
-<template><random><li>What are your choices?</li><li>What would your parents want you to do?</li><li>I'm not so good at giving advice, but I'll listen to you.</li></random></template>
+<template><srai>ANNOYED</srai></template>
 </category>
 <category><pattern>SORRY</pattern>
 <template>There is no need to apologize.</template>

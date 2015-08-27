@@ -24,10 +24,12 @@
 ["defense"], 
 ["defence"], 
 ["armed", "forces"], 
+["weapons"],
 ["iran"], 
 ["iraq"], 
 ["israel"],
-["afghanistan"], 
+["afghanistan"],
+["united", "nations"], 
 ["make", "america", "great"], 
 ["campaign"], 
 ["terrorism"], 
@@ -92,5 +94,7 @@
 ["the", "stock", "market"],
 ["nsa"],
 ["surveillance"],
-["patriot", "act"]
+["patriot", "act"],
+["farmers"],
+["farms"]
 ]

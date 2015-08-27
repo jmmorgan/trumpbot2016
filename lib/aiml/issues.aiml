@@ -313,7 +313,9 @@
 </template>
 </category>
 
-
+<category><pattern>WEAPONS</pattern>
+<template><srai>IRAN</srai></template>
+</category>
 
 <category><pattern>IRAQ</pattern>
 <template>
@@ -750,6 +752,20 @@
 <template>
   <random>
     <li>I support legislation which allows the NSA to hold the bulk metadata. For oversight, I propose that a court, which is available any time on any day, is created to issue individual rulings on when this metadata can be accessed.</li>
+  </random>
+</template>
+</category>
+
+<category><pattern>FARMERS</pattern>
+<template>
+<srai>FARMS</srai>
+</template>
+</category>
+
+<category><pattern>FARMS</pattern>
+<template>
+  <random>
+    <li>Windfarms are ruining the landscape.</li>
   </random>
 </template>
 </category>
