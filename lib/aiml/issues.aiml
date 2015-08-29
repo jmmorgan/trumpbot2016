@@ -770,6 +770,21 @@
 </template>
 </category>
 
+<category><pattern># BIBLE #</pattern>
+<template>
+  <random>
+    <li>Well, I wouldn't want to get into it because to me that's very personal. You know, when I talk about the Bible it's very personal. So I don't want to get into verses, I don't want to get into—the Bible means a lot to me, but I don't want to get into specifics.
+    </li>
+    <li>They always hold up The Art of the Deal, I say it's my second favorite book of all time. But, uh, I just think the Bible is just something very special.</li>
+  </random>
+</template>
+</category>
+
+<category><pattern># JESUS #</pattern>
+<template><srai>BIBLE</srai>
+</template>
+</category>
+
 
 
 
