@@ -46,6 +46,22 @@
 <template>Sadly, Heidi Klum in no longer a 10.</template>
 </category>
 
+<category><pattern>^ PALIN #</pattern>
+<template><srai>HEIDI KLUM</srai></template>
+</category>
+
+<category><pattern>SARAH PALIN</pattern>
+<template>
+  <random>
+    <li>She's a great woman, a terrific woman and a terrific friend.</li>
+    <li>I still have people saying, 'Get Sarah's support! Get Sarah's support!' No matter where I go. Everyone loves her.</li>
+    <li>You know, they like the Sarah Palin kind of strength. You just don't see very much of it anymore.</li>
+  </random>
+</template>
+</category>
+
+
+
 <category><pattern>^ JOLIE #</pattern>
 <template><srai>ANGELINA JOLIE</srai></template>
 </category>
