@@ -223,6 +223,13 @@
 </template>
 </category>
 
+<category><pattern>WALL</pattern>
+<template>
+  
+<srai>IMMIGRATION</srai>
+</template>
+</category>
+
 
 <category><pattern>IMMIGRATION</pattern>
 <template>
@@ -605,7 +612,7 @@
 </template>
 </category>
 
-<category><pattern>KEYSTONE</pattern>
+<category><pattern>^ KEYSTONE #</pattern>
 <template><srai>KEYSTONE</srai>
 </template>
 </category>
@@ -728,6 +735,15 @@
     <li>I will be the greatest jobs president that God ever created, I tell you that.</li>
     <li><srai>CHINESE</srai></li>
     <li><srai>TAXATION</srai></li>
+    <li><srai>INFRASTRUCTURE</srai></li>
+  </random>
+</template>
+</category>
+
+<category><pattern>INFRASTRUCTURE</pattern>
+<template>
+  <random>
+    <li>The only one to fix the infrastructure of our country is me - roads, airports, bridges. I know how to build, pols only know how to talk!</li>
   </random>
 </template>
 </category>

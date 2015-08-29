@@ -37,6 +37,11 @@ class BotBrain
     end
     sentences.map(&:strip!)
 
+    # Strip out any remaining non alpha-numeric characters
+    sentences.each do |sentence|
+      sentence.gsub!(/[^\w\s]/, '')
+    end
+
     sentences.each_index do |i|
       # Normalize interword spaces and convert to caps
       original_tokens = sentences[i].split
