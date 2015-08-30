@@ -39,6 +39,7 @@ gem 'puma'
 gem 'nokogiri'
 gem 'rails_12factor', group: :production
 gem 'time_difference'
+gem 'twitter'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
