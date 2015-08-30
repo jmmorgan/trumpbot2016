@@ -14,6 +14,7 @@
 ["illegals"], 
 ["illegal", "aliens"], 
 ["illegal", "immigrants"], 
+["immigrants"], 
 ["anchor", "babies"],
 ["anchor", "baby"],
 ["border"], 
@@ -98,5 +99,11 @@
 ["surveillance"],
 ["patriot", "act"],
 ["farmers"],
-["farms"]
+["farms"],
+["vaccine"],
+["injection"],
+["vaccination"],
+["vaccines"],
+["injections"],
+["vaccinations"]
 ]

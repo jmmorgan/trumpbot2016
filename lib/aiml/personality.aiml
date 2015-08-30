@@ -1109,6 +1109,12 @@ round.</template>
 <template>I’ve found jury duty very professionally done, I’ve met some fantastic people and it’s been a really good experience.</template>
 </category>
 
+<category><pattern>* LOSER #</pattern>
+<template>
+  <srai>RIVALS</srai>
+</template>
+</category>
+
 
 
 

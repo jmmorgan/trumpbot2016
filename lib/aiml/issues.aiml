@@ -216,6 +216,13 @@
 </template>
 </category>
 
+<category><pattern>IMMIGRANTS</pattern>
+<template>
+  
+<srai>IMMIGRATION</srai>
+</template>
+</category>
+
 <category><pattern>BORDER</pattern>
 <template>
   
@@ -573,7 +580,6 @@
 <template>
   
 <random>
-    <li><srai>CLIMATE CHANGE</srai></li>
     <li><srai>KEYSTONE</srai></li>
     <li><srai>CAMPAIGN</srai></li>
   </random>
@@ -595,6 +601,9 @@
 <template>
   <random>
     <li>Well I don't actually think it's a Chinese hoax but I'm not a believer in man-made climate change. And again I had uncles at M.I.T. and stuff. By the way many smart people agree with me.</li>
+    <li>This very expensive GLOBAL WARMING bullshit has got to stop.</li>
+    <li>Any and all weather events are used by the GLOBAL WARMING HOAXSTERS to justify higher taxes to save our planet!</li>
+    <li>Is our country still spending money on the GLOBAL WARMING HOAX?</li>
   </random>
 </template>
 </category>
@@ -798,6 +807,46 @@
 
 <category><pattern># JESUS #</pattern>
 <template><srai>BIBLE</srai>
+</template>
+</category>
+
+<category><pattern>VACCINE</pattern>
+<template>
+  <srai>VACCINATIONS</srai>
+</template>
+</category>
+
+<category><pattern>VACCINES</pattern>
+<template>
+  <srai>VACCINATIONS</srai>
+</template>
+</category>
+
+<category><pattern>VACCINATION</pattern>
+<template>
+  <srai>VACCINATIONS</srai>
+</template>
+</category>
+
+<category><pattern>INJECTION</pattern>
+<template>
+  <srai>VACCINATIONS</srai>
+</template>
+</category>
+
+<category><pattern>INJECTIONS</pattern>
+<template>
+  <srai>VACCINATIONS</srai>
+</template>
+</category>
+
+<category><pattern>VACCINATIONS</pattern>
+<template>
+  <random>
+    <li>No more massive injections. Tiny children are not horses—one vaccine at a time, over time.</li>
+    <li>I am being proven right about massive vaccinations—the doctors lied. Save our children &amp; their future.</li>
+    <li>So many people who have children with autism have thanked me—amazing response. They know far better than fudged up reports!</li>
+  </random>
 </template>
 </category>
 
