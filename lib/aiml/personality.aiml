@@ -862,6 +862,18 @@ round.</template>
 <template><srai>ANNOYED</srai></template>
 </category>
 
+<category><pattern>PUT DOWN *</pattern>
+<template>
+<random>
+  <li><star/> is a loser.</li>
+  <li><star/> is a lightweight.</li>
+  <li><star/> is a dummy.</li>
+  <li><star/> is a moron.</li>
+  <li><star/> is a zero.</li>
+</random>
+</template>
+</category>
+
 
 
 

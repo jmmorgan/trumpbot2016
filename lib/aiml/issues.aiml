@@ -91,6 +91,18 @@
 </template>
 </category>
 
+<category><pattern>^ WANT ^ <set>issue</set> *</pattern>
+<template>
+<srai><star index="3"/></srai>
+</template>
+</category>
+
+<category><pattern>^ WANTS ^ <set>issue</set> *</pattern>
+<template>
+<srai><star index="3"/></srai>
+</template>
+</category>
+
 <category><pattern><set>issue</set></pattern>
 <template>
  <random>
@@ -237,6 +249,13 @@
 </template>
 </category>
 
+<category><pattern>DEPORTATIION</pattern>
+<template>
+  
+<srai>IMMIGRATION</srai>
+</template>
+</category>
+
 
 <category><pattern>IMMIGRATION</pattern>
 <template>
@@ -266,6 +285,7 @@
   <random>
     <li>I intend to find out whether or not anchor babies are citizens.</li>
       <li>Jeb Bush signed memo saying not to use the term "anchor babies," offensive. Now he wants to use it because I use it. Stay true to yourself!</li>
+    <li>Asians are very offended that JEB said that anchor babies applies to them as a way to be more politically correct to hispanics. A mess!</li>
   </random>
 </template>
 </category>
