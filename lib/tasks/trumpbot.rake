@@ -47,6 +47,18 @@ namespace :trumpbot do
     end
 
   end
+
+  task :respond_to_twitter_mentions => [:environment] do |t, args|
+    client = Twitter::REST::Client.new do |config|
+      config.consumer_key        = ENV['TRUMPBOT_TWITTER_CONSUMER_KEY']
+      config.consumer_secret     = ENV['TRUMPBOT_TWITTER_CONSUMER_SECRET']
+      config.access_token        = ENV['TRUMPBOT_TWITTER_ACCESS_TOKEN']  
+      config.access_token_secret = ENV['TRUMPBOT_TWITTER_ACCESS_SECRET']
+    end
+
+    Interactors::CollectNewTwitterMentions.new(twitter_client: client).call
+    Interactors::RespondToTwitterMentions.new(twitter_client: client).call
+  end
 end
 
 def foo
