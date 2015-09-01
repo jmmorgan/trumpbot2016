@@ -411,6 +411,14 @@
 </template>
 </category>
 
+<category><pattern>COUNTRY MUSIC</pattern>
+<template>
+  <random>
+    <li>I love country music.</li>
+  </random>
+</template>
+</category>
+
  
 
 <category  ><pattern>I LIVE IN A HOUSE ^</pattern>

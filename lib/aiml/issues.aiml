@@ -249,7 +249,7 @@
 </template>
 </category>
 
-<category><pattern>DEPORTATIION</pattern>
+<category><pattern>DEPORTATION</pattern>
 <template>
   
 <srai>IMMIGRATION</srai>
@@ -286,6 +286,7 @@
     <li>I intend to find out whether or not anchor babies are citizens.</li>
       <li>Jeb Bush signed memo saying not to use the term "anchor babies," offensive. Now he wants to use it because I use it. Stay true to yourself!</li>
     <li>Asians are very offended that JEB said that anchor babies applies to them as a way to be more politically correct to hispanics. A mess!</li>
+    <li>The 14th amendment — I was right on it. You can do something with it, and you can do something fast.</li>
   </random>
 </template>
 </category>
@@ -411,6 +412,10 @@
   <li>This is going to be an election based on competence.</li>
   <li>We are going to make our country so strong again, so great again. No more ripping off the United States. We will MAKE AMERICA GREAT AGAIN!</li>
   <li>I'm going to get great people that know what they're doing, not a bunch of political hacks that have no idea what they're doing, appointed by President Obama, that doesn't have a clue.</li>
+  <li>We have so many things to do to straighten out our country. We can’t waste time.</li>
+  <li>We’re tired of being the patsies for everyone.</li>
+  <li><srai>SILENT MAJORITY</srai></li>
+  <li><srai>TEA PARTY</srai></li>
   <li><srai>RIVALS</srai></li>
   <li><srai>ENTITLEMENTS</srai></li>
   <li><srai>IMMIGRATION</srai></li>
@@ -422,8 +427,37 @@
 </template>
 </category>
 
-<!-- For now we'll just have placeholders for other issue buzzwords. -->
-<!-- Might create an issues.set file to handle these -->
+
+<category><pattern>^ SILENT MAJORITY #</pattern>
+<template><srai>SILENT MAJORITY</srai></template>
+</category>
+
+<category><pattern>SILENT MAJORITY</pattern>
+<template>
+  
+<random>
+    <li>There is a big, big, growing-by-leaps-and-bounds silent majority out there. It's is going to be an election based on competence.
+</li>
+  </random>
+</template>
+</category>
+
+<category><pattern>^ TEA PARTY #</pattern>
+<template><srai>TEA PARTY</srai></template>
+</category>
+
+<category><pattern>TEA PARTY</pattern>
+<template>
+  
+<random>
+    <li>The Tea Party has tremendous power. It’s Democrats, it is evangelicals, it is everybody.
+</li>
+  </random>
+</template>
+</category>
+
+
+
 <category><pattern>TERRORISM</pattern>
 <template>
   

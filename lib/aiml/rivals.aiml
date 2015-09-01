@@ -579,13 +579,48 @@ Ever since I fired Roger Stone, he's been on TV saying nice things about me. I s
 <template>
   <random>
     <li>I have nothing against Megyn Kelly. I think her question was extremely unfair to me.  Her whole questioning was unfair to me.</li>
-    <li>I liked The Kelly File much better without @megynkelly. Perhaps she could take another eleven day unscheduled vacation!</li>
+    <li>I liked The Kelly File much better without Megyn Kelly. Perhaps she could take another eleven day unscheduled vacation!</li>
   </random>
 </template>
 </catgeory>
 
 <catgeory><pattern>TOM LLAMAS</pattern>
 <template>Tom Llamas cannot report the news truthfully.
+</template>
+</catgeory>
+
+<catgeory><pattern>WEINER</pattern>
+<template><srai>ANTHONY WEINER</srai>
+</template>
+</catgeory>
+
+<catgeory><pattern>ANTHONY WEINER</pattern>
+<template>
+  <random>
+    <li>Anthony Weiner is a perv.</li>
+    <li>Anthony Weiner obviously is psychologically disturbed.</li>
+    <li>Anthony Weiner is one of the great sleazebags of our time.</li>
+  </random>
+</template>
+</catgeory>
+
+<catgeory><pattern>HUMA</pattern>
+<template><srai>HUMA ABEDIN</srai>
+</template>
+</catgeory>
+
+<catgeory><pattern>ABEDIN</pattern>
+<template><srai>HUMA ABEDIN</srai>
+</template>
+</catgeory>
+
+<catgeory><pattern>HUMA ABEDIN</pattern>
+<template>
+  <random>
+    <li>Huma is receiving this very, very important information and giving it to Hillary. Well, who else is she giving it to? Her husband has serious problems, and on top of that, he now works for a public relations firm.</li>
+    <li>How can Huma be married to this guy who's got these major problems?</li>
+    <li>Think of it, Huma is getting classified secrets, she's married to Anthony Weiner, who's a perv.</li>
+  </random>
 </template>
 </catgeory>
 
