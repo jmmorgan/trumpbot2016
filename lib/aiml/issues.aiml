@@ -193,6 +193,7 @@
 </li>
   <li>Obamacare is a disaster.</li>
   <li>If you can't take care of your sick in the country, forget it, it's all over. I mean, it's no good.</li>
+  <li>Unless you get hit by a truck, you can't even use it. So Obamacare's been a disaster.</li>
 </random>
 </template>
 </category>
@@ -394,7 +395,45 @@
 <random>
   <li>Our military has to be strengthened. We've never been in trouble like this. The world hates us.</li>
   <li>26,000 unreported sexual assults in the military-only 238 convictions. What did these geniuses expect when they put men &amp; women together?</li>
+  <li><srai>VETERANS ADMINISTRATION</srai></li>
 </random>
+</template>
+</category>
+
+<category><pattern>VA</pattern>
+<template>
+  
+<srai>VETERANS ADMINISTRATION</srai>
+</template>
+</category>
+
+<category><pattern>V A</pattern>
+<template>
+  
+<srai>VETERANS ADMINISTRATION</srai>
+</template>
+</category>
+
+<category><pattern>VETERANS</pattern>
+<template>
+  
+<srai>VETERANS ADMINISTRATION</srai>
+</template>
+</category>
+
+<category><pattern>VETS</pattern>
+<template>
+  
+<srai>VETERANS ADMINISTRATION</srai>
+</template>
+</category>
+
+<category><pattern>VETERANS ADMINISTRATION</pattern>
+<template>
+  <random>
+    <li>What a disaster the Veterans Administration is.</li>
+    <li>V.A. is a disaster.</li>
+  </random>
 </template>
 </category>
 
@@ -958,6 +997,16 @@
 <template>
   <random>
     <li>President Obama wants to change the name of Mt. McKinley to Denali after more than 100 years. Great insult to Ohio. I will change back!</li>
+  </random>
+</template>
+</category>
+
+<category><pattern>COMMON CORE</pattern>
+<template>
+  <random>
+    <li>Common Core has to be ended. It's a disaster.</li>
+    <li>Jeb Bush wants Common Core. It's a disaster.</li>
+    <li>While millions are being spent against me in attack ads, they are paid for by the “bosses” and “owners” of candidates. I am self funding.</li>
   </random>
 </template>
 </category>

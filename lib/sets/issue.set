@@ -114,5 +114,11 @@
 ["super", "pacs"],
 ["campaign", "finance"],
 ["mckinley"],
-["denali"]
+["denali"],
+["common", "core"],
+["veterans", "administration"],
+["veterans"],
+["vets"],
+["va"],
+["v", "a"]
 ]
