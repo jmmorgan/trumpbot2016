@@ -34,6 +34,16 @@
 </template>
 </category>
 
+<category><pattern>OHIO</pattern>
+<template>
+  <random>
+    <li>President Obama wants to change the name of Mt. McKinley to Denali after more than 100 years. Great insult to Ohio. I will change back!</li>
+    <li>MAKE OHIO GREAT</li>
+  </random>
+</template>
+</category>
+
+
 
 
 </aiml>

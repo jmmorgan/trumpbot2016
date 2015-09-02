@@ -28,10 +28,14 @@ describe Interactors::RespondToTwitterMentions do
       let(:chat_response) { double('chat_response', outputs: ["Ok" * 200]) }
 
       it 'breaks up the response into sub 140-character chunks' do
-        expect(twitter_client).to have_received(:update).with("@Me #{"Ok" * 66} 1/4").twice
-        expect(twitter_client).to have_received(:update).with("@Me #{"Ok" * 66} 2/4").twice
-        expect(twitter_client).to have_received(:update).with("@Me #{"Ok" * 66} 3/4").twice
-        expect(twitter_client).to have_received(:update).with("@Me #{"Ok" * 66} 4/4").twice
+        expect(twitter_client).to have_received(:update).with("@Me #{"Ok" * 66} 1/4", {:in_reply_to_status_id=>2}).once
+        expect(twitter_client).to have_received(:update).with("@Me #{"Ok" * 66} 2/4", {:in_reply_to_status_id=>2}).once
+        expect(twitter_client).to have_received(:update).with("@Me #{"Ok" * 66} 3/4", {:in_reply_to_status_id=>2}).once
+        expect(twitter_client).to have_received(:update).with("@Me #{"Ok" * 66} 4/4", {:in_reply_to_status_id=>2}).once
+        expect(twitter_client).to have_received(:update).with("@Me #{"Ok" * 66} 1/4", {:in_reply_to_status_id=>4}).once
+        expect(twitter_client).to have_received(:update).with("@Me #{"Ok" * 66} 2/4", {:in_reply_to_status_id=>4}).once
+        expect(twitter_client).to have_received(:update).with("@Me #{"Ok" * 66} 3/4", {:in_reply_to_status_id=>4}).once
+        expect(twitter_client).to have_received(:update).with("@Me #{"Ok" * 66} 4/4", {:in_reply_to_status_id=>4}).once
       end
 
     end

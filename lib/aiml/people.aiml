@@ -132,7 +132,11 @@
 </template>
 </category>
 
-<category><pattern>^ IVANA #</pattern>
+<category><pattern>^ IVANKA #</pattern>
+<template><srai>IVANKA</srai></template>
+</category>
+
+<category><pattern>^ DAUGHTER #</pattern>
 <template><srai>IVANKA</srai></template>
 </category>
 

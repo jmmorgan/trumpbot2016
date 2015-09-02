@@ -11,6 +11,7 @@
 ["health", "insurance"], 
 ["health", "care"], 
 ["mexico"], 
+["mexicans"],
 ["illegals"], 
 ["illegal", "aliens"], 
 ["illegal", "immigrants"], 
@@ -106,5 +107,12 @@
 ["vaccination"],
 ["vaccines"],
 ["injections"],
-["vaccinations"]
+["vaccinations"],
+["pac"],
+["pacs"],
+["super", "pac"],
+["super", "pacs"],
+["campaign", "finance"],
+["mckinley"],
+["denali"]
 ]

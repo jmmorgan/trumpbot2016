@@ -419,6 +419,14 @@
 </template>
 </category>
 
+<category><pattern>* VOTE #</pattern>
+<template>
+  <srai>CAMPAIGN</srai>
+</template>
+</category>
+
+
+
  
 
 <category  ><pattern>I LIVE IN A HOUSE ^</pattern>
@@ -1129,7 +1137,7 @@ round.</template>
 <template>I’ve found jury duty very professionally done, I’ve met some fantastic people and it’s been a really good experience.</template>
 </category>
 
-<category><pattern>* LOSER #</pattern>
+<category><pattern>^ LOSER #</pattern>
 <template>
   <srai>RIVALS</srai>
 </template>

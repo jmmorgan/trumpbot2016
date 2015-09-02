@@ -274,6 +274,7 @@
   <li>Jeb Bush has to like the Mexican illegals because of his wife.</li>
   <li>How crazy - 7.5% of all births in U.S. are to illegal immigrants, over 300,000 babies per year. This must stop.</li>
   <li>You look at the gang members in Baltimore, Chicago, in Ferguson, these people, a lot of them, are illegals. These are rough dudes. And we're going to get them to hell out fast.</li>
+  <li>For those that don’t think a wall (fence) works, why don’t they suggest taking down the fence around the White House? Foolish people!</li>
   <li><srai>LATINOS</srai></li>
   <li><srai>ANCHOR BABIES</srai></li>
 </random>
@@ -296,6 +297,13 @@
 </category>
 
 <category><pattern>HISPANIC</pattern>
+<template>
+  
+<srai>LATINOS</srai>
+</template>
+</category>
+
+<category><pattern>MEXICANS</pattern>
 <template>
   
 <srai>LATINOS</srai>
@@ -521,6 +529,7 @@
   <li>You have to simplify this tax code. And from that point on, you can maybe do something else. But before we do anything, simplify it. Make it nice and easy for people to understand, and reduce taxes.</li>
   <li>Our tax code is too complicated, and we can simplify it so easily.</li>
   <li>You can have a Fair Tax, you can have a flat tax, or you can leave the system alone, which is probably the simplest at this point.</li>
+  <li>The one problem I have with the flat tax is that rich people are paying the same as people that are making very little money, and I think there should be a graduation of some kind.</li>
   <li><srai>HEDGE FUNDS</srai></li>
 </random>
 </template>
@@ -903,6 +912,57 @@
   </random>
 </template>
 </category>
+
+<category><pattern>PAC</pattern>
+<template>
+  <srai>CAMPAIGN FINANCE</srai>
+</template>
+</category>
+
+<category><pattern>PACS</pattern>
+<template>
+  <srai>CAMPAIGN FINANCE</srai>
+</template>
+</category>
+
+<category><pattern>SUPER PAC</pattern>
+<template>
+  <srai>CAMPAIGN FINANCE</srai>
+</template>
+</category>
+
+<category><pattern>SUPER PACS</pattern>
+<template>
+  <srai>CAMPAIGN FINANCE</srai>
+</template>
+</category>
+
+
+<category><pattern>CAMPAIGN FINANCE</pattern>
+<template>
+  <random>
+    <li>Many Super Pacs, funded by groups that want total control over their candidate, are being formed to “attack” Trump. Remember when you see them.</li>
+    <li>I’m turning down millions of dollars of campaign contributions—feel totally stupid doing so, but hope it is appreciated by the voters.</li>
+    <li>While millions are being spent against me in attack ads, they are paid for by the “bosses” and “owners” of candidates. I am self funding.</li>
+  </random>
+</template>
+</category>
+
+<category><pattern>MCKINLEY</pattern>
+<template>
+  <srai>DENALI</srai>
+</template>
+</category>
+
+<category><pattern>DENALI</pattern>
+<template>
+  <random>
+    <li>President Obama wants to change the name of Mt. McKinley to Denali after more than 100 years. Great insult to Ohio. I will change back!</li>
+  </random>
+</template>
+</category>
+
+
 
 
 
