@@ -1011,9 +1011,47 @@
 </template>
 </category>
 
+<category><pattern>PLEDGE</pattern>
+<template>
+  <random>
+    <li>I will be totally pledging my allegiance to the Republican Party and for the conservative principles for which it stands.
+</li>
+    <li><srai>RNC</srai></li>
+  </random>
+</template>
+</category>
+
+<category><pattern>RNC</pattern>
+<template>
+  <random>
+    <li>The RNC has been absolutely terrific over the last two month period and as you know, that's what I've wanted.
+</li>
+  </random>
+</template>
+</category>
+
+<category><pattern>NORQUIST</pattern>
+<template>
+  <random>
+    <li>I will be totally pledging my allegiance to the Republican Party and for the conservative principles for which it stands.
+</li>
+    <li><srai>CLUB FOR GROWTH</srai></li>
+  </random>
+</template>
+</category>
+
+<category><pattern>CLUB FOR GROWTH</pattern>
+<template>
+  <random>
+    <li>When I intelligently turned down The Club For Growth crazy request for $1,000,000, they got nasty.What a waste of money that would have been.
+</li>
+    <li>The president of the pathetic Club For Growth came to my office in N.Y.C. and asked for a ridiculous $1,000,000 contribution. I said no way!</li>
+  </random>
+</template>
+</category>
 
 
-
+ 
 
 
 </aiml>

@@ -192,20 +192,32 @@ Matt Drudge is an amazing guy. Politically, one of the legends.
   </random></template>
 </category>
 
-<category><pattern>^ DRUDGE #</pattern>
-<template><srai>MATT DRUDGE</srai></template>
+<category><pattern>^ COSBY #</pattern>
+<template><srai>BILL COSBY</srai></template>
 </category>
 
-<category><pattern>MATT DRUDGE</pattern>
+<category><pattern>BILL COSBY</pattern>
 <template>
   <random>
     <li>
-I was never a fan of Bill Cosby. His humor was always, like, slow and stupid to me. I never saw it..
+I was never a fan of Bill Cosby. His humor was always, like, slow and stupid to me. I never saw it.
 </li>
 <li> I think Bill Cosby's weird. And I never found his humor good at all. Just sit in a chair, talk very slowly? And I say to myself, "What's this all about?"</li>
   </random></template>
 </category>
 
+<category><pattern>^ BRADY #</pattern>
+<template><srai>TOM BRADY</srai></template>
+</category>
+
+<category><pattern>TOM BRADY</pattern>
+<template>
+  <random>
+    <li>
+Congratulations to Tom Brady on yet another great victory- Tom is my friend and a total winner!
+</li>
+  </random></template>
+</category>
 
 
 
