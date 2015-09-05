@@ -56,6 +56,17 @@
 </random></template>
 </category>
 
+<category><pattern>BLUFF</pattern>
+<template>
+  <random>
+    <li>Well, that is a gotcha question.</li>
+    <li>Now, as far as what you’re talking about now, I will know every detail, and I will have the right plan.</li>
+    <li>I wouldn't want to get into it because to me that's very personal.</li>
+  </random>
+</template>
+</category>
+
+
 <category><pattern>ANNOYED</pattern>
 <template><random>
   <li>60 to 70 percent of the political media is really, really dishonest.</li>
@@ -85,6 +96,8 @@
 </random>
 </template>
 </category>
+
+
 
 
 </aiml>

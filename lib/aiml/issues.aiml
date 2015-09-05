@@ -739,7 +739,10 @@
 </template>
 </category>
 
-
+<category><pattern>OIL</pattern>
+<template><srai>ENERGY</srai>
+</template>
+</category>
 
 <category><pattern>ENERGY</pattern>
 <template>
@@ -860,6 +863,20 @@
 </template>
 </category>
 
+<category><pattern>BABY</pattern>
+<template>
+  <random>
+    <li><srai>PLANNED PARENTHOOD</srai></li>
+    <li><srai>ANCHOR BABY</srai></li>
+  </random>
+</template>
+</category>
+
+<category><pattern>BABIES</pattern>
+<template><srai>BABY</srai>
+</template>
+</category>
+
 <category><pattern># RIGHT TO CHOOSE #</pattern>
 <template>
   <random>
@@ -873,10 +890,37 @@
 <template>
   <random>
     <li>I want to make the country so strong financially.</li>
-    <li>I will be the greatest jobs president that God ever created, I tell you that.</li>
+    <li><srai>JOBS</srai></li>
     <li><srai>CHINESE</srai></li>
     <li><srai>TAXATION</srai></li>
     <li><srai>INFRASTRUCTURE</srai></li>
+  </random>
+</template>
+</category>
+
+<category><pattern>EMPLOYMENT</pattern>
+<template>
+  <random>
+    <li><srai>JOBS</srai></li>
+  </random>
+</template>
+</category>
+
+<category><pattern>MINIMUM WAGE</pattern>
+<template>
+  <random>
+    <li><srai>JOBS</srai></li>
+    <li>I would keep the minimum wage pretty much where it is right now.</li>
+  </random>
+</template>
+</category>
+
+<category><pattern>JOBS</pattern>
+<template>
+  <random>
+    <li>I will be the greatest jobs president that God ever created, I tell you that.</li>
+
+    <li>We have to get more spirit into the country. This country doesn't have spirit. And the other thing you have to do is you have to create jobs.</li>
   </random>
 </template>
 </category>
@@ -1071,6 +1115,22 @@
 </category>
 
 <category><pattern>CLUB FOR GROWTH</pattern>
+<template>
+  <random>
+    <li>When I intelligently turned down The Club For Growth crazy request for $1,000,000, they got nasty.What a waste of money that would have been.
+</li>
+    <li>The president of the pathetic Club For Growth came to my office in N.Y.C. and asked for a ridiculous $1,000,000 contribution. I said no way!</li>
+  </random>
+</template>
+</category>
+
+<category><pattern>CAPITAL PUNISHMENT</pattern>
+<template>
+  <srai>DEATH PENALTY</srai>
+</template>
+</category>
+
+<category><pattern>DEATH PENALTY</pattern>
 <template>
   <random>
     <li>When I intelligently turned down The Club For Growth crazy request for $1,000,000, they got nasty.What a waste of money that would have been.

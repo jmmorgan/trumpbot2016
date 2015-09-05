@@ -84,6 +84,18 @@
 <template><srai>EDUCATION</srai></template>
 </category>
 
+<category><pattern>* TRADE *</pattern>
+<template><srai>BUSINESS</srai></template>
+</category>
+
+<category><pattern>* BUY *</pattern>
+<template><srai>BUSINESS</srai></template>
+</category>
+
+<category><pattern>* SELL *</pattern>
+<template><srai>BUSINESS</srai></template>
+</category>
+
 <category><pattern>HOW MUCH WOOD *</pattern>
 <template><srai>ANNOYED</srai></template>
 </category>
@@ -91,6 +103,16 @@
 <category><pattern>HAPPY BIRTHDAY</pattern>
 <template><srai>BIRTHDAY</srai></template>
 </category>
+
+<category><pattern>HAPPY BIRTHDAY</pattern>
+<template><srai>BIRTHDAY</srai></template>
+</category>
+
+<category><pattern><set>interjection</set></pattern>
+<template><srai>RANDOM PICKUP LINE</srai></template>
+</category>
+
+
 
 
 <category><pattern>HAVE YOU <set>been</set> A GOOD * LATELY</pattern>
