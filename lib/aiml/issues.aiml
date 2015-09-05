@@ -103,6 +103,18 @@
 </template>
 </category>
 
+<category><pattern>ARE YOU IN FAVOR OF ^ <set>issue</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
+<category><pattern>DO YOU FAVOR OF ^ <set>issue</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
 <category><pattern><set>issue</set></pattern>
 <template>
  <random>
@@ -307,7 +319,14 @@
 <category><pattern>MEXICANS</pattern>
 <template>
   
-<srai>LATINOS</srai>
+<srai>MEXICO</srai>
+</template>
+</category>
+
+<category><pattern>MEXICAN</pattern>
+<template>
+  
+<srai>MEXICO</srai>
 </template>
 </category>
 
@@ -395,6 +414,7 @@
 <random>
   <li>Our military has to be strengthened. We've never been in trouble like this. The world hates us.</li>
   <li>26,000 unreported sexual assults in the military-only 238 convictions. What did these geniuses expect when they put men &amp; women together?</li>
+  <li>I will be so good at the military, your head will be spin.</li>
   <li><srai>VETERANS ADMINISTRATION</srai></li>
 </random>
 </template>
@@ -461,6 +481,7 @@
   <li>I'm going to get great people that know what they're doing, not a bunch of political hacks that have no idea what they're doing, appointed by President Obama, that doesn't have a clue.</li>
   <li>We have so many things to do to straighten out our country. We can’t waste time.</li>
   <li>We’re tired of being the patsies for everyone.</li>
+  <li>This country is a hellhole. We are going down fast.</li>
   <li><srai>SILENT MAJORITY</srai></li>
   <li><srai>TEA PARTY</srai></li>
   <li><srai>RIVALS</srai></li>
@@ -578,19 +599,27 @@
 <template>
   
 <random>
+    <li>I fully support and back up the Second Amendment.</li>
     <li><srai>POLICE</srai></li>
-    <li><srai>CAMPAIGN</srai></li>
   </random>
 </template>
 </category>
 
 <category><pattern>GUN CONTROL</pattern>
 <template>
-  
-<random>
-    <li><srai>POLICE</srai></li>
-    <li><srai>CAMPAIGN</srai></li>
-  </random>
+  <srai>GUNS</srai>
+</template>
+</category>
+
+<category><pattern>SECOND AMENDMENT</pattern>
+<template>
+  <srai>GUNS</srai>
+</template>
+</category>
+
+<category><pattern>2ND AMENDMENT</pattern>
+<template>
+  <srai>GUNS</srai>
 </template>
 </category>
 
@@ -748,6 +777,7 @@
     <li>A Business Weekend story, "What are the 10 things that the Chinese most want?" One of the 10 things was anything Trump.</li>
     <l1>As I have long stated, we are so tied in with China and Asia that their markets are now taking the U.S. market down. Get smart U.S.A.!</l1>
     <li>I've been telling everybody for a long time China's taking our jobs, they're taking our money. Be careful, they'll bring us down. You have to know what you're doing</li>
+    <li>I love China.</li>
 </random>
 </template>
 </category>

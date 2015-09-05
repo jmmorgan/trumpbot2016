@@ -1433,12 +1433,7 @@ What should I say instead?</template>
 <set var="been"><map><name>be2been</name><get var="be"/></map></set>
 <set var="object"><person><star index="3"/></person></set>
 </think>
-<random>
-<li>When was this?</li>
-<li>Are you kidding me?</li>
-<li>What happened?</li>
-<li>I can't believe <star/> would <get var="be"/> <get var="object"/>.</li>
-</random>
+<srai>RANDOM PICKUP LINE</srai>
 <learn>
 <category>
 <pattern><eval><get var="questionword"/> <get var="was"/></eval> #</pattern>

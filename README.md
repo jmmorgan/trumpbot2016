@@ -21,3 +21,4 @@ TrumpBot is currently hosted [here](http://shielded-fortress-9359.herokuapp.com/
 * Look into organizing AIML files in a way that makes more logical and/or intuitive sense for TrumpBot.
 * Add selenium tests or request tests for chat UI.
 * Post a random line to Twitter on a regular basis (once every few hours)
+* Look into better leveraging `<think>` and `<learn>` elements to make TrumpBot more engaging and 'intelligent'.

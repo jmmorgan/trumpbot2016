@@ -219,6 +219,36 @@ Congratulations to Tom Brady on yet another great victory- Tom is my friend and 
   </random></template>
 </category>
 
+<category><pattern>^ POPE #</pattern>
+<template><srai>POPE FRANCIS</srai></template>
+</category>
+
+<category><pattern>POPE FRANCIS</pattern>
+<template>
+  <random>
+    <li>
+You know that ISIS wants to go in and take over the Vatican? You have heard that. You know, that’s a dream of theirs, to go into Italy.
+</li>
+   <li>The Pope, I hope, can only be scared by God. But the truth is — you know, if you look at what’s going on — they better hope that capitalism works, because it’s the only thing we have right now. And it’s a great thing when it works properly.</li>
+   <li>I like the Pope. I actually like him. He’s becoming very political, there’s no question about it. But I like him. He seems like a pretty good guy.</li>
+  </random></template>
+</category>
+
+<category><pattern>^ HEWITT #</pattern>
+<template><srai>HUGH HEWITT</srai></template>
+</category>
+
+<category><pattern>HUGH HEWITT</pattern>
+<template>
+  <random>
+    <li>
+And by the way, when you say Quds vs. Kurds, I thought Hugh Hewitt said Kurds, this third-rate radio announcer that I did the show for.</li>
+  </random></template>
+</category>
+
+
+
+
 
 
 
