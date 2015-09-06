@@ -425,6 +425,48 @@
 </template>
 </category>
 
+<category><pattern>WHO <set>is</set> *</pattern>
+<template>
+  <srai>BLUFF</srai>
+</template>
+</category>
+
+<category><pattern>WHO <set>be</set> *</pattern>
+<template>
+  <srai>BLUFF</srai>
+</template>
+</category>
+
+<category><pattern>WHO <set>was</set> *</pattern>
+<template>
+  <srai>BLUFF</srai>
+</template>
+</category>
+
+<category><pattern>WHAT <set>is</set> *</pattern>
+<template>
+  <srai>BLUFF</srai>
+</template>
+</category>
+
+<category><pattern>WHAT <set>be</set> *</pattern>
+<template>
+  <srai>BLUFF</srai>
+</template>
+</category>
+
+<category><pattern>WHAT <set>was</set> *</pattern>
+<template>
+  <srai>BLUFF</srai>
+</template>
+</category>
+
+<category><pattern>* WHO *</pattern>
+<template>
+  <srai>BLUFF</srai>
+</template>
+</category>
+
 
 
  

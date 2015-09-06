@@ -19,6 +19,7 @@
 <li><srai>CARLY FIORINA</srai></li>
 <li><srai>BOBBY JINDAL</srai></li>
 <li><srai>JIM GILMORE</srai></li>
+<li><srai>BEN CARSON</srai></li>
 <li><srai>BARACK OBAMA</srai></li>
 <li><srai>HILLARY CLINTON</srai></li>
 <li><srai>KOCH BROTHERS</srai></li>
@@ -274,7 +275,23 @@
 </template>
 </category>
 
+<category><pattern>CARSON</pattern>
+<template><srai>BEN CARSON</srai></template>
+</category>
 
+<category><pattern>BEN CARSON</pattern>
+<template>
+<random>
+  <li>ell, I'm much better as a counterpuncher, so I'd rather have, and I'm hoping for Ben to really hit me at some point, because I love to counterpunch.</li>
+  <li>Ben Carson has been very nice to me, he's actually a really nice guy.</li>
+  <li><srai>I AM BETTER</srai></li>
+</random>
+</template>
+</category>
+
+
+
+W
 
 
 

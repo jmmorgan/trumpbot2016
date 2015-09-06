@@ -6,9 +6,9 @@ module TemplateContentNode
   #
   # Classes including this module should override this method to return a normalized response 
   # fragment, or nil when appropriate.
-  def apply(star_mappings, graphmaster, predicates, category_stack)
+  def apply(star_mappings, graphmaster, predicates, category_tree)
     #puts "self.class = #{self.class} #{tokens.to_s}" # For debugging for now
-    result = tokens.map{|token| token.is_a?(String) ? token : token.apply(star_mappings, graphmaster, predicates, category_stack.clone)}.join(' ')
+    result = tokens.map{|token| token.is_a?(String) ? token : token.apply(star_mappings, graphmaster, predicates, category_tree.branch)}.join(' ')
   end
 
   def to_s

@@ -26,14 +26,15 @@ class PathMatchResult
     @graphmaster.category_for_template(@path.last).source_file
   end
 
-  def apply_template(predicates, category_stack)
+  def apply_template(predicates, category_tree)
     #puts "APPLYING TEMPLATE FOR PATH #{@path}"
     category = @graphmaster.category_for_template(@path.last)
-    if (!category_stack.include?(category))
-      category_stack.push(category)
-      @path.last.apply(self.star_mappings, @graphmaster, predicates, category_stack)
-    else
+    begin
+      category_tree.append(category)
+      @path.last.apply(self.star_mappings, @graphmaster, predicates, category_tree)
+    rescue => e
       # For now just return a default response
+      Rails.logger.error e.message
       "I'm having trouble understanding you."
     end
   end

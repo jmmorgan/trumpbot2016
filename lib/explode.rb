@@ -1,7 +1,7 @@
 class Explode
   include TemplateContentNode
 
-  def apply(star_mappings, graphmaster, predicates, category_stack)
+  def apply(star_mappings, graphmaster, predicates, category_tree)
     super.chars.join(' ')
   end
 

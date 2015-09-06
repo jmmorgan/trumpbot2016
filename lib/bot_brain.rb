@@ -14,8 +14,9 @@ class BotBrain
         predicates['that'] || '*', '*')
       result[:matched_patterns] << path_result.pattern
       result[:source_files] << path_result.source_file
-      category_stack = []
-      normalized_responses << path_result.apply_template(predicates, category_stack)
+      category_tree = CategoryTree.new
+      normalized_responses << path_result.apply_template(predicates, category_tree)
+      #puts category_tree.to_s
     end
 
     predicates['that'] = normalize(normalized_responses.last.to_s).last || '*' 

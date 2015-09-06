@@ -1,10 +1,10 @@
 class Person
   include TemplateContentNode
 
-  def apply(star_mappings, graphmaster, predicates, category_stack)
+  def apply(star_mappings, graphmaster, predicates, category_tree)
     input = nil
     if (tokens.present?)
-      input = super(star_mappings, graphmaster, predicates, category_stack)
+      input = super(star_mappings, graphmaster, predicates, category_tree)
     else
       index = (attributes['index'] || 1).to_i
       star_mapping = star_mappings.star_mappings[index-1]
