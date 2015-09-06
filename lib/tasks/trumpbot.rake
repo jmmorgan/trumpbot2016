@@ -26,12 +26,18 @@ namespace :trumpbot do
         f.puts bot_line
         puts bot_line
 
-        matched_pattern = chat_response.matched_patterns.last.to_s
-        matched_pattern_counts[matched_pattern] += 1
-        num_requests_no_wildcards += 1 if matched_pattern !~ /[\_#\^\*<]/
-        matched_pattern_line = "MATCHED PATTERN: #{matched_pattern}"
-        f.puts matched_pattern_line
-        puts matched_pattern_line
+        chat_response.category_trees.each do |category_tree|
+          # Law of Demeter smell!
+          matched_pattern = category_tree.root.category.pattern.to_s
+          matched_pattern_counts[matched_pattern] += 1
+          num_requests_no_wildcards += 1 if matched_pattern !~ /[\_#\^\*<]/
+          matched_pattern_line = "MATCHED PATTERN: #{matched_pattern}"
+          f.puts matched_pattern_line
+          puts matched_pattern_line
+          category_tree_lines = "CATEGORY TREE:\n#{category_tree.to_s}"
+          f.puts category_tree_lines
+          puts category_tree_lines
+        end
 
         f.puts
         puts

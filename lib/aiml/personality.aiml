@@ -467,6 +467,12 @@
 </template>
 </category>
 
+<category><pattern>* WHAT *</pattern>
+<template>
+  <srai>BLUFF</srai>
+</template>
+</category>
+
 
 
  

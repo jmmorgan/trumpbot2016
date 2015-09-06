@@ -10,8 +10,6 @@ TrumpBot is currently hosted [here](http://shielded-fortress-9359.herokuapp.com/
 # Next up TODOs
 
 * Look into expanding upon trumpbot.rake to accelerate training (and maybe scrap the training controller).
-  * Displaying the full pattern match trace for each input would be helpful.
-  * Automatically detecting shadowed categories might also be helpful.
 * Try to handle initialized acronyms and abbreviations shuch as U.S. and etc. better.
 * Should TrumpBot be made more interactive by occasionally proactively peppering the user with questions?
 * Implement support for `<topic>`

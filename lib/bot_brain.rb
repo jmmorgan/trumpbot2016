@@ -4,7 +4,7 @@
 class BotBrain
 
   def respond(input, previous_requests, predicates)
-    result = {matched_patterns: [], source_files: []}
+    result = {category_trees: [], source_files: []}
     result[:inputs] =  input.split(/(?<=[#{Regexp.quote(PROPERTIES_MAP_FILE['sentence-splitters'])}])(\s+|$)/).reject(&:blank?)
     sentences = normalize(input)
     path_matcher = PathMatcher.new
@@ -12,11 +12,10 @@ class BotBrain
     sentences.each do |sentence|
       path_result = path_matcher.get_matching_path(Graphmaster.instance, sentence, predicates['_chat_session_id'], 
         predicates['that'] || '*', '*')
-      result[:matched_patterns] << path_result.pattern
       result[:source_files] << path_result.source_file
       category_tree = CategoryTree.new
+      result[:category_trees] << category_tree
       normalized_responses << path_result.apply_template(predicates, category_tree)
-      #puts category_tree.to_s
     end
 
     predicates['that'] = normalize(normalized_responses.last.to_s).last || '*' 

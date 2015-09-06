@@ -24,8 +24,8 @@ describe Interactors::QueryBot do
         expect(@response.outputs.count).to eq 1
       end
 
-      it 'populates matched patterns on the ChatResponse' do
-        expect(@response.matched_patterns.count).to eq 1
+      it 'populates category trees on the ChatResponse' do
+        expect(@response.category_trees.count).to eq 1
       end
 
       it 'populates source files on the ChatResponse' do
