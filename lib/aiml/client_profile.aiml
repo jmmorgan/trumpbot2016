@@ -213,7 +213,7 @@ I call you <get name="name"/>.</template>
 <li>Tell me what you love about it</li>
 <li>What do you do there?</li>
 <li>Does it make you happy living there?</li>
-<li>Whats great about there?</li>
+<li>What's great about there?</li>
 </random>
 <think><set name="it"><set name="there"><set name="topic"><star/></set></set></set></think>
 <think><set name="location"><star/></set></think></template>
