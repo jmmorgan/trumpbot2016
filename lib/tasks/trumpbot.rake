@@ -66,11 +66,11 @@ namespace :trumpbot do
     # TODO: Encapsulate this logic in interactor(s)?
     followers_threshold = 5000
     take_limit = 100
-    hash_tags = ['#Trump', '#Trump2016', '#TrumpBot']
+    search_terms = ['#Trump', '#Trump2016', '#TrumpBot', 'Donald Trump']
     user_ids_to_follow = []
 
-    hash_tags.each do |hash_tag|
-      client.search(hash_tag).take(take_limit).each do |tweet|
+    search_terms.each do |search_term|
+      client.search(search_term).take(take_limit).each do |tweet|
         user = tweet.user
         if (user.followers_count >= followers_threshold)
           user_ids_to_follow  << user.id
