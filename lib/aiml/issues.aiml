@@ -492,6 +492,8 @@
   <li><srai>HEALTH CARE</srai></li>
   <li><srai>DEFENSE</srai></li>
   <li><srai>ECONOMY</srai></li>
+  <li><srai>TAXATION</srai></li>
+  <li><srai>CLUB FOR GROWTH</srai></li>
   <li><srai>CHINESE</srai></li>
 </random>
 </template>
@@ -630,7 +632,6 @@
   
 <random>
     <li><srai>POLICE</srai></li>
-    <li><srai>CAMPAIGN</srai></li>
   </random>
 </template>
 </category>
@@ -640,7 +641,6 @@
   
 <random>
     <li><srai>POLICE</srai></li>
-    <li><srai>CAMPAIGN</srai></li>
   </random>
 </template>
 </category>
@@ -693,7 +693,7 @@
 <random>
     <li><srai>CLIMATE CHANGE</srai></li>
     <li><srai>KEYSTONE</srai></li>
-    <li><srai>CAMPAIGN</srai></li>
+    <li><srai>ENERGY</srai></li>
   </random>
 </template>
 </category>
@@ -714,7 +714,6 @@
   
 <random>
     <li><srai>KEYSTONE</srai></li>
-    <li><srai>CAMPAIGN</srai></li>
   </random>
 </template>
 </category>
@@ -725,7 +724,6 @@
 <random>
     <li><srai>CLIMATE CHANGE</srai></li>
     <li><srai>KEYSTONE</srai></li>
-    <li><srai>CAMPAIGN</srai></li>
   </random>
 </template>
 </category>
@@ -752,7 +750,6 @@
 <random>
     <li><srai>CLIMATE CHANGE</srai></li>
     <li><srai>KEYSTONE</srai></li>
-    <li><srai>CAMPAIGN</srai></li>
   </random>
 </template>
 </category>

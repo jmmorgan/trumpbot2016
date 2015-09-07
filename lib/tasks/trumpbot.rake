@@ -74,12 +74,26 @@ namespace :trumpbot do
         user = tweet.user
         if (user.followers_count >= followers_threshold)
           user_ids_to_follow  << user.id
-          puts "Requesting to follow     #{user.screen_name}"
+          puts "Requesting to follow  #{user.screen_name}"
         end
       end
     end
 
     client.follow(user_ids_to_follow.uniq) unless user_ids_to_follow.empty?
+  end
+
+  task :tweet_campaign_message => [:environment] do |t, args|
+    client = twitter_rest_client
+    max_tries = 20
+    # TODO: Encapsulate this logic in interactor(s)?
+    recent_tweets = client.user_timeline('realtrumpbot').map(&:text)
+    max_tries.times do 
+      message = ChatSession.new.respond('CAMPAIGN').outputs.first
+      if (recent_tweets.select{|tweet| tweet =~ /#{Regexp.quote(message)}/i}.empty?)
+        client.update("#{message} #{["#Trump", "#Trump2016"].sample}")
+        break
+      end
+    end
   end
 end
 
