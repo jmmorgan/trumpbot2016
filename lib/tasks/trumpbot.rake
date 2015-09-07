@@ -55,18 +55,39 @@ namespace :trumpbot do
   end
 
   task :respond_to_twitter_mentions => [:environment] do |t, args|
-    client = Twitter::REST::Client.new do |config|
+    client = twitter_rest_client
+
+    Interactors::CollectNewTwitterMentions.new(twitter_client: client).call
+    Interactors::RespondToTwitterMentions.new(twitter_client: client).call
+  end
+
+  task :follow_tweeters => [:environment] do |t, args|
+    client = twitter_rest_client
+    # TODO: Encapsulate this logic in interactor(s)?
+    followers_threshold = 5000
+    take_limit = 100
+    hash_tags = ['#Trump', '#Trump2016', '#TrumpBot']
+    user_ids_to_follow = []
+
+    hash_tags.each do |hash_tag|
+      client.search(hash_tag).take(take_limit).each do |tweet|
+        user = tweet.user
+        if (user.followers_count >= followers_threshold)
+          user_ids_to_follow  << user.id
+          puts "Requesting to follow     #{user.screen_name}"
+        end
+      end
+    end
+
+    client.follow(user_ids_to_follow.uniq) unless user_ids_to_follow.empty?
+  end
+end
+
+def twitter_rest_client
+    Twitter::REST::Client.new do |config|
       config.consumer_key        = ENV['TRUMPBOT_TWITTER_CONSUMER_KEY']
       config.consumer_secret     = ENV['TRUMPBOT_TWITTER_CONSUMER_SECRET']
       config.access_token        = ENV['TRUMPBOT_TWITTER_ACCESS_TOKEN']  
       config.access_token_secret = ENV['TRUMPBOT_TWITTER_ACCESS_SECRET']
     end
-
-    Interactors::CollectNewTwitterMentions.new(twitter_client: client).call
-    Interactors::RespondToTwitterMentions.new(twitter_client: client).call
-  end
-end
-
-def foo
-
 end
