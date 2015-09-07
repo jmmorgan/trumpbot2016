@@ -9,7 +9,12 @@ class AimlMap
       result = map(name)[tokens.first.apply(star_mappings, graphmaster, predicates, category_tree)]
     else
       name = tokens[0].apply(star_mappings, graphmaster, predicates, category_tree)
-      result = map(name)[tokens[1].apply(star_mappings, graphmaster, predicates, category_tree)]
+      # for now we'll try raw key, downcase and capitalized
+      # TODO: Look into implementing a cleaner way of properly finding key/value matches,
+      # maybe by having MapFile map several formats (raw, upcase, downcase, capitalize, etc.)?
+      key = tokens[1].apply(star_mappings, graphmaster, predicates, category_tree)
+      _map = map(name)
+      result = _map[key] ||= _map[key.downcase] ||= _map[key.captialize]
     end
 
     result

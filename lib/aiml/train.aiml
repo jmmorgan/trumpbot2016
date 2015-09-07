@@ -1650,9 +1650,8 @@ Is <get name="pronoun"/> any good at <set name="it"><get var="verb"/> <get var="
 <pattern>DOES <eval><get var="name"/></eval> *</pattern>
 <template>I don't know if <eval><get var="name"/></eval> <star/>.  I know <eval><get var="response"/></eval>.</template>
 </category>
-
 </learn>
-Why does <get name="pronoun"/> <get var="be"/> <set name="it"><get var="obj"/></set>?</template>
+<get name="name"/> does <get var="be"/> <lowercase><set name="it"><get var="obj"/></set></lowercase>.</template>
 </category>
 <category><pattern><set>name</set> <set>was</set> *</pattern>
 <template><think>
