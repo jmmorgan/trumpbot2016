@@ -32,7 +32,7 @@ class Interactors::RespondToTwitterMentions < Interactor
       message_space = 140 - pagination_space - spaces - screen_name_space
       page_count = full_text.length / message_space + (full_text.length % message_space == 0 ? 0 : 1)
       page_count.times do |i|
-        result << "@#{screen_name} #{full_text.slice(message_space * (i-1), message_space)} #{i+1}/#{page_count}"
+        result << "@#{screen_name} #{full_text.slice(message_space * (i), message_space)} #{i+1}/#{page_count}"
       end
     else
       result = ["@#{screen_name} #{full_text}"]
