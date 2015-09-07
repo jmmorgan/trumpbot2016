@@ -524,6 +524,21 @@
 <random>
     <li>The Tea Party has tremendous power. It’s Democrats, it is evangelicals, it is everybody.
 </li>
+   <li>I am with the Evangelicals and Tea Party big time. We will all WIN together!</li>
+  </random>
+</template>
+</category>
+
+<category><pattern>EVANGELICAL CHIRSTIANS</pattern>
+<template><srai>EVANGELICALS</srai></template>
+</category>
+
+
+<category><pattern>EVANGELICALS</pattern>
+<template>
+  
+<random>
+   <li>I am with the Evangelicals and Tea Party big time. We will all WIN together!</li>
   </random>
 </template>
 </category>
@@ -671,20 +686,38 @@
 </template>
 </category>
 
-
-
 <category><pattern>MARRIAGE</pattern>
 <template>
-  
-<srai>CAMPAIGN</srai>
+  <random>
+    <li><srai>SAME SEX MARRIAGE</srai></li>
+  </random>
 </template>
 </category>
 
 <category><pattern>GAY</pattern>
 <template>
-  
-<srai>CAMPAIGN</srai>
+<random>
+    <li><srai>SAME SEX MARRIAGE</srai></li>
+  </random>
 </template>
+</category>
+
+<category><pattern>GAY MARRIAGE</pattern>
+<template><srai>SAME SEX MARRIAGE</srai>
+</template>
+</category>
+
+<category><pattern>MARRIAGE EQUALITY</pattern>
+<template><srai>SAME SEX MARRIAGE</srai>
+</template>
+</category>
+
+<category><pattern>SAME SEX MARRIAGE</pattern>
+<template>
+  <random>
+    <li>The Supreme Court makes a decision. That’s the law of the land. Right? You have to go with it.</li>
+  </random>
+  </template>
 </category>
 
 <category><pattern>ENVIRONMENT</pattern>
@@ -1139,6 +1172,16 @@
     <li>The death penalty should be brought back and it should be brought back strong.
 </li>
     <li>When a man or woman cold-bloodedly murders, he or she should pay. It sets an example.</li>
+  </random>
+</template>
+</category>
+
+<category><pattern>KIM DAVIS</pattern>
+<template>
+  <random>
+    <li>I hate to see Kim Davis being put in jail.
+</li>
+    <li><srai>SAME SEX MARRIAGE</srai></li>
   </random>
 </template>
 </category>

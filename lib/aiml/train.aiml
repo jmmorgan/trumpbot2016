@@ -501,7 +501,7 @@ Why does <get name="pronoun"/> <get var="inf"/> <get var="prep"/> <get var="obj"
 <condition value="unknown" var="star2"><set var="star2"/></condition>
 <condition value="unknown" var="star4"><set var="star4"/></condition>
 </think>
-You <star/> <get var="star2"/> <star index="3"/>?
+<srai>IWILLREMEMBERTHAT</srai>
 <learn>
 <category>
   <pattern>WHO DO I <eval><get var="verb"/></eval> #</pattern>
