@@ -88,7 +88,7 @@ namespace :trumpbot do
     # TODO: Encapsulate this logic in interactor(s)?
     recent_tweets = client.user_timeline('realtrumpbot').map(&:text)
     max_tries.times do 
-      message = ChatSession.new.respond('CAMPAIGN').outputs.first
+      message = ChatSession.new.respond(['CAMPAIGN'].sample).outputs.first
       if (recent_tweets.select{|tweet| tweet =~ /#{Regexp.quote(message)}/i}.empty?)
         client.update("#{message} #{["#Trump", "#Trump2016"].sample}")
         break
