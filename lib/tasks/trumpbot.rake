@@ -88,8 +88,8 @@ namespace :trumpbot do
     # TODO: Encapsulate this logic in interactor(s)?
     recent_tweets = client.user_timeline('realtrumpbot').map(&:text)
     max_tries.times do 
-      message = ChatSession.new.respond(['CAMPAIGN'].sample).outputs.first
-      if (recent_tweets.select{|tweet| tweet =~ /#{Regexp.quote(message)}/i}.empty?)
+      message = ChatSession.new.respond(['CAMPAIGN', 'RIVALS'].sample).outputs.first
+      if (!message_already_tweeted?(message))
         Interactors::SendTweets.new({twitter_client: client, text: message,
             hash_tags: [["#Trump", "#Trump2016"].sample]}).call()
         break
@@ -105,4 +105,10 @@ def twitter_rest_client
       config.access_token        = ENV['TRUMPBOT_TWITTER_ACCESS_TOKEN']  
       config.access_token_secret = ENV['TRUMPBOT_TWITTER_ACCESS_SECRET']
     end
+end
+
+def message_already_tweeted?(message)
+    # VERY QUICK AND DIRTY
+    # For now we'll just take the first 20 chars of the message and search against sent tweets
+    SentTweet.where('text like ?', "#{message.slice(0,30).strip}%").present?
 end
