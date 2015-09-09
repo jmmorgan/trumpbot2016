@@ -90,7 +90,8 @@ namespace :trumpbot do
     max_tries.times do 
       message = ChatSession.new.respond(['CAMPAIGN'].sample).outputs.first
       if (recent_tweets.select{|tweet| tweet =~ /#{Regexp.quote(message)}/i}.empty?)
-        client.update("#{message} #{["#Trump", "#Trump2016"].sample}")
+        Interactors::SendTweets.new({twitter_client: client, text: message,
+            hash_tags: [["#Trump", "#Trump2016"].sample]}).call()
         break
       end
     end

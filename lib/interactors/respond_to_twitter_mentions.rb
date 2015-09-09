@@ -8,21 +8,14 @@ class Interactors::RespondToTwitterMentions < Interactor
 
     mentions = TwitterMention.where('replied IS NOT TRUE').order(twitter_id: :desc).limit(REPLY_LIMIT).each do |mention|
       chat_response = Interactors::QueryBot.new(input: strip_mentions(mention.text)).call()
-      response_texts = build_response_texts(chat_response, mention.screen_name)
+      full_text = "#{chat_response.outputs.join(' ')}"
       mention.update_attributes!(replied: true)
-      response_texts.each do |response_text|
-        client.update(response_text, in_reply_to_status_id: mention.twitter_id)
-      end
+      Interactors::SendTweets.new({twitter_client: client, text: full_text, 
+        screen_names: [mention.screen_name], in_reply_to_status_id: mention.twitter_id}).call()
     end
   end
 
   private 
-
-  def build_response_texts(chat_response, screen_name)
-    full_text = "#{chat_response.outputs.join(' ')}"
-    response = Interactors::FormatTweets.new({text: full_text, screen_names: [screen_name]}).call()
-    response[:tweets]
-  end
 
   def strip_mentions(text)
     text.gsub(/(^|\W)@\w+/, ' ')

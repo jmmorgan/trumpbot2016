@@ -486,6 +486,7 @@
   <li><srai>CAMPAIGN FINANCE</srai></li>
   <li><srai>SILENT MAJORITY</srai></li>
   <li><srai>TEA PARTY</srai></li>
+  <li><srai>EVANGELICALS</srai></li>
   <li><srai>RIVALS</srai></li>
   <li><srai>ENTITLEMENTS</srai></li>
   <li><srai>IMMIGRATION</srai></li>
@@ -495,6 +496,7 @@
   <li><srai>TAXATION</srai></li>
   <li><srai>CLUB FOR GROWTH</srai></li>
   <li><srai>CHINESE</srai></li>
+  <li><srai>PLANNED PARENTHOOD</srai></li>
 </random>
 </template>
 </category>
@@ -529,7 +531,7 @@
 </template>
 </category>
 
-<category><pattern>EVANGELICAL CHIRSTIANS</pattern>
+<category><pattern>EVANGELICAL CHRISTIANS</pattern>
 <template><srai>EVANGELICALS</srai></template>
 </category>
 
@@ -539,6 +541,7 @@
   
 <random>
    <li>I am with the Evangelicals and Tea Party big time. We will all WIN together!</li>
+   <li>I’m a very, very strong believer in Christianity and religion.</li>
   </random>
 </template>
 </category>
@@ -682,6 +685,7 @@
     <li>Our great African American President hasn't exactly had a positive impact on the thugs who are so happily and openly destroying Baltimore.</li>
     <li>And, you know, I have a great relationship with African Americans, as you possibly have heard. I just have great respect for them and you know they like me.</li>
     <li>And if you look at black and African American youth, to a point where they've never done more poorly. There's no spirit.</li>
+    <li>All lives matter.</li>
   </random>
 </template>
 </category>
@@ -856,6 +860,7 @@
     <li>Those Planned Parenthood videos that came out recently are terrible.</li>
     <li>Look, Planned Parenthood has to stop with the abortions.</li>
     <li>I would look at the good aspects of Planned Parenthood and I would also look because I'm sure they do some things properly and good, good for women, and I would look at that.</li>
+    <li>Somebody said I was supporting Planned Parenthood. I'm not supporting Planned Parenthood.</li>
   </random>
 </template>
 </category>
