@@ -74,12 +74,13 @@ namespace :trumpbot do
         user = tweet.user
         if (user.followers_count >= followers_threshold)
           user_ids_to_follow  << user.id
-          puts "Requesting to follow  #{user.screen_name}"
         end
       end
     end
 
-    client.follow(user_ids_to_follow.uniq) unless user_ids_to_follow.empty?
+    FOLLOW_LIMIT = 10 # To keep from exceeding rate limit
+
+    client.follow(user_ids_to_follow.uniq.slice(0, FOLLOW_LIMIT)) unless user_ids_to_follow.empty?
   end
 
   task :tweet_campaign_message => [:environment] do |t, args|
