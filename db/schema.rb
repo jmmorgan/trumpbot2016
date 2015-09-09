@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150831020512) do
+ActiveRecord::Schema.define(version: 20150909025339) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,6 +42,14 @@ ActiveRecord::Schema.define(version: 20150831020512) do
   end
 
   add_index "predicates", ["chat_session_id"], name: "index_predicates_on_chat_session_id", using: :btree
+
+  create_table "sent_tweets", force: :cascade do |t|
+    t.integer  "twitter_id",             limit: 8
+    t.integer  "in_reply_to_twitter_id", limit: 8
+    t.string   "text"
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
+  end
 
   create_table "twitter_mentions", force: :cascade do |t|
     t.string   "screen_name"

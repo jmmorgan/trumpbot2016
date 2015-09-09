@@ -5,7 +5,8 @@ describe Interactors::RespondToTwitterMentions do
   describe '#call' do
     let(:chat_response) { double('chat_response', outputs: ["Ok"]) }
     let(:query_bot) { double('query_bot', call: chat_response) }
-    let(:twitter_client) { double('twitter_client', update: nil) }
+    let(:tweet) { double('tweet', id: 42, in_reply_to_status_id: 21, text: 'foo')}
+    let(:twitter_client) { double('twitter_client', update: tweet) }
     let(:respond_to_twitter_mentions)  { Interactors::RespondToTwitterMentions.new({twitter_client: twitter_client}) }
 
     before do

@@ -12,9 +12,12 @@ class Interactors::SendTweets < Interactor
     result = []
     messages = Interactors::FormatTweets.new(@request).call()[:tweets]
     client = @request[:twitter_client]
-    # Not too worried about error handlin yet
+    # Not too worried about error handling yet
     messages.each do |message|
-      result << client.update(message, in_reply_to_status_id: request[:in_reply_to_status_id])
+      tweet = client.update(message, in_reply_to_status_id: request[:in_reply_to_status_id])
+      result << tweet
+      SentTweet.create!(twitter_id: tweet.id, in_reply_to_twitter_id: tweet.in_reply_to_status_id,
+        text: tweet.text)
     end
 
     result
