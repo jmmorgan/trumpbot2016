@@ -473,6 +473,18 @@
   <srai>BLUFF</srai>
 </template>
 </category>
+
+<category><pattern>COMPLIMENT TRUMP WITH A TWEET</pattern>
+<template>
+  <random>
+    <li>Every thing about @realDonaldTrump screams "Winner!"</li>
+    <li>@realDonaldTrump is one of the truly all-time greats.</li>
+    <li>@realDonaldTrump has a beautiful wife, which can't honestly be said about some of the other candidates.</li>
+    <li>@realDonaldTrump will do for America what he's already done for Twitter -- make it great.</li>
+    <li>I would love to be @realDonaldTrump's running mate if I weren't a bot, even though I was born in the U.S., unlike some politicians we know.</li>
+  </random>
+</template>
+</category>
  
 
 <category  ><pattern>I LIVE IN A HOUSE ^</pattern>
