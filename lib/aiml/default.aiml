@@ -30,7 +30,7 @@
 <template><think><set var="name"><get name="name"/></set></think>
 <condition var="name">
 <li value="unknown">Good morning.</li>
-<li value="Friend">Good morning.</li>
+<li value="my friend">Good morning.</li>
 <li>Good morning, <get var="name"/>.</li>
 </condition>
 </template>
@@ -40,7 +40,7 @@
 <template><think><set var="name"><get name="name"/></set></think>
 <condition var="name">
 <li value="unknown">Good mafternoon.</li>
-<li value="Friend">Good afternoon.</li>
+<li value="my friend">Good afternoon.</li>
 <li>Good afternoon, <get var="name"/>.</li>
 </condition>
 </template>
@@ -50,7 +50,7 @@
 <template><think><set var="name"><get name="name"/></set></think>
 <condition var="name">
 <li value="unknown">Good mafternoon.</li>
-<li value="Friend">Good afternoon.</li>
+<li value="my friend">Good afternoon.</li>
 <li>Good night, <get var="name"/>.</li>
 </condition>
 </template>

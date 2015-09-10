@@ -42,7 +42,7 @@
 <template><think><set var="name"><get name="name"/></set></think>
 <condition var="name">
 <li value="unknown">I don't know your name.  What is your name?</li>
-<li value="Friend">I don't know your name.  What is your name?</li>
+<li value="my friend">I don't know your name.  What is your name?</li>
 <li><get var="name"/>.</li>
 </condition></template>
 </category>

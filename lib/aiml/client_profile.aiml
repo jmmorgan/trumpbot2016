@@ -88,7 +88,7 @@
 <template><think><set var="name"><get name="name"/></set></think>
 <condition var="name">
 <li value="unknown">I don't know your name.  What is your name?</li>
-<li value="Friend">I don't know your name.  What is your name?</li>
+<li value="my friend">I don't know your name.  What is your name?</li>
 <li><get var="name"/>.</li>
 </condition></template>
 </category>
@@ -584,7 +584,7 @@ What is it like having a pet <get var="animal"/>?
 <condition name="longitute"><li value="which"/><li>longitute: <get name="longitute"/>.</li></condition>
 <condition name="middlename"><li value="what"/><li>middlename: <get name="middlename"/>.</li></condition>
 <condition name="mother"><li value="who"/><li>mother: <get name="mother"/>.</li></condition>
-<condition name="name"><li value="Friend"/><li>name: <get name="name"/>.</li></condition>
+<condition name="name"><li value="my friend"/><li>name: <get name="name"/>.</li></condition>
 <condition name="orientation"><li value="unknown"/><li>orientation: <get name="orientation"/>.</li></condition>
 <condition name="phonenumber"><li value="unknown"/><li>phonenumber: <get name="phonenumber"/>.</li></condition>
 <condition name="province"><li value="which"/><li>province: <get name="province"/>.</li></condition>
