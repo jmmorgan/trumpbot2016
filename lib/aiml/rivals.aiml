@@ -137,6 +137,12 @@
 </template>
 </category>
 
+<category><pattern><set>rival</set> #</pattern>
+<template>
+<srai><star index="1"/></srai>
+</template>
+</category>
+
 
 <category><pattern>BUSH</pattern>
 <template><srai>JEB BUSH</srai></template>
@@ -572,6 +578,8 @@
   <li>I think Carly's a very nice woman. But she got fired. And, she lost in a landslide. Does that qualify you to run for president?</li>
   <li>I just realized that if you listen to Carly Fiorina for more than ten minutes straight, you develop a massive headache. She has zero chance!</li>
   <li>Carly Fiorina's a fine woman but it's not gonna happen. She was viciously fired from Hewlett-Packard and the company still hasn't recovered. The stock went down to nothing.</li>
+  <li>I mean, Carly Fiorina's a woman, and I'm not supposed to say bad things, but really, folks, come on. Are we serious?</li>
+  <li>Carly Fiorina. Look at that face! Would anyone vote for that?</li>
   <li><srai>ZERO POLLS</srai></li>
   <li><srai>I AM BETTER</srai></li>
 </random>
