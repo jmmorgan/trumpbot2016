@@ -8,7 +8,8 @@ class Interactors::FormatTweets < Interactor
 
   def call
     response = {tweets: []}
-    full_text = request[:text].to_s + request[:hash_tags].to_a.join(' ')
+    hash_tags = request[:hash_tags].to_a.join(' ')
+    full_text = request[:text].to_s + (hash_tags.present? ? ' ' + hash_tags : '')
     full_text = Interactors::TransformNamesToTwitterHandles.new(full_text).call()
     screen_names = request[:screen_names].to_a.collect{|n| "@#{n}"}.join(' ')
     if (screen_names.length + full_text.length + 2 > 140)
