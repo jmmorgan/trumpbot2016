@@ -61,28 +61,6 @@ namespace :trumpbot do
     Interactors::RespondToTwitterMentions.new(twitter_client: client).call
   end
 
-  task :follow_tweeters => [:environment] do |t, args|
-    client = twitter_rest_client
-    # TODO: Encapsulate this logic in interactor(s)?
-    followers_threshold = 5000
-    take_limit = 100
-    search_terms = ['#Trump', '#Trump2016', '#TrumpBot', 'Donald Trump']
-    user_ids_to_follow = []
-
-    search_terms.each do |search_term|
-      client.search(search_term).take(take_limit).each do |tweet|
-        user = tweet.user
-        if (user.followers_count >= followers_threshold)
-          user_ids_to_follow  << user.id
-        end
-      end
-    end
-
-    FOLLOW_LIMIT = 10 # To keep from exceeding rate limit
-
-    client.follow(user_ids_to_follow.uniq.slice(0, FOLLOW_LIMIT)) unless user_ids_to_follow.empty?
-  end
-
   task :tweet_campaign_message => [:environment] do |t, args|
     client = twitter_rest_client
     max_tries = 20
