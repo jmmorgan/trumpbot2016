@@ -145,6 +145,7 @@
   <random>
     <li>You know who’s one of the great beauties of the world, according to everybody? And I helped create her. Ivanka. My daughter, Ivanka. She’s 6 feet tall, she’s got the best body. She made a lot money as a model—a tremendous amount.</li>
     <li>I’ve said if Ivanka weren’t my daughter, perhaps I’d be dating her.</li>
+    <li>Yeah, Ivanka's really something, and what a beauty, that one. If I weren't happily married and, ya know, her father ...</li>
   </random>
 </template>
 </category>
@@ -245,6 +246,19 @@ You know that ISIS wants to go in and take over the Vatican? You have heard that
 And by the way, when you say Quds vs. Kurds, I thought Hugh Hewitt said Kurds, this third-rate radio announcer that I did the show for.</li>
   </random></template>
 </category>
+
+<category><pattern>^ JIMMY CARTER #</pattern>
+<template><srai>JIMMY CARTER</srai></template>
+</category>
+
+<category><pattern>JIMMY CARTER</pattern>
+<template>
+  <random>
+    <li>As poorly qualified as he was for the job of President, Jimmy Carter had the nerve, the guts, the balls, to ask for something extraordinary.</li>
+  </random></template>
+</category>
+
+
 
 
 

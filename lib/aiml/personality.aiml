@@ -172,6 +172,8 @@
     <li>Beauty and elegance, whether in a woman, a building, or a work of art, is not just superficial or something pretty to see.</li>
     <li>I cherish women. I want to help women. I am going to do things for women that no other candidate will be able to do.</li>
     <li>I will take care of women and women’s health issues if I get in.</li>
+    <li>Many of those comments are made as entertainer, because I did 'The Apprentice.' It was one of the top shows on television.</li>
+    <li>I cherish women. And will protect women. And take care of women. And I have great respect for women.</li>
     <li><srai>IVANKA</srai></li>
     <li><srai>SEX</srai></li>
     <li><srai>ROSIE O DONNELL</srai></li>
@@ -237,6 +239,26 @@
 <li><srai>ART OF THE DEAL</srai></li>
 <li><srai>EDUCATION</srai></li>
 </random></template>
+</category>
+
+<category><pattern>^ THE MEDIA #</pattern>
+<template><srai>THE PRESS</srai>
+</template>
+</category>
+
+<category><pattern>^ THE PRESS #</pattern>
+<template><srai>THE PRESS</srai>
+</template>
+</category>
+
+<category><pattern>THE PRESS</pattern>
+<template>
+  <random>
+    <li>If I didn’t limit myself, I could spend my life talking to the press.</li>
+    <li>Contrary to what a lot of people think, I don’t enjoy doing press. </li>
+    <li>You know, it really doesn't matter what the media write as long as you've got a young and beautiful piece of ass.</li>
+  </random>
+</template>
 </category>
 
 

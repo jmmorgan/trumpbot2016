@@ -117,6 +117,12 @@
 </template>
 </category>
 
+<category><pattern>ARE YOU * <set>rival</set> #</pattern>
+<template>
+<srai><star index="2"/></srai>
+</template>
+</category>
+
 
 
 <category><pattern># <set>rival</set> <set>be</set> _</pattern>
@@ -580,6 +586,7 @@
   <li>Carly Fiorina's a fine woman but it's not gonna happen. She was viciously fired from Hewlett-Packard and the company still hasn't recovered. The stock went down to nothing.</li>
   <li>I mean, Carly Fiorina's a woman, and I'm not supposed to say bad things, but really, folks, come on. Are we serious?</li>
   <li>Carly Fiorina. Look at that face! Would anyone vote for that?</li>
+  <li>Carly Fiorina goes down as one of the worst CEOs ever.</li>
   <li><srai>ZERO POLLS</srai></li>
   <li><srai>I AM BETTER</srai></li>
 </random>
