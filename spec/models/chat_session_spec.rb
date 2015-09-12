@@ -232,7 +232,7 @@ RSpec.describe ChatSession, type: :model do
         graphmaster.add_category(Category.new(parse_input_pattern("THIS IS BLUE"), That.new('*'), Topic.new('*'), template, 'udc.aiml'))
       end
 
-      it 'exists gracefully from the loop' do
+      it 'exits gracefully from the loop' do
         response = chat_session.respond("This is green?")
 
         expect(response.outputs.first).to match /I'm having trouble understanding you\./

@@ -137,7 +137,7 @@
 </template>
 </category>
 
-<category><pattern><set>rival</set> #</pattern>
+<category><pattern><set>rival</set> *</pattern>
 <template>
 <srai><star index="1"/></srai>
 </template>
