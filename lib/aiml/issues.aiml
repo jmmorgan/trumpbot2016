@@ -403,6 +403,17 @@
 </template>
 </category>
 
+<category><pattern>SAUDI ARABIA</pattern>
+<template>
+  <random>
+    <li><srai>TRADE</srai></li>
+    <li><srai>OIL</srai></li>
+    <li>Saudi Arabia, if it weren’t for us, they wouldn’t be here. They wouldn’t exist. They should pay us.</li>
+    <li>The primary reason we are with Saudi Arabia is because we need the oil. Now, we don’t need the oil so much.</li>
+  </random>
+</template>
+</category>
+
 
 <category><pattern>AFGHANISTAN</pattern>
 <template>
@@ -493,6 +504,7 @@
   <li>If the right man doesn’t get into office, you’re going to see a catastrophe in this country in the next four years like you’re never going to believe.</li>
   <li>"Make America Great Again" is a registered trademark of Donald J. Trump.</li>
   <li>People may not always think big themselves, but they can still get very excited by those who do.</li>
+  <li>When you mess with the American Dream, you’re on the fighting side of Trump.</li>
   <li><srai>CAMPAIGN FINANCE</srai></li>
   <li><srai>SILENT MAJORITY</srai></li>
   <li><srai>TEA PARTY</srai></li>
@@ -829,6 +841,7 @@
     <l1>As I have long stated, we are so tied in with China and Asia that their markets are now taking the U.S. market down. Get smart U.S.A.!</l1>
     <li>I've been telling everybody for a long time China's taking our jobs, they're taking our money. Be careful, they'll bring us down. You have to know what you're doing</li>
     <li>I love China.</li>
+    <li><srai>TRADE</srai></li>
 </random>
 </template>
 </category>
@@ -940,10 +953,28 @@
 <template>
   <random>
     <li>I want to make the country so strong financially.</li>
+    <li>I learned at the Wharton School of Finance that the economy runs in cycles.</li>
     <li><srai>JOBS</srai></li>
     <li><srai>CHINESE</srai></li>
     <li><srai>TAXATION</srai></li>
     <li><srai>INFRASTRUCTURE</srai></li>
+    <li><srai>TRADE</srai></li>
+  </random>
+</template>
+</category>
+
+<category><pattern>TRADING</pattern>
+<template>
+  <random>
+    <li><srai>TRADE</srai></li>
+  </random>
+</template>
+</category>
+
+<category><pattern>TRADE</pattern>
+<template>
+  <random>
+    <li>Our trading partners will have to sit across the table from Donald Trump and I guarantee you the rip-off of the United States would end.</li>
   </random>
 </template>
 </category>

@@ -133,6 +133,8 @@
 <li>Your business, and your brand, must first let people know what you care about, and that you care about them.</li>
 <li>If your business is not a brand, it is a commodity.</li>
 <li>To be a great dealmaker, you have to be flexible. There's no great dealmaker I've ever seen who's rigid. You have to go with the punches a little bit. And if you don't, it's going to be a long day on Sunday.</li>
+<li>I make a tremendous amount of money from selling very wealthy people from other parts of the world and from the United States apartments and other things.</li>
+<li>China, Mexico and Saudi Arabia lease tremendous office space from me. I get along with all of them.”</li>
 <li><srai>CASINO</srai></li>
 <li><srai>DUPED</srai></li>
 <li><srai>BLUNDER</srai></li>
@@ -174,6 +176,7 @@
     <li>I will take care of women and women’s health issues if I get in.</li>
     <li>Many of those comments are made as entertainer, because I did 'The Apprentice.' It was one of the top shows on television.</li>
     <li>I cherish women. And will protect women. And take care of women. And I have great respect for women.</li>
+    <li>I have only one regret in the women department — that I never had the opportunity to court Lady Diana Spencer. . . a dream lady.</li>
     <li><srai>IVANKA</srai></li>
     <li><srai>SEX</srai></li>
     <li><srai>ROSIE O DONNELL</srai></li>
@@ -500,11 +503,16 @@
 <category><pattern>COMPLIMENT TRUMP WITH A TWEET</pattern>
 <template>
   <random>
-    <li>Every thing about @realDonaldTrump screams "Winner!"</li>
-    <li>@realDonaldTrump is one of the truly all-time greats.</li>
+    <li>Everything about @realDonaldTrump screams "Winner!"</li>
+    <li>@realDonaldTrump is one of the true all-time greats.</li>
     <li>@realDonaldTrump has a beautiful wife, which can't honestly be said about some of the other candidates.</li>
     <li>@realDonaldTrump will do for America what he's already done for Twitter -- make it great.</li>
     <li>I would love to be @realDonaldTrump's running mate if I weren't a bot, even though I was born in the U.S., unlike some politicians we know.</li>
+    <li>@realDonaldTrump is a class act.</li>
+    <li>@realDonaldTrump is tremendous.</li>
+    <li>@realDonaldTrump is a ratings machine.</li>
+    <li>@realDonaldTrump is really smart.</li>
+    <li>@realDonaldTrump is killing it in the polls.</li>
   </random>
 </template>
 </category>

@@ -258,6 +258,19 @@ And by the way, when you say Quds vs. Kurds, I thought Hugh Hewitt said Kurds, t
   </random></template>
 </category>
 
+<category><pattern>^ REAGAN #</pattern>
+<template><srai>RONALD REAGEN</srai></template>
+</category>
+
+<category><pattern>RONALD REAGAN</pattern>
+<template>
+  <random>
+    <li>Ronald Reagan wass so smooth and so effective a performer that he completely won over the American people.
+.</li>
+  </random></template>
+</category>
+
+
 
 
 
