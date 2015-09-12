@@ -64,7 +64,7 @@ namespace :trumpbot do
   task :tweet_campaign_message => [:environment] do |t, args|
     # For now we have this task scheduled in Heroku to
     # run every hour, but let's only tweet once every three hours
-    return unless (Time.now.hour % 3) == 0
+    next unless (Time.now.hour % 3) == 0
     client = twitter_rest_client
     max_tries = 20
     # TODO: Encapsulate this logic in interactor(s)?
