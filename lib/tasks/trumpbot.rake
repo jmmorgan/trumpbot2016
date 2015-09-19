@@ -71,10 +71,9 @@ namespace :trumpbot do
     recent_tweets = client.user_timeline('realtrumpbot').map(&:text)
     max_tries.times do 
       message = ChatSession.new.respond(['CAMPAIGN', 'RIVALS', 
-        'RANDOM PICKUP LINE', 'COMPLIMENT TRUMP WITH A TWEET'].sample).outputs.first
+        'RANDOM PICKUP LINE'].sample).outputs.first
       if (!message_already_tweeted?(message))
-        Interactors::SendTweets.new({twitter_client: client, text: message,
-            hash_tags: [["#Trump", "#Trump2016", "#MakeAmericaGreatAgain"].sample]}).call()
+        Interactors::SendTweets.new({twitter_client: client, text: message}).call()
         break
       end
     end
