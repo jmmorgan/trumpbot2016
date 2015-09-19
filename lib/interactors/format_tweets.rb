@@ -10,7 +10,9 @@ class Interactors::FormatTweets < Interactor
     response = {tweets: []}
     hash_tags = request[:hash_tags].to_a.join(' ')
     full_text = request[:text].to_s + (hash_tags.present? ? ' ' + hash_tags : '')
-    full_text = Interactors::TransformNamesToTwitterHandles.new(full_text).call()
+    # Commenting out this line to avoid mentioning users who don't follow TrumpBot.
+    # Might revisit this.
+    #full_text = Interactors::TransformNamesToTwitterHandles.new(full_text).call()
     screen_names = request[:screen_names].to_a.collect{|n| "@#{n}"}.join(' ')
     if (screen_names.length + full_text.length + 2 > 140)
       # We'll assume for now that pagination does not exceed 9 tweets
