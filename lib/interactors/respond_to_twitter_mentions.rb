@@ -1,7 +1,7 @@
 # Class should be initialized with a request parameter where request[:twitter_client]
 # returns an instance of Twitter::REST::Client
 class Interactors::RespondToTwitterMentions < Interactor
-  REPLY_LIMIT = 5 # Arbitrary starting point
+  REPLY_LIMIT = 2 # Keeping very low because we're running this job very frequently on Heroku.
 
   def call
     client = @request[:twitter_client]
