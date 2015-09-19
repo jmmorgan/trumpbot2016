@@ -392,6 +392,20 @@
 </template>
 </category>
 
+<category><pattern>SYRIA</pattern>
+<template>
+  <random>
+    <li>Syria is a mess.</li> 
+    <li>You look at Syria and it’s a mess.</li>
+    <li>We’re fighting ISIS. ISIS wants to fight Syria. Why are we fighting ISIS in Syria? Let them fight each other and pick up the remnants.</li>
+    <li>It's an unbelievable humanitarian problem.</li>
+    <li><srai>ISRAEL</srai></li>
+    <li><srai>ISIS</srai></li>
+    <li><srai>DEFENSE</srai></li>
+  </random>
+</template>
+</category>
+
 <category><pattern>ISRAEL</pattern>
 <template>
   <random>
@@ -505,6 +519,7 @@
   <li>"Make America Great Again" is a registered trademark of Donald J. Trump.</li>
   <li>People may not always think big themselves, but they can still get very excited by those who do.</li>
   <li>When you mess with the American Dream, you’re on the fighting side of Trump.</li>
+  <li>Give America Back its dream!</li>
   <li><srai>CAMPAIGN FINANCE</srai></li>
   <li><srai>SILENT MAJORITY</srai></li>
   <li><srai>TEA PARTY</srai></li>
@@ -646,6 +661,7 @@
   
 <random>
     <li>I fully support and back up the Second Amendment.</li>
+    <li>I’ve just released my position papers on The Second Amendment.</li>
     <li><srai>POLICE</srai></li>
   </random>
 </template>
@@ -949,6 +965,14 @@
 </template>
 </category>
 
+<category><pattern>ECONOMIC POLICY</pattern>
+<template>
+  <random>
+    <li><srai>ECONOMY</srai></li>
+  </random>
+</template>
+</category>
+
 <category><pattern>ECONOMY</pattern>
 <template>
   <random>
@@ -1200,7 +1224,7 @@
 <category><pattern>CLUB FOR GROWTH</pattern>
 <template>
   <random>
-    <li>When I intelligently turned down The Club For Growth crazy request for $1,000,000, they got nasty.What a waste of money that would have been.
+    <li>When I intelligently turned down The Club For Growth crazy request for $1,000,000, they got nasty. What a waste of money that would have been.
 </li>
     <li>The president of the pathetic Club For Growth came to my office in N.Y.C. and asked for a ridiculous $1,000,000 contribution. I said no way!</li>
     <li>The phony Club For Growth, which asked me in writing for $1,000,000 (I said no), is now wanting to do negative ads on me. Total hypocrites!</li>

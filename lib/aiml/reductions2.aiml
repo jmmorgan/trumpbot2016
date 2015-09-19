@@ -21,6 +21,10 @@
 <template><srai>CAMPAIGN</srai></template>
 </category>
 
+<category><pattern>WHY ^ PRESIDENT #</pattern>
+<template><srai>CAMPAIGN</srai></template>
+</category>
+
 <category><pattern>^ VOTERS #</pattern>
 <template><srai>CAMPAIGN</srai></template>
 </category>
