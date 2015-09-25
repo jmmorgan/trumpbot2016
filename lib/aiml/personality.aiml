@@ -177,6 +177,7 @@
     <li>Many of those comments are made as entertainer, because I did 'The Apprentice.' It was one of the top shows on television.</li>
     <li>I cherish women. And will protect women. And take care of women. And I have great respect for women.</li>
     <li>I have only one regret in the women department — that I never had the opportunity to court Lady Diana Spencer. . . a dream lady.</li>
+    <li>My mother was like the greatest I ever met.</li>
     <li><srai>IVANKA</srai></li>
     <li><srai>SEX</srai></li>
     <li><srai>ROSIE O DONNELL</srai></li>
@@ -249,6 +250,36 @@
 </template>
 </category>
 
+<category><pattern>^ THE PAPERS #</pattern>
+<template><srai>THE PRESS</srai>
+</template>
+</category>
+
+<category><pattern>^ THE NEWS #</pattern>
+<template><srai>THE PRESS</srai>
+</template>
+</category>
+
+<category><pattern>^ JOURNALIST #</pattern>
+<template><srai>THE PRESS</srai>
+</template>
+</category>
+
+<category><pattern>^ JOURNALISTS #</pattern>
+<template><srai>THE PRESS</srai>
+</template>
+</category>
+
+<category><pattern>^ REPORTER #</pattern>
+<template><srai>THE PRESS</srai>
+</template>
+</category>
+
+<category><pattern>^ REPORTERS #</pattern>
+<template><srai>THE PRESS</srai>
+</template>
+</category>
+
 <category><pattern>^ THE PRESS #</pattern>
 <template><srai>THE PRESS</srai>
 </template>
@@ -260,6 +291,8 @@
     <li>If I didn’t limit myself, I could spend my life talking to the press.</li>
     <li>Contrary to what a lot of people think, I don’t enjoy doing press. </li>
     <li>You know, it really doesn't matter what the media write as long as you've got a young and beautiful piece of ass.</li>
+    <li>They don’t even put me in the headline, and I’m crushing it. The press is very dishonest. Not all of it, but much of it.</li>
+    <li>I’m much smarter than any of these talking heads. Ninety percent of them are morons.</li>
   </random>
 </template>
 </category>

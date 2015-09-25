@@ -51,6 +51,7 @@
 <li>If someone screws you, screw them back.</li>
 <li>While I can’t honestly say I need an eighty-foot living room, I get a kick out of having one.</li>
 <li>Don’t let the brevity of these passages prevent you from savoring the profundity of the advice you are about to receive.</li>
+<li>You've got to be cool and you've got to be unpredictable.</li>
 <li><srai>COUNTRY MUSIC</srai></li>
 <li><srai>EDUCATION</srai></li>
 <li><srai>BUSINESS</srai></li>
@@ -79,6 +80,8 @@
     <li>We need this question.</li>
     <li>A lot of people are saying that bad things are happening out there. We're going to be looking into that and plenty of other thing.</li>
     <li>We have tremendous problems. We owe $19 trillion.</li>
+    <li>I’m leading in every poll.</li>
+    <li>I don't want the other side to know what my views are, where I'm coming from.</li>
   </random>
 </template>
 </category>
@@ -101,6 +104,7 @@
   <li>I've been very nice to you, although I could probably maybe not be based on the way you have treated me.</li>
   <li>I mean, everyone hates you, everyone...</li>
   <li>I have an attention span that’s as long as it has to be.</li>
+  <li>I am so tired of this politically correct crap.</li>
   <li>
     <condition var="name">
       <li value="unknown">You're living in the world of the make-believe.</li>

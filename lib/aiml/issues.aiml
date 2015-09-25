@@ -288,6 +288,7 @@
   <li>How crazy - 7.5% of all births in U.S. are to illegal immigrants, over 300,000 babies per year. This must stop.</li>
   <li>You look at the gang members in Baltimore, Chicago, in Ferguson, these people, a lot of them, are illegals. These are rough dudes. And we're going to get them to hell out fast.</li>
   <li>For those that don’t think a wall (fence) works, why don’t they suggest taking down the fence around the White House? Foolish people!</li>
+  <li>The money comes out, the drugs come in. We’re gonna stop it.</li>
   <li><srai>LATINOS</srai></li>
   <li><srai>ANCHOR BABIES</srai></li>
 </random>
@@ -365,6 +366,17 @@
 </template>
 </category>
 
+<category><pattern>MIDDLE EAST</pattern>
+<template>
+  <random>
+    <srai>IRAN</srai>
+    <srai>IRAQ</srai>
+    <srai>SYRIA</srai>
+    <srai>ISRAEL</srai>
+  </random>
+</template>
+</category>
+
 <category><pattern>IRAN</pattern>
 <template>
   
@@ -374,8 +386,13 @@
     <li>Saudi Arabia was "vehemently" against the Iran nuclear deal. Then today they embraced it. What happened? What did we give them to endorse?</li>
     <li>Iran has taken advantage of stupid people, stupid representatives, people that are incompetent, whether it's Kerry or our president.</li>
     <li><srai>DEFENSE</srai></li>
+    <li><srai>IRAN IRAG TAKEOVE</srai></li>
   </random>
 </template>
+</category>
+
+<category><pattern>IRAN IRAQ TAKEOVER</pattern>
+<template>Iran is going to take over Iraq. We’ve handed everything to everybody on a silver platter, and it shouldn’t have happened.</template>
 </category>
 
 <category><pattern>WEAPONS</pattern>
@@ -388,6 +405,7 @@
     <li><srai>SADDAM</srai></li>
     <li>I was against that war from the beginning. That's a big thing because that shows judgment.</li>
     <li><srai>DEFENSE</srai></li>
+    <li><srai>IRAN IRAG TAKEOVE</srai></li>
   </random>
 </template>
 </category>
@@ -441,7 +459,7 @@
 <random>
   <li>Our military has to be strengthened. We've never been in trouble like this. The world hates us.</li>
   <li>26,000 unreported sexual assults in the military-only 238 convictions. What did these geniuses expect when they put men &amp; women together?</li>
-  <li>I will be so good at the military, your head will be spin.</li>
+  <li>I will be so good at the military, your head will be spinning.</li>
   <li><srai>VETERANS ADMINISTRATION</srai></li>
 </random>
 </template>
@@ -611,6 +629,7 @@
 <template>
   
 <random>
+    <li>Every time they kill mid-level accounting person from ISIS they have a news conference.</li>
     <li><srai>SADDAM</srai></li>
     <li><srai>DEFENSE</srai></li>
   </random>

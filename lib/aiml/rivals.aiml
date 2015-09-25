@@ -192,6 +192,7 @@
 <template>
 <random>
   <li>Chris is a friend of mine but he missed his time. If he would have done it four years ago he would have beaten Romney and he could be president right now. But this is a different time.</li>
+  <li>That room was hot. I mean, poor Chris Christie.</li>
   <li><srai>ZERO POLLS</srai></li>
   <li><srai>I AM BETTER</srai></li>
 </random>
@@ -355,6 +356,7 @@
   <li>Hillary said such nasty things about me, read directly off her teleprompter...but there was no emotion, no truth. Just can't read speeches!</li>
   <li>Hillary Clinton made a speech today using the biggest teleprompter I have ever seen. In fact, it wasn't even see through glass, it was black.</li>
   <li>Our country needs a president with great leadership skills and vision, not someone like Hillary or Barack, neither of which has a clue!</li>
+  <li>Hillary was the original birther.</li>
   <li><srai>I AM BETTER</srai></li>
 </random>
 </template>
@@ -571,6 +573,10 @@
   <li>We need someone who is going to make the country great again, and Rubio is not going to make the country great again.</li>
   <li>Don't know Rubio. Got to know him behind the lectern. Really nice guy. Highly thought of. Very young. But I have better hair than he does.</li>
   <li>Senator Marco "amnesty" Rubio, who has worst voting record in Senate, just hit me on national security-but I said don't go into Iraq. VISION</li>
+  <li>Marco Rubio, he's like a kid. He shouldn't be running in this race as far as I'm concerned.</li>
+  <li>Marco Rubio sits behind a desk; sometimes and he reads stuff, he's in committees so you know that's all he does. I create jobs all day long.</li>
+  <li>I mean, Marco Rubio, as an example. He's got no money, zero. Now, I think that's OK, but I mean, he's got nothing.</li>
+  <li>Rubio announced he was going to run because he's overly ambitious, too young -- and I have better hair than he does, right?</li>
   <li><srai>ZERO POLLS</srai></li>
   <li><srai>I AM BETTER</srai></li>
 </random>
@@ -627,6 +633,7 @@ Ever since I fired Roger Stone, he's been on TV saying nice things about me. I s
   <random>
     <li>I have nothing against Megyn Kelly. I think her question was extremely unfair to me.  Her whole questioning was unfair to me.</li>
     <li>I liked The Kelly File much better without Megyn Kelly. Perhaps she could take another eleven day unscheduled vacation!</li>
+    <li>Megyn Kelly is the worst -- all anti-Trump!</li>
     <li><srai>FOX NEWS</srai></li>
   </random>
 </template>
