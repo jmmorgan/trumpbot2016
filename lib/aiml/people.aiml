@@ -146,6 +146,7 @@
     <li>You know who’s one of the great beauties of the world, according to everybody? And I helped create her. Ivanka. My daughter, Ivanka. She’s 6 feet tall, she’s got the best body. She made a lot money as a model—a tremendous amount.</li>
     <li>I’ve said if Ivanka weren’t my daughter, perhaps I’d be dating her.</li>
     <li>Yeah, Ivanka's really something, and what a beauty, that one. If I weren't happily married and, ya know, her father ...</li>
+    <li>So happy about my daughter Ivanka’s announcement that she will be having a baby this spring. Congratulations!</li>
   </random>
 </template>
 </category>
@@ -269,6 +270,19 @@ And by the way, when you say Quds vs. Kurds, I thought Hugh Hewitt said Kurds, t
 .</li>
   </random></template>
 </category>
+
+<category><pattern>^ BOEHNER #</pattern>
+<template><srai>RONALD REAGEN</srai></template>
+</category>
+
+<category><pattern>JOHN BOEHNER</pattern>
+<template>
+  <random>
+    <li>Well, it’s a big decision that John Boehner made, it’s a great decision.</li>
+  </random></template>
+</category>
+
+
 
 
 

@@ -23,6 +23,7 @@
 <li><srai>BARACK OBAMA</srai></li>
 <li><srai>HILLARY CLINTON</srai></li>
 <li><srai>KOCH BROTHERS</srai></li>
+<li><srai>POLITICO</srai></li>
 </random>
 </template>
 </category>
@@ -577,6 +578,9 @@
   <li>Marco Rubio sits behind a desk; sometimes and he reads stuff, he's in committees so you know that's all he does. I create jobs all day long.</li>
   <li>I mean, Marco Rubio, as an example. He's got no money, zero. Now, I think that's OK, but I mean, he's got nothing.</li>
   <li>Rubio announced he was going to run because he's overly ambitious, too young -- and I have better hair than he does, right?</li>
+  <li>I think Marco Rubio's a baby.</li>
+  <li>You have this clown, Marco Rubio, I've been so nice to him.</li>
+  <li>Just watched Marco Rubio on television. Just another all talk, no action, politician.</li>
   <li><srai>ZERO POLLS</srai></li>
   <li><srai>I AM BETTER</srai></li>
 </random>
@@ -694,6 +698,15 @@ Ever since I fired Roger Stone, he's been on TV saying nice things about me. I s
 <template>
   <random>
     <li>I am having a really hard time watching FOX News.</li>
+  </random>
+</template>
+</catgeory>
+
+<catgeory><pattern>POLITICO</pattern>
+<template>
+  <random>
+    <li>The failing Politico news outlet, which I hear is losing lots of money, is really dishonest!</li>
+    <li>Politico, which is not read or respected by many, may be the most dishonest of the media outlets--- and that is saying something.</li>
   </random>
 </template>
 </catgeory>

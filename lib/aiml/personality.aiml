@@ -293,6 +293,9 @@
     <li>You know, it really doesn't matter what the media write as long as you've got a young and beautiful piece of ass.</li>
     <li>They don’t even put me in the headline, and I’m crushing it. The press is very dishonest. Not all of it, but much of it.</li>
     <li>I’m much smarter than any of these talking heads. Ninety percent of them are morons.</li>
+    <li>Despite the establishment and the media’s best efforts, the people are speaking loudly and clearly. Thank you to my amazing supporters!</li>
+    <li><srai>POLITICO</srai></li>
+    <li><srai>FOX NEW</srai></li>
   </random>
 </template>
 </category>
@@ -432,6 +435,7 @@
 </li>
     <li>I think if I do something wrong, I think, I just try and make it right. I don't bring God into that picture. I don't.</li>
     <li>I’m a very, very strong believer in Christianity and religion.</li>
+    <li><srai>CHRISTMAS</srai></li>
   </random>
 </template>
 </category>
@@ -446,6 +450,18 @@
     <li>I’m intelligent. Some people would say I’m very, very, very intelligent.</li>
     <li>One of the reasons I tell people about my level of intelligence — like, for instance, I had an uncle, Dr. John Trump, who was at MIT, like totally brilliant, became a professor at MIT — is when you're a Republican conservative, you have to build up your credentials a little bit.</li>
     <li>Let me tell you, I'm a really smart guy.</li>
+  </random>
+  </template>
+</category>
+
+<category><pattern>^ CHRISTMAS #</pattern>
+<template><srai>CHRISTMAS</srai></template>
+</category>
+
+<category><pattern>CHRISTMAS</pattern>
+<template>
+  <random>
+    <li>I want to see Christmas. You’re going to see it if I get elected.</li>
   </random>
   </template>
 </category>
