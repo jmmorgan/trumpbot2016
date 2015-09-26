@@ -67,9 +67,11 @@ namespace :trumpbot do
     next unless (Time.now.hour % 6) == 0
     client = twitter_rest_client
 
-    user = Interactors::SelectRandomTwitterFollower.new(twitter_client: client).call()[:user]
-    text =  "I will make #{user[:location]} great once again."
-    Interactors::SendTweets.new(twitter_client: client, text: text, screen_names: [user[:screen_name]]).call
+    user = Interactors::SelectRandomTwitterFollower.new(twitter_client: client, required_fields: [:location]).call()[:user]
+    if (location = user[:location])
+      text =  "I will make #{location} great once again."
+      Interactors::SendTweets.new(twitter_client: client, text: text, screen_names: [user[:screen_name]]).call
+    end
   end
 
   task :tweet_campaign_message => [:environment] do |t, args|
