@@ -294,8 +294,20 @@
     <li>They don’t even put me in the headline, and I’m crushing it. The press is very dishonest. Not all of it, but much of it.</li>
     <li>I’m much smarter than any of these talking heads. Ninety percent of them are morons.</li>
     <li>Despite the establishment and the media’s best efforts, the people are speaking loudly and clearly. Thank you to my amazing supporters!</li>
+    <li>You're dealing with the press, and the distortion that they write is so unbelievable… I mean, they really do distort, and they are terrible people. Not all of them but many of them.</li>
     <li><srai>POLITICO</srai></li>
-    <li><srai>FOX NEW</srai></li>
+    <li><srai>FOX NEWS</srai></li>
+  </random>
+</template>
+</category>
+
+<category><pattern>WINNING</pattern>
+<template>
+  <random>
+    <li>You're going to be sick and tired of winning!</li>
+    <li>We will have so much winning if I get elected, that you may get bored with winning.</li>
+    <li>We are going to have so many victories.</li>
+    <li>We are going to win, win, win. And we are going to make our country great again.</li>
   </random>
 </template>
 </category>

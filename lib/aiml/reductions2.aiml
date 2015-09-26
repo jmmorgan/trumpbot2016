@@ -116,6 +116,10 @@
 <template><srai>RANDOM PICKUP LINE</srai></template>
 </category>
 
+<category><pattern>WILL *</pattern>
+<template><srai><star/></srai></template>
+</category>
+
 
 
 

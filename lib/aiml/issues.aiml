@@ -386,13 +386,18 @@
     <li>Saudi Arabia was "vehemently" against the Iran nuclear deal. Then today they embraced it. What happened? What did we give them to endorse?</li>
     <li>Iran has taken advantage of stupid people, stupid representatives, people that are incompetent, whether it's Kerry or our president.</li>
     <li><srai>DEFENSE</srai></li>
-    <li><srai>IRAN IRAG TAKEOVE</srai></li>
+    <li><srai>IRAN IRAQ TAKEOVE</srai></li>
   </random>
 </template>
 </category>
 
 <category><pattern>IRAN IRAQ TAKEOVER</pattern>
-<template>Iran is going to take over Iraq. We’ve handed everything to everybody on a silver platter, and it shouldn’t have happened.</template>
+<template>
+  <random>
+    <li>Iran is going to take over Iraq. We’ve handed everything to everybody on a silver platter, and it shouldn’t have happened.</li>
+    <li>And right now as you are standing here, Iraq is negotiating with Iran . They’re going to merge and Iran is going to get the oil… and the one that gets the rest of it is going to be ISIS.</li>
+  </random>
+</template>
 </category>
 
 <category><pattern>WEAPONS</pattern>
@@ -405,7 +410,7 @@
     <li><srai>SADDAM</srai></li>
     <li>I was against that war from the beginning. That's a big thing because that shows judgment.</li>
     <li><srai>DEFENSE</srai></li>
-    <li><srai>IRAN IRAG TAKEOVE</srai></li>
+    <li><srai>IRAN IRAQ TAKEOVE</srai></li>
   </random>
 </template>
 </category>
@@ -417,12 +422,20 @@
     <li>You look at Syria and it’s a mess.</li>
     <li>We’re fighting ISIS. ISIS wants to fight Syria. Why are we fighting ISIS in Syria? Let them fight each other and pick up the remnants.</li>
     <li>It's an unbelievable humanitarian problem.</li>
+    <li>They want to start World War III over Syria. Give me a break.</li>
     <li><srai>ISRAEL</srai></li>
     <li><srai>ISIS</srai></li>
+    <li><srai>RUSSIA ISIS SYRIA</srai></li>
     <li><srai>DEFENSE</srai></li>
   </random>
 </template>
 </category>
+
+<category><pattern>RUSSIA ISIS SYRIA</pattern>
+<template>You know Russia wants to get ISIS right. We want to get ISIS. Russia’s in Syria. Maybe we should let them do it?</template>
+</category>
+
+
 
 <category><pattern>ISRAEL</pattern>
 <template>
@@ -454,12 +467,23 @@
 </template>
 </category>
 
+<category><pattern>RUSSIA</pattern>
+<template>
+  
+<random>
+    <li><srai>DEFENSE</srai></li>
+    <li><srai>RUSSIA ISIS SYRIA</srai></li>
+  </random>
+</template>
+</category>
+
 <category><pattern>DEFENSE</pattern>
 <template>
 <random>
   <li>Our military has to be strengthened. We've never been in trouble like this. The world hates us.</li>
   <li>26,000 unreported sexual assults in the military-only 238 convictions. What did these geniuses expect when they put men &amp; women together?</li>
   <li>I will be so good at the military, your head will be spinning.</li>
+  <li>I’m the most militant person here, the most militaristic person you’ll ever meet.</li>
   <li><srai>VETERANS ADMINISTRATION</srai></li>
 </random>
 </template>
@@ -528,7 +552,6 @@
   <li>We’re tired of being the patsies for everyone.</li>
   <li>This country is a hellhole. We are going down fast.</li>
   <li>I don't start these fights, but I sure as hell win them.</li>
-  <li>We will have so much winning if I get elected, that you may get bored with winning.</li>
   <li>You'll never get bored with winning. We never get bored.</li>
   <li>I did notice in all of the polls and recent polls I'm doing really well with women and really well overall.</li>
   <li>I'm just gonna do it.</li>
@@ -537,6 +560,7 @@
   <li>"Make America Great Again" is a registered trademark of Donald J. Trump.</li>
   <li>People may not always think big themselves, but they can still get very excited by those who do.</li>
   <li>When you mess with the American Dream, you’re on the fighting side of Trump.</li>
+  <li><srai>WINING</srai></li>
   <li>Give America Back its dream!</li>
   <li><srai>CAMPAIGN FINANCE</srai></li>
   <li><srai>SILENT MAJORITY</srai></li>
@@ -633,6 +657,7 @@
     <li>Every time they kill mid-level accounting person from ISIS they have a news conference.</li>
     <li><srai>SADDAM</srai></li>
     <li><srai>DEFENSE</srai></li>
+    <li><srai>RUSSIA ISIS SYRIA</srai></li>
   </random>
 </template>
 </category>
