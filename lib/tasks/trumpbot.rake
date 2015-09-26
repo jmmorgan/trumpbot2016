@@ -61,6 +61,17 @@ namespace :trumpbot do
     Interactors::RespondToTwitterMentions.new(twitter_client: client).call
   end
 
+  task :shout_out_to_random_follower => [:environment] do |t, args|
+    # For now we have this task scheduled in Heroku to
+    # run every hour, but let's only tweet once every six hours
+    next unless (Time.now.hour % 6) == 0
+    client = twitter_rest_client
+
+    user = Interactors::SelectRandomTwitterFollower.new(twitter_client: client).call()[:user]
+    text =  "I will make #{user[:location]} great once again."
+    Interactors::SendTweets.new(twitter_client: client, text: text, screen_names: [user[:screen_name]]).call
+  end
+
   task :tweet_campaign_message => [:environment] do |t, args|
     # For now we have this task scheduled in Heroku to
     # run every hour, but let's only tweet once every three hours
