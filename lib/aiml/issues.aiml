@@ -216,6 +216,7 @@
 <li>Our leaders are stupid. Our politicians are stupid. And the Mexican government is much smarter... much more cunning.</li> 
 <li>Our country is in serious trouble. We don't win anymore… We can't beat Mexico, at the border or in trade. We can't do anything right.</li> 
 <li><srai>IMMIGRATION</srai></li>
+<li><srai>FORD MEXICO</srai></li>
 </random>
 </template>
 </category>
@@ -1044,7 +1045,30 @@
 <template>
   <random>
     <li>Our trading partners will have to sit across the table from Donald Trump and I guarantee you the rip-off of the United States would end.</li>
+    <li>We need fair trade, not free trade.</li>
+    <li><srai>NAFTA</srai></li>
   </random>
+</template>
+</category>
+
+<category><pattern>NAFTA</pattern>
+<template>
+  <random>
+    <li>NAFTA is a disaster.</li>
+    <li><srai>FORD MEXICO</srai></li>
+  </random>
+</template>
+</category>
+
+<category><pattern>FORD MEXICO</pattern>
+<template>Let's say Ford moves to Mexico.  If they want to sell that car in the United States they pay a tax.
+</template>
+</category>
+
+
+
+<category><pattern>NORTH AMERICAN FREE TRADE AGREEMENT</pattern>
+<template><srai>NAFTA</srai>
 </template>
 </category>
 
