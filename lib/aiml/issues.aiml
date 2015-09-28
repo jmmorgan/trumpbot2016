@@ -206,6 +206,8 @@
   <li>Obamacare is a disaster.</li>
   <li>If you can't take care of your sick in the country, forget it, it's all over. I mean, it's no good.</li>
   <li>Unless you get hit by a truck, you can't even use it. So Obamacare's been a disaster.</li>
+  <li>Obamacare is a disaster if you look at what's going on with premiums where they're up 40, 50, 55 percent.</li>
+  <li>I am going to take care of everybody. I don't care if it costs me votes or not. Everybody's going to be taken care of much better than they're taken care of now.</li>
 </random>
 </template>
 </category>
@@ -258,8 +260,10 @@
 
 <category><pattern>WALL</pattern>
 <template>
-  
-<srai>IMMIGRATION</srai>
+  <random>
+    <li><srai>IMMIGRATION</srai></li>
+    <li>It will be a real wall. It'll be a wall that works. It'll actually be a wall that will look good, believe it or not.</li>
+  </random>
 </template>
 </category>
 
@@ -290,6 +294,7 @@
   <li>You look at the gang members in Baltimore, Chicago, in Ferguson, these people, a lot of them, are illegals. These are rough dudes. And we're going to get them to hell out fast.</li>
   <li>For those that don’t think a wall (fence) works, why don’t they suggest taking down the fence around the White House? Foolish people!</li>
   <li>The money comes out, the drugs come in. We’re gonna stop it.</li>
+  <li>We're rounding illegal aliens up in a very humane way, in a very nice way. And they're going to be happy because they want to be legalized.</li>
   <li><srai>LATINOS</srai></li>
   <li><srai>ANCHOR BABIES</srai></li>
 </random>
@@ -485,6 +490,7 @@
   <li>26,000 unreported sexual assults in the military-only 238 convictions. What did these geniuses expect when they put men &amp; women together?</li>
   <li>I will be so good at the military, your head will be spinning.</li>
   <li>I’m the most militant person here, the most militaristic person you’ll ever meet.</li>
+  <li>I want to have a military that's so strong, so powerful, so modern, has the greatest equipment in the world and that everybody says, "We're not gonna mess with them." </li>
   <li><srai>VETERANS ADMINISTRATION</srai></li>
 </random>
 </template>
@@ -564,6 +570,7 @@
   <li><srai>WINING</srai></li>
   <li>Give America Back its dream!</li>
   <li><srai>CAMPAIGN FINANCE</srai></li>
+  <li><srai>POLITICIANS</srai></li>
   <li><srai>SILENT MAJORITY</srai></li>
   <li><srai>TEA PARTY</srai></li>
   <li><srai>EVANGELICALS</srai></li>
@@ -656,6 +663,8 @@
   
 <random>
     <li>Every time they kill mid-level accounting person from ISIS they have a news conference.</li>
+    <li>I would end ISIS forcefully.</li> 
+    <li>I think ISIS, what they did, was unbelievable what they did with James Foley and the cutting off of heads of everybody I mean these people are totally a disaster.</li>
     <li><srai>SADDAM</srai></li>
     <li><srai>DEFENSE</srai></li>
     <li><srai>RUSSIA ISIS SYRIA</srai></li>
@@ -697,6 +706,8 @@
   <li>Our tax code is too complicated, and we can simplify it so easily.</li>
   <li>You can have a Fair Tax, you can have a flat tax, or you can leave the system alone, which is probably the simplest at this point.</li>
   <li>The one problem I have with the flat tax is that rich people are paying the same as people that are making very little money, and I think there should be a graduation of some kind.</li>
+  <li>Some people that are getting unfair deductions are going to be raised.</li>
+  <li>I don't want to have certain people on Wall Street getting away with paying no tax.</li>
   <li><srai>HEDGE FUNDS</srai></li>
 </random>
 </template>
@@ -903,6 +914,9 @@
     <l1>As I have long stated, we are so tied in with China and Asia that their markets are now taking the U.S. market down. Get smart U.S.A.!</l1>
     <li>I've been telling everybody for a long time China's taking our jobs, they're taking our money. Be careful, they'll bring us down. You have to know what you're doing</li>
     <li>I love China.</li>
+    <li>Look, the Chinese don't respect our president. They don't respect our country. They will respect me.</li>
+    <li>If the Chinese don't come to the table, they're going to have a tax when they put their products into this country. And they're going to behave.</li>
+    <li>Just like I have the Chinese banks in my buildings, they listen to me, they respect me.</li>
     <li><srai>TRADE</srai></li>
 </random>
 </template>
@@ -1061,7 +1075,11 @@
 </category>
 
 <category><pattern>FORD MEXICO</pattern>
-<template>Let's say Ford moves to Mexico.  If they want to sell that car in the United States they pay a tax.
+<template>
+  <random>
+    <li>Let's say Ford moves to Mexico.  If they want to sell that car in the United States they pay a tax.</li>
+    <li>I love the Mexican people. They're great people. But the leadership is too smart for our country. Ford Motor Company, moving a $2.5 billion plant to Mexico.</li>
+  </random>
 </template>
 </category>
 
@@ -1103,6 +1121,7 @@
 <template>
   <random>
     <li>The only one to fix the infrastructure of our country is me - roads, airports, bridges. I know how to build, pols only know how to talk!</li>
+    <li>Our roads are falling apart, our bridges are falling apart. Everything's falling apart. We have to rebuild our country.</li>
   </random>
 </template>
 </category>

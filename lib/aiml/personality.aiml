@@ -295,11 +295,39 @@
     <li>I’m much smarter than any of these talking heads. Ninety percent of them are morons.</li>
     <li>Despite the establishment and the media’s best efforts, the people are speaking loudly and clearly. Thank you to my amazing supporters!</li>
     <li>You're dealing with the press, and the distortion that they write is so unbelievable… I mean, they really do distort, and they are terrible people. Not all of them but many of them.</li>
+    <li>You know, some of the media is among the worst people I've ever met. I mean a pretty good percentage is really a terrible group of people.</li>
     <li><srai>POLITICO</srai></li>
     <li><srai>FOX NEWS</srai></li>
+    <li><srai>COVERS</srai></li>
   </random>
 </template>
 </category>
+
+<category><pattern>^ POLITICIAN #</pattern>
+<template><srai>POLITICIANS</srai>
+</template>
+</category>
+
+<category><pattern>^ POLITICIANS #</pattern>
+<template><srai>POLITICIANS</srai>
+</template>
+</category>
+
+<category><pattern>POLITICIANS</pattern>
+<template>
+  <random>
+    <li>I've gotten along with politicians my whole life. I've made a fortune on politicians..</li>
+    <li>Nobody knows politicians better than I do. I get along with politicians.</li>
+  </random>
+</template>
+</category>
+
+<category><pattern>POLITICIANS</pattern>
+<template>I'm on a lot of covers. I think maybe more than almost any supermodel.
+</template>
+</category>
+
+
 
 <category><pattern>WINNING</pattern>
 <template>
