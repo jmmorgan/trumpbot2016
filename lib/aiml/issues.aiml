@@ -376,6 +376,8 @@
 <category><pattern>MIDDLE EAST</pattern>
 <template>
   <random>
+    <li>Everyone who's touched the Middle East, the've gotten bogged down.</li>
+    <li>Everybody that's gone to the Middle East has had nothing but problems.</li>
     <srai>IRAN</srai>
     <srai>IRAQ</srai>
     <srai>SYRIA</srai>
@@ -393,7 +395,7 @@
     <li>Saudi Arabia was "vehemently" against the Iran nuclear deal. Then today they embraced it. What happened? What did we give them to endorse?</li>
     <li>Iran has taken advantage of stupid people, stupid representatives, people that are incompetent, whether it's Kerry or our president.</li>
     <li><srai>DEFENSE</srai></li>
-    <li><srai>IRAN IRAQ TAKEOVE</srai></li>
+    <li><srai>IRAN IRAQ TAKEOVER</srai></li>
   </random>
 </template>
 </category>
@@ -416,8 +418,9 @@
   <random>
     <li><srai>SADDAM</srai></li>
     <li>I was against that war from the beginning. That's a big thing because that shows judgment.</li>
+    <li>I said, "Don't do Iraq."</li>
     <li><srai>DEFENSE</srai></li>
-    <li><srai>IRAN IRAQ TAKEOVE</srai></li>
+    <li><srai>IRAN IRAQ TAKEOVER</srai></li>
   </random>
 </template>
 </category>
@@ -448,7 +451,12 @@
 </category>
 
 <category><pattern>SYRIAN REFUGEES</pattern>
-<template>I’m putting the people here on notice that are coming here from Syria as part of this mass migration that if I win, if I win, they’re going back.</template>
+<template>
+  <random>
+    <li>I’m putting the people here on notice that are coming here from Syria as part of this mass migration that if I win, if I win, they’re going back.</li>
+    <li>I have a bigger heart than you do, OK? Believe me. I have a very big heart and I understand the whole thing with migration.</li>
+  </random>
+</template>
 </category>
 
 <category><pattern>RUSSIA ISIS SYRIA</pattern>
@@ -739,10 +747,18 @@
 <random>
     <li>I fully support and back up the Second Amendment.</li>
     <li>I’ve just released my position papers on The Second Amendment.</li>
+    <li>The Second Amendment to our Constotution is clear.</li>
+    <li>The right of self-defense doesn't stop at the end of your driveway. That's why I have a concealed carry permit and why tens of millions of Americans do too.</li>
+    <li><srai>ROSEBURG</srai></li>
     <li><srai>POLICE</srai></li>
   </random>
 </template>
 </category>
+
+<catgeory><pattern>ROSEBURG</pattern>
+<template>Let me tell you, if you had a couple teachers with guns in that room, you would have been a hell of a lot better off.
+  </template>
+</catgeory>
 
 <category><pattern>GUN CONTROL</pattern>
 <template>
