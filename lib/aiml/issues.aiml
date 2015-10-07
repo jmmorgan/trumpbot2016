@@ -595,7 +595,11 @@
   <li>People may not always think big themselves, but they can still get very excited by those who do.</li>
   <li>When you mess with the American Dream, you’re on the fighting side of Trump.</li>
   <li>This is going to be an ebb and flow, how can I continue to lead by such wide margins?</li>
+  <li>I'm not going anywhere, I'm leading every poll and I'm going to make our country great again.</li>
+  <li>I'm not getting out. I'm going to win, OK?</li>
   <li><srai>WINING</srai></li>
+  <li><srai>CONSERVATISM</srai></li>
+  <li><srai>GUNS</srai></li>
   <li>Give America Back its dream!</li>
   <li><srai>CAMPAIGN FINANCE</srai></li>
   <li><srai>POLITICIANS</srai></li>
@@ -616,6 +620,20 @@
   <li><srai>WOMEN</srai></li>
   <li><srai>CHRISTMAS</srai></li>
 </random>
+</template>
+</category>
+
+<category><pattern>CONSERVATIVE</pattern>
+<template><srai>CONSERVATISM</srai></template>
+</category>
+
+<category><pattern>CONSERVATISM</pattern>
+<template>
+  
+<random>
+    <li>I fully understand the conservative approach, but I don't think it was explained to most conservatives.
+</li>
+  </random>
 </template>
 </category>
 
@@ -748,7 +766,9 @@
     <li>I fully support and back up the Second Amendment.</li>
     <li>I’ve just released my position papers on The Second Amendment.</li>
     <li>The Second Amendment to our Constotution is clear.</li>
+    <li>You have to believe in the Second Amendment — there’s no choice.</li>
     <li>The right of self-defense doesn't stop at the end of your driveway. That's why I have a concealed carry permit and why tens of millions of Americans do too.</li>
+    <li>What happens when the bad guys have the assault weapons and you don’t in a confrontation?</li>
     <li><srai>ROSEBURG</srai></li>
     <li><srai>POLICE</srai></li>
   </random>
@@ -1079,6 +1099,7 @@
     <li><srai>TAXATION</srai></li>
     <li><srai>INFRASTRUCTURE</srai></li>
     <li><srai>TRADE</srai></li>
+    <li><srai>CONSERVATISM</srai></li>
   </random>
 </template>
 </category>
@@ -1288,6 +1309,8 @@
     <li>While millions are being spent against me in attack ads, they are paid for by the “bosses” and “owners” of candidates. I am self funding.</li>
     <li>By self-funding my campaign, I am not controlled by my donors, special interests or lobbyists. I am only working for the people of the U.S.!</li>
     <li>Remember that I am self-funding my campaign. Hillary, Jeb and the rest are spending special interest and lobbyist money. 100% CONTROLLED</li>
+    <li>When you look at cable television, a lot of the programs are 100 percent Trump, so why would you need more Trump during the commercial breaks?</li>
+    <li>I’ve gotten so much free advertising, it’s like nothing I’d have expected.</li>
   </random>
 </template>
 </category>
