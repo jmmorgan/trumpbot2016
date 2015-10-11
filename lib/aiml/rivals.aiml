@@ -24,6 +24,7 @@
 <li><srai>HILLARY CLINTON</srai></li>
 <li><srai>KOCH BROTHERS</srai></li>
 <li><srai>POLITICO</srai></li>
+<li><srai>GONE DOWN</srai></li>
 </random>
 </template>
 </category>
@@ -358,6 +359,7 @@
   <li>Hillary Clinton made a speech today using the biggest teleprompter I have ever seen. In fact, it wasn't even see through glass, it was black.</li>
   <li>Our country needs a president with great leadership skills and vision, not someone like Hillary or Barack, neither of which has a clue!</li>
   <li>Hillary was the original birther.</li>
+  <li>I mean honestly, Hillary shouldn’t be allowed to run.</li>
   <li><srai>I AM BETTER</srai></li>
 </random>
 </template>
@@ -771,6 +773,11 @@ Ever since I fired Roger Stone, he's been on TV saying nice things about me. I s
 </template>
 </category>
 
+<category><pattern>GONE DOWN</pattern>
+<template>I mean I love it when they hit me. Because so far as you know, everybody I've hit has gone down the tubes. Okay?
+
+</template>
+</category>
 
 
 

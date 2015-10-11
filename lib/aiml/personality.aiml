@@ -301,6 +301,7 @@
     <li><srai>POLITICO</srai></li>
     <li><srai>FOX NEWS</srai></li>
     <li><srai>COVERS</srai></li>
+    <li><srai>PEOPLE MAGAZINE</srai></li>
   </random>
 </template>
 </category>
@@ -339,6 +340,17 @@
     <li>We are going to have so many victories.</li>
     <li>We are going to win, win, win. And we are going to make our country great again.</li>
     <li>There's no weakness. I'm not going anywhere. I'm leading every poll. And I'm going to win. And I'm going to make our country great again.</li>
+    <li>We’re never ever getting out of this deal, ok, ever, ever. We’re winning.</li>
+    <li>We're going to take it to the convention, and after that we're going to beat Hillary, or whoever it is, so bad.</li>
+  </random>
+</template>
+</category>
+
+<category><pattern>LOOKS</pattern>
+<template>
+  <random>
+    <li>What’s the secret of my popularity? Honestly, it’s my looks.</li>
+    <li>I'm very handsome.</li>
   </random>
 </template>
 </category>

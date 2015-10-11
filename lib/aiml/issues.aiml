@@ -298,6 +298,7 @@
   <li><srai>LATINOS</srai></li>
   <li><srai>ANCHOR BABIES</srai></li>
   <li><srai>SYRIAN REFUGEES</srai></li>
+  <li><srai>IMMIGRANTS AND VETS</srai></li>
 </random>
 </template>
 </category>
@@ -347,6 +348,7 @@
   <li>I have great relationship with the Mexican people. I have many people working for me.</li>
   <li>I will create jobs and the Latinos will have jobs that they don't have right now, and I will win that vote.</li>
   <li>If I get the nomination, I'll win the Latino vote.</li>
+  <li>I won the Hispanic poll in the state of Nevada. Big Hispanic population. I won it easily.</li>
 </random>
 </template>
 </category>
@@ -556,8 +558,13 @@
   <random>
     <li>What a disaster the Veterans Administration is.</li>
     <li>V.A. is a disaster.</li>
+    <li><srai>IMMIGRANTS AND VETS</srai></li>
   </random>
 </template>
+</category>
+
+<category><pattern>IMMIGRANTS AND VETS</pattern>
+<template>The illegal immigrants are being treated better in many many instances then our great vets. I can’t happen.</template>
 </category>
 
 <category><pattern>MAKE AMERICA GREAT</pattern>
@@ -619,6 +626,7 @@
   <li><srai>IRAN</srai></li>
   <li><srai>WOMEN</srai></li>
   <li><srai>CHRISTMAS</srai></li>
+  <li><srai>CAMPAIGN</srai></li>
 </random>
 </template>
 </category>
@@ -1405,7 +1413,26 @@
 </template>
 </category>
 
+<category><pattern>SPEAKER</pattern>
+<template>
+  <srai>SPEAKER OF THE HOUSE</srai>
+</template>
+</category>
 
+<category><pattern>HOUSE SPEAKER</pattern>
+<template>
+  <srai>SPEAKER OF THE HOUSE</srai>
+</template>
+</category>
+
+<category><pattern>SPEAKER OF THE HOUSE</pattern>
+<template>
+  <random>
+    <li><srai>PAUL RYAN</srai></li>
+    <li><srai>JOHN BOEHNER</srai></li>
+  </random>
+</template>
+</category>
  
 
 

@@ -260,7 +260,7 @@ And by the way, when you say Quds vs. Kurds, I thought Hugh Hewitt said Kurds, t
 </category>
 
 <category><pattern>^ REAGAN #</pattern>
-<template><srai>RONALD REAGEN</srai></template>
+<template><srai>RONALD REAGAN</srai></template>
 </category>
 
 <category><pattern>RONALD REAGAN</pattern>
@@ -272,7 +272,7 @@ And by the way, when you say Quds vs. Kurds, I thought Hugh Hewitt said Kurds, t
 </category>
 
 <category><pattern>^ BOEHNER #</pattern>
-<template><srai>RONALD REAGEN</srai></template>
+<template><srai>JOHN BOEHNER</srai></template>
 </category>
 
 <category><pattern>JOHN BOEHNER</pattern>
@@ -282,6 +282,27 @@ And by the way, when you say Quds vs. Kurds, I thought Hugh Hewitt said Kurds, t
   </random></template>
 </category>
 
+<category><pattern>^ RYAN #</pattern>
+<template><srai>PAUL RYAN</srai></template>
+</category>
+
+<category><pattern>PAUL RYAN</pattern>
+<template>
+  <random>
+    <li>Paul Ryan is a nice man.</li>
+  </random></template>
+</category>
+
+<category><pattern>^ PEOPLE MAGAZINE #</pattern>
+<template><srai>PEOPLE MAGAZINE</srai></template>
+</category>
+
+<category><pattern>PEOPLE MAGAZINE</pattern>
+<template>
+  <random>
+    <li>She was a terrific woman, and she was Hispanic.  And she said, 'The Hispanics love Trump, we love Trump.'</li>
+  </random></template>
+</category>
 
 
 
