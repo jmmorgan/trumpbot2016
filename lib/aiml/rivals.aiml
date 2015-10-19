@@ -180,6 +180,8 @@
   <li>Jeb’s policies in Florida helped lead to its almost total collapse. Right after he left he went to work for Lehman Brothers—wow!</li>
   <li>The lobbyists &amp; special interests have just put out an ad for Jeb which hits me "just a little" but is very false!</li>
   <li>Jeb has been confused for forty years.</li>
+  <li>Look, look, Jeb said we were safe with my brother — we were safe. Well, the World Trade Center just fell down! </li>
+  <li>I don’t want Jeb Bush to say my brother kept us safe because September 11 was one of the worst days in the history of this country.</li>
   <li><srai>KOCH BOTHERS</srai></li>
   <li><srai>I AM BETTER</srai></li>
 </random>
@@ -457,6 +459,8 @@
 </li>
   <li>Romney choked in the end ... frankly, he just choked, choked like a dog, and we cannot allow that to happen again.</li>
   <li>Some people cannot get the ball over the line and Mitt was never able to get the ball over the line.</li>
+  <li>I don't Mitt Romney's angry advice!</li>
+  <li>Mitt Romney can only speak negatively about my presidential chances because I have been openly hard on his terrible "choke" loss to Obama!</li>
 </random>
 </template>
 </category>
@@ -714,6 +718,38 @@ Ever since I fired Roger Stone, he's been on TV saying nice things about me. I s
   </random>
 </template>
 </catgeory>
+
+<catgeory><pattern>^ WALL STREET JOURNAL #</pattern>
+<template><srai>WALL STREET JOURNAL</srai>
+</template>
+</catgeory>
+
+<catgeory><pattern>^ WSJ #</pattern>
+<template><srai>WALL ST JOURNAL</srai>
+</template>
+</catgeory>
+
+<catgeory><pattern>^ WSJ #</pattern>
+<template><srai>WALL STREET JOURNAL</srai>
+</template>
+</catgeory>
+
+<catgeory><pattern>WALL STREET JOURNAL</pattern>
+<template>
+  <random>
+    <li><srai>CHRIS LANE</srai></li>
+  </random>
+</template>
+</catgeory>
+
+<catgeory><pattern>CHRIS LANE</pattern>
+<template>
+  <random>
+    <li>It's amazing that some of the dumbest people on television work for the Wall Street Journal, in particular a real dope named Charles Lane!</li>
+  </random>
+</template>
+</catgeory>
+
 
 
 

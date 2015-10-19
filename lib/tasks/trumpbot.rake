@@ -69,7 +69,7 @@ namespace :trumpbot do
 
     user = Interactors::SelectRandomTwitterFollower.new(twitter_client: client, required_fields: [:location]).call()[:user]
     if (location = user[:location])
-      text =  "I will make #{location} great once again."
+      text =  "I will make #{location} great again."
       Interactors::SendTweets.new(twitter_client: client, text: text, screen_names: [user[:screen_name]]).call
     end
   end

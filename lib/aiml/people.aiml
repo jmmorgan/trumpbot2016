@@ -304,6 +304,17 @@ And by the way, when you say Quds vs. Kurds, I thought Hugh Hewitt said Kurds, t
   </random></template>
 </category>
 
+<category><pattern>^ PENN #</pattern>
+<template><srai>PENN JILLETTE</srai></template>
+</category>
+
+<category><pattern>PEN JILLETTE</pattern>
+<template>
+  <random>
+    <li>I should release the sad and totally apologetic letter that Penn hand delivered to me. Minds would be changed very fast!
+</li>
+  </random></template>
+</category>
 
 
 
