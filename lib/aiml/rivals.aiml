@@ -7,7 +7,6 @@
 <li><srai>JEB BUSH</srai></li>
 <li><srai>CHRIS CHRISTIE</srai></li>
 <li><srai>LINDSEY GRAHAM</srai></li>
-<li><srai>RICK PERRY</srai></li>
 <li><srai>MARCO RUBIO</srai></li>
 <li><srai>TED CRUZ</srai></li>
 <li><srai>MIKE HUCKABEE</srai></li>
@@ -15,7 +14,6 @@
 <li><srai>JOHN KASICH</srai></li>
 <li><srai>RICK SANTORUM</srai></li>
 <li><srai>RAND PAUL</srai></li>
-<li><srai>SCOTT WALKER</srai></li>
 <li><srai>CARLY FIORINA</srai></li>
 <li><srai>BOBBY JINDAL</srai></li>
 <li><srai>JIM GILMORE</srai></li>
@@ -182,6 +180,10 @@
   <li>Jeb has been confused for forty years.</li>
   <li>Look, look, Jeb said we were safe with my brother — we were safe. Well, the World Trade Center just fell down! </li>
   <li>I don’t want Jeb Bush to say my brother kept us safe because September 11 was one of the worst days in the history of this country.</li>
+  <li>Bush has no money, he's meeting today with mommy and daddy, and they're working on his campaign.</li>
+  <li>Jeb's a guy wants to run our country and he can't even run his own campaign. Think of it.</li>
+  <li>Jeb is losing badly and embarrassing his family.</li>
+  <li><srai>BUSH RUBIO</srai></li>
   <li><srai>KOCH BOTHERS</srai></li>
   <li><srai>I AM BETTER</srai></li>
 </random>
@@ -306,6 +308,13 @@
   <li>Well, I'm much better as a counterpuncher, so I'd rather have, and I'm hoping for Ben to really hit me at some point, because I love to counterpunch.</li>
   <li>Ben Carson has been very nice to me, he's actually a really nice guy.</li>
   <li>During the debate Ben and I were high-fiving each other. We were having a good time.</li>
+  <li>I like Ben, but he cannot do with trade like I do.</li>
+  <li>Ben Carson's very, very weak on immigration and I'm very strong on immigration.</li>
+  <li>Ben Carson is very, very weak on immigration. He believes in amnesty strongly. He believes in citizenship. He's going to give citizenship to people who are here illegally -- you can't do that.</li>
+  <li>Ben Carson's even lower-energy than Bush.</li>
+  <li>I’m Presbyterian. That’s down the middle of road. I mean, Seventh-day Adventist I don’t know about.</li>
+  <li>Ben Carson is super low energy. We need tremendous energy.</li>
+  <li>Carson is lower energy than Bush. I don’t understand what’s going on.</li>
   <li><srai>I AM BETTER</srai></li>
   <li><srai>THE BLACKS</srai></li>
 </random>
@@ -589,10 +598,18 @@
   <li>Just watched Marco Rubio on television. Just another all talk, no action, politician.</li>
   <li>Rubio is not the guy that's going to be negotiating with the kinds of people you have to negotiate with to turn this country around.</li>
   <li>Take a look at Rubio's past. He’s got $12 in the bank.</li>
+  <li>Have you ever seen a guy sweat like Rubio?</li>
+  <li>You’ve got Rubio doing poorly, and he sweats like a dog.</li>
+  <li><srai>BUSH RUBIO</srai></li>
   <li><srai>ZERO POLLS</srai></li>
   <li><srai>I AM BETTER</srai></li>
 </random>
 </template>
+</category>
+
+<category>
+  <pattern>BUSH RUBIO</pattern>
+  <template>Rubio was very disloyal to Bush. Everybody admits that Bush was his mentor. They're fighting like crazy. I'm laughing watching them fight.</template>
 </category>
 
 <category><pattern>FIORINA</pattern>
@@ -805,7 +822,11 @@ Ever since I fired Roger Stone, he's been on TV saying nice things about me. I s
 </category>
 
 <category><pattern>I AM BETTER</pattern>
-<template>I think the only difference between me and the other candidates is that I'm more honest and my women are more beautiful.
+<template>
+  <random>
+    <li>I think the only difference between me and the other candidates is that I'm more honest and my women are more beautiful.</li>
+    <li>I put up less money than everyone else, and I'm number one.</li>
+  </random>
 </template>
 </category>
 
